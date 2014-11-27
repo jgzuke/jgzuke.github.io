@@ -76,29 +76,20 @@ a.toplinks {
  font-size: 175%;
  color: #FFFFFF;
 }
-#profileWithHeader, #projectsWithHeader {
-	height:100vh;
-}
-
 #profile {
   width: 85%;
   text-align: left;
 }
 #projects {
+	background-color: rgba(200,255,255,0.5);
 	width: 85%;
 }
-
 #button-next1, #button-next2 {
-	position:absolute;
 	background-color: rgba(255,255,255,0.5);
-	back
+	height:100px;
 }
-.project1describe, .project2describe {
-	width:93%;
-	position:absolute;
-}
-img.project1slide, img.project2slide {
-	width:93%;
+.project1describe, .project2describe, img.project1slide, img.project2slide {
+	width:500px;
 	position:absolute;
 }
 h1.myheaders {
@@ -117,8 +108,8 @@ hr.mydividers {
 }
 h3.paragraphheaders {
 	text-indent: 20px;
- text-align: left;
- color: #294F6D;
+ 	text-align: left;
+ 	color: #3975A3;
 }
 #myimage {
  width:90%;
