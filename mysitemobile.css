@@ -1,0 +1,139 @@
+#backgrounddiv {
+	/*background: url("topBack.JPG");*/
+    width: 100%;
+    z-index:0;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+#backgrounddivtop {
+	width:100%;
+	text-align: center;
+	background-image: url("math.png");
+	background-position: left top;
+    height: 100vh;
+}
+#backgrounddivmid {
+	text-align: center;
+	/*background: url("topBack.JPG");*/
+    height: 300vh; /*height will be ((scrolling height)-100)/2 */
+}
+#backgrounddivbottom {
+	width:100%;
+	text-align: center;
+	background-image: url("binary.png");
+    height: 100vh;
+}
+#navbuttons {
+	position:fixed;
+	width: 64px;
+	bottom: 15px;
+    right: 15px;
+    background-color : #FFFFFF;
+    z-index: 10;
+	box-shadow: 0px 0px 20px 0px #000;
+    -moz-box-shadow: 0px 0px 20px 0px #000;
+	-webkit-box-shadow: 0px 0px 20px 0px #000;
+}
+#scrolling {
+	position:relative;
+    height:700vh;
+    width:100%;
+    background-color : #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #000;
+    -moz-box-shadow: 0px 0px 20px 0px #000;
+	-webkit-box-shadow: 0px 0px 20px 0px #000;
+}
+div.transparent {
+  height:100vh;
+  width: 100%;
+  background-color : transparent;
+}
+#toptext {
+	vertical-align: middle;
+    margin-top:25vh;
+}
+#topname {
+	color: #FFFFFF;
+	font-size: 500%;
+}
+#bottext {
+	vertical-align: middle;
+    margin-top:25vh;
+}
+#botname {
+	color: #FFFFFF;
+	font-size: 500%;
+}
+p.topDividers {
+ display : inline;
+ font-size: 175%;
+ color: #FFFFFF;
+}
+a.toplinks {
+ display : inline;
+ font-weight: bold;
+ font-size: 175%;
+ color: #FFFFFF;
+}
+#profileWithHeader, #projectsWithHeader {
+	height:350vh;
+}
+
+#profile {
+  width: 85%;
+  text-align: left;
+}
+#projects {
+	width: 85%;
+}
+
+#button-next1, #button-next2 {
+	position:absolute;
+	background-color: rgba(255,255,255,0.5);
+	back
+}
+.project1describe, .project2describe {
+	width:93%;
+	position:absolute;
+}
+img.project1slide, img.project2slide {
+	width:93%;
+	position:absolute;
+}
+h1.myheaders {
+ text-align: center;
+ font-size: 400%;
+ font-style: normal;
+ color: #3975A3;
+ margin-top:50px;
+}
+hr.mydividers {
+ width:85%;
+ background-color: #3975A3;
+ height: 2px;
+ margin-top:40px;
+ size:4;
+}
+h3.paragraphheaders {
+	text-indent: 20px;
+ text-align: left;
+ color: #294F6D;
+}
+#myimage {
+ width:90%;
+ height:90%;
+ margin-top:60px;
+}
+p.paragraphs {
+ text-align: left;
+}
+#findoutmore {
+	margin-top:40px;
+	text-align: center;
+	font-style: italic;
+}
+h3.paragraphheaders, p.paragraphs, #findoutmore, h1.myheaders {
+	font-family: Arial, Helvetica, sans-serif;
+}
