@@ -16,8 +16,8 @@
 }
 #backgrounddivmid {
 	text-align: center;
+	background-color : #FFFFFF;
 	/*background: url("topBack.JPG");*/
-    height: 100vh; /*height will be ((scrolling height)-100)/2 */
 }
 #backgrounddivbottom {
 	width:100%;
@@ -38,7 +38,6 @@
 }
 #scrolling {
 	position:relative;
-    height:300vh;
     width:100%;
     background-color : #FFFFFF;
     box-shadow: 0px 0px 20px 0px #000;

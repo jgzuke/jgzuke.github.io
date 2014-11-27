@@ -58,6 +58,10 @@ $('#prevpage').click(function()
 });
 $(document).ready(function()
 {
+	var scrollHeight = $("#scrolling").height();
+	var windowHeight = $(window).height();
+	var divHeight = (scrollHeight-windowHeight)/2
+	$("#backgrounddivmid").height(divHeight);
 	$('.project1slide').first().addClass('active1');
 	$('.project1slide').hide();
 	$('.active1').show();
