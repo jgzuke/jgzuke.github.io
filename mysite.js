@@ -63,8 +63,8 @@ $(document).ready(function()
 	var divHeight = (scrollHeight-windowHeight)/2;
 	if( screen.width <= 700 )
     {
-      $("#project1").style.marginLeft = "10px";
-      $("#project2").style.marginRight = "10px";
+      document.getElementById("project1").style.marginLeft = "10px";
+      document.getElementById("project2").style.marginRight = "10px";
       //window.open('mobile.html');
     }
 	$("#backgrounddivmid").height(divHeight);
