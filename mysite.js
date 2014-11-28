@@ -60,7 +60,13 @@ $(document).ready(function()
 {
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
-	var divHeight = (scrollHeight-windowHeight)/2
+	var divHeight = (scrollHeight-windowHeight)/2;
+	if( screen.width <= 700 )
+    {
+      $("#project1").style.marginLeft = "10px";
+      $("#project2").style.marginRight = "10px";
+      //window.open('mobile.html');
+    }
 	$("#backgrounddivmid").height(divHeight);
 	
 	$('.project1slide').first().addClass('active1');
