@@ -2,7 +2,7 @@ $(window).bind('scroll', function(e)
 {
 	parallaxScroll();
 });
-
+var desktop = true;
 function parallaxScroll()
 {
 	var scrolled = $(window).scrollTop();
@@ -61,25 +61,31 @@ $(document).ready(function()
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
 	var divHeight = (scrollHeight-windowHeight)/2;
-	if( screen.width <= 700 )
+	desktop = (screen.width >= 700)
+	if(!desktop)
     {
-      document.getElementById("project1").style.marginLeft = "10px";
-      document.getElementById("project2").style.marginRight = "10px";
+      $("#project1").style.marginLeft = "10px";
+      $("#project2").style.marginRight = "10px";
       //window.open('mobile.html');
     }
 	$("#backgrounddivmid").height(divHeight);
 	
 	$('.project1slide').first().addClass('active1');
-	$('.project1slide').hide();
-	$('.active1').show();
 	$('.project2slide').first().addClass('active2');
+	$('.project1slide').hide();
 	$('.project2slide').hide();
 	$('.active2').show();
+	$('.active1').show();
 
 	$('.project1describe').first().addClass('active1Describe');
 	$('.project2describe').first().addClass('active2Describe');
 	$('.project1describe').hide();
 	$('.project2describe').hide();
+	if(!desktop)
+	{
+		$('.active1Describe').show();
+		$('.active2Describe').show();
+	}
 });
 $('#project1').click(function()
 {
@@ -123,15 +129,15 @@ $('#project2').click(function()
 });
 $('#project1').mouseenter(function()
 {
-    $('.active1Describe').fadeIn();
+    if(desktop) {$('.active1Describe').fadeIn();}
 }).mouseleave(function()
 {
-    $('.active1Describe').fadeOut();
+    if(desktop) {$('.active1Describe').fadeOut();}
 });
 $('#project2').mouseenter(function()
 {
-    $('.active2Describe').fadeIn();
+    if(desktop) {$('.active2Describe').fadeIn();}
 }).mouseleave(function()
 {
-    $('.active2Describe').fadeOut();
+    if(desktop) {$('.active2Describe').fadeOut();}
 });
