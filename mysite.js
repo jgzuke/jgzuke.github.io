@@ -58,15 +58,16 @@ $('#prevpage').click(function()
 });
 $(document).ready(function()
 {
+	var height = $("#firstPicture").height();
+    $("#projectRow").height(height);
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
 	var divHeight = (scrollHeight-windowHeight)/2;
-	desktop = (screen.width >= 700)
+	desktop = ($(window).width() >= 700)
 	if(!desktop)
     {
-      $("#project1").style.marginLeft = "10px";
-      $("#project2").style.marginRight = "10px";
-      //window.open('mobile.html');
+    	document.getElementById("project1").style.marginLeft =  "10px";
+    	document.getElementById("project2").style.marginRight =  "10px";
     }
 	$("#backgrounddivmid").height(divHeight);
 	
