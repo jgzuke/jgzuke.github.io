@@ -56,12 +56,9 @@ $('#prevpage').click(function()
 		}, 'slow');
 	}
 });
-$(document).ready(function()
+function resizeScrolling()
 {
 	var height = $("#firstPicture").height();
-    $("#projectRow").height(height);
-    $("#projectRow2").height(height);
-
     $("#project1").height(height);
     $("#project2").height(height);
     $("#project3").height(height);
@@ -71,9 +68,55 @@ $(document).ready(function()
     {
     	document.getElementById("project1").style.marginLeft =  "-20px";
     	document.getElementById("project1").style.marginRight =  "-20px";
+    	document.getElementById("project1").style.marginBottom =  "40px";
     	document.getElementById("project2").style.marginLeft =  "-20px";
     	document.getElementById("project2").style.marginRight =  "-20px";
+    	document.getElementById("project2").style.marginBottom =  "40px";
+    	document.getElementById("project3").style.marginLeft =  "-20px";
+    	document.getElementById("project3").style.marginRight =  "-20px";
+    	document.getElementById("project3").style.marginBottom =  "40px";
+    	document.getElementById("project4").style.marginLeft =  "-20px";
+    	document.getElementById("project4").style.marginRight =  "-20px";
+    	document.getElementById("project4").style.marginBottom =  "40px";
     	document.getElementById("myimage").style.marginTop =  "0px";
+    	document.getElementById("projectRow").style.marginBottom =  "0px";
+    	document.getElementById("projectRow2").style.marginBottom =  "0px";
+
+
+    	$('#myimage').hide();
+    }
+	var scrollHeight = $("#scrolling").height();
+	var windowHeight = $(window).height();
+	var divHeight = (scrollHeight-windowHeight)/2;
+	$("#backgrounddivmid").height(divHeight);
+}
+$(document).ready(function()
+{
+	var height = $("#firstPicture").height();
+    $("#project1").height(height);
+    $("#project2").height(height);
+    $("#project3").height(height);
+    $("#project4").height(height);
+	desktop = ($(window).width() >= 700)
+	if(!desktop)
+    {
+    	document.getElementById("project1").style.marginLeft =  "-20px";
+    	document.getElementById("project1").style.marginRight =  "-20px";
+    	document.getElementById("project1").style.marginBottom =  "40px";
+    	document.getElementById("project2").style.marginLeft =  "-20px";
+    	document.getElementById("project2").style.marginRight =  "-20px";
+    	document.getElementById("project2").style.marginBottom =  "40px";
+    	document.getElementById("project3").style.marginLeft =  "-20px";
+    	document.getElementById("project3").style.marginRight =  "-20px";
+    	document.getElementById("project3").style.marginBottom =  "40px";
+    	document.getElementById("project4").style.marginLeft =  "-20px";
+    	document.getElementById("project4").style.marginRight =  "-20px";
+    	document.getElementById("project4").style.marginBottom =  "40px";
+    	document.getElementById("myimage").style.marginTop =  "0px";
+    	document.getElementById("projectRow").style.marginBottom =  "0px";
+    	document.getElementById("projectRow2").style.marginBottom =  "0px";
+
+
     	$('#myimage').hide();
     }
 	var scrollHeight = $("#scrolling").height();
