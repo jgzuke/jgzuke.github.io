@@ -68,6 +68,7 @@ $(document).ready(function()
     {
     	document.getElementById("project1").style.marginLeft =  "10px";
     	document.getElementById("project2").style.marginRight =  "10px";
+    	document.getElementById("myimage").style.marginTop =  "0px";
     }
 	$("#backgrounddivmid").height(divHeight);
 	
