@@ -61,6 +61,11 @@ $(document).ready(function()
 	var height = $("#firstPicture").height();
     $("#projectRow").height(height);
     $("#projectRow2").height(height);
+
+    $("#project1").height(height);
+    $("#project2").height(height);
+    $("#project3").height(height);
+    $("#project4").height(height);
 	desktop = ($(window).width() >= 700)
 	if(!desktop)
     {
@@ -79,7 +84,6 @@ $(document).ready(function()
 	var num = '1';
 	for (var i = 0; i < 4; i++)
 	{
-		
 		$('.project'+num+'slide').first().addClass('active'+num);
 		$('.project'+num+'slide').hide();
 		$('.active'+num).show();
