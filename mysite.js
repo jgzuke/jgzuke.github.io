@@ -86,6 +86,7 @@ function resizeScrolling()
     	document.getElementById("projectRow").style.marginBottom =  "0px";
     	document.getElementById("projectRow2").style.marginBottom =  "0px";
     	$('#myimage').hide();
+		$('#navbuttons').hide();
     } else
     {
     	document.getElementById("project1").style.marginLeft =  "-10px";
@@ -104,6 +105,7 @@ function resizeScrolling()
     	document.getElementById("projectRow").style.marginBottom =  "20px";
     	document.getElementById("projectRow2").style.marginBottom =  "20px";
     	$('#myimage').show();
+    	$('#navbuttons').show();
     }
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
