@@ -60,36 +60,39 @@ $(document).ready(function()
 {
 	var height = $("#firstPicture").height();
     $("#projectRow").height(height);
-	var scrollHeight = $("#scrolling").height();
-	var windowHeight = $(window).height();
-	var divHeight = (scrollHeight-windowHeight)/2;
+    $("#projectRow2").height(height);
 	desktop = ($(window).width() >= 700)
 	if(!desktop)
     {
-    	document.getElementById("project1").style.marginLeft =  "10px";
-    	document.getElementById("project2").style.marginRight =  "10px";
+    	document.getElementById("project1").style.marginLeft =  "-20px";
+    	document.getElementById("project1").style.marginRight =  "-20px";
+    	document.getElementById("project2").style.marginLeft =  "-20px";
+    	document.getElementById("project2").style.marginRight =  "-20px";
     	document.getElementById("myimage").style.marginTop =  "0px";
+    	$('#myimage').hide();
     }
+	var scrollHeight = $("#scrolling").height();
+	var windowHeight = $(window).height();
+	var divHeight = (scrollHeight-windowHeight)/2;
 	$("#backgrounddivmid").height(divHeight);
 	
-	$('.project1slide').first().addClass('active1');
-	$('.project2slide').first().addClass('active2');
-	$('.project1slide').hide();
-	$('.project2slide').hide();
-	$('.active2').show();
-	$('.active1').show();
-
-	$('.project1describe').first().addClass('active1Describe');
-	$('.project2describe').first().addClass('active2Describe');
-	$('.project1describe').hide();
-	$('.project2describe').hide();
-	if(!desktop)
+	var num = '1';
+	for (var i = 0; i < 4; i++)
 	{
-		$('.active1Describe').show();
-		$('.active2Describe').show();
-	}
+		
+		$('.project'+num+'slide').first().addClass('active'+num);
+		$('.project'+num+'slide').hide();
+		$('.active'+num).show();
+		$('.project'+num+'describe').first().addClass('active'+num+'Describe');
+		$('.project'+num+'describe').hide();
+		if(!desktop) $('.active'+num+'Describe').show();
+
+		if (num=='3') num = '4';
+		if (num=='2') num = '3';
+		if (num=='1') num = '2';
+	};
 });
-$('#project1').click(function()
+function clickPic()
 {
 	$('.active1').removeClass('active1').addClass('oldActive');
 	$('.active1Describe').removeClass('active1Describe').addClass('oldActiveDescribe');
@@ -108,6 +111,10 @@ $('#project1').click(function()
 	$('.project1describe').fadeOut();
 	$('.active1').fadeIn();
 	$('.active1Describe').fadeIn();
+}
+$('#project1').click(function()
+{
+	clickPic('1');
 });
 $('#project2').click(function()
 {
@@ -142,4 +149,18 @@ $('#project2').mouseenter(function()
 }).mouseleave(function()
 {
     if(desktop) {$('.active2Describe').fadeOut();}
+});
+$('#project3').mouseenter(function()
+{
+    if(desktop) {$('.active3Describe').fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.active3Describe').fadeOut();}
+});
+$('#project4').mouseenter(function()
+{
+    if(desktop) {$('.active4Describe').fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.active4Describe').fadeOut();}
 });

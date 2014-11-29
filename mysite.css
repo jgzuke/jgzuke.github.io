@@ -86,28 +86,26 @@ a.toplinks {
 #projects {
 	width: 85%;
 }
-#projectRow {
+#projectRow, #projectRow2 {
 	margin-left: 0px;
 	margin-right: 30px;
 	margin-bottom: 20px;
 }
-#project1
+#project1, #project3
 {
 	margin-left: -10px;
 	margin-right: 10px;
 }
-#project2
+#project2, #project4
 {
 	margin-left: 10px;
 	margin-right: -10px;
 }
-.project1describe, .project2describe, img.project1slide, img.project2slide {
+.project1describe, .project2describe, .project3describe, .project4describe, 
+.project1slide, .project2slide, .project3slide, .project4slide {
 	width:100%;
 	position:absolute;
 }
-
-
-
 h1.myheaders {
  text-align: center;
  font-size: 400%;
