@@ -2,6 +2,10 @@ $(window).bind('scroll', function(e)
 {
 	parallaxScroll();
 });
+$(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e)
+{
+	resizeScrolling();
+});
 var desktop = true;
 function parallaxScroll()
 {
@@ -63,7 +67,7 @@ function resizeScrolling()
     $("#project2").height(height);
     $("#project3").height(height);
     $("#project4").height(height);
-	desktop = ($(window).width() >= 700)
+	desktop = ($(window).width() >= 992)
 	if(!desktop)
     {
     	document.getElementById("project1").style.marginLeft =  "-20px";
@@ -81,9 +85,25 @@ function resizeScrolling()
     	document.getElementById("myimage").style.marginTop =  "0px";
     	document.getElementById("projectRow").style.marginBottom =  "0px";
     	document.getElementById("projectRow2").style.marginBottom =  "0px";
-
-
     	$('#myimage').hide();
+    } else
+    {
+    	document.getElementById("project1").style.marginLeft =  "-10px";
+    	document.getElementById("project1").style.marginRight =  "10px";
+    	document.getElementById("project1").style.marginBottom =  "0px";
+    	document.getElementById("project2").style.marginLeft =  "10px";
+    	document.getElementById("project2").style.marginRight =  "-10px";
+    	document.getElementById("project2").style.marginBottom =  "0px";
+    	document.getElementById("project3").style.marginLeft =  "-10px";
+    	document.getElementById("project3").style.marginRight =  "10px";
+    	document.getElementById("project3").style.marginBottom =  "0px";
+    	document.getElementById("project4").style.marginLeft =  "10px";
+    	document.getElementById("project4").style.marginRight =  "-10px";
+    	document.getElementById("project4").style.marginBottom =  "0px";
+    	document.getElementById("myimage").style.marginTop =  "60px";
+    	document.getElementById("projectRow").style.marginBottom =  "20px";
+    	document.getElementById("projectRow2").style.marginBottom =  "20px";
+    	$('#myimage').show();
     }
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
@@ -92,38 +112,7 @@ function resizeScrolling()
 }
 $(document).ready(function()
 {
-	var height = $("#firstPicture").height();
-    $("#project1").height(height);
-    $("#project2").height(height);
-    $("#project3").height(height);
-    $("#project4").height(height);
-	desktop = ($(window).width() >= 700)
-	if(!desktop)
-    {
-    	document.getElementById("project1").style.marginLeft =  "-20px";
-    	document.getElementById("project1").style.marginRight =  "-20px";
-    	document.getElementById("project1").style.marginBottom =  "40px";
-    	document.getElementById("project2").style.marginLeft =  "-20px";
-    	document.getElementById("project2").style.marginRight =  "-20px";
-    	document.getElementById("project2").style.marginBottom =  "40px";
-    	document.getElementById("project3").style.marginLeft =  "-20px";
-    	document.getElementById("project3").style.marginRight =  "-20px";
-    	document.getElementById("project3").style.marginBottom =  "40px";
-    	document.getElementById("project4").style.marginLeft =  "-20px";
-    	document.getElementById("project4").style.marginRight =  "-20px";
-    	document.getElementById("project4").style.marginBottom =  "40px";
-    	document.getElementById("myimage").style.marginTop =  "0px";
-    	document.getElementById("projectRow").style.marginBottom =  "0px";
-    	document.getElementById("projectRow2").style.marginBottom =  "0px";
-
-
-    	$('#myimage').hide();
-    }
-	var scrollHeight = $("#scrolling").height();
-	var windowHeight = $(window).height();
-	var divHeight = (scrollHeight-windowHeight)/2;
-	$("#backgrounddivmid").height(divHeight);
-	
+	resizeScrolling();
 	var num = '1';
 	for (var i = 0; i < 4; i++)
 	{
