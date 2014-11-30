@@ -73,9 +73,8 @@ p.topDividers {
  font-size: 175%;
  color: #FFFFFF;
 }
-a.toplinks {
+.toplinks {
  display : inline;
- font-weight: bold;
  font-size: 175%;
  color: #FFFFFF;
 }
