@@ -67,6 +67,14 @@ function resizeScrolling()
     $("#project2").height(height);
     $("#project3").height(height);
     $("#project4").height(height);
+    $("#git1").height(height/5);
+    $("#git2").height(height/5);
+    $("#git3").height(height/5);
+    $("#git4").height(height/5);
+    $("#git1").width(height/5);
+    $("#git2").width(height/5);
+    $("#git3").width(height/5);
+    $("#git4").width(height/5);
 	desktop = ($(window).width() >= 992)
 	if(!desktop)
     {
@@ -123,8 +131,13 @@ $(document).ready(function()
 		$('.active'+num).show();
 		$('.project'+num+'describe').first().addClass('active'+num+'Describe');
 		$('.project'+num+'describe').hide();
-		if(!desktop) $('.active'+num+'Describe').show();
-
+		if(!desktop)
+		{
+		 $('.active'+num+'Describe').show();
+		} else
+		{
+			$("#git"+num).hide();
+		}
 		if (num=='3') num = '4';
 		if (num=='2') num = '3';
 		if (num=='1') num = '2';
@@ -176,29 +189,29 @@ $('#project2').click(function()
 });
 $('#project1').mouseenter(function()
 {
-    if(desktop) {$('.active1Describe').fadeIn();}
+    if(desktop) {$('.active1Describe').fadeIn(); $("#git1").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active1Describe').fadeOut();}
+    if(desktop) {$('.active1Describe').fadeOut(); $("#git1").fadeOut();}
 });
 $('#project2').mouseenter(function()
 {
-    if(desktop) {$('.active2Describe').fadeIn();}
+    if(desktop) {$('.active2Describe').fadeIn(); $("#git2").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active2Describe').fadeOut();}
+    if(desktop) {$('.active2Describe').fadeOut(); $("#git2").fadeOut();}
 });
 $('#project3').mouseenter(function()
 {
-    if(desktop) {$('.active3Describe').fadeIn();}
+    if(desktop) {$('.active3Describe').fadeIn(); $("#git3").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active3Describe').fadeOut();}
+    if(desktop) {$('.active3Describe').fadeOut(); $("#git3").fadeOut();}
 });
 $('#project4').mouseenter(function()
 {
-    if(desktop) {$('.active4Describe').fadeIn();}
+    if(desktop) {$('.active4Describe').fadeIn(); $("#git4").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active4Describe').fadeOut();}
+    if(desktop) {$('.active4Describe').fadeOut(); $("#git4").fadeOut();}
 });

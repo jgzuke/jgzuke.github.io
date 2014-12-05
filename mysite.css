@@ -103,6 +103,11 @@ p.topDividers {
 	width:100%;
 	position:absolute;
 }
+.githublink {
+	margin-left: -15px;
+	width:100%;
+	position:absolute;
+}
 h1.myheaders {
  text-align: center;
  font-size: 400%;
