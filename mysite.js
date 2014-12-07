@@ -28,6 +28,13 @@ $('#nextpage').click(function()
 			scrollTop: $('#projectsWithHeader').offset().top
 		}, 'slow');
 	}
+	else if ($(window).scrollTop() < $("#experiencesWithHeader").offset().top-10)
+	{
+		$('html, body').animate(
+		{
+			scrollTop: $('#experiencesWithHeader').offset().top
+		}, 'slow');
+	}
 	else
 	{
 		$('html, body').animate(
@@ -38,6 +45,13 @@ $('#nextpage').click(function()
 });
 $('#prevpage').click(function()
 {
+	if ($(window).scrollTop() > $("#experiencesWithHeader").offset().top+10)
+	{
+		$('html, body').animate(
+		{
+			scrollTop: $('#experiencesWithHeader').offset().top
+		}, 'slow');
+	}
 	if ($(window).scrollTop() > $("#projectsWithHeader").offset().top+10)
 	{
 		$('html, body').animate(
@@ -67,6 +81,8 @@ function resizeScrolling()
     $("#project2").height(height);
     $("#project3").height(height);
     $("#project4").height(height);
+    $("#experience1").height(height);
+    $("#experience2").height(height);
     $("#git1").height(height/5);
     $("#git2").height(height/5);
     $("#git3").height(height/5);
@@ -90,9 +106,17 @@ function resizeScrolling()
     	document.getElementById("project4").style.marginLeft =  "-20px";
     	document.getElementById("project4").style.marginRight =  "-20px";
     	document.getElementById("project4").style.marginBottom =  "40px";
+
+    	document.getElementById("experience1").style.marginLeft =  "-20px";
+    	document.getElementById("experience1").style.marginRight =  "-20px";
+    	document.getElementById("experience1").style.marginBottom =  "40px";
+    	document.getElementById("experience2").style.marginLeft =  "-20px";
+    	document.getElementById("experience2").style.marginRight =  "-20px";
+    	document.getElementById("experience2").style.marginBottom =  "40px";
     	document.getElementById("myimage").style.marginTop =  "0px";
     	document.getElementById("projectRow").style.marginBottom =  "0px";
     	document.getElementById("projectRow2").style.marginBottom =  "0px";
+    	document.getElementById("experienceRow").style.marginBottom =  "00px";
     	$('#myimage').hide();
 		$('#navbuttons').hide();
     } else
@@ -109,9 +133,17 @@ function resizeScrolling()
     	document.getElementById("project4").style.marginLeft =  "10px";
     	document.getElementById("project4").style.marginRight =  "-10px";
     	document.getElementById("project4").style.marginBottom =  "0px";
+
+    	document.getElementById("experience1").style.marginLeft =  "-10px";
+    	document.getElementById("experience1").style.marginRight =  "10px";
+    	document.getElementById("experience1").style.marginBottom =  "0px";
+    	document.getElementById("experience2").style.marginLeft =  "10px";
+    	document.getElementById("experience2").style.marginRight =  "-10px";
+    	document.getElementById("experience2").style.marginBottom =  "0px";
     	document.getElementById("myimage").style.marginTop =  "60px";
     	document.getElementById("projectRow").style.marginBottom =  "20px";
     	document.getElementById("projectRow2").style.marginBottom =  "20px";
+    	document.getElementById("experienceRow").style.marginBottom =  "20px";
     	$('#myimage').show();
     	$('#navbuttons').show();
     }
