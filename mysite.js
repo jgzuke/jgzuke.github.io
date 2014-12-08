@@ -174,6 +174,20 @@ $(document).ready(function()
 		if (num=='2') num = '3';
 		if (num=='1') num = '2';
 	};
+	num = '1';
+	for (var i = 0; i < 2; i++)
+	{
+		$('.experience'+num+'slide').first().addClass('activeE'+num);
+		$('.experience'+num+'slide').hide();
+		$('.activeE'+num).show();
+		$('.experience'+num+'describe').first().addClass('activeE'+num+'Describe');
+		$('.experience'+num+'describe').hide();
+		if(!desktop)
+		{
+		 $('.activeE'+num+'Describe').show();
+		}
+		if (num=='1') num = '2';
+	};
 });
 function clickPic()
 {
@@ -218,6 +232,20 @@ $('#project2').click(function()
 	$('.project2describe').fadeOut();
 	$('.active2').fadeIn();
 	$('.active2Describe').fadeIn();
+});
+$('#experience1').mouseenter(function()
+{
+    if(desktop) {$('.activeE1Describe').fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.activeE1Describe').fadeOut();}
+});
+$('#experience2').mouseenter(function()
+{
+    if(desktop) {$('.activeE2Describe').fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.activeE2Describe').fadeOut();}
 });
 $('#project1').mouseenter(function()
 {
