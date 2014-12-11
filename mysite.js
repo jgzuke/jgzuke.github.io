@@ -233,6 +233,26 @@ $('#project2').click(function()
 	$('.active2').fadeIn();
 	$('.active2Describe').fadeIn();
 });
+$('#project4').click(function()
+{
+	$('.active4').removeClass('active4').addClass('oldActive');
+	$('.active4Describe').removeClass('active4Describe').addClass('oldActiveDescribe');
+	if ($('.oldActive').is(':last-child'))
+	{
+		$('.project4slide').first().addClass('active4');
+		$('.project4describe').first().addClass('active4Describe');
+	} else
+	{
+		$('.oldActive').next().addClass('active4');
+		$('.oldActiveDescribe').next().addClass('active4Describe');
+	}
+	$('.oldActive').removeClass('oldActive');
+	$('.oldActiveDescribe').removeClass('oldActiveDescribe');
+	$('.project4slide').fadeOut();
+	$('.project4describe').fadeOut();
+	$('.active4').fadeIn();
+	$('.active4Describe').fadeIn();
+});
 $('#experience1').mouseenter(function()
 {
     if(desktop) {$('.activeE1Describe').fadeIn();}
