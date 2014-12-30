@@ -9,6 +9,29 @@
     <link href="mysite.css" rel="stylesheet">
   </head>
   <body onresize="resizeScrolling()" onload="resizeScrolling()">
+
+  <nav class="navbar navbar-default navbar-fixed-top shadow" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand myNavLinks" id="Top">Jason Zukewich</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li><a class "myNavLinks" id = "About" style="color: #888">About</a></li>
+              <li><a class "myNavLinks" id = "Projects" style="color: #888">Projects</a></li>
+              <li><a class "myNavLinks" id = "Experiences" style="color: #888">Experiences</a></li>
+              <li><a class "myNavLinks" id = "Contact" style="color: #888">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
     <div id="backgrounddiv">
       <div id="backgrounddivtop" class="container">
         <div id="toptext" class="container">
@@ -41,13 +64,13 @@
               <h3 class="paragraphheaders mytext">Passions</h3>
               <p class="paragraphs"><strong>Math: </strong>What's better than elegantly solving a problem, or stumbling across a cool pattern</p>
               <p class="paragraphs"><strong>Code: </strong>Stackoverflow addict. You rarely see me smile wider than when my code works</p>
-              <p class="paragraphs"><strong>Helping: </strong>Helping out makes you feel incredible, whether it's tutoring or volunteering</p>
-              <p class="paragraphs"><strong>Learning: </strong>Theres so much out there to figure out, it's hard to decide where to look</p>
+              <p class="paragraphs"><strong>Helping: </strong>Helping makes you feel incredible, whether it's tutoring or volunteering</p>
+              <p class="paragraphs"><strong>Learning: </strong>Theres so much out there to learn, it's hard to decide where to start</p>
               <h3 class="paragraphheaders">Languages</h3>
               <p class="paragraphs"><strong>Proficient: </strong>
-              Java | Android | C</p>
+              Java, Android, C</p>
               <p class="paragraphs"><strong>Experienced: </strong>
-              C++ | Python | HTML | CSS | JavaScript</p>
+              C++, Python, HTML, CSS, JavaScript</p>
             </div>
             <div class="col-md-4 text-center">
               <img src="displaypic.png" id="myimage"/>
@@ -55,15 +78,15 @@
             <div class="col-md-4">
               <h3 class="paragraphheaders">Education</h3>
               <p class="paragraphs"><strong>UWaterloo - Software Engineering</strong>
-              <br/>Eng Ambassador | Eng Society Director</p>
+              <br/>Eng Ambassador, Eng Society Director</p>
               <p class="paragraphs"><strong>Ontario Science Centre - Science School</strong>
-              <br/>1 of 28 students in Semester 64 | OSC Host</p>
+              <br/>1 of 28 students in Semester 64, OSC Host</p>
               <p class="paragraphs"><strong>Grimsby Secondary School</strong>
-              <br/>Robotics Club | Me to We | Prefects | Students in Action | Tutoring | All Bands</p>
+              <br/>Robotics Club, Me to We, Prefects, Students in Action, Tutoring, All Bands</p>
 
               <h3 class="paragraphheaders">Online Courseware</h3>
               <p class="paragraphs"><strong>Udacity: </strong>
-              Intro to Statistics | Algorithms | Software Testing | Differential Equations in Action</p>
+              Intro to Statistics, Algorithms, Software Testing, Differential Equations in Action</p>
               <p class="paragraphs"><strong>Codecademy: </strong>
               A ton</p>
             </div>
@@ -73,7 +96,7 @@
         </div>  
       </div>
       <div id="projectsWithHeader" class="container">
-        <h1 class="myheaders" id="projectsHeader">My Projects</h1>
+        <h1 class="myheaders" id="projectsHeader">Projects</h1>
         <HR class="mydividers"></HR>
         <div id="projects" class="container">
           <div id = "projectRow" class="row">

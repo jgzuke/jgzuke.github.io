@@ -12,67 +12,40 @@ function parallaxScroll()
 	var scrolled = $(window).scrollTop();
 	$('#backgrounddiv').css('top', (0 - (scrolled * .5)) + 'px');
 }
-$('#nextpage').click(function()
+$('#Top').click(function()
 {
-	if ($(window).scrollTop() < $("#profileWithHeader").offset().top-10)
+	$('html, body').animate(
 	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#profileWithHeader').offset().top
-		}, 'slow');
-	}
-	else if ($(window).scrollTop() < $("#projectsWithHeader").offset().top-10)
-	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#projectsWithHeader').offset().top
-		}, 'slow');
-	}
-	else if ($(window).scrollTop() < $("#experiencesWithHeader").offset().top-10)
-	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#experiencesWithHeader').offset().top
-		}, 'slow');
-	}
-	else
-	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#botTrans').offset().top
-		}, 'slow');
-	}
+		scrollTop: $('#topTrans').offset().top
+	}, 'slow');
 });
-$('#prevpage').click(function()
+$('#About').click(function()
 {
-	if ($(window).scrollTop() > $("#experiencesWithHeader").offset().top+10)
+	$('html, body').animate(
 	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#experiencesWithHeader').offset().top
-		}, 'slow');
-	}
-	if ($(window).scrollTop() > $("#projectsWithHeader").offset().top+10)
+		scrollTop: $('#profileWithHeader').offset().top
+	}, 'slow');
+});
+$('#Projects').click(function()
+{
+	$('html, body').animate(
 	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#projectsWithHeader').offset().top
-		}, 'slow');
-	}
-	else if ($(window).scrollTop() > $("#profileWithHeader").offset().top+10)
+		scrollTop: $('#projectsWithHeader').offset().top
+	}, 'slow');
+});
+$('#Experiences').click(function()
+{
+	$('html, body').animate(
 	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#profileWithHeader').offset().top
-		}, 'slow');
-	}
-	else
+		scrollTop: $('#experiencesWithHeader').offset().top
+	}, 'slow');
+});
+$('#Contact').click(function()
+{
+	$('html, body').animate(
 	{
-		$('html, body').animate(
-		{
-			scrollTop: $('#topTrans').offset().top
-		}, 'slow');
-	}
+		scrollTop: $('#botTrans').offset().top
+	}, 'slow');
 });
 function resizeScrolling()
 {
