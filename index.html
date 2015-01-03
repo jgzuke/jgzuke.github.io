@@ -4,13 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jason Zukewich</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="mysite.css" rel="stylesheet">
   </head>
   <body onresize="resizeScrolling()" onload="resizeScrolling()">
 
-  <nav class="navbar navbar-default navbar-fixed-top shadow" role="navigation">
+    <nav id = "fullNavbar" class="navbar navbar-default navbar-fixed-top shadow" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -19,14 +19,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand myNavLinks" id="Top">Jason Zukewich</a>
+          <a class="navbar-brand myNavLinks" id="homeLink">Jason Zukewich</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-              <li><a class "myNavLinks" id = "About" style="color: #888">About</a></li>
-              <li><a class "myNavLinks" id = "Projects" style="color: #888">Projects</a></li>
-              <li><a class "myNavLinks" id = "Experiences" style="color: #888">Experiences</a></li>
-              <li><a class "myNavLinks" id = "Contact" style="color: #888">Contact</a></li>
+              <li><a class "myNavLinks" id = "About">About</a></li>
+              <li><a class "myNavLinks" id = "Projects">Projects</a></li>
+              <li><a class "myNavLinks" id = "Experiences">Experiences</a></li>
+              <li><a class "myNavLinks" id = "Contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -37,7 +37,9 @@
         <div id="toptext" class="container">
             <h1 id="topname">Jason Zukewich</h1>
             <hr width="75%" style="height:2px; border:none; color:#fff; background-color:#fff;"></hr>
-            <p class="toplinks"> Mathie | Coder</p>
+            <a href="https://github.com/jgzuke" class="toplinks" target="_blank"> Github </a><p class="topDividers">|</p>
+            <a href="https://ca.linkedin.com/in/jzukewich/" class="toplinks" target="_blank"> LinkedIn </a><p class="topDividers">|</p>
+            <a href="Jason_Zukewich_Resume.pdf" class="toplinks" target="_blank"> Resume </a>
         </div>
       </div>
       <div id="backgrounddivmid"></div>
