@@ -32,7 +32,7 @@
       </div>
     </nav>
 
-    <div id="backgrounddiv">
+    <div id="backgrounddiv" style = "color: #FFF;">
       <div id="backgrounddivtop" class="container">
         <div id="toptext" class="container">
             <h1 id="topname">Jason Zukewich</h1>
@@ -45,11 +45,33 @@
       <div id="backgrounddivmid"></div>
       <div id="backgrounddivbottom" class="container">
         <div id="bottext" class="container">
-            <h1 id="botname">Want to know more?</h1>
-            <hr width="75%" style="height:2px; border:none; color:#fff; background-color:#fff;"></hr>
-            <a href="https://github.com/jgzuke" class="toplinks" target="_blank"> Github </a><p class="topDividers">|</p>
-            <a href="https://ca.linkedin.com/in/jzukewich/" class="toplinks" target="_blank"> LinkedIn </a><p class="topDividers">|</p>
-            <a href="Jason_Zukewich_Resume.pdf" class="toplinks" target="_blank"> Resume </a>
+          <h1 class="myheaders" id="contactHeader" style="color: #FFF; margin-top: -20px;">My Story</h1>
+          <hr class="mydividers" style="background-color: #FFF;"></hr>
+          
+
+          <form id="contactform" action="" method="post">
+            <div class="form-group">
+              <label for="email">Your Details</label>
+              <div class="input-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required>
+                <span class="input-group-addon"><i class="fa fa-check"></i></span>
+              </div><!-- /.input-group -->
+            </div><!-- /.form-group -->
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter Your Subject" required>
+                <span class="input-group-addon"><i class="fa fa-check"></i></span>
+              </div><!-- /.input-group -->
+            </div><!-- /.form-group -->
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-group">
+                <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+                <span class="input-group-addon"><i class="fa fa-check"></i></span>
+              </div><!-- /.input-group -->
+            </div><!-- /.form-group -->
+            <button type="submit" name="submit" id="submit" class="btn btn-outlined btn-black pull-left">Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -60,7 +82,7 @@
       <div id="profileWithHeader" class="container">
         <h1 class="myheaders" id="aboutHeader">My Story</h1>
         <hr class="mydividers"></hr>
-        <div id="profile" class="container">
+        <div id="profile" class="container mySection">
           <div class="row">
             <div class="col-md-4">
               <h3 class="paragraphheaders mytext">Passions</h3>
@@ -100,7 +122,7 @@
       <div id="projectsWithHeader" class="container">
         <h1 class="myheaders" id="projectsHeader">Projects</h1>
         <HR class="mydividers"></HR>
-        <div id="projects" class="container">
+        <div id="projects" class="container mySection">
           <div id = "projectRow" class="row">
             <div id = "project1" class="col-md-6 shadowSmall">
               <div>
@@ -131,6 +153,7 @@
                 <img src="screenshots/database/des4.png" class = "project2describe"/>
               </div>
               <a href="https://github.com/jgzuke/Find-Me-Web-App" target="_blank"><img src="github.png" class = "githublink" id = "git2"/></a>
+              <a href="https://findmewebapp.appspot.com" target="_blank"><img src="weblink.png" class = "weblink" id = "web2"/></a>
             </div>
           </div>
           <div id = "projectRow2" class="row">
@@ -163,7 +186,7 @@
       <div id="experiencesWithHeader" class="container">
         <h1 class="myheaders" id="projectsHeader">Experiences</h1>
         <HR class="mydividers"></HR>
-        <div id="experiences" class="container">
+        <div id="experiences" class="container mySection">
           <div id = "experienceRow" class="row">
             <div id = "experience1" class="col-md-6 shadowSmall">
               <div>

@@ -44,7 +44,7 @@ body {
 }
 #toptext {
 	vertical-align: middle;
-    margin-top:25vh;
+    margin-top:32vh;
 }
 #topname {
 	color: #FFFFFF;
@@ -73,6 +73,10 @@ body {
  display : inline;
  font-size: 175%;
  color: #FFFFFF;
+}
+#contactform {
+	width: 70%;
+	margin-left: 15%;
 }
 
 
@@ -105,6 +109,10 @@ body {
     width:100%;
     background-color : #FFFFFF;
 }
+.mySection {
+  width: 85%;
+  text-align: left;
+}
 .myheaders {
  text-align: center;
  font-size: 400%;
@@ -127,9 +135,13 @@ body {
 	font-style: italic;
 	font-size: 110%;
 }
-#profile, #projects, #experiences {
-  width: 85%;
-  text-align: left;
+.paragraphheaders {
+	text-indent: 20px;
+ 	text-align: left;
+ 	color: #3975A3;
+}
+.paragraphs {
+ text-align: left;
 }
 
 
@@ -164,16 +176,13 @@ body {
 	width:100%;
 	position:absolute;
 }
+.weblink {
+	margin-left: 15px;
+	width:100%;
+	position:absolute;
+}
 #myimage {
  width:90%;
  height:90%;
  margin-top:60px;
-}
-.paragraphheaders {
-	text-indent: 20px;
- 	text-align: left;
- 	color: #3975A3;
-}
-.paragraphs {
- text-align: left;
 }

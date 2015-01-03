@@ -249,10 +249,10 @@ $('#project1').mouseenter(function()
 });
 $('#project2').mouseenter(function()
 {
-    if(desktop) {$('.active2Describe').fadeIn(); $("#git2").fadeIn();}
+    if(desktop) {$('.active2Describe').fadeIn(); $("#git2").fadeIn(); $("#web2").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active2Describe').fadeOut(); $("#git2").fadeOut();}
+    if(desktop) {$('.active2Describe').fadeOut(); $("#git2").fadeOut(); $("#web2").fadeOut();}
 });
 $('#project3').mouseenter(function()
 {
