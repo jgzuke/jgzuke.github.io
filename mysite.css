@@ -40,7 +40,8 @@ body {
 	text-align: center;
 	background-image: url("math.png");
 	background-position: left top;
-    height: 100vh;
+	min-height: 100vh !important;
+    height: 100vh !important;
 }
 #toptext {
 	vertical-align: middle;
@@ -54,7 +55,8 @@ body {
 	width:100%;
 	text-align: center;
 	background-image: url("binary.png");
-    height: 100vh;
+    min-height: 100vh !important;
+    height: 100vh !important;
 }
 #bottext {
 	vertical-align: middle;
@@ -85,19 +87,23 @@ body {
 
 
 #fullNavbar {
-	height: 80px !important;
 	background-color : #FFFFFF !important;
 }
-#navbar {
-	margin-top: 15px;
+#navbarMain {
+	height: 80px !important;
 	font-size: 140%;
 }
 #homeLink {
-	margin-top: 12px;
-	font-size: 200%;
+	margin-top: 13px;
+	font-size: 180%;
 }
 .myNavLinks, li {
 	cursor: pointer;
+	margin-top: 14px;
+	font-size: 170%;
+}
+#expandNavbar {
+	margin-top: 22px !important;
 }
 
 
@@ -117,14 +123,12 @@ body {
  text-align: center;
  font-size: 400%;
  font-style: normal;
- color: #3975A3;
  margin-top:130px;
 }
 .mydividers {
  border:none;
  width:85%;
- background-color: #3975A3;
- color: #3975A3;
+ background-color: #3083FF;
  height: 2px;
  margin-top:40px;
 }
@@ -138,12 +142,14 @@ body {
 .paragraphheaders {
 	text-indent: 20px;
  	text-align: left;
- 	color: #3975A3;
 }
 .paragraphs {
  text-align: left;
 }
 
+.myheaders, .mydividers, .paragraphheaders, a {
+	color: #3083FF;
+}
 
 
 

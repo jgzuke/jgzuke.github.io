@@ -12,7 +12,7 @@ function parallaxScroll()
 	var scrolled = $(window).scrollTop();
 	$('#backgrounddiv').css('top', (0 - (scrolled * .5)) + 'px');
 }
-$('#Top').click(function()
+$('#homeLink').click(function()
 {
 	$('html, body').animate(
 	{
