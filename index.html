@@ -49,28 +49,24 @@
           <hr class="mydividers" style="background-color: #FFF;"></hr>
           
 
-          <form id="contactform" action="" method="post">
+          <form name="sentMessage" id="contactForm"  novalidate>
             <div class="form-group">
-              <label for="email">Your Details</label>
-              <div class="input-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required>
-                <span class="input-group-addon"><i class="fa fa-check"></i></span>
-              </div><!-- /.input-group -->
-            </div><!-- /.form-group -->
+              <div class="controls">
+                <input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name"/>
+              </div>
+            </div>   
             <div class="form-group">
-              <div class="input-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter Your Subject" required>
-                <span class="input-group-addon"><i class="fa fa-check"></i></span>
-              </div><!-- /.input-group -->
-            </div><!-- /.form-group -->
+              <div class="controls">
+                <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+              </div>
+            </div>  
             <div class="form-group">
-              <label for="message">Message</label>
-              <div class="input-group">
-                <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
-                <span class="input-group-addon"><i class="fa fa-check"></i></span>
-              </div><!-- /.input-group -->
-            </div><!-- /.form-group -->
-            <button type="submit" name="submit" id="submit" class="btn btn-outlined btn-black pull-left">Submit</button>
+              <div class="controls">
+                <textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>      
+            <div id="success"> </div> <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary pull-right">Send</button><br />
           </form>
         </div>
       </div>
