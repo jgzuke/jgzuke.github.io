@@ -7,6 +7,7 @@ $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFu
 	resizeScrolling();
 });
 var desktop = true;
+var oldDesktop = true;
 function parallaxScroll()
 {
 	var scrolled = $(window).scrollTop();
@@ -66,62 +67,67 @@ function resizeScrolling()
     $("#web2").width(height/5);
     $("#git3").width(height/5);
     $("#git4").width(height/5);
+
 	desktop = ($(window).width() >= 992)
-	if(!desktop)
-    {
-    	document.getElementById("project1").style.marginLeft =  "-20px";
-    	document.getElementById("project1").style.marginRight =  "-20px";
-    	document.getElementById("project1").style.marginBottom =  "40px";
-    	document.getElementById("project2").style.marginLeft =  "-20px";
-    	document.getElementById("project2").style.marginRight =  "-20px";
-    	document.getElementById("project2").style.marginBottom =  "40px";
-    	document.getElementById("project3").style.marginLeft =  "-20px";
-    	document.getElementById("project3").style.marginRight =  "-20px";
-    	document.getElementById("project3").style.marginBottom =  "40px";
-    	document.getElementById("project4").style.marginLeft =  "-20px";
-    	document.getElementById("project4").style.marginRight =  "-20px";
-    	document.getElementById("project4").style.marginBottom =  "40px";
+	if(oldDesktop!=desktop)
+	{
+		if(!desktop)
+	    {
+	    	document.getElementById("project1").style.marginLeft =  "-20px";
+	    	document.getElementById("project1").style.marginRight =  "-20px";
+	    	document.getElementById("project1").style.marginBottom =  "40px";
+	    	document.getElementById("project2").style.marginLeft =  "-20px";
+	    	document.getElementById("project2").style.marginRight =  "-20px";
+	    	document.getElementById("project2").style.marginBottom =  "40px";
+	    	document.getElementById("project3").style.marginLeft =  "-20px";
+	    	document.getElementById("project3").style.marginRight =  "-20px";
+	    	document.getElementById("project3").style.marginBottom =  "40px";
+	    	document.getElementById("project4").style.marginLeft =  "-20px";
+	    	document.getElementById("project4").style.marginRight =  "-20px";
+	    	document.getElementById("project4").style.marginBottom =  "40px";
 
-    	document.getElementById("experience1").style.marginLeft =  "-20px";
-    	document.getElementById("experience1").style.marginRight =  "-20px";
-    	document.getElementById("experience1").style.marginBottom =  "40px";
-    	document.getElementById("experience2").style.marginLeft =  "-20px";
-    	document.getElementById("experience2").style.marginRight =  "-20px";
-    	document.getElementById("experience2").style.marginBottom =  "40px";
-    	document.getElementById("myimage").style.marginTop =  "0px";
-    	document.getElementById("projectRow").style.marginBottom =  "0px";
-    	document.getElementById("projectRow2").style.marginBottom =  "0px";
-    	document.getElementById("experienceRow").style.marginBottom =  "00px";
-    	$('#myimage').hide();
-		$('#navbuttons').hide();
-    } else
-    {
-    	document.getElementById("project1").style.marginLeft =  "-10px";
-    	document.getElementById("project1").style.marginRight =  "10px";
-    	document.getElementById("project1").style.marginBottom =  "0px";
-    	document.getElementById("project2").style.marginLeft =  "10px";
-    	document.getElementById("project2").style.marginRight =  "-10px";
-    	document.getElementById("project2").style.marginBottom =  "0px";
-    	document.getElementById("project3").style.marginLeft =  "-10px";
-    	document.getElementById("project3").style.marginRight =  "10px";
-    	document.getElementById("project3").style.marginBottom =  "0px";
-    	document.getElementById("project4").style.marginLeft =  "10px";
-    	document.getElementById("project4").style.marginRight =  "-10px";
-    	document.getElementById("project4").style.marginBottom =  "0px";
+	    	document.getElementById("experience1").style.marginLeft =  "-20px";
+	    	document.getElementById("experience1").style.marginRight =  "-20px";
+	    	document.getElementById("experience1").style.marginBottom =  "40px";
+	    	document.getElementById("experience2").style.marginLeft =  "-20px";
+	    	document.getElementById("experience2").style.marginRight =  "-20px";
+	    	document.getElementById("experience2").style.marginBottom =  "40px";
+	    	document.getElementById("myimage").style.marginTop =  "0px";
+	    	document.getElementById("projectRow").style.marginBottom =  "0px";
+	    	document.getElementById("projectRow2").style.marginBottom =  "0px";
+	    	document.getElementById("experienceRow").style.marginBottom =  "00px";
+	    	$('#myimage').hide();
+			$('#navbuttons').hide();
+	    } else
+	    {
+	    	document.getElementById("project1").style.marginLeft =  "-10px";
+	    	document.getElementById("project1").style.marginRight =  "10px";
+	    	document.getElementById("project1").style.marginBottom =  "0px";
+	    	document.getElementById("project2").style.marginLeft =  "10px";
+	    	document.getElementById("project2").style.marginRight =  "-10px";
+	    	document.getElementById("project2").style.marginBottom =  "0px";
+	    	document.getElementById("project3").style.marginLeft =  "-10px";
+	    	document.getElementById("project3").style.marginRight =  "10px";
+	    	document.getElementById("project3").style.marginBottom =  "0px";
+	    	document.getElementById("project4").style.marginLeft =  "10px";
+	    	document.getElementById("project4").style.marginRight =  "-10px";
+	    	document.getElementById("project4").style.marginBottom =  "0px";
 
-    	document.getElementById("experience1").style.marginLeft =  "-10px";
-    	document.getElementById("experience1").style.marginRight =  "10px";
-    	document.getElementById("experience1").style.marginBottom =  "0px";
-    	document.getElementById("experience2").style.marginLeft =  "10px";
-    	document.getElementById("experience2").style.marginRight =  "-10px";
-    	document.getElementById("experience2").style.marginBottom =  "0px";
-    	document.getElementById("myimage").style.marginTop =  "60px";
-    	document.getElementById("projectRow").style.marginBottom =  "20px";
-    	document.getElementById("projectRow2").style.marginBottom =  "20px";
-    	document.getElementById("experienceRow").style.marginBottom =  "20px";
-    	$('#myimage').show();
-    	$('#navbuttons').show();
-    }
+	    	document.getElementById("experience1").style.marginLeft =  "-10px";
+	    	document.getElementById("experience1").style.marginRight =  "10px";
+	    	document.getElementById("experience1").style.marginBottom =  "0px";
+	    	document.getElementById("experience2").style.marginLeft =  "10px";
+	    	document.getElementById("experience2").style.marginRight =  "-10px";
+	    	document.getElementById("experience2").style.marginBottom =  "0px";
+	    	document.getElementById("myimage").style.marginTop =  "60px";
+	    	document.getElementById("projectRow").style.marginBottom =  "20px";
+	    	document.getElementById("projectRow2").style.marginBottom =  "20px";
+	    	document.getElementById("experienceRow").style.marginBottom =  "20px";
+	    	$('#myimage').show();
+	    	$('#navbuttons').show();
+	    }
+	}
+	oldDesktop = desktop;
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
 	var divHeight = (scrollHeight-windowHeight)/2;
