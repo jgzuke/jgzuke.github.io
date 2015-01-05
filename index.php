@@ -1,68 +1,39 @@
 <?php
-/* Set e-mail recipient */
-$myemail = "jzukewic@uwaterloo.ca";
-
-/* Check all form inputs using check_input function */
-$name = check_input($_POST['inputName'], "Your Name");
-$email = check_input($_POST['inputEmail'], "Your E-mail Address");
-$subject = check_input($_POST['inputSubject'], "Message Subject");
-$message = check_input($_POST['inputMessage'], "Your Message");
-
-/* If e-mail is not valid show error message */
-if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
-{
-show_error("Invalid e-mail address");
+	if ($_POST["submit"]) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$human = intval($_POST['human']);
+		$from = 'Demo Contact Form'; 
+		$to = 'example@domain.com'; 
+		$subject = 'Message from Contact Demo ';
+		
+		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+		
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+		
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message';
+		}
+		//Check if simple anti-bot test is correct
+		if ($human !== 5) {
+			$errHuman = 'Your anti-spam is incorrect';
+		}
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+	if (mail ($to, $subject, $body, $from)) {
+		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+	} else {
+		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+	}
 }
-/* Let's prepare the message for the e-mail */
-
-$subject = "Someone has sent you a message";
-
-$message = "
-
-Someone has sent you a message using your contact form:
-
-Name: $name
-Email: $email
-Subject: $subject
-
-Message:
-$message
-
-";
-
-/* Send the message using mail() function */
-mail($myemail, $subject, $message);
-
-/* Redirect visitor to the thank you page */
-header('Location: http://address-of-confirmation-page.html');
-exit();
-
-/* Functions we used */
-function check_input($data, $problem='')
-{
-$data = trim($data);
-$data = stripslashes($data);
-$data = htmlspecialchars($data);
-if ($problem && strlen($data) == 0)
-{
-show_error($problem);
-}
-return $data;
-}
-
-function show_error($myError)
-{
-?>
-<html>
-<body>
-
-<p>Please correct the following error:</p>
-<strong><?php echo $myError; ?></strong>
-<p>Hit the back button and try again</p>
-
-</body>
-</html>
-<?php
-exit();
-}
+	}
 ?>
