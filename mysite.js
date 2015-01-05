@@ -58,10 +58,12 @@ function resizeScrolling()
     $("#experience2").height(height);
     $("#git1").height(height/5);
     $("#git2").height(height/5);
+    $("#web2").height(height/5);
     $("#git3").height(height/5);
     $("#git4").height(height/5);
     $("#git1").width(height/5);
     $("#git2").width(height/5);
+    $("#web2").width(height/5);
     $("#git3").width(height/5);
     $("#git4").width(height/5);
 	desktop = ($(window).width() >= 992)
