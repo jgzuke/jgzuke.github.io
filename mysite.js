@@ -8,9 +8,21 @@ $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFu
 });
 var desktop = true;
 var oldDesktop = true;
+var navBarHeight = $('#navbarMain').height();
 function parallaxScroll()
 {
 	var scrolled = $(window).scrollTop();
+	var barHeight = navBarHeight - (scrolled/35);
+	var marginHeight = (navBarHeight/5) - (scrolled/70);
+	if(barHeight<navBarHeight/1.3)
+	{
+		barHeight = navBarHeight/1.3;
+		marginHeight = '-4px';
+	}
+	document.getElementById("homeLink").style.marginTop = marginHeight - 1 + 'px';
+	document.getElementById("navbar").style.marginTop = marginHeight - 1 + 'px';
+	document.getElementById("expandNavbar").style.marginTop = marginHeight + 6 + 'px';
+	$('#navbarMain').height(barHeight);
 	$('#backgrounddiv').css('top', (0 - (scrolled * .5)) + 'px');
 }
 $('#homeLink').click(function()
@@ -150,6 +162,7 @@ $(document).ready(function()
 		} else
 		{
 			$("#git"+num).hide();
+			$("#web"+num).hide();
 		}
 		if (num=='3') num = '4';
 		if (num=='2') num = '3';
