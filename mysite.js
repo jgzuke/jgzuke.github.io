@@ -71,14 +71,20 @@ function resizeScrolling()
     $("#experience2").height(height);
     $("#git1").height(height/5);
     $("#git2").height(height/5);
-    $("#web2").height(height/5);
     $("#git3").height(height/5);
     $("#git4").height(height/5);
     $("#git1").width(height/5);
     $("#git2").width(height/5);
-    $("#web2").width(height/5);
     $("#git3").width(height/5);
     $("#git4").width(height/5);
+
+    $("#web2").height(height/5);
+    $("#web2").width(height/5);
+    $("#webE1").height(height/5);
+    $("#webE1").width(height/5);
+    $("#webE2").height(height/5);
+    $("#webE2").width(height/5);
+
 
 	desktop = ($(window).width() >= 992)
 	if(oldDesktop!=desktop)
@@ -179,6 +185,9 @@ $(document).ready(function()
 		if(!desktop)
 		{
 		 $('.activeE'+num+'Describe').show();
+		} else
+		{
+			$("#webE"+num).hide();
 		}
 		if (num=='1') num = '2';
 	};
@@ -249,17 +258,17 @@ $('#project4').click(function()
 });
 $('#experience1').mouseenter(function()
 {
-    if(desktop) {$('.activeE1Describe').fadeIn();}
+    if(desktop) {$('.activeE1Describe').fadeIn(); $("#webE1").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.activeE1Describe').fadeOut();}
+    if(desktop) {$('.activeE1Describe').fadeOut(); $("#webE1").fadeOut();}
 });
 $('#experience2').mouseenter(function()
 {
-    if(desktop) {$('.activeE2Describe').fadeIn();}
+    if(desktop) {$('.activeE2Describe').fadeIn(); $("#webE2").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.activeE2Describe').fadeOut();}
+    if(desktop) {$('.activeE2Describe').fadeOut(); $("#webE2").fadeOut();}
 });
 $('#project1').mouseenter(function()
 {
