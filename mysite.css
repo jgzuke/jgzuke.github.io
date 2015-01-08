@@ -62,24 +62,15 @@ body {
 	background-position: center;
     min-height: 100vh !important;
     height: 100vh !important;
+
+}
+#topLi1, #topLi2, #topLi3, #topLi4 {
+	width: 60px;
+	height: 60px;
 }
 #bottext {
 	vertical-align: middle;
     margin-top:25vh;
-}
-#botname {
-	color: #FFFFFF;
-	font-size: 500%;
-}
-.topDividers {
- display : inline;
- font-size: 175%;
- color: #FFFFFF;
-}
-.toplinks {
- display : inline;
- font-size: 175%;
- color: #FFFFFF;
 }
 #contactForm {
 	width: 70%;
@@ -92,24 +83,33 @@ body {
 
 
 
-#fullNavbar {
-	background-color : #FFFFFF !important;
+.inblue {
+	background-color : transparent !important;
+	border-color: transparent;
+}
+.outofblue {
+	background-color : rgba(0, 153, 255, 0.8) !important;
+	border-color: transparent;
+	box-shadow: 		0px 0px 20px #000;
+    -moz-box-shadow: 	0px 0px 20px #000;
+	-webkit-box-shadow: 0px 0px 20px #000;
 }
 #navbarMain {
 	height: 80px;
 	font-size: 140%;
 }
 #homeLink {
-	margin-top: 16px;
-	font-size: 140%;
+	margin-top: 15px;
 	margin-left: 50px;
 }
 #navbar {
-	margin-top: 16px;
+	margin-top: 26px;
 }
-.myNavLinks, li {
+li, #homeLink {
 	cursor: pointer;
-	font-size: 125%;
+	color: #fff;
+	font-size: 140%;
+	margin-right: 20px;
 }
 #expandNavbar {
 	margin-top: 22px;
@@ -156,8 +156,12 @@ body {
  text-align: left;
 }
 
-.myheaders, .mydividers, .paragraphheaders, a {
+.myheaders, .mydividers, .paragraphheaders, .mylinks {
 	color: #0099ff;
+}
+.mylinks {
+	text-decoration: none !important;
+	cursor: pointer;
 }
 
 
