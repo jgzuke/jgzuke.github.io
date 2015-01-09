@@ -90,12 +90,9 @@ body {
 .outofblue {
 	background-color : rgba(0, 153, 255, 0.8) !important;
 	border-color: transparent;
-	box-shadow: 		0px 0px 20px #000;
-    -moz-box-shadow: 	0px 0px 20px #000;
-	-webkit-box-shadow: 0px 0px 20px #000;
 }
 #navbarMain {
-	height: 80px;
+	height: 60px;
 	font-size: 140%;
 }
 #homeLink {
@@ -110,6 +107,9 @@ li, #homeLink {
 	color: #fff;
 	font-size: 140%;
 	margin-right: 20px;
+}
+#topLi4 {
+	cursor: pointer;
 }
 #expandNavbar {
 	margin-top: 22px;

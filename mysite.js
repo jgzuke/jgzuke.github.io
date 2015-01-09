@@ -10,6 +10,7 @@ var desktop = true;
 var oldDesktop = true;
 var navBarHeight = $('#navbarMain').height();
 var blueSection = true;
+var blueSectionClose = true;
 function parallaxScroll()
 {
 	var scrolled = $(window).scrollTop();
@@ -23,19 +24,21 @@ function parallaxScroll()
 	{
 		scrolledFromEnd = scrollHeight + windowHeight - scrolled;
 	}
-	var barHeight = navBarHeight - (scrolledFromEnd/35);
-	var marginHeight = (navBarHeight/5) - (scrolledFromEnd/70);
-	if(barHeight<navBarHeight/1.3)
+	var barHeight = 120 - (scrolledFromEnd/9);
+	var marginHeight = 35 - (scrolledFromEnd/18);
+	if(marginHeight < 5)
 	{
-		barHeight = navBarHeight/1.3;
-		marginHeight = '-4px';
+		marginHeight = 5;
 	}
-	document.getElementById("homeLink").style.marginTop = marginHeight - 1 + 'px';
-	document.getElementById("homeLink").style.marginTop = marginHeight - 1 + 'px';
-	document.getElementById("navbar").style.marginTop = marginHeight + 10 + 'px';
-	document.getElementById("expandNavbar").style.marginTop = marginHeight + 6 + 'px';
+	if(barHeight < 60)
+	{
+		barHeight = 60;
+	}
+	document.getElementById("homeLink").style.marginTop = marginHeight + 1 + 'px';
+	document.getElementById("homeLink").style.marginTop = marginHeight + 1 + 'px';
+	document.getElementById("navbar").style.marginTop = marginHeight + 12 + 'px';
+	document.getElementById("expandNavbar").style.marginTop = marginHeight + 8 + 'px';
 	$('#navbarMain').height(barHeight);
-
 	
 	if(scrolled > windowHeight - 65 && scrolled < scrollHeight + windowHeight)
 	{
@@ -54,7 +57,21 @@ function parallaxScroll()
 			blueSection = true;
 		}
 	}
-	
+	if(scrolled > windowHeight - 65 && scrolled < scrollHeight + windowHeight - 105)
+	{
+		if(blueSectionClose == true)
+		{
+			$('#fullNavbar').addClass('shadow');
+			blueSectionClose = false;
+		}
+	} else
+	{
+		if(blueSectionClose == false)
+		{
+			$('#fullNavbar').removeClass('shadow');
+			blueSectionClose = true;
+		}
+	}
 	$('#backgrounddiv').css('top', (0 - (scrolled * .5)) + 'px');
 }
 $('#homeLink').click(function()
