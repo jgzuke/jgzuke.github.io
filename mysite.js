@@ -119,42 +119,16 @@ $('.Contact').click(function()
 function resizeScrolling()
 {
 	var height = $("#firstPicture").height();
-    $("#project1").height(height);
-    $("#project2").height(height);
-    $("#project3").height(height);
-    $("#project4").height(height);
-	$("#project5").height(height);
-    $("#project6").height(height);
-	$("#project7").height(height);
-    $("#project8").height(height);
-
-    $("#experience1").height(height);
-    $("#experience2").height(height);
+	for(var i = 1; i < 9; i++)
+	{
+		$('#project'+i.toString()).height(height);
+		$('#git'+i.toString()).height(height/5);
+    	$('#git'+i.toString()).width(height/5);
+	}
 
 
-    $("#git1").height(height/5);
-    $("#git2").height(height/5);
-    $("#git3").height(height/5);
-    $("#git4").height(height/5);
-    $("#git5").height(height/5);
-    $("#git6").height(height/5);
-    $("#git7").height(height/5);
-    $("#git8").height(height/5);
-    $("#git1").width(height/5);
-    $("#git2").width(height/5);
-    $("#git3").width(height/5);
-    $("#git4").width(height/5);
-    $("#git5").width(height/5);
-    $("#git6").width(height/5);
-    $("#git7").width(height/5);
-    $("#git8").width(height/5);
-
-    $("#web3").height(height/5);
-    $("#web4").height(height/5);
-    $("#web5").height(height/5);
-    $("#web3").width(height/5);
-    $("#web4").width(height/5);
-    $("#web5").width(height/5);
+    $("#projectE1").height(height);
+    $("#projectE2").height(height);
 
     $("#webE1").height(height/5);
     $("#webE1").width(height/5);
@@ -167,60 +141,28 @@ function resizeScrolling()
 	{
 		if(!desktop)
 	    {
-	    	document.getElementById("project1").style.marginLeft =  "-20px";
-	    	document.getElementById("project1").style.marginRight =  "-20px";
-	    	document.getElementById("project1").style.marginBottom =  "40px";
-	    	document.getElementById("project2").style.marginLeft =  "-20px";
-	    	document.getElementById("project2").style.marginRight =  "-20px";
-	    	document.getElementById("project2").style.marginBottom =  "40px";
-	    	document.getElementById("project3").style.marginLeft =  "-20px";
-	    	document.getElementById("project3").style.marginRight =  "-20px";
-	    	document.getElementById("project3").style.marginBottom =  "40px";
-	    	document.getElementById("project4").style.marginLeft =  "-20px";
-	    	document.getElementById("project4").style.marginRight =  "-20px";
-	    	document.getElementById("project4").style.marginBottom =  "40px";
+	    	$(".projectLeft").removeClass('projectOnLeft');
+	    	$(".projectRight").removeClass('projectOnRight');
+	    	$(".projectLeft").addClass('projectInCenter');
+	    	$(".projectRight").addClass('projectInCenter');
 
-	    	document.getElementById("experience1").style.marginLeft =  "-20px";
-	    	document.getElementById("experience1").style.marginRight =  "-20px";
-	    	document.getElementById("experience1").style.marginBottom =  "40px";
-	    	document.getElementById("experience2").style.marginLeft =  "-20px";
-	    	document.getElementById("experience2").style.marginRight =  "-20px";
-	    	document.getElementById("experience2").style.marginBottom =  "40px";
+	    	$(".projectRows").removeClass('projectRowsNormal');
+	    	$(".projectRows").addClass('projectRowsMobile');
 
-
-	    	document.getElementById("myimage").style.marginTop =  "0px";
-	    	document.getElementById("projectRow").style.marginBottom =  "0px";
-	    	document.getElementById("projectRow2").style.marginBottom =  "0px";
-	    	document.getElementById("experienceRow").style.marginBottom =  "00px";
+	    	document.getElementById("experienceRow").style.marginBottom =  "0px";
 	    	$('#myimage').hide();
 			$('#navbuttons').hide();
 	    } else
 	    {
-	    	document.getElementById("project1").style.marginLeft =  "-10px";
-	    	document.getElementById("project1").style.marginRight =  "10px";
-	    	document.getElementById("project1").style.marginBottom =  "0px";
-	    	document.getElementById("project2").style.marginLeft =  "10px";
-	    	document.getElementById("project2").style.marginRight =  "-10px";
-	    	document.getElementById("project2").style.marginBottom =  "0px";
-	    	document.getElementById("project3").style.marginLeft =  "-10px";
-	    	document.getElementById("project3").style.marginRight =  "10px";
-	    	document.getElementById("project3").style.marginBottom =  "0px";
-	    	document.getElementById("project4").style.marginLeft =  "10px";
-	    	document.getElementById("project4").style.marginRight =  "-10px";
-	    	document.getElementById("project4").style.marginBottom =  "0px";
+	    	$(".projectLeft").removeClass('projectInCenter');
+	    	$(".projectRight").removeClass('projectInCenter');
+	    	$(".projectLeft").addClass('projectOnLeft');
+	    	$(".projectRight").addClass('projectOnRight');
 
-	    	document.getElementById("experience1").style.marginLeft =  "-10px";
-	    	document.getElementById("experience1").style.marginRight =  "10px";
-	    	document.getElementById("experience1").style.marginBottom =  "0px";
-	    	document.getElementById("experience2").style.marginLeft =  "10px";
-	    	document.getElementById("experience2").style.marginRight =  "-10px";
-	    	document.getElementById("experience2").style.marginBottom =  "0px";
-
+	    	$(".projectRows").removeClass('projectRowsMobile');
+	    	$(".projectRows").addClass('projectRowsNormal');
 
 	    	document.getElementById("myimage").style.marginTop =  "60px";
-	    	document.getElementById("projectRow").style.marginBottom =  "20px";
-	    	document.getElementById("projectRow2").style.marginBottom =  "20px";
-	    	document.getElementById("experienceRow").style.marginBottom =  "20px";
 	    	$('#myimage').show();
 	    	$('#navbuttons').show();
 	    }
@@ -234,67 +176,61 @@ function resizeScrolling()
 $(document).ready(function()
 {
 	resizeScrolling();
-	var num = '1';
-	for (var i = 0; i < 8; i++)
+	$(".projectLeft").addClass('projectOnLeft');
+	$(".projectRight").addClass('projectOnRight');
+	$(".projectRows").addClass('projectRowsNormal');
+	for (var i = 1; i < 9; i++)
 	{
-		$('.project'+num+'slide').first().addClass('active'+num);
-		$('.project'+num+'slide').hide();
-		$('.active'+num).show();
-		$('.project'+num+'describe').first().addClass('active'+num+'Describe');
-		$('.project'+num+'describe').hide();
+		$('.project'+i.toString()+'slide').first().addClass('active'+i.toString());
+		$('.project'+i.toString()+'slide').hide();
+		$('.active'+i.toString()).show();
+		$('.project'+i.toString()+'describe').first().addClass('active'+i.toString()+'Describe');
+		$('.project'+i.toString()+'describe').hide();
 		if(!desktop)
 		{
-		 $('.active'+num+'Describe').show();
+		 $('.active'+i.toString()+'Describe').show();
 		} else
 		{
-			$("#git"+num).hide();
-			$("#web"+num).hide();
+			$("#git"+i.toString()).hide();
+			$("#web"+i.toString()).hide();
 		}
-		if (num=='7') num = '8';
-		if (num=='6') num = '7';
-		if (num=='5') num = '6';
-		if (num=='4') num = '5';
-		if (num=='3') num = '4';
-		if (num=='2') num = '3';
-		if (num=='1') num = '2';
 	};
-	num = '1';
-	for (var i = 0; i < 2; i++)
+	for (var i = 1; i < 3; i++)
 	{
-		$('.experience'+num+'slide').first().addClass('activeE'+num);
-		$('.experience'+num+'slide').hide();
-		$('.activeE'+num).show();
-		$('.experience'+num+'describe').first().addClass('activeE'+num+'Describe');
-		$('.experience'+num+'describe').hide();
+		$('.experience'+i.toString()+'slide').first().addClass('activeE'+i.toString());
+		$('.experience'+i.toString()+'slide').hide();
+		$('.activeE'+i.toString()).show();
+		$('.experience'+i.toString()+'describe').first().addClass('activeE'+i.toString()+'Describe');
+		$('.experience'+i.toString()+'describe').hide();
 		if(!desktop)
 		{
-		 $('.activeE'+num+'Describe').show();
+		 $('.activeE'+i.toString()+'Describe').show();
 		} else
 		{
-			$("#webE"+num).hide();
+			$("#webE"+i.toString()).hide();
 		}
-		if (num=='1') num = '2';
+		if (i.toString()=='1') i.toString() = '2';
 	};
 });
-function clickPic()
+function clickPic(num)
 {
-	$('.active1').removeClass('active1').addClass('oldActive');
-	$('.active1Describe').removeClass('active1Describe').addClass('oldActiveDescribe');
+	$('.active'+num).removeClass('active'+num).addClass('oldActive');
+	$('.active'+num+'Describe').removeClass('active'+num+'Describe').addClass('oldActiveDescribe');
 	if ($('.oldActive').is(':last-child'))
 	{
-		$('.project1slide').first().addClass('active1');
-		$('.project1describe').first().addClass('active1Describe');
+		$('.project'+num+'slide').first().addClass('active'+num);
+		$('.project'+num+'describe').first().addClass('active'+num+'Describe');
 	} else
 	{
-		$('.oldActive').next().addClass('active1');
-		$('.oldActiveDescribe').next().addClass('active1Describe');
+		$('.oldActive').next().addClass('active'+num);
+		$('.oldActiveDescribe').next().addClass('active'+num+'Describe');
 	}
 	$('.oldActive').removeClass('oldActive');
 	$('.oldActiveDescribe').removeClass('oldActiveDescribe');
-	$('.project1slide').fadeOut();
-	$('.project1describe').fadeOut();
-	$('.active1').fadeIn();
-	$('.active1Describe').fadeIn();
+	$('.project'+num+'slide').fadeOut();
+	$('.project'+num+'describe').fadeOut();
+	$('.active'+num).fadeIn();
+	$('.active'+num+'Describe').fadeIn();
 }
 $('#project1').click(function()
 {
@@ -341,73 +277,21 @@ $('#project4').click(function()
 	$('.active4Describe').fadeIn();
 });
 
-$('#experience1').mouseenter(function()
+function fadeInProject(number)
 {
-    if(desktop) {$('.activeE1Describe').fadeIn(); $("#webE1").fadeIn();}
-}).mouseleave(function()
+	if(desktop) {$('.active'+number+'Describe').fadeIn(); $('#git'+number).fadeIn(); $('#web'+number).fadeIn();}
+}
+function fadeOutProject(number)
 {
-    if(desktop) {$('.activeE1Describe').fadeOut(); $("#webE1").fadeOut();}
-});
-$('#experience2').mouseenter(function()
-{
-    if(desktop) {$('.activeE2Describe').fadeIn(); $("#webE2").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.activeE2Describe').fadeOut(); $("#webE2").fadeOut();}
-});
-$('#project1').mouseenter(function()
-{
-    if(desktop) {$('.active1Describe').fadeIn(); $("#git1").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active1Describe').fadeOut(); $("#git1").fadeOut();}
-});
-$('#project2').mouseenter(function()
-{
-    if(desktop) {$('.active2Describe').fadeIn(); $("#git2").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active2Describe').fadeOut(); $("#git2").fadeOut();}
-});
-$('#project3').mouseenter(function()
-{
-    if(desktop) {$('.active3Describe').fadeIn(); $("#git3").fadeIn(); $("#web3").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active3Describe').fadeOut(); $("#git3").fadeOut(); $("#web3").fadeOut();}
-});
-$('#project4').mouseenter(function()
-{
-    if(desktop) {$('.active4Describe').fadeIn(); $("#git4").fadeIn(); $("#web4").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active4Describe').fadeOut(); $("#git4").fadeOut(); $("#web4").fadeIn();}
-});
-$('#project5').mouseenter(function()
-{
-    if(desktop) {$('.active5Describe').fadeIn(); $("#git5").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active5Describe').fadeOut(); $("#git5").fadeOut();}
-});
-$('#project6').mouseenter(function()
-{
-    if(desktop) {$('.active6Describe').fadeIn(); $("#git6").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active6Describe').fadeOut(); $("#git6").fadeOut();}
-});
-$('#project7').mouseenter(function()
-{
-    if(desktop) {$('.active7Describe').fadeIn(); $("#git7").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active7Describe').fadeOut(); $("#git7").fadeOut();}
-});
-$('#project8').mouseenter(function()
-{
-    if(desktop) {$('.active8Describe').fadeIn(); $("#git8").fadeIn();}
-}).mouseleave(function()
-{
-    if(desktop) {$('.active8Describe').fadeOut(); $("#git8").fadeOut();}
-});
+	if(desktop) {$('.active'+number+'Describe').fadeOut(); $('#git'+number).fadeOut(); $('#web'+number).fadeOut();}
+}
+$('#projectE1').mouseenter(function(){ fadeInProject('E1'); }).mouseleave(function() { fadeOutProject('E1'); });
+$('#projectE2').mouseenter(function(){ fadeInProject('E2'); }).mouseleave(function() { fadeOutProject('E2'); });
+$('#project1').mouseenter(function(){ fadeInProject('1'); }).mouseleave(function() { fadeOutProject('1'); });
+$('#project2').mouseenter(function(){ fadeInProject('2'); }).mouseleave(function() { fadeOutProject('2'); });
+$('#project3').mouseenter(function(){ fadeInProject('3'); }).mouseleave(function() { fadeOutProject('3'); });
+$('#project4').mouseenter(function(){ fadeInProject('4'); }).mouseleave(function() { fadeOutProject('4'); });
+$('#project5').mouseenter(function(){ fadeInProject('5'); }).mouseleave(function() { fadeOutProject('5'); });
+$('#project6').mouseenter(function(){ fadeInProject('6'); }).mouseleave(function() { fadeOutProject('6'); });
+$('#project7').mouseenter(function(){ fadeInProject('7'); }).mouseleave(function() { fadeOutProject('7'); });
+$('#project8').mouseenter(function(){ fadeInProject('8'); }).mouseleave(function() { fadeOutProject('8'); });

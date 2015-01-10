@@ -173,17 +173,29 @@ li, #homeLink {
 	margin-right: 15px;
 	margin-bottom: 20px;
 }
-.projectLeft
+.projectRowsNormal {
+	margin-bottom: 20px;
+}
+.projectRowsMobile {
+	margin-bottom: 0px;
+}
+.projectOnLeft
 {
 	margin-left: -10px;
 	margin-right: 10px;
 	margin-bottom: 0px;
 }
-.projectRight
+.projectOnRight
 {
 	margin-left: 10px;
 	margin-right: -10px;
 	margin-bottom: 0px;
+}
+.projectInCenter
+{
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 40px;
 }
 .projectDescribe {
 	margin-left: -15px;
