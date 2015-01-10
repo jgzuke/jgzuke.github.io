@@ -123,19 +123,39 @@ function resizeScrolling()
     $("#project2").height(height);
     $("#project3").height(height);
     $("#project4").height(height);
+	$("#project5").height(height);
+    $("#project6").height(height);
+	$("#project7").height(height);
+    $("#project8").height(height);
+
     $("#experience1").height(height);
     $("#experience2").height(height);
+
+
     $("#git1").height(height/5);
     $("#git2").height(height/5);
     $("#git3").height(height/5);
     $("#git4").height(height/5);
+    $("#git5").height(height/5);
+    $("#git6").height(height/5);
+    $("#git7").height(height/5);
+    $("#git8").height(height/5);
     $("#git1").width(height/5);
     $("#git2").width(height/5);
     $("#git3").width(height/5);
     $("#git4").width(height/5);
+    $("#git5").width(height/5);
+    $("#git6").width(height/5);
+    $("#git7").width(height/5);
+    $("#git8").width(height/5);
 
-    $("#web2").height(height/5);
-    $("#web2").width(height/5);
+    $("#web3").height(height/5);
+    $("#web4").height(height/5);
+    $("#web5").height(height/5);
+    $("#web3").width(height/5);
+    $("#web4").width(height/5);
+    $("#web5").width(height/5);
+
     $("#webE1").height(height/5);
     $("#webE1").width(height/5);
     $("#webE2").height(height/5);
@@ -166,6 +186,8 @@ function resizeScrolling()
 	    	document.getElementById("experience2").style.marginLeft =  "-20px";
 	    	document.getElementById("experience2").style.marginRight =  "-20px";
 	    	document.getElementById("experience2").style.marginBottom =  "40px";
+
+
 	    	document.getElementById("myimage").style.marginTop =  "0px";
 	    	document.getElementById("projectRow").style.marginBottom =  "0px";
 	    	document.getElementById("projectRow2").style.marginBottom =  "0px";
@@ -193,6 +215,8 @@ function resizeScrolling()
 	    	document.getElementById("experience2").style.marginLeft =  "10px";
 	    	document.getElementById("experience2").style.marginRight =  "-10px";
 	    	document.getElementById("experience2").style.marginBottom =  "0px";
+
+
 	    	document.getElementById("myimage").style.marginTop =  "60px";
 	    	document.getElementById("projectRow").style.marginBottom =  "20px";
 	    	document.getElementById("projectRow2").style.marginBottom =  "20px";
@@ -211,7 +235,7 @@ $(document).ready(function()
 {
 	resizeScrolling();
 	var num = '1';
-	for (var i = 0; i < 4; i++)
+	for (var i = 0; i < 8; i++)
 	{
 		$('.project'+num+'slide').first().addClass('active'+num);
 		$('.project'+num+'slide').hide();
@@ -226,6 +250,10 @@ $(document).ready(function()
 			$("#git"+num).hide();
 			$("#web"+num).hide();
 		}
+		if (num=='7') num = '8';
+		if (num=='6') num = '7';
+		if (num=='5') num = '6';
+		if (num=='4') num = '5';
 		if (num=='3') num = '4';
 		if (num=='2') num = '3';
 		if (num=='1') num = '2';
@@ -312,6 +340,7 @@ $('#project4').click(function()
 	$('.active4').fadeIn();
 	$('.active4Describe').fadeIn();
 });
+
 $('#experience1').mouseenter(function()
 {
     if(desktop) {$('.activeE1Describe').fadeIn(); $("#webE1").fadeIn();}
@@ -335,22 +364,50 @@ $('#project1').mouseenter(function()
 });
 $('#project2').mouseenter(function()
 {
-    if(desktop) {$('.active2Describe').fadeIn(); $("#git2").fadeIn(); $("#web2").fadeIn();}
+    if(desktop) {$('.active2Describe').fadeIn(); $("#git2").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active2Describe').fadeOut(); $("#git2").fadeOut(); $("#web2").fadeOut();}
+    if(desktop) {$('.active2Describe').fadeOut(); $("#git2").fadeOut();}
 });
 $('#project3').mouseenter(function()
 {
-    if(desktop) {$('.active3Describe').fadeIn(); $("#git3").fadeIn();}
+    if(desktop) {$('.active3Describe').fadeIn(); $("#git3").fadeIn(); $("#web3").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active3Describe').fadeOut(); $("#git3").fadeOut();}
+    if(desktop) {$('.active3Describe').fadeOut(); $("#git3").fadeOut(); $("#web3").fadeOut();}
 });
 $('#project4').mouseenter(function()
 {
-    if(desktop) {$('.active4Describe').fadeIn(); $("#git4").fadeIn();}
+    if(desktop) {$('.active4Describe').fadeIn(); $("#git4").fadeIn(); $("#web4").fadeIn();}
 }).mouseleave(function()
 {
-    if(desktop) {$('.active4Describe').fadeOut(); $("#git4").fadeOut();}
+    if(desktop) {$('.active4Describe').fadeOut(); $("#git4").fadeOut(); $("#web4").fadeIn();}
+});
+$('#project5').mouseenter(function()
+{
+    if(desktop) {$('.active5Describe').fadeIn(); $("#git5").fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.active5Describe').fadeOut(); $("#git5").fadeOut();}
+});
+$('#project6').mouseenter(function()
+{
+    if(desktop) {$('.active6Describe').fadeIn(); $("#git6").fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.active6Describe').fadeOut(); $("#git6").fadeOut();}
+});
+$('#project7').mouseenter(function()
+{
+    if(desktop) {$('.active7Describe').fadeIn(); $("#git7").fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.active7Describe').fadeOut(); $("#git7").fadeOut();}
+});
+$('#project8').mouseenter(function()
+{
+    if(desktop) {$('.active8Describe').fadeIn(); $("#git8").fadeIn();}
+}).mouseleave(function()
+{
+    if(desktop) {$('.active8Describe').fadeOut(); $("#git8").fadeOut();}
 });

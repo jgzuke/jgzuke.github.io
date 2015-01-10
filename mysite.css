@@ -168,24 +168,24 @@ li, #homeLink {
 
 
 
-#projectRow, #projectRow2, #experienceRow {
+.projectRows {
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-bottom: 20px;
 }
-#project1, #project3, #experience1
+.projectLeft
 {
 	margin-left: -10px;
 	margin-right: 10px;
+	margin-bottom: 0px;
 }
-#project2, #project4, #experience2
+.projectRight
 {
 	margin-left: 10px;
 	margin-right: -10px;
+	margin-bottom: 0px;
 }
-.project1describe, .project2describe, .project3describe, .project4describe, 
-.project1slide, .project2slide, .project3slide, .project4slide,
-.experience1describe, .experience2describe, .experience1slide, .experience2slide{
+.projectDescribe {
 	margin-left: -15px;
 	width:100%;
 	position:absolute;
