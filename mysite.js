@@ -35,7 +35,6 @@ function parallaxScroll()
 		barHeight = 60;
 	}
 	document.getElementById("homeLink").style.marginTop = marginHeight + 1 + 'px';
-	document.getElementById("homeLink").style.marginTop = marginHeight + 1 + 'px';
 	document.getElementById("navbar").style.marginTop = marginHeight + 12 + 'px';
 	document.getElementById("expandNavbar").style.marginTop = marginHeight + 8 + 'px';
 	$('#navbarMain').height(barHeight);
@@ -119,23 +118,18 @@ $('.Contact').click(function()
 function resizeScrolling()
 {
 	var height = $("#firstPicture").height();
-	for(var i = 1; i < 9; i++)
+	for(var i = 1; i < 11; i++)
 	{
 		$('#project'+i.toString()).height(height);
 		$('#git'+i.toString()).height(height/5);
     	$('#git'+i.toString()).width(height/5);
+    	$('#web'+i.toString()).height(height/5);
+    	$('#web'+i.toString()).width(height/5);
+		$('#fac'+i.toString()).height(height/5);
+    	$('#fac'+i.toString()).width(height/5);
+    	$('#twi'+i.toString()).height(height/5);
+    	$('#twi'+i.toString()).width(height/5);
 	}
-
-
-    $("#projectE1").height(height);
-    $("#projectE2").height(height);
-
-    $("#webE1").height(height/5);
-    $("#webE1").width(height/5);
-    $("#webE2").height(height/5);
-    $("#webE2").width(height/5);
-
-
 	desktop = ($(window).width() >= 992)
 	if(oldDesktop!=desktop)
 	{
@@ -149,7 +143,6 @@ function resizeScrolling()
 	    	$(".projectRows").removeClass('projectRowsNormal');
 	    	$(".projectRows").addClass('projectRowsMobile');
 
-	    	document.getElementById("experienceRow").style.marginBottom =  "0px";
 	    	$('#myimage').hide();
 			$('#navbuttons').hide();
 	    } else
@@ -179,7 +172,7 @@ $(document).ready(function()
 	$(".projectLeft").addClass('projectOnLeft');
 	$(".projectRight").addClass('projectOnRight');
 	$(".projectRows").addClass('projectRowsNormal');
-	for (var i = 1; i < 9; i++)
+	for (var i = 1; i < 11; i++)
 	{
 		$('.project'+i.toString()+'slide').first().addClass('active'+i.toString());
 		$('.project'+i.toString()+'slide').hide();
@@ -193,25 +186,12 @@ $(document).ready(function()
 		{
 			$("#git"+i.toString()).hide();
 			$("#web"+i.toString()).hide();
+			$("#fac"+i.toString()).hide();
+			$("#twi"+i.toString()).hide();
 		}
-	};
-	for (var i = 1; i < 3; i++)
-	{
-		$('.experience'+i.toString()+'slide').first().addClass('activeE'+i.toString());
-		$('.experience'+i.toString()+'slide').hide();
-		$('.activeE'+i.toString()).show();
-		$('.experience'+i.toString()+'describe').first().addClass('activeE'+i.toString()+'Describe');
-		$('.experience'+i.toString()+'describe').hide();
-		if(!desktop)
-		{
-		 $('.activeE'+i.toString()+'Describe').show();
-		} else
-		{
-			$("#webE"+i.toString()).hide();
-		}
-		if (i.toString()=='1') i.toString() = '2';
 	};
 });
+
 function clickPic(num)
 {
 	$('.active'+num).removeClass('active'+num).addClass('oldActive');
@@ -232,61 +212,23 @@ function clickPic(num)
 	$('.active'+num).fadeIn();
 	$('.active'+num+'Describe').fadeIn();
 }
-$('#project1').click(function()
-{
-	clickPic('1');
-});
-$('#project2').click(function()
-{
-	$('.active2').removeClass('active2').addClass('oldActive');
-	$('.active2Describe').removeClass('active2Describe').addClass('oldActiveDescribe');
-	if ($('.oldActive').is(':last-child'))
-	{
-		$('.project2slide').first().addClass('active2');
-		$('.project2describe').first().addClass('active2Describe');
-	} else
-	{
-		$('.oldActive').next().addClass('active2');
-		$('.oldActiveDescribe').next().addClass('active2Describe');
-	}
-	$('.oldActive').removeClass('oldActive');
-	$('.oldActiveDescribe').removeClass('oldActiveDescribe');
-	$('.project2slide').fadeOut();
-	$('.project2describe').fadeOut();
-	$('.active2').fadeIn();
-	$('.active2Describe').fadeIn();
-});
-$('#project4').click(function()
-{
-	$('.active4').removeClass('active4').addClass('oldActive');
-	$('.active4Describe').removeClass('active4Describe').addClass('oldActiveDescribe');
-	if ($('.oldActive').is(':last-child'))
-	{
-		$('.project4slide').first().addClass('active4');
-		$('.project4describe').first().addClass('active4Describe');
-	} else
-	{
-		$('.oldActive').next().addClass('active4');
-		$('.oldActiveDescribe').next().addClass('active4Describe');
-	}
-	$('.oldActive').removeClass('oldActive');
-	$('.oldActiveDescribe').removeClass('oldActiveDescribe');
-	$('.project4slide').fadeOut();
-	$('.project4describe').fadeOut();
-	$('.active4').fadeIn();
-	$('.active4Describe').fadeIn();
-});
+$('#project1').click(function(){ clickPic('1'); });
+$('#project2').click(function(){ clickPic('2'); });
+$('#project5').click(function(){ clickPic('5'); });
+$('#project6').click(function(){ clickPic('6'); });
+$('#project7').click(function(){ clickPic('7'); });
+$('#project8').click(function(){ clickPic('8'); });
 
 function fadeInProject(number)
 {
-	if(desktop) {$('.active'+number+'Describe').fadeIn(); $('#git'+number).fadeIn(); $('#web'+number).fadeIn();}
+	if(desktop) {$('.active'+number+'Describe').fadeIn(); $('#git'+number).fadeIn(); $('#web'+number).fadeIn(); $('#fac'+number).fadeIn(); $('#twi'+number).fadeIn();}
 }
 function fadeOutProject(number)
 {
-	if(desktop) {$('.active'+number+'Describe').fadeOut(); $('#git'+number).fadeOut(); $('#web'+number).fadeOut();}
+	if(desktop) {$('.active'+number+'Describe').fadeOut(); $('#git'+number).fadeOut(); $('#web'+number).fadeOut(); $('#fac'+number).fadeOut(); $('#twi'+number).fadeOut();}
 }
-$('#projectE1').mouseenter(function(){ fadeInProject('E1'); }).mouseleave(function() { fadeOutProject('E1'); });
-$('#projectE2').mouseenter(function(){ fadeInProject('E2'); }).mouseleave(function() { fadeOutProject('E2'); });
+$('#project9').mouseenter(function(){ fadeInProject('9'); }).mouseleave(function() { fadeOutProject('9'); });
+$('#project10').mouseenter(function(){ fadeInProject('10'); }).mouseleave(function() { fadeOutProject('10'); });
 $('#project1').mouseenter(function(){ fadeInProject('1'); }).mouseleave(function() { fadeOutProject('1'); });
 $('#project2').mouseenter(function(){ fadeInProject('2'); }).mouseleave(function() { fadeOutProject('2'); });
 $('#project3').mouseenter(function(){ fadeInProject('3'); }).mouseleave(function() { fadeOutProject('3'); });

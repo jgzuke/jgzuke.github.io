@@ -26,10 +26,20 @@ body {
   width: 100%;
   background-color : transparent;
 }
+#backgroundfixed {
+	width:100%;
+	min-height: 100vh !important;
+    height: 100vh !important;
+	background-image: url("alttop.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: fixed;
+}
 #backgrounddiv {
 	/*background: url("topBack.JPG");*/
     width: 100%;
-    z-index:0;
+    z-index:1;
     position:fixed;
     top: 0;
     left: 0;
@@ -38,7 +48,7 @@ body {
 #backgrounddivtop {
 	width:100%;
 	text-align: center;
-	background-image: url("alt.png");
+	background-image: url("altbot.png");
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -96,11 +106,11 @@ body {
 	font-size: 140%;
 }
 #homeLink {
-	margin-top: 15px;
+	margin-top: 36px;
 	margin-left: 50px;
 }
 #navbar {
-	margin-top: 26px;
+	margin-top: 47px;
 }
 li, #homeLink {
 	cursor: pointer;
@@ -112,7 +122,7 @@ li, #homeLink {
 	cursor: pointer;
 }
 #expandNavbar {
-	margin-top: 22px;
+	margin-top: 43px;
 }
 
 
@@ -209,6 +219,11 @@ li, #homeLink {
 }
 .bubbleLink2 {
 	margin-left: 25px;
+	width:100%;
+	position:absolute;
+}
+.bubbleLink3 {
+	margin-left: 65px;
 	width:100%;
 	position:absolute;
 }
