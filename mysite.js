@@ -11,13 +11,13 @@ var oldDesktop = true;
 var navBarHeight = $('#navbarMain').height();
 var blueSection = true;
 var blueSectionClose = true;
+var myBlue = '#0099ff';
 function parallaxScroll()
 {
 	var scrolled = $(window).scrollTop();
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
-
-
+	
 	var scrolledFromEnd = scrolled;
 	//
 	if(scrolled > windowHeight)
@@ -34,29 +34,18 @@ function parallaxScroll()
 	{
 		barHeight = 60;
 	}
+	var opacity = (120-barHeight) * 4/3;
+	if(scrolled > windowHeight) opacity = 80;
+	if(scrolled > scrollHeight + windowHeight - 100) opacity = (120-barHeight) * 8;
+	if(scrolled >= scrollHeight + windowHeight) opacity = 0;
+	var rgbaCol = 'rgba(00,153,255,'+opacity/100+')';
+	$('#fullNavbar').css('background-color', rgbaCol);
 	document.getElementById("homeLink").style.marginTop = marginHeight + 1 + 'px';
 	document.getElementById("navbar").style.marginTop = marginHeight + 12 + 'px';
 	document.getElementById("expandNavbar").style.marginTop = marginHeight + 8 + 'px';
 	$('#navbarMain').height(barHeight);
 	
-	if(scrolled > windowHeight - 65 && scrolled < scrollHeight + windowHeight)
-	{
-		if(blueSection == true)
-		{
-			$('#fullNavbar').removeClass('inblue');
-			$('#fullNavbar').addClass('outofblue');
-			blueSection = false;
-		}
-	} else
-	{
-		if(blueSection == false)
-		{
-			$('#fullNavbar').removeClass('outofblue');
-			$('#fullNavbar').addClass('inblue');
-			blueSection = true;
-		}
-	}
-	if(scrolled > windowHeight - 65 && scrolled < scrollHeight + windowHeight - 105)
+	if(scrolled > windowHeight - 65 && scrolled < scrollHeight + windowHeight - 109)
 	{
 		if(blueSectionClose == true)
 		{
@@ -144,7 +133,6 @@ function resizeScrolling()
 	    	$(".projectRows").addClass('projectRowsMobile');
 
 	    	$('#myimage').hide();
-			$('#navbuttons').hide();
 	    } else
 	    {
 	    	$(".projectLeft").removeClass('projectInCenter');
@@ -155,9 +143,7 @@ function resizeScrolling()
 	    	$(".projectRows").removeClass('projectRowsMobile');
 	    	$(".projectRows").addClass('projectRowsNormal');
 
-	    	document.getElementById("myimage").style.marginTop =  "60px";
 	    	$('#myimage').show();
-	    	$('#navbuttons').show();
 	    }
 	}
 	oldDesktop = desktop;
@@ -169,6 +155,7 @@ function resizeScrolling()
 $(document).ready(function()
 {
 	resizeScrolling();
+	parallaxScroll();
 	$(".projectLeft").addClass('projectOnLeft');
 	$(".projectRight").addClass('projectOnRight');
 	$(".projectRows").addClass('projectRowsNormal');

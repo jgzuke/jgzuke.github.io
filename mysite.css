@@ -101,13 +101,7 @@ body {
 
 
 
-
-.inblue {
-	background-color : transparent !important;
-	border-color: transparent;
-}
-.outofblue {
-	background-color : rgba(0, 153, 255, 0.8) !important;
+#fullNavbar {
 	border-color: transparent;
 }
 #navbarMain {
