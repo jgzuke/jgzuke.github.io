@@ -34,9 +34,9 @@ function parallaxScroll()
 	{
 		barHeight = 60;
 	}
-	var opacity = (120-barHeight) * 4/3;
+	var opacity = (65-barHeight) * 16;
 	if(scrolled > windowHeight) opacity = 80;
-	if(scrolled > scrollHeight + windowHeight - 100) opacity = (120-barHeight) * 8;
+	if(scrolled > scrollHeight + windowHeight - 100) opacity = (120-barHeight) * 7.273;
 	if(scrolled >= scrollHeight + windowHeight) opacity = 0;
 	var rgbaCol = 'rgba(00,153,255,'+opacity/100+')';
 	$('#fullNavbar').css('background-color', rgbaCol);
