@@ -12,6 +12,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300 !important;
 	color: #555;
+	background-color: #0099ff;
 }
 
 
@@ -35,15 +36,6 @@ body {
   height:100vh;
   width: 100%;
   background-color : transparent;
-}
-#backgroundfixed {
-	width:100%;
-	min-height: 100vh !important;
-    height: 100vh !important;
-	background-image: url("alttop.png");
-	background-repeat:no-repeat;
-	background-size: cover;
-	position: fixed;
 }
 #backgrounddiv {
 	/*background: url("topBack.JPG");*/
@@ -75,10 +67,6 @@ body {
 #backgrounddivbottom {
 	width:100%;
 	text-align: center;
-	background-image: url("binary.png");
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
     min-height: 100vh !important;
     height: 100vh !important;
 
