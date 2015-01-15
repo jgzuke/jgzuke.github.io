@@ -12,10 +12,8 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300 !important;
 	color: #555;
-	background-image: url("boxes.png");
-	background-repeat:no-repeat;
-	background-size: 100% 100%;
-	background-position: center;
+	background-color: #0099ff;
+	text-align: center;
 }
 
 
@@ -40,6 +38,15 @@ body {
   width: 100%;
   background-color : transparent;
 }
+#backgroundfixed {
+	width:100%;
+	min-height: 100vh !important;
+    height: 100vh !important;
+	background-image: url("boxes.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	position: fixed;
+}
 #backgrounddiv {
 	/*background: url("topBack.JPG");*/
     width: 100%;
@@ -62,6 +69,7 @@ body {
 #toptext {
 	vertical-align: middle;
     margin-top:32vh;
+    position:relative;
 }
 #topname {
 	color: #FFFFFF;
@@ -71,8 +79,6 @@ body {
 	width:100%;
 	text-align: center;
     min-height: 100vh !important;
-    height: 100vh !important;
-
 }
 #topLi1, #topLi2, #topLi3, #topLi4 {
 	width: 60px;
@@ -112,8 +118,12 @@ li, #homeLink {
 	font-size: 140%;
 	margin-right: 20px;
 }
-#topLi4 {
+#topLi4, #toAbout {
 	cursor: pointer;
+}
+#toAbout {
+	width: 80px;
+	height: 80px;
 }
 #expandNavbar {
 	margin-top: 43px;
