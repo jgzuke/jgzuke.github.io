@@ -231,6 +231,11 @@ li, #homeLink {
 	width:100%;
 	position:absolute;
 }
+.projectDot {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+}
 #myimage {
  width:90%;
  height:90%;
