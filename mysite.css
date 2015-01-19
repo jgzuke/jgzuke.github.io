@@ -99,6 +99,7 @@ body {
 
 
 #fullNavbar {
+	background-color: rgba(0, 153, 255, 0.8);
 	border-color: transparent;
 }
 #navbarMain {

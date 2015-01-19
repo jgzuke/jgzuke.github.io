@@ -36,20 +36,12 @@ function parallaxScroll()
 		{
 			barHeight = 60;
 		}
-		var opacity = (65-barHeight) * 18;
-		if(scrolled > windowHeight) opacity = 90;
-		if(scrolled > scrollHeight + windowHeight - 100) opacity = (120-barHeight) * 7.273;
-		if(scrolled >= scrollHeight + windowHeight) opacity = 0;
-		var rgbaCol = 'rgba(00,153,255,'+opacity/100+')';
-		$('#fullNavbar').css('background-color', rgbaCol);
 		document.getElementById("homeLink").style.marginTop = marginHeight + 1 + 'px';
 		document.getElementById("navbar").style.marginTop = marginHeight + 12 + 'px';
 		document.getElementById("expandNavbar").style.marginTop = marginHeight + 8 + 'px';
 		$('#navbarMain').height(barHeight);
 	} else
 	{
-		var rgbaCol = 'rgba(00,153,255, 0.9)';
-		$('#fullNavbar').css('background-color', rgbaCol);
 		document.getElementById("homeLink").style.marginTop = 16 + 'px';
 		document.getElementById("navbar").style.marginTop = 27 + 'px';
 		document.getElementById("expandNavbar").style.marginTop = 23 + 'px';
