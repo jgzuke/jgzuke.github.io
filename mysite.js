@@ -7,7 +7,9 @@ $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFu
 	resizeScrolling();
 });
 var desktop = true;
+var phone = false;
 var oldDesktop = true;
+var oldPhone = false;
 var navBarHeight = $('#navbarMain').height();
 var blueSection = true;
 var blueSectionClose = true;
@@ -121,9 +123,20 @@ function resizeScrolling()
     	$("#git"+i.toString()+", #web"+i.toString()+", #fac"+i.toString()+", #twi"+i.toString()).width(height/5);
 	}
 	desktop = ($(window).width() >= 992)
+	phone = ($(window).width() <= 768)
 	if(oldDesktop!=desktop)
 	{
 		if(!desktop)
+	    {
+	    	$('#myimage').hide();
+	    } else
+	    {
+	    	$('#myimage').show();
+	    }
+	}
+	if(oldPhone!=phone)
+	{
+		if(phone)
 	    {
 	    	$(".projectLeft").removeClass('projectOnLeft');
 	    	$(".projectRight").removeClass('projectOnRight');
@@ -131,8 +144,6 @@ function resizeScrolling()
 
 	    	$(".projectRows").removeClass('projectRowsNormal');
 	    	$(".projectRows").addClass('projectRowsMobile');
-
-	    	$('#myimage').hide();
 	    } else
 	    {
 	    	$(".projectLeft, .projectRight").removeClass('projectInCenter');
@@ -141,12 +152,11 @@ function resizeScrolling()
 
 	    	$(".projectRows").removeClass('projectRowsMobile');
 	    	$(".projectRows").addClass('projectRowsNormal');
-
-	    	$('#myimage').show();
 	    }
 	}
 	setUpProjects();
 	oldDesktop = desktop;
+	oldPhone = phone;
 	var scrollHeight = $("#scrolling").height();
 	var windowHeight = $(window).height();
 	var divHeight = (scrollHeight-windowHeight)/2;
