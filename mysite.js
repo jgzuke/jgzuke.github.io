@@ -108,12 +108,10 @@ $('#Contact, .Contact').click(function()
 function resizeScrolling()
 {
 	var height = $("#firstPicture").height();
-	for(var i = 1; i < 11; i++)
+	for (var i = 1; i < 11; i++)
 	{
 		$('#project'+i.toString()).height(height);
-		$("#git"+i.toString()+", #web"+i.toString()+", #fac"+i.toString()+", #twi"+i.toString()).height(height/5);
-    	$("#git"+i.toString()+", #web"+i.toString()+", #fac"+i.toString()+", #twi"+i.toString()).width(height/5);
-	}
+	};
 	desktop = ($(window).width() >= 992)
 	phone = ($(window).width() <= 768)
 	if(oldDesktop!=desktop)
@@ -121,15 +119,18 @@ function resizeScrolling()
 		if(!desktop)
 	    {
 	    	$('#myimage').hide();
+	    	setUpProjects();
 	    } else
 	    {
 	    	$('#myimage').show();
+	    	setUpProjects();
 	    }
 	}
 	if(oldPhone!=phone)
 	{
 		if(phone)
 	    {
+	    	document.getElementById("toptext").style.marginTop = '20vh';
 	    	$(".projectLeft").removeClass('projectOnLeft');
 	    	$(".projectRight").removeClass('projectOnRight');
 	    	$(".projectLeft, .projectRight").addClass('projectInCenter');
@@ -138,6 +139,7 @@ function resizeScrolling()
 	    	$(".projectRows").addClass('projectRowsMobile');
 	    } else
 	    {
+	    	document.getElementById("toptext").style.marginTop = '28vh'
 	    	$(".projectLeft, .projectRight").removeClass('projectInCenter');
 	    	$(".projectLeft").addClass('projectOnLeft');
 	    	$(".projectRight").addClass('projectOnRight');
@@ -146,7 +148,6 @@ function resizeScrolling()
 	    	$(".projectRows").addClass('projectRowsNormal');
 	    }
 	}
-	setUpProjects();
 	oldDesktop = desktop;
 	oldPhone = phone;
 	var scrollHeight = $("#scrolling").height();
@@ -164,14 +165,13 @@ function setUpProjects()
 		$('.active'+i.toString()).show();
 		$('.project'+i.toString()+'describe').first().addClass('active'+i.toString()+'Describe');
 		$('.project'+i.toString()+'describe').hide();
+		$('.active'+i.toString()+'Describe').show();
 		if(!desktop)
 		{
-		    $('.active'+i.toString()+'Describe').show();
-		    $("#git"+i.toString()+", #web"+i.toString()+", #fac"+i.toString()+", #twi"+i.toString()).show();
+		    $('#project'+i.toString()+'Top').show();
 		} else
 		{
-			$('.active'+i.toString()+'Describe').hide();
-			$("#git"+i.toString()+", #web"+i.toString()+", #fac"+i.toString()+", #twi"+i.toString()).hide();
+			$('#project'+i.toString()+'Top').hide();
 		}
 	};
 }
@@ -195,8 +195,27 @@ $('#topLi4').mouseenter(function(){ resize('topLi4', '80', '80', '-10'); }).mous
 
 
 
-
-function clickPic(num)
+function prevPic(num)
+{
+	$('.active'+num).removeClass('active'+num).addClass('oldActive');
+	$('.active'+num+'Describe').removeClass('active'+num+'Describe').addClass('oldActiveDescribe');
+	if ($('.oldActive').is(':first-child'))
+	{
+		$('.project'+num+'slide').last().addClass('active'+num);
+		$('.project'+num+'describe').last().addClass('active'+num+'Describe');
+	} else
+	{
+		$('.oldActive').prev().addClass('active'+num);
+		$('.oldActiveDescribe').prev().addClass('active'+num+'Describe');
+	}
+	$('.oldActive').removeClass('oldActive');
+	$('.oldActiveDescribe').removeClass('oldActiveDescribe');
+	$('.project'+num+'slide').fadeOut();
+	$('.project'+num+'describe').fadeOut();
+	$('.active'+num).fadeIn();
+	$('.active'+num+'Describe').fadeIn();
+}
+function nextPic(num)
 {
 	$('.active'+num).removeClass('active'+num).addClass('oldActive');
 	$('.active'+num+'Describe').removeClass('active'+num+'Describe').addClass('oldActiveDescribe');
@@ -216,24 +235,15 @@ function clickPic(num)
 	$('.active'+num).fadeIn();
 	$('.active'+num+'Describe').fadeIn();
 }
-$('#project1').click(function(){ clickPic('1'); });
-$('#project2').click(function(){ clickPic('2'); });
-$('#project5').click(function(){ clickPic('5'); });
-$('#project6').click(function(){ clickPic('6'); });
-$('#project7').click(function(){ clickPic('7'); });
-$('#project8').click(function(){ clickPic('8'); });
-
-
-
 
 
 function fadeInProject(number)
 {
-	if(desktop) {$('.active'+number+'Describe').fadeIn(); $('#git'+number).fadeIn(); $('#web'+number).fadeIn(); $('#fac'+number).fadeIn(); $('#twi'+number).fadeIn();}
+	if(desktop) {$('#project'+number+'Top').fadeIn();}
 }
 function fadeOutProject(number)
 {
-	if(desktop) {$('.active'+number+'Describe').fadeOut(); $('#git'+number).fadeOut(); $('#web'+number).fadeOut(); $('#fac'+number).fadeOut(); $('#twi'+number).fadeOut();}
+	if(desktop) {$('#project'+number+'Top').fadeOut()}
 }
 $('#project9').mouseenter(function(){ fadeInProject('9'); }).mouseleave(function() { fadeOutProject('9'); });
 $('#project10').mouseenter(function(){ fadeInProject('10'); }).mouseleave(function() { fadeOutProject('10'); });

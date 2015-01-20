@@ -38,6 +38,7 @@
       <div id="backgrounddivtop" class="container">
         <div id="toptext" class="container">
             <h1 id="topname">Jason Zukewich</h1>
+            <h3>Software Developer, Problem Solver</h3>
             <hr width="75%" style="height:2px; border:none; background-color:#ffffff;"></hr>
             <a href="https://github.com/jgzuke" target="_blank"><img src="github.png" id = "topLi1"/></a>
             <a href="https://ca.linkedin.com/in/jgzuke/" target="_blank"><img src="linkedin.png" id = "topLi2"/></a>
@@ -81,13 +82,25 @@
         <div id="profile" class="container mySection">
           <div class="row">
             <div class="col-md-4">
-              
+              <h3 class="paragraphheaders mytext">Passions</h3>
+              <p class="paragraphs"><strong>Math: </strong>What's better than elegantly solving a problem, or stumbling across a cool pattern</p>
+              <p class="paragraphs"><strong>Code: </strong>Stackoverflow addict. You rarely see me smile wider than when my code works</p>
+              <p class="paragraphs"><strong>Helping: </strong>Helping makes you feel incredible, no matter what form it takes</p>
+              <p class="paragraphs"><strong>Learning: </strong>Theres so much out there to learn, it's hard to decide where to start</p>
+
+              <h3 class="paragraphheaders mytext">Me</h3>
+
               <h3 class="paragraphheaders">Skills</h3>
               <p class="paragraphs"><strong>Languages: </strong>
               Java (Android), C, C++, HTML, CSS, JavaScript, PHP, Python</p>
               <p class="paragraphs"><strong>Tools: </strong>
               Github, MySQL, Bootstrap, JQuery, Google App Engine, Google Cloud Messaging</p>
-
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="displaypic.png" id="myimage"/>
+            </div>
+            <div class="col-md-4">
+              
               <h3 class="paragraphheaders">Education</h3>
               <p class="paragraphs"><strong>UWaterloo - Software Engineering</strong>
               <br/>Eng Ambassador, Eng Society Director</p>
@@ -96,24 +109,11 @@
               <p class="paragraphs"><strong>Grimsby Secondary School</strong>
               <br/>Robotics Club, Me to We, Prefects, Students in Action, Tutoring, All Bands</p>
 
-            </div>
-            <div class="col-md-4 text-center">
-              <img src="displaypic.png" id="myimage"/>
-            </div>
-            <div class="col-md-4">
-              
-              <h3 class="paragraphheaders mytext">Passions</h3>
-              <p class="paragraphs"><strong>Math: </strong>What's better than elegantly solving a problem, or stumbling across a cool pattern</p>
-              <p class="paragraphs"><strong>Code: </strong>Stackoverflow addict. You rarely see me smile wider than when my code works</p>
-              <p class="paragraphs"><strong>Helping: </strong>Helping makes you feel incredible, no matter what form it takes</p>
-              <p class="paragraphs"><strong>Learning: </strong>Theres so much out there to learn, it's hard to decide where to start</p>
-
               <h3 class="paragraphheaders">Online Courseware</h3>
               <p class="paragraphs"><strong>Udacity: </strong>
               Intro to Statistics, Algorithms, Software Testing, Differential Equations in Action</p>
               <p class="paragraphs"><strong>Codecademy: </strong>
               A ton</p>
-
             </div>
           </div>
           <p class="psssssst" text-align="center">Find out more on my<a class = "mylinks" href="https://ca.linkedin.com/in/jgzuke/" target="_blank"> LinkedIn</a></p>
@@ -131,11 +131,13 @@
                 <img src="screenshots/3d/view1.png" class = "project8slide projectDescribe"/>
                 <img src="screenshots/3d/view2.png" class = "project8slide projectDescribe"/>
               </div>
-              <div>
+              <div class = "container projectTop" id="project8Top">
                 <img src="screenshots/3d/des1.png" class = "project8describe projectDescribe"/>
                 <img src="screenshots/3d/des2.png" class = "project8describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/3DCity" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <img src="next.png" class = "nextLink" onClick = "nextPic(8)"/>
+                <img src="prev.png" class = "prevLink" onClick = "prevPic(8)"/>
               </div>
-              <a href="https://github.com/jgzuke/3DCity" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git8"/></a>
             </div>
             <div id = "project7" class="col-sm-6 shadowSmall projectRight">
               <div>
@@ -144,13 +146,15 @@
                 <img src="screenshots/wom/view3.png" class = "project7slide projectDescribe"/>
                 <img src="screenshots/wom/view4.png" class = "project7slide projectDescribe"/>
               </div>
-              <div>
+              <div class = "container projectTop" id="project7Top">
                 <img src="screenshots/wom/des1.png" class = "project7describe projectDescribe"/>
                 <img src="screenshots/wom/des2.png" class = "project7describe projectDescribe"/>
                 <img src="screenshots/wom/des3.png" class = "project7describe projectDescribe"/>
                 <img src="screenshots/wom/des4.png" class = "project7describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/OpenWOM" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <img src="next.png" class = "nextLink" onClick = "nextPic(7)"/>
+                <img src="prev.png" class = "prevLink" onClick = "prevPic(7)"/>
               </div>
-              <a href="https://github.com/jgzuke/OpenWOM" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git7"/></a>
             </div>
           </div>
 
@@ -162,12 +166,14 @@
                 <img src="screenshots/notif/view2.png" class = "project6slide projectDescribe"/>
                 <img src="screenshots/notif/view3.png" class = "project6slide projectDescribe"/>
               </div>  
-              <div>
+              <div class = "container projectTop" id="project6Top">
                 <img src="screenshots/notif/des1.png" class = "project6describe projectDescribe"/>
                 <img src="screenshots/notif/des2.png" class = "project6describe projectDescribe"/>
                 <img src="screenshots/notif/des3.png" class = "project6describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/NotificationsManager" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <img src="next.png" class = "nextLink" onClick = "nextPic(6)"/>
+                <img src="prev.png" class = "prevLink" onClick = "prevPic(6)"/>
               </div>
-              <a href="https://github.com/jgzuke/NotificationsManager" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git6"/></a>
             </div>
             <div id = "project5" class="col-sm-6 shadowSmall projectRight">
               <div>
@@ -176,14 +182,16 @@
                 <img src="screenshots/database/view3.png" class = "project5slide projectDescribe"/>
                 <img src="screenshots/database/view4.png" class = "project5slide projectDescribe"/>
               </div>  
-              <div>
+              <div class = "container projectTop" id="project5Top">
                 <img src="screenshots/database/des1.png" class = "project5describe projectDescribe"/>
                 <img src="screenshots/database/des2.png" class = "project5describe projectDescribe"/>
                 <img src="screenshots/database/des3.png" class = "project5describe projectDescribe"/>
                 <img src="screenshots/database/des4.png" class = "project5describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/Find-Me-Web-App" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <a href="https://findmewebapp.appspot.com" target="_blank"><img src="weblink.png" class = "bubbleLink2"/></a>
+                <img src="next.png" class = "nextLink" onClick = "nextPic(5)"/>
+                <img src="prev.png" class = "prevLink" onClick = "prevPic(5)"/>
               </div>
-              <a href="https://github.com/jgzuke/Find-Me-Web-App" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git5"/></a>
-              <a href="https://findmewebapp.appspot.com" target="_blank"><img src="weblink.png" class = "bubbleLink2" id = "web5"/></a>
             </div>
           </div>
 
@@ -193,21 +201,22 @@
               <div>
                 <img src="screenshots/aarons/view1.png" class = "project4slide projectDescribe"/>
               </div>  
-              <div>
+              <div class = "container projectTop" id="project4Top">
                 <img src="screenshots/aarons/des1.png" class = "project4describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/aazukewich.github.io" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <a href="https://aazukewich.github.io" target="_blank"><img src="weblink.png" class = "bubbleLink2"/></a>
               </div>
-              <a href="https://github.com/jgzuke/aazukewich.github.io" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git4"/></a>
-              <a href="https://aazukewich.github.io" target="_blank"><img src="weblink.png" class = "bubbleLink2" id = "web4"/></a>
+              
             </div>
             <div id = "project3" class="col-sm-6 shadowSmall projectRight">
               <div>
                 <img src="screenshots/website/view1.png" class = "project3slide projectDescribe"/>
               </div>  
-              <div>
+              <div class = "container projectTop" id="project3Top">
                 <img src="screenshots/website/des1.png" class = "project3describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/jgzuke.github.io" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <a href="https://jgzuke.github.io" target="_blank"><img src="weblink.png" class = "bubbleLink2"/></a>
               </div>
-              <a href="https://github.com/jgzuke/jgzuke.github.io" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git3"/></a>
-              <a href="https://jgzuke.github.io" target="_blank"><img src="weblink.png" class = "bubbleLink2" id = "web3"/></a>
             </div>
           </div>
 
@@ -218,11 +227,13 @@
                 <img src="screenshots/myro/view1.png" class = "project2slide projectDescribe"/>
                 <img src="screenshots/myro/view2.png" class = "project2slide projectDescribe"/>
               </div>  
-              <div>
+              <div class = "container projectTop" id="project2Top">
                 <img src="screenshots/myro/des1.png" class = "project2describe projectDescribe"/>
                 <img src="screenshots/myro/des2.png" class = "project2describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/SE-101-Domestic-Sercurity" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <img src="next.png" class = "nextLink" onClick = "nextPic(2)"/>
+                <img src="prev.png" class = "prevLink" onClick = "prevPic(2)"/>
               </div>
-              <a href="https://github.com/jgzuke/SE-101-Domestic-Sercurity" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git2"/></a>
             </div>
             <div id = "project1" class="col-sm-6 shadowSmall projectRight container">
               <div>
@@ -231,13 +242,15 @@
                 <img src="screenshots/wom/view3.png" class = "project1slide projectDescribe"/>
                 <img src="screenshots/wom/view4.png" class = "project1slide projectDescribe"/>
               </div>
-              <div>
+              <div class = "container projectTop" id="project1Top">
                 <img src="screenshots/wom/des1.png" class = "project1describe projectDescribe"/>
                 <img src="screenshots/wom/des2.png" class = "project1describe projectDescribe"/>
                 <img src="screenshots/wom/des3.png" class = "project1describe projectDescribe"/>
                 <img src="screenshots/wom/des4.png" class = "project1describe projectDescribe"/>
+                <a href="https://github.com/jgzuke/WarOfMyths" target="_blank"><img src="github.png" class = "bubbleLink1"/></a>
+                <img src="next.png" class = "nextLink" onClick = "nextPic(1)"/>
+                <img src="prev.png" class = "prevLink" onClick = "prevPic(1)"/>
               </div>
-              <a href="https://github.com/jgzuke/WarOfMyths" target="_blank"><img src="github.png" class = "bubbleLink1" id = "git1"/></a>
             </div>
           </div>
         </div>
@@ -260,23 +273,24 @@
               <div>
                 <img src="screenshots/osc/view1.png" class = "project10slide projectDescribe"/>
               </div>
-              <div>
+              <div class = "container projectTop" id="project10Top">
                 <img src="screenshots/osc/des1.png" class = "project10describe projectDescribe"/>
+                <a href="https://www.ontariosciencecentre.ca/" target="_blank"><img src="weblink.png" class = "bubbleLink1"/></a>
+                <a href="https://www.facebook.com/ontariosciencecentre" target="_blank"><img src="facebook.png" class = "bubbleLink2"/></a>
+                <a href="https://twitter.com/ontsciencectr" target="_blank"><img src="twitter.png" class = "bubbleLink3"/></a>
               </div>
-              <a href="https://www.ontariosciencecentre.ca/" target="_blank"><img src="weblink.png" class = "bubbleLink1" id = "web10"/></a>
-              <a href="https://www.facebook.com/ontariosciencecentre" target="_blank"><img src="facebook.png" class = "bubbleLink2" id = "fac10"/></a>
-              <a href="https://twitter.com/ontsciencectr" target="_blank"><img src="twitter.png" class = "bubbleLink3" id = "twi10"/></a>
+              
             </div>
             <div id = "project9" class="col-sm-6 shadowSmall projectRight">
               <div>
                 <img src="screenshots/sipo/view1.png" class = "project9slide projectDescribe"/>
               </div>  
-              <div>
+              <div class = "container projectTop" id="project9Top">
                 <img src="screenshots/sipo/des1.png" class = "project9describe projectDescribe"/>
+                <a href="https://www.sipofoundation.org/" target="_blank"><img src="weblink.png" class = "bubbleLink1"/></a>
+                <a href="https://www.facebook.com/SIPOFoundation" target="_blank"><img src="facebook.png" class = "bubbleLink2"/></a>
+                <a href="https://twitter.com/sipofoundation" target="_blank"><img src="twitter.png" class = "bubbleLink3"/></a>
               </div>
-              <a href="https://www.sipofoundation.org/" target="_blank"><img src="weblink.png" class = "bubbleLink1" id = "web9"/></a>
-              <a href="https://www.facebook.com/SIPOFoundation" target="_blank"><img src="facebook.png" class = "bubbleLink2" id = "fac9"/></a>
-              <a href="https://twitter.com/sipofoundation" target="_blank"><img src="twitter.png" class = "bubbleLink3" id = "twi9"/></a>
             </div>
           </div>
         </div>
