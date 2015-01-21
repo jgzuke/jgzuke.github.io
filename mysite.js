@@ -166,13 +166,7 @@ function setUpProjects()
 		$('.project'+i.toString()+'describe').first().addClass('active'+i.toString()+'Describe');
 		$('.project'+i.toString()+'describe').hide();
 		$('.active'+i.toString()+'Describe').show();
-		if(!desktop)
-		{
-		    $('#project'+i.toString()+'Top').show();
-		} else
-		{
-			$('#project'+i.toString()+'Top').hide();
-		}
+		$('#project'+i.toString()+'Top').hide();
 	};
 }
 $(document).ready(function()
@@ -182,6 +176,12 @@ $(document).ready(function()
 	$(".projectRight").addClass('projectOnRight');
 	$(".projectRows").addClass('projectRowsNormal');
 	setUpProjects();
+	prevPic(1);
+	prevPic(2);
+	prevPic(5);
+	prevPic(6);
+	prevPic(7);
+	prevPic(8);
 });
 function resize(toExpand, widthSet, heightSet, sideMargin)
 {
@@ -255,3 +255,30 @@ $('#project5').mouseenter(function(){ fadeInProject('5'); }).mouseleave(function
 $('#project6').mouseenter(function(){ fadeInProject('6'); }).mouseleave(function() { fadeOutProject('6'); });
 $('#project7').mouseenter(function(){ fadeInProject('7'); }).mouseleave(function() { fadeOutProject('7'); });
 $('#project8').mouseenter(function(){ fadeInProject('8'); }).mouseleave(function() { fadeOutProject('8'); });
+
+var faded = [true, true, true, true, true, true, true, true, true, true];
+function clickMobile(number)
+{
+	if(phone)
+	{
+		if(faded[number])
+		{
+			$('#project'+number.toString()+'Top').fadeIn();
+			faded[number] = false;
+		} else
+		{
+			$('#project'+number.toString()+'Top').fadeOut();
+			faded[number] = true;
+		}
+	}
+}
+$('#project1').click(function(){ clickMobile(1); });
+$('#project2').click(function(){ clickMobile(2); });
+$('#project3').click(function(){ clickMobile(3); });
+$('#project4').click(function(){ clickMobile(4); });
+$('#project5').click(function(){ clickMobile(5); });
+$('#project6').click(function(){ clickMobile(6); });
+$('#project7').click(function(){ clickMobile(7); });
+$('#project8').click(function(){ clickMobile(8); });
+$('#project9').click(function(){ clickMobile(9); });
+$('#project10').click(function(){ clickMobile(10); });
