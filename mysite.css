@@ -87,6 +87,10 @@ body {
 	width: 60px;
 	height: 60px;
 }
+#toAbout {
+	width: 80px;
+	height: 80px;
+}
 #bottext {
 	vertical-align: middle;
     margin-top:25vh;
@@ -125,10 +129,6 @@ li, #homeLink {
 #topLi4, #toAbout {
 	cursor: pointer;
 }
-#toAbout {
-	width: 80px;
-	height: 80px;
-}
 #expandNavbar {
 	margin-top: 43px;
 }
@@ -138,8 +138,8 @@ li, #homeLink {
 
 #aboutBlurb {
 	text-align: center;
-	margin-left: 10%;
-	width: 80%;
+	margin-left: 00%;
+	width: 100%;
 	font-size: 140%;
  	font-weight: 10 !important;
 }
@@ -157,6 +157,9 @@ li, #homeLink {
  font-size: 500%;
  font-style: normal;
  margin-top:120px;
+}
+.myheadersMobile {
+	font-size: 400%;
 }
 .mydividers {
  border:none;

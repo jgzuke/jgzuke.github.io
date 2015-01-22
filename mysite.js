@@ -128,22 +128,54 @@ function resizeScrolling()
 	}
 	if(oldPhone!=phone)
 	{
-		if(phone)
+	    if(phone)
 	    {
-	    	document.getElementById("toptext").style.marginTop = '20vh';
+	    	document.getElementById("toptext").style.marginTop = '18vh';
+	    	document.getElementById("topname").style.fontSize = "400%";
+	    	document.getElementById("aboutBlurb").style.marginLeft = '-10%';
+	    	document.getElementById("aboutBlurb").style.width = '120%';
+	    	document.getElementById("aboutRows").style.marginLeft = '-15%';
+	    	document.getElementById("aboutRows").style.width = '130%';
+	    	document.getElementById("contactForm").style.marginLeft = '0%';
+	    	document.getElementById("contactForm").style.width = '100%';
+	    	document.getElementById("contactHeader").style.marginTop = '-50px';
+	    	$(".myheaders").addClass('myheadersMobile');
+	    	for(var i = 1; i < 5; i++)
+	    	{
+	    		document.getElementById('topLi'+i.toString()).style.height = '40px';
+	    		document.getElementById('topLi'+i.toString()).style.width = '40px';
+	    	}
+	    	document.getElementById('toAbout').style.height = '60px';
+	    	document.getElementById('toAbout').style.width = '60px';
+
 	    	$(".projectLeft").removeClass('projectOnLeft');
 	    	$(".projectRight").removeClass('projectOnRight');
 	    	$(".projectLeft, .projectRight").addClass('projectInCenter');
-
 	    	$(".projectRows").removeClass('projectRowsNormal');
 	    	$(".projectRows").addClass('projectRowsMobile');
 	    } else
 	    {
-	    	document.getElementById("toptext").style.marginTop = '28vh'
+	    	document.getElementById("toptext").style.marginTop = '28vh';
+	    	document.getElementById("topname").style.fontSize = "600%";
+	    	document.getElementById("aboutBlurb").style.marginLeft = '0%';
+	    	document.getElementById("aboutBlurb").style.width = '100%';
+	    	document.getElementById("aboutRows").style.marginLeft = '0%';
+	    	document.getElementById("aboutRows").style.width = '100%';
+	    	document.getElementById("contactForm").style.marginLeft = '15%';
+	    	document.getElementById("contactForm").style.width = '70%';
+	    	document.getElementById("contactHeader").style.marginTop = '120px';
+	    	$(".myheaders").removeClass('myheadersMobile');
+	    	for(var i = 1; i < 5; i++)
+	    	{
+	    		document.getElementById('topLi'+i.toString()).style.height = '60px';
+	    		document.getElementById('topLi'+i.toString()).style.width = '60px';
+	    	}
+	    	document.getElementById('toAbout').style.height = '80px';
+	    	document.getElementById('toAbout').style.width = '80px';
+
 	    	$(".projectLeft, .projectRight").removeClass('projectInCenter');
 	    	$(".projectLeft").addClass('projectOnLeft');
 	    	$(".projectRight").addClass('projectOnRight');
-
 	    	$(".projectRows").removeClass('projectRowsMobile');
 	    	$(".projectRows").addClass('projectRowsNormal');
 	    }
@@ -183,14 +215,15 @@ $(document).ready(function()
 	prevPic(7);
 	prevPic(8);
 });
-function resize(toExpand, widthSet, heightSet, sideMargin)
+function resize(toExpand, widthSet, heightSet, sideMargin, mwidthSet, mheightSet, msideMargin)
 {
-	$('#'+toExpand).animate({width: widthSet+'px', height: heightSet+'px', marginLeft: sideMargin+'px', marginRight: sideMargin+'px'}, 'fast');
+	if(phone) $('#'+toExpand).animate({width: mwidthSet+'px', height: mheightSet+'px', marginLeft: msideMargin+'px', marginRight: msideMargin+'px'}, 'fast');
+	else $('#'+toExpand).animate({width: widthSet+'px', height: heightSet+'px', marginLeft: sideMargin+'px', marginRight: sideMargin+'px'}, 'fast');
 }
-$('#topLi1').mouseenter(function(){ resize('topLi1', '80', '80', '-10'); }).mouseleave(function() { resize('topLi1', '60', '60', '0'); });
-$('#topLi2').mouseenter(function(){ resize('topLi2', '80', '80', '-10'); }).mouseleave(function() { resize('topLi2', '60', '60', '0'); });
-$('#topLi3').mouseenter(function(){ resize('topLi3', '80', '80', '-10'); }).mouseleave(function() { resize('topLi3', '60', '60', '0'); });
-$('#topLi4').mouseenter(function(){ resize('topLi4', '80', '80', '-10'); }).mouseleave(function() { resize('topLi4', '60', '60', '0'); });
+$('#topLi1').mouseenter(function(){ resize('topLi1', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi1', '60', '60', '0', '40', '40', '0'); });
+$('#topLi2').mouseenter(function(){ resize('topLi2', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi2', '60', '60', '0', '40', '40', '0'); });
+$('#topLi3').mouseenter(function(){ resize('topLi3', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi3', '60', '60', '0', '40', '40', '0'); });
+$('#topLi4').mouseenter(function(){ resize('topLi4', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi4', '60', '60', '0', '40', '40', '0'); });
 
 
 
