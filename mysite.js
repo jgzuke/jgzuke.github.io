@@ -66,8 +66,9 @@ function parallaxScroll()
 	}
 
 	var opacity = 1 - (scrolled/windowHeight*1.5);
-	document.getElementById("toAbout").style.opacity = opacity;
 	document.getElementById("backgrounddivtop").style.opacity = opacity;
+	opacity = 1 - ((scrollHeight + windowHeight-scrolled)/windowHeight*1.5);
+	document.getElementById("backgrounddivbottom").style.opacity = opacity;
 	$('#backgrounddiv').css('top', (0 - (scrolled * .5)) + 'px');
 }
 $('#homeLink').click(function()
@@ -163,7 +164,7 @@ function resizeScrolling()
 	    	document.getElementById("aboutRows").style.width = '100%';
 	    	document.getElementById("contactForm").style.marginLeft = '15%';
 	    	document.getElementById("contactForm").style.width = '70%';
-	    	document.getElementById("contactHeader").style.marginTop = '120px';
+	    	document.getElementById("contactHeader").style.marginTop = '0px';
 	    	$(".myheaders").removeClass('myheadersMobile');
 	    	for(var i = 1; i < 5; i++)
 	    	{

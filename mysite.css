@@ -62,10 +62,6 @@ body {
 #backgrounddivtop {
 	width:100%;
 	text-align: center;
-	background-image: url("altbot.png");
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
 	min-height: 100vh !important;
     height: 100vh !important;
 }
