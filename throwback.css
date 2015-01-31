@@ -1,0 +1,68 @@
+* {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+p, h1, h2 {
+	cursor: default;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300 !important;
+	color: #fff;
+	background-color: #0099ff;
+	text-align: center;
+}
+div {
+	float: left
+}
+#aboutBlurb {
+	text-align: center;
+	width: 70%;
+	margin-left: 15%;
+	font-size: 140%;
+	margin-bottom: 70px;
+ 	font-weight: 10 !important;
+}
+.myheaders {
+ text-align: center;
+ font-size: 500%;
+ font-style: normal;
+ margin-top:120px;
+}
+.mydividers {
+ border:none;
+ width:85%;
+ background-color: #0099ff;
+ height: 2px;
+ margin-top:20px;
+}
+
+
+
+
+
+
+.projectRows {
+	width: 100%;
+	margin-top: 2%;
+}
+.project {
+}
+.projectLeft {
+	margin-right: 2%;
+}
+.pview {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.pdes {
+	position: relative;
+	top: -100%;
+	left: 0;
+	z-index: 20;
+}
