@@ -11,8 +11,8 @@ p, h1, h2 {
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300 !important;
-	color: #fff;
-	background-color: #0099ff;
+	color: #555;
+	background-color: #fff;
 	text-align: center;
 }
 div {
@@ -20,17 +20,18 @@ div {
 }
 #aboutBlurb {
 	text-align: center;
-	width: 70%;
-	margin-left: 15%;
-	font-size: 140%;
-	margin-bottom: 70px;
+	width: 80%;
+	margin-left: 10%;
+	font-size: 180%;
+	margin-bottom: 170px;
  	font-weight: 10 !important;
 }
 .myheaders {
  text-align: center;
- font-size: 500%;
+ font-size: 600%;
  font-style: normal;
- margin-top:120px;
+ margin-top:190px;
+ color: #0099ff;
 }
 .mydividers {
  border:none;
@@ -71,14 +72,17 @@ div {
 
 .projectRows {
 	width: 100%;
-	margin-top: 2%;
+	margin-top: 4%;
 }
 .project {
 	background-repeat:no-repeat;
 	background-size: cover;
+	box-shadow: 		0px 0px 20px #000;
+    -moz-box-shadow: 	0px 0px 20px #000;
+	-webkit-box-shadow: 0px 0px 20px #000;
 }
 .projectLeft {
-	margin-right: 2%;
+	margin-right: 4%;
 }
 .pview {
 	position: relative;

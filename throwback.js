@@ -3,12 +3,12 @@ function setUpProjects()
 	var windowWidth = $(window).width();
 	$('#project1Top').width(windowWidth*1);
 	$('#project2Top').width(windowWidth*1);
-	$('#project3Top').width(windowWidth*0.43);
-	$('#project4Top').width(windowWidth*0.55);
-	$('#project5Top').width(windowWidth*0.58);
-	$('#project6Top').width(windowWidth*0.40);
-	$('#project7Top').width(windowWidth*0.44);
-	$('#project8Top').width(windowWidth*0.539);
+	$('#project3Top').width(windowWidth*0.4199);
+	$('#project4Top').width(windowWidth*0.54);
+	$('#project5Top').width(windowWidth*0.5699);
+	$('#project6Top').width(windowWidth*0.39);
+	$('#project7Top').width(windowWidth*0.43);
+	$('#project8Top').width(windowWidth*0.5299);
 	for (var i = 1; i < 9; i++)
 	{
 		var height = $('#project'+i.toString()+'Top').height();
