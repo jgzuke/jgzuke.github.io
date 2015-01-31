@@ -109,7 +109,7 @@ $('#Contact, .Contact').click(function()
 function resizeScrolling()
 {
 	var height = $("#firstPicture").height();
-	for (var i = 1; i < 11; i++)
+	for (var i = 1; i < 13; i++)
 	{
 		$('#project'+i.toString()).height(height);
 	};
@@ -191,7 +191,7 @@ function resizeScrolling()
 }
 function setUpProjects()
 {
-	for (var i = 1; i < 11; i++)
+	for (var i = 1; i < 13; i++)
 	{
 		$('.project'+i.toString()+'slide').first().addClass('active'+i.toString());
 		$('.project'+i.toString()+'slide').hide();
@@ -279,6 +279,8 @@ function fadeOutProject(number)
 {
 	if(desktop) {$('#project'+number+'Top').fadeOut()}
 }
+$('#project11').mouseenter(function(){ fadeInProject('11'); }).mouseleave(function() { fadeOutProject('11'); });
+$('#project12').mouseenter(function(){ fadeInProject('12'); }).mouseleave(function() { fadeOutProject('12'); });
 $('#project9').mouseenter(function(){ fadeInProject('9'); }).mouseleave(function() { fadeOutProject('9'); });
 $('#project10').mouseenter(function(){ fadeInProject('10'); }).mouseleave(function() { fadeOutProject('10'); });
 $('#project1').mouseenter(function(){ fadeInProject('1'); }).mouseleave(function() { fadeOutProject('1'); });
@@ -316,3 +318,5 @@ $('#project7').click(function(){ clickMobile(7); });
 $('#project8').click(function(){ clickMobile(8); });
 $('#project9').click(function(){ clickMobile(9); });
 $('#project10').click(function(){ clickMobile(10); });
+$('#project11').click(function(){ clickMobile(11); });
+$('#project12').click(function(){ clickMobile(12); });
