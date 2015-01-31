@@ -22,6 +22,13 @@ function setUpProjects()
 $(document).ready(function()
 {
 	setUpProjects();
+
+	while($('#project1Top').height() < 100)
+	{
+		setTimeout(function (){
+			setUpProjects();
+		}, 5); // How long do you want the delay to be (in milliseconds)?
+	}
 });
 function fadeInProject(number)
 {
