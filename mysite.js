@@ -141,6 +141,7 @@ function resizeScrolling()
 	    	document.getElementById("contactForm").style.width = '100%';
 	    	document.getElementById("contactHeader").style.marginTop = '-50px';
 	    	$(".myheaders").addClass('myheadersMobile');
+	    	$('#throwbackLink').hide();
 	    	for(var i = 1; i < 5; i++)
 	    	{
 	    		document.getElementById('topLi'+i.toString()).style.height = '40px';
@@ -166,6 +167,7 @@ function resizeScrolling()
 	    	document.getElementById("contactForm").style.width = '70%';
 	    	document.getElementById("contactHeader").style.marginTop = '0px';
 	    	$(".myheaders").removeClass('myheadersMobile');
+	    	$('#throwbackLink').show();
 	    	for(var i = 1; i < 5; i++)
 	    	{
 	    		document.getElementById('topLi'+i.toString()).style.height = '60px';
