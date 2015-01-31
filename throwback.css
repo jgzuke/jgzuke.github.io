@@ -42,6 +42,30 @@ div {
 
 
 
+#project1 {
+	background-image: url('flash/view1.png');
+}
+#project2 {
+	background-image: url('flash/view2.png');
+}
+#project3 {
+	background-image: url('flash/view3.png');
+}
+#project4 {
+	background-image: url('flash/view4.png');
+}
+#project5 {
+	background-image: url('flash/view5.png');
+}
+#project6 {
+	background-image: url('flash/view6.png');
+}
+#project7 {
+	background-image: url('flash/view8.png');
+}
+#project8 {
+	background-image: url('flash/view7.png');
+}
 
 
 
@@ -50,6 +74,8 @@ div {
 	margin-top: 2%;
 }
 .project {
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 .projectLeft {
 	margin-right: 2%;
@@ -58,11 +84,11 @@ div {
 	position: relative;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 20;
 }
 .pdes {
 	position: relative;
-	top: -100%;
+	top: 0;
 	left: 0;
-	z-index: 20;
+	z-index: 30;
 }

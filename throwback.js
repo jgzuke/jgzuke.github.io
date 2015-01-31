@@ -1,21 +1,22 @@
 function setUpProjects()
 {
 	var windowWidth = $(window).width();
-	$('#project1View').width(windowWidth*1);
-	$('#project2View').width(windowWidth*1);
-	$('#project3View').width(windowWidth*0.43);
-	$('#project4View').width(windowWidth*0.55);
-	$('#project5View').width(windowWidth*0.58);
-	$('#project6View').width(windowWidth*0.40);
-	$('#project7View').width(windowWidth*0.44);
-	$('#project8View').width(windowWidth*0.539);
+	$('#project1Top').width(windowWidth*1);
+	$('#project2Top').width(windowWidth*1);
+	$('#project3Top').width(windowWidth*0.43);
+	$('#project4Top').width(windowWidth*0.55);
+	$('#project5Top').width(windowWidth*0.58);
+	$('#project6Top').width(windowWidth*0.40);
+	$('#project7Top').width(windowWidth*0.44);
+	$('#project8Top').width(windowWidth*0.539);
 	for (var i = 1; i < 9; i++)
 	{
-		var height = $('#project'+i.toString()+'View').height();
-		var width = $('#project'+i.toString()+'View').width();
+		var height = $('#project'+i.toString()+'Top').height();
+		var width = $('#project'+i.toString()+'Top').width();
 		$('#project'+i.toString()).height(height);
 		$('#project'+i.toString()).width(width);
-		$('#project'+i.toString() + 'Top').height(height);
+		$('#project'+i.toString() + 'View').width(width);
+		$('#project'+i.toString() + 'Top').fadeOut()
 	};
 }
 $(document).ready(function()
@@ -24,11 +25,11 @@ $(document).ready(function()
 });
 function fadeInProject(number)
 {
-	if(desktop) {$('#project'+number+'Top').fadeIn();}
+	$('#project'+number+'Top').fadeIn();
 }
 function fadeOutProject(number)
 {
-	if(desktop) {$('#project'+number+'Top').fadeOut()}
+	$('#project'+number+'Top').fadeOut()
 }
 $('#project1').mouseenter(function(){ fadeInProject('1'); }).mouseleave(function() { fadeOutProject('1'); });
 $('#project2').mouseenter(function(){ fadeInProject('2'); }).mouseleave(function() { fadeOutProject('2'); });
