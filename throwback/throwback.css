@@ -62,17 +62,17 @@ div {
 	background-image: url('flash/view6.png');
 }
 #project7 {
-	background-image: url('flash/view8.png');
+	background-image: url('flash/view7.png');
 }
 #project8 {
-	background-image: url('flash/view7.png');
+	background-image: url('flash/view8.png');
 }
 
 
 
 .projectRows {
 	width: 100%;
-	margin-top: 4%;
+	margin-top: 1.5625%;
 }
 .project {
 	background-repeat:no-repeat;
@@ -82,7 +82,7 @@ div {
 	-webkit-box-shadow: 0px 0px 20px #000;
 }
 .projectLeft {
-	margin-right: 4%;
+	margin-right: 1.5625%;
 }
 .pview {
 	position: relative;

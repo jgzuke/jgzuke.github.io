@@ -1,14 +1,14 @@
 function setUpProjects()
 {
 	var windowWidth = $(window).width();
-	$('#project1Top').width(windowWidth*1);
-	$('#project2Top').width(windowWidth*1);
-	$('#project3Top').width(windowWidth*0.4199);
-	$('#project4Top').width(windowWidth*0.54);
-	$('#project5Top').width(windowWidth*0.5699);
-	$('#project6Top').width(windowWidth*0.39);
-	$('#project7Top').width(windowWidth*0.43);
-	$('#project8Top').width(windowWidth*0.5299);
+	$('#project1Top').width(windowWidth*0.57447);
+	$('#project5Top').width(windowWidth*0.40937);
+	$('#project2Top').width(windowWidth*0.67343);
+	$('#project4Top').width(windowWidth*0.31033);
+	$('#project8Top').width(windowWidth*0.2133);
+	$('#project3Top').width(windowWidth*0.22856);
+	$('#project7Top').width(windowWidth*0.26041);
+	$('#project6Top').width(windowWidth*0.250859);
 	for (var i = 1; i < 9; i++)
 	{
 		var height = $('#project'+i.toString()+'Top').height();
