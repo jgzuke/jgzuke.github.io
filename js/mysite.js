@@ -224,7 +224,7 @@ $(document).ready(function()
 	{
 		$('#backgroundfixed').fadeIn(1500, 'swing');
 		$('#fullNavbar').fadeIn(1500, 'swing');
-	}, 1700);
+	}, 1200);
 	setTimeout(function ()
 	{
 		$(".projectLeft").addClass('projectOnLeft');
@@ -238,7 +238,7 @@ $(document).ready(function()
 		prevPic(6);
 		prevPic(7);
 		prevPic(8);
-	}, 1900);
+	}, 1400);
 	setTimeout(function ()
 	{
 		$('#toAbout').animate({width: '80px', height: '80px', marginTop: '0px', marginBottom: '0px'}, 'slow');
@@ -251,7 +251,7 @@ $(document).ready(function()
 		    duration:'slow'
 		},'swing');*/
 		$('body').removeClass('stop-scrolling');
-	}, 2300);
+	}, 1800);
 });
 function resize(toExpand, widthSet, heightSet, sideMargin, mwidthSet, mheightSet, msideMargin)
 {
