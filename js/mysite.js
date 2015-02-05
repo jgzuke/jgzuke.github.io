@@ -217,6 +217,13 @@ $(document).ready(function()
 	prevPic(6);
 	prevPic(7);
 	prevPic(8);
+	$("#myBody").fadeIn(1500);
+	setTimeout(function (){
+		$("#toptext").fadeIn(1500);
+	}, 1000);
+	setTimeout(function (){
+		$("#toptext").fadeIn(1500);
+	}, 1000);
 });
 function resize(toExpand, widthSet, heightSet, sideMargin, mwidthSet, mheightSet, msideMargin)
 {
