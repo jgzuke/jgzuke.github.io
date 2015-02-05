@@ -14,7 +14,6 @@ body {
 	color: #555;
 	background-color: #0099ff;
 	text-align: center;
-	display: none;
 }
 .prevLink, .nextLink {
 	cursor: pointer;
@@ -51,6 +50,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	position: fixed;
+	display: none;
 }
 #backgrounddiv {
 	/*background: url("topBack.JPG");*/
@@ -74,8 +74,10 @@ body {
     display: none;
 }
 #topname {
-	color: #FFFFFF;
-	font-size: 600%;
+	font-size: 700%;
+}
+#topdescription {
+	font-size: 250%;
 }
 #backgrounddivbottom {
 	width:100%;
@@ -85,10 +87,15 @@ body {
 #topLi1, #topLi2, #topLi3, #topLi4 {
 	width: 60px;
 	height: 60px;
+	display: none;
+}
+#tophr {
+	display: none;
 }
 #toAbout {
 	width: 80px;
 	height: 80px;
+	display: none;
 }
 #bottext {
 	vertical-align: middle;
@@ -101,12 +108,16 @@ body {
 }
 
 
-
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 
 
 #fullNavbar {
 	background-color: rgba(0, 153, 255, 0.8);
 	border-color: transparent;
+	display: none;
 }
 #navbarMain {
 	height: 60px;

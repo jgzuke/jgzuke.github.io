@@ -132,7 +132,8 @@ function resizeScrolling()
 	    if(phone)
 	    {
 	    	document.getElementById("toptext").style.marginTop = '18vh';
-	    	document.getElementById("topname").style.fontSize = "400%";
+	    	document.getElementById("topname").style.fontSize = "500%";
+	    	document.getElementById("topdescription").style.fontSize = "180%";
 	    	document.getElementById("aboutBlurb").style.marginLeft = '-10%';
 	    	document.getElementById("aboutBlurb").style.width = '120%';
 	    	document.getElementById("aboutRows").style.marginLeft = '-15%';
@@ -158,7 +159,8 @@ function resizeScrolling()
 	    } else
 	    {
 	    	document.getElementById("toptext").style.marginTop = '28vh';
-	    	document.getElementById("topname").style.fontSize = "600%";
+	    	document.getElementById("topname").style.fontSize = "700%";
+	    	document.getElementById("topdescription").style.fontSize = "250%";
 	    	document.getElementById("aboutBlurb").style.marginLeft = '0%';
 	    	document.getElementById("aboutBlurb").style.width = '100%';
 	    	document.getElementById("aboutRows").style.marginLeft = '0%';
@@ -203,13 +205,14 @@ function setUpProjects()
 		$('.active'+i.toString()+'Describe').show();
 		$('#project'+i.toString()+'Top').hide();
 	};
+
 }
 $(document).ready(function()
 {
-	resizeScrolling();
 	$(".projectLeft").addClass('projectOnLeft');
 	$(".projectRight").addClass('projectOnRight');
 	$(".projectRows").addClass('projectRowsNormal');
+	resizeScrolling();
 	setUpProjects();
 	prevPic(1);
 	prevPic(2);
@@ -217,13 +220,27 @@ $(document).ready(function()
 	prevPic(6);
 	prevPic(7);
 	prevPic(8);
-	$("#myBody").fadeIn(1500);
-	setTimeout(function (){
-		$("#toptext").fadeIn(1500);
-	}, 1000);
-	setTimeout(function (){
-		$("#toptext").fadeIn(1500);
-	}, 1000);
+
+	$('body').addClass('stop-scrolling');
+	$("#toptext").fadeIn(1000);
+	setTimeout(function ()
+	{
+		for (var i = 1; i < 5; i++)
+		{
+			$('#topLi'+i.toString()).fadeIn(1300);
+		};
+		$('#toAbout').fadeIn(1300);
+		$('#tophr').fadeIn(1300);
+	}, 300);
+	setTimeout(function ()
+	{
+		$('#backgroundfixed').fadeIn(1000);
+		$('#fullNavbar').fadeIn(1000);
+	}, 600);
+	setTimeout(function ()
+	{
+		$('body').removeClass('stop-scrolling');
+	}, 1600);
 });
 function resize(toExpand, widthSet, heightSet, sideMargin, mwidthSet, mheightSet, msideMargin)
 {
