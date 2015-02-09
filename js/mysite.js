@@ -250,8 +250,11 @@ $(document).ready(function()
 		    },
 		    duration:'slow'
 		},'swing');*/
-		$('body').removeClass('stop-scrolling');
 	}, 1800);
+	setTimeout(function ()
+	{
+		$('body').removeClass('stop-scrolling');
+	}, 2800);
 });
 function resize(toExpand, widthSet, heightSet, sideMargin, mwidthSet, mheightSet, msideMargin)
 {
