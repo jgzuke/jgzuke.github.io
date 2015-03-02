@@ -64,11 +64,13 @@ function parallaxScroll()
 			blueSectionClose = true;
 		}
 	}
-
-	var opacity = 1 - (scrolled/windowHeight*1.5);
-	document.getElementById("backgrounddivtop").style.opacity = opacity;
-	opacity = 1 - ((scrollHeight + windowHeight-scrolled)/windowHeight*1.5);
-	document.getElementById("backgrounddivbottom").style.opacity = opacity;
+	if(!phone)
+	{
+		var opacity = 1 - (scrolled/windowHeight*1.5);
+		document.getElementById("backgrounddivtop").style.opacity = opacity;
+		opacity = 1 - ((scrollHeight + windowHeight-scrolled)/windowHeight*1.5);
+		document.getElementById("backgrounddivbottom").style.opacity = opacity;
+	}
 	$('#backgrounddiv').css('top', (0 - (scrolled * .5)) + 'px');
 }
 $('#homeLink').click(function()
@@ -131,9 +133,11 @@ function resizeScrolling()
 	{
 	    if(phone)
 	    {
+			document.getElementById("backgrounddivtop").style.opacity = 1;
+			document.getElementById("backgrounddivbottom").style.opacity = 1;
 	    	document.getElementById("toptext").style.marginTop = '18vh';
 	    	document.getElementById("topname").style.fontSize = "500%";
-	    	document.getElementById("topdescription").style.fontSize = "180%";
+	    	document.getElementById("topdescription").style.fontSize = "210%";
 	    	document.getElementById("aboutBlurb").style.marginLeft = '-10%';
 	    	document.getElementById("aboutBlurb").style.width = '120%';
 	    	document.getElementById("aboutRows").style.marginLeft = '-15%';
@@ -145,17 +149,17 @@ function resizeScrolling()
 	    	$('#throwbackLink').hide();
 	    	for(var i = 1; i < 5; i++)
 	    	{
-	    		document.getElementById('topLi'+i.toString()).style.height = '40px';
-	    		document.getElementById('topLi'+i.toString()).style.width = '40px';
+	    		document.getElementById('topLi'+i.toString()).style.marginLeft = '-7px';
+	    		document.getElementById('topLi'+i.toString()).style.marginRight = '-7px';
 	    	}
-	    	document.getElementById('toAbout').style.height = '60px';
-	    	document.getElementById('toAbout').style.width = '60px';
 
 	    	$(".projectLeft").removeClass('projectOnLeft');
 	    	$(".projectRight").removeClass('projectOnRight');
 	    	$(".projectLeft, .projectRight").addClass('projectInCenter');
 	    	$(".projectRows").removeClass('projectRowsNormal');
 	    	$(".projectRows").addClass('projectRowsMobile');
+
+	    	$("#backgroundfixed").addClass('backgroundfixedMobile');
 	    } else
 	    {
 	    	document.getElementById("toptext").style.marginTop = '28vh';
@@ -172,17 +176,17 @@ function resizeScrolling()
 	    	$('#throwbackLink').show();
 	    	for(var i = 1; i < 5; i++)
 	    	{
-	    		document.getElementById('topLi'+i.toString()).style.height = '60px';
-	    		document.getElementById('topLi'+i.toString()).style.width = '60px';
+	    		document.getElementById('topLi'+i.toString()).style.marginLeft = '0px';
+	    		document.getElementById('topLi'+i.toString()).style.marginRight = '0px';
 	    	}
-	    	document.getElementById('toAbout').style.height = '80px';
-	    	document.getElementById('toAbout').style.width = '80px';
 
 	    	$(".projectLeft, .projectRight").removeClass('projectInCenter');
 	    	$(".projectLeft").addClass('projectOnLeft');
 	    	$(".projectRight").addClass('projectOnRight');
 	    	$(".projectRows").removeClass('projectRowsMobile');
 	    	$(".projectRows").addClass('projectRowsNormal');
+
+	    	$("#backgroundfixed").removeClass('backgroundfixedMobile');
 	    }
 	}
 	oldDesktop = desktop;
@@ -258,8 +262,7 @@ $(document).ready(function()
 });
 function resize(toExpand, widthSet, heightSet, sideMargin, mwidthSet, mheightSet, msideMargin)
 {
-	if(phone) $('#'+toExpand).animate({width: mwidthSet+'px', height: mheightSet+'px', marginLeft: msideMargin+'px', marginRight: msideMargin+'px'}, 'fast');
-	else $('#'+toExpand).animate({width: widthSet+'px', height: heightSet+'px', marginLeft: sideMargin+'px', marginRight: sideMargin+'px'}, 'fast');
+	if(!phone) $('#'+toExpand).animate({width: widthSet+'px', height: heightSet+'px', marginLeft: sideMargin+'px', marginRight: sideMargin+'px'}, 'fast');
 }
 $('#topLi1').mouseenter(function(){ resize('topLi1', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi1', '60', '60', '0', '40', '40', '0'); });
 $('#topLi2').mouseenter(function(){ resize('topLi2', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi2', '60', '60', '0', '40', '40', '0'); });

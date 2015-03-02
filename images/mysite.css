@@ -52,6 +52,9 @@ body {
 	position: fixed;
 	display: none;
 }
+.backgroundfixedMobile {
+	background-image: none !important;
+}
 #backgrounddiv {
 	/*background: url("topBack.JPG");*/
     width: 100%;
