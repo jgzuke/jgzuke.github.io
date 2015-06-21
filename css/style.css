@@ -1,11 +1,65 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+* {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+	cursor: default;
+}
 
 .icon-block {
   padding: 0 15px;
+}
+
+#landing-title {
+	font-size: 600%;
+}
+
+#page-home {
+	width: 90%;
+	margin-left: 5%;
+	height: 100vh;
+}
+
+#page-work {
+	width: 90%;
+	margin-left: 5%;
+}
+
+#page-contact {
+	width: 80%;
+	margin-left: 10%;
+	height: 100vh;
+}
+
+#page-contact-inner {
+	width: 100%;
+}
+
+#send-to-button {
+	float: right;
+}
+
+.home-link {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+body {
+	/*background-color: #eee;
+	/*background-image: url("../images/back.png");*/
+}
+
+#page-center {
+	background-color: #fff;
+}
+
+#my-fab-bar {
+	bottom: 50px;
+	right: 50px;
+}
+
+#page-center {
 }

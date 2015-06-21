@@ -1,7 +1,23 @@
-(function($){
-  $(function(){
+$('#fab-home').click(function()
+{
+	$('html, body').animate(
+	{
+		scrollTop: $('#page-home').offset().top
+	}, 'slow');
+});
 
-    $('.button-collapse').sideNav();
+$('#fab-work, #link-work').click(function()
+{
+	$('html, body').animate(
+	{
+		scrollTop: $('#page-work').offset().top
+	}, 'slow');
+});
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+$('#fab-contact, #link-contact').click(function()
+{
+	$('html, body').animate(
+	{
+		scrollTop: $('#page-contact').offset().top
+	}, 'slow');
+});
