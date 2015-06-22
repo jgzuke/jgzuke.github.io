@@ -24,8 +24,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #page-work {
-	width: 90%;
-	margin-left: 5%;
+	padding-top: 15%;
+	width: 120%;
+	margin-left: -10%;
 }
 
 #page-contact {
@@ -62,4 +63,37 @@ body {
 }
 
 #page-center {
+}
+
+.image-overlay-main {
+	position: relative;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.image-overlay-text {
+	position: absolute;
+    top: 0;
+    color:#fff;
+    background-color:rgba(0, 188, 212, 0.7);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    opacity:0;
+    text-align: center;
+    z-index: 10;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.image-overlay-text:hover {
+    opacity:1;
+}
+
+.image-overlay-background {
+	z-index:1;
+	width: 100%;
+	height: 100%;
 }
