@@ -9,8 +9,10 @@ p, h1, h2, h3, h4, h5, h6 {
 	cursor: default;
 }
 
-.icon-block {
-  padding: 0 15px;
+.section-header {
+	font-size: 500%;
+	margin-top: 6%;
+	margin-bottom: 3%;
 }
 
 #landing-title {
@@ -18,20 +20,20 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #page-home {
-	width: 90%;
-	margin-left: 5%;
 	height: 100vh;
 }
 
 #page-work {
-	padding-top: 15%;
-	width: 120%;
-	margin-left: -10%;
+	padding-top: 7%;
+	padding-bottom: 2%;
+}
+
+#page-work-inner {
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #page-contact {
-	width: 80%;
-	margin-left: 10%;
 	height: 100vh;
 }
 
@@ -41,11 +43,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #send-to-button {
 	float: right;
-}
-
-.home-link {
-	text-decoration: none !important;
-	cursor: pointer;
 }
 
 body {
@@ -58,30 +55,32 @@ body {
 }
 
 #my-fab-bar {
-	bottom: 50px;
-	right: 50px;
+	bottom: 30px;
+	right: 30px;
 }
 
 #page-center {
 }
 
+#image-3d {
+	width: 100%;
+    height: 100%;
+    background-image: url("../images/screenshots/3d/view1.png");
+}
+
 .image-overlay-main {
 	position: relative;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
 }
 
 .image-overlay-text {
 	position: absolute;
-    top: 0;
     color:#fff;
-    background-color:rgba(0, 188, 212, 0.7);
-    width: 100%;
-    height: 100%;
-    margin-bottom: 15px;
-    opacity:0;
-    text-align: center;
+    background-color:rgba(0, 188, 212, 0.92);
+    opacity:1;
     z-index: 10;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3.5%;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -90,6 +89,14 @@ body {
 
 .image-overlay-text:hover {
     opacity:1;
+}
+
+.image-overlay-text-title {
+	text-align: center;
+	font-style: bold;
+}
+
+.image-overlay-text-main {
 }
 
 .image-overlay-background {
