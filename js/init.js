@@ -38,8 +38,8 @@ function resizeImageOverlays() {
 
 	var heightInt = parseInt(imHeight, "10");
 	var fontSizeScale = Math.pow(heightInt, 1); //constant to keep text scaling with size
-	var fontSizeTitle = Math.floor(fontSizeScale * 0.7) + '%';
-	var fontSizeBody = Math.floor(fontSizeScale*0.47) + '%';
+	var fontSizeTitle = Math.floor(fontSizeScale * 0.65) + '%';
+	var fontSizeBody = Math.floor(fontSizeScale*0.46) + '%';
 
 	$('.image-overlay-text-title').css('font-size', fontSizeTitle);
 	$('.image-overlay-text-main').css('font-size', fontSizeBody);

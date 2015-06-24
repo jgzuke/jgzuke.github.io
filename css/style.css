@@ -9,10 +9,34 @@ p, h1, h2, h3, h4, h5, h6 {
 	cursor: default;
 }
 
+.bubbleLink1 {
+	z-index: 11;
+	margin-left: -4.5%;
+	margin-top: -1vh;
+	width:10%;
+	position:absolute;
+}
+
+.bubbleLink2 {
+	z-index: 11;
+	margin-left: 3%;
+	margin-top: -1vh;
+	width:10%;
+	position:absolute;
+}
+
+.bubbleLink3 {
+	z-index: 11;
+	margin-left: 10.5%;
+	margin-top: -1vh;
+	width:10%;
+	position:absolute;
+}
+
 .section-header {
 	font-size: 500%;
-	margin-top: 6%;
-	margin-bottom: 3%;
+	margin-top: 8vh;
+	margin-bottom: 4vh;
 }
 
 #landing-title {
@@ -50,6 +74,16 @@ body {
 	/*background-image: url("../images/back.png");*/
 }
 
+.github-li {
+	float: top;
+	float: left;
+}
+
+.web-li {
+	float: top;
+	float: left;
+}
+
 #page-center {
 	background-color: #fff;
 }
@@ -70,13 +104,14 @@ body {
 
 .image-overlay-main {
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .image-overlay-text {
 	position: absolute;
     color:#fff;
     background-color:rgba(0, 188, 212, 0.92);
-    opacity:1;
+    opacity:0;
     z-index: 10;
     padding-left: 6%;
     padding-right: 6%;
