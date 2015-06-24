@@ -43,6 +43,10 @@ p, h1, h2, h3, h4, h5, h6 {
 	font-size: 600%;
 }
 
+.landing-text {
+	font-size: 175%;
+}
+
 #page-home {
 	height: 100vh;
 }

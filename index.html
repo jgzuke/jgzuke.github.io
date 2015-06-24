@@ -6,25 +6,26 @@
   <title>Jason Zukewich</title>
 
   <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body onresize="resizeImageOverlays()" onload="resizeImageOverlays()">
   <div class="fixed-action-btn" id="my-fab-bar">
     <a class="btn-floating btn-large red">
-      <i class="large mdi-navigation-more-vert"></i>
+      <i class="large material-icons">more_vert</i>
     </a>
     <ul>
       <li><a class="btn-floating btn-large waves-effect waves-light tooltipped light-blue" data-position="left" data-tooltip="Home" id="fab-home">
-        <i class="large mdi-action-home"></i>
+        <i class="large material-icons">home</i>
       </a></li>
 
       <li><a class="btn-floating btn-large waves-effect waves-light tooltipped cyan" data-position="left" data-tooltip="Projects" id="fab-work">
-        <i class="large mdi-action-work"></i>
+        <i class="large material-icons">work</i>
       </a></li>
 
       <li><a class="btn-floating btn-large waves-effect waves-light tooltipped teal" data-position="left" data-tooltip="Contact" id="fab-contact">
-        <i class="large mdi-communication-email"></i>
+        <i class="large material-icons">email</i>
       </a></li>
 
       <li><a class="btn-floating btn-large tooltipped green" data-position="left" data-tooltip="Linkedin" href="https://ca.linkedin.com/in/jgzuke" target="_blank">in</a></li>
@@ -32,7 +33,7 @@
       <li><a class="btn-floating btn-large tooltipped light-green" data-position="left" data-tooltip="Github" href="https://github.com/jgzuke" target="_blank">gh</a></li>
 
       <li><a class="btn-floating btn-large tooltipped lime" data-position="left" data-tooltip="Resume" href="Jason_Zukewich_Resume.pdf" target="_blank">
-        <i class="large mdi-action-description"></i>
+        <i class="large material-icons">description</i>
       </a></li>
     </ul>
   </div>
@@ -42,13 +43,17 @@
       <div class="container valign">
         <h1 class="header center-align light-blue-text" id = "landing-title">Jason Zukewich</h1>
 
-        <h5 class="header center-align light grey-text text-darken-1">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things. I love to design and create cool stuff, as well as cook, build LEGOs, play board games, Ping Pong, Soccer, and Mafia.</h5>
+        <h4 class="header center-align light grey-text text-darken-1 landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things. I love to design and create cool stuff, as well as cook, build LEGOs, play board games, Ping Pong, Soccer, and Mafia.</h4>
 
-        <h5 class="header center-align light grey-text text-darken-1">Want to work together? Looking for a developer? 
+        <h4 class="header center-align light grey-text text-darken-1 landing-text">Want to work together? Looking for a developer? 
         <a class="home-link light-blue-text" id="link-contact">Contact me</a>
         , or 
-        <a class="home-link light-blue-text" id="link-work">check out my work</a>. Let's build cool stuff together.</h5>
+        <a class="home-link light-blue-text" id="link-work">check out my work</a>. Let's build cool stuff together.</h4>
       </div>
+
+      <a class="btn-floating btn-large waves-effect waves-light light-blue">
+        <img src="images/icons/github.png"/>
+      </a>
     </div>
 
     <div class="z-depth-2" id="page-work">
@@ -58,7 +63,7 @@
         <div class="row">
           <div class="col s12 m6 l4 image-overlay-main">
             <div class="image-overlay-text" id="overlay1">
-              <a href="https://github.com/jgzuke/SE-101-Domestic-Sercurity" target="_blank"><img src="images/icons/github.png" class = "bubbleLink1"/></a>
+
 
               <p class = "image-overlay-text-title">Army Commander</p>
               <p class = "image-overlay-text-main">Create and control an army using gestures for different formations and actions, as well as set new gestures to create custom groups. Enemies work together and form groups to defend themselves. Still under development</p>
@@ -78,6 +83,8 @@
 
           <div class="col s12 m6 l4 image-overlay-main">
             <div class="image-overlay-text">
+
+
               <p class = "image-overlay-text-title">IntoxicMate</p>
               <p class = "image-overlay-text-main">Uses machine learning on contextual data like location, time, and heart-rate, plus data from others to tell when you are drunk. If you are, IntoxicMate helps guide you home, calls a cab, or in emergencies calls freinds/family</p>
             </div>
