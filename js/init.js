@@ -1,4 +1,4 @@
-$('#fab-home').click(function()
+$('.link-home').click(function()
 {
 	$('html, body').animate(
 	{
@@ -6,7 +6,7 @@ $('#fab-home').click(function()
 	}, 'slow');
 });
 
-$('#fab-work, #link-work').click(function()
+$('.link-work').click(function()
 {
 	$('html, body').animate(
 	{
@@ -14,13 +14,16 @@ $('#fab-work, #link-work').click(function()
 	}, 'slow');
 });
 
-$('#fab-contact, #link-contact').click(function()
+$('.link-contact').click(function()
 {
-	$('html, body').animate(
-	{
-		scrollTop: $('#page-contact').offset().top
-	}, 'slow');
+	$('#contact-modal').openModal();
 });
+
+$('#topLi1').mouseenter(function(){ resize('topLi1', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi1', '60', '60', '0', '40', '40', '0'); });
+$('#topLi2').mouseenter(function(){ resize('topLi2', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi2', '60', '60', '0', '40', '40', '0'); });
+$('#topLi3').mouseenter(function(){ resize('topLi3', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi3', '60', '60', '0', '40', '40', '0'); });
+$('#topLi4').mouseenter(function(){ resize('topLi4', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi4', '60', '60', '0', '40', '40', '0'); });
+
 
 $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {
 	resizeImageOverlays();
@@ -54,7 +57,9 @@ function resizeImageOverlays() {
 	var landingTitle = Math.floor(textScale * 600) + '%';
 	var landingText = Math.floor(textScale * 150) + '%';
 	var normalTitle = Math.floor(textScale * 500) + '%';
+	var modalTitle = Math.floor(textScale * 230) + '%';
 	$('#landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);
 	$('.section-header').css('font-size', normalTitle);
+	$('.modal-header').css('font-size', modalTitle);
 }

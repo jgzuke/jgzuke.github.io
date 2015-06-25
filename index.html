@@ -11,50 +11,31 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body onresize="resizeImageOverlays()" onload="resizeImageOverlays()">
-  <div class="fixed-action-btn" id="my-fab-bar">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">more_vert</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating btn-large waves-effect waves-light tooltipped light-blue" data-position="left" data-tooltip="Home" id="fab-home">
-        <i class="large material-icons">home</i>
-      </a></li>
-
-      <li><a class="btn-floating btn-large waves-effect waves-light tooltipped cyan" data-position="left" data-tooltip="Projects" id="fab-work">
-        <i class="large material-icons">work</i>
-      </a></li>
-
-      <li><a class="btn-floating btn-large waves-effect waves-light tooltipped teal" data-position="left" data-tooltip="Contact" id="fab-contact">
-        <i class="large material-icons">email</i>
-      </a></li>
-
-      <li><a class="btn-floating btn-large tooltipped green" data-position="left" data-tooltip="Linkedin" href="https://ca.linkedin.com/in/jgzuke" target="_blank">in</a></li>
-
-      <li><a class="btn-floating btn-large tooltipped light-green" data-position="left" data-tooltip="Github" href="https://github.com/jgzuke" target="_blank">gh</a></li>
-
-      <li><a class="btn-floating btn-large tooltipped lime" data-position="left" data-tooltip="Resume" href="Jason_Zukewich_Resume.pdf" target="_blank">
-        <i class="large material-icons">description</i>
-      </a></li>
-    </ul>
-  </div>
-
   <div id="page-center">
-    <div class="valign-wrapper" id="page-home">
+
+    <div class="valign-wrapper light-blue" id="page-home">
       <div class="container valign">
-        <h1 class="header center-align light-blue-text" id = "landing-title">Jason Zukewich</h1>
+        <h1 class="header center-align" id = "landing-title">Jason Zukewich</h1>
 
-        <h4 class="header center-align light grey-text text-darken-1 landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things. I love to design and create cool stuff, as well as cook, build LEGOs, and play board games and sports.</h4>
+        <p class="header center-align landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things and creating cool stuff</p>
 
-        <h4 class="header center-align light grey-text text-darken-1 landing-text"><strong>Want to work together? Looking for a developer? 
-        <a class="home-link light-blue-text" id="link-contact">Contact me</a>
-        , or 
-        <a class="home-link light-blue-text" id="link-work">check out my work</a>. Let's build cool stuff together.</strong></h4>
+        <div class="center-align">
+          <a href="https://github.com/jgzuke" target="_blank"><img src="images/icons/github.png" id = "topLi1"/></a>
+          <a href="https://ca.linkedin.com/in/jgzuke/" target="_blank"><img src="images/icons/linkedin.png" id = "topLi2"/></a>
+          <a><img src="images/icons/down.png" id = "toAbout"/></a>
+          <a href="Jason_Zukewich_Resume.pdf" target="_blank"><img src="images/icons/resume.png" id = "topLi3"/></a>
+          <a class = "Contact"><img src="images/icons/email.png" id = "topLi4"/></a>
+        </div>
       </div>
     </div>
 
-    <div id="page-work">
+
+
+
+
+    <div class="cyan" id="page-work">
       <div id="page-work-inner">
-        <h1 class="section-header header center-align cyan-text">Projects</h1>
+        <h1 class="section-header header center-align">Projects</h1>
 
         <div class="row">
           <div class="col s12 m6 l4 image-overlay-main">
@@ -184,7 +165,7 @@
           </div>
         </div>
 
-        <h1 class="section-header header center-align cyan-text">Work</h1>
+        <h1 class="section-header header center-align">Work</h1>
 
         <div class="row">
           <div class="col s12 m6 l4 image-overlay-main">
@@ -222,12 +203,30 @@
           </div>
         </div>
       </div>
-    </div>
 
+
+
+      <div class="light-blue valign-wrapper" id="contact-footer">
+        <p class="header center-align landing-text footer-text">Want to work together?  
+          <a class="home-link link-contact">Contact me</a>
+          , or 
+          <a class="home-link link-work">check out my work</a>. Let's build cool stuff together.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="contact-modal" class="modal">
     <div class="valign-wrapper" id="page-contact">
       <div class="container">
         <div class="valign" id="page-contact-inner">
-          <h1 class="section-header header center-align teal-text">Contact Me</h1>
+          <h3 class="modal-header header center-align teal-text">To jzukewic@uwaterloo.ca</h3>
 
           <form method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
             <div class="row">
@@ -237,13 +236,9 @@
               </div>
 
               <div class="input-field col m6 s12">
-                <input disabled value="To: jzukewic@uwaterloo.ca" type="text" class="validate">
-              </div>
-            </div>
-
-            <div class="input-field">
-              <input type="text" name="_subject" class="validate">
+                <input type="text" name="_subject" class="validate">
               <label for="subject">Subject</label>
+              </div>
             </div>
 
             <div class="input-field">
@@ -259,6 +254,33 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="fixed-action-btn" id="my-fab-bar">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">more_vert</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped light-blue link-home" data-position="left" data-tooltip="Home">
+          <i class="large material-icons">home</i>
+        </a></li>
+
+        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped cyan link-work" data-position="left" data-tooltip="Projects">
+          <i class="large material-icons">work</i>
+        </a></li>
+
+        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped teal link-contact" data-position="left" data-tooltip="Contact">
+          <i class="large material-icons">email</i>
+        </a></li>
+
+        <li><a class="btn-floating btn-large tooltipped green" data-position="left" data-tooltip="Linkedin" href="https://ca.linkedin.com/in/jgzuke" target="_blank">in</a></li>
+
+        <li><a class="btn-floating btn-large tooltipped light-green" data-position="left" data-tooltip="Github" href="https://github.com/jgzuke" target="_blank">gh</a></li>
+
+        <li><a class="btn-floating btn-large tooltipped lime" data-position="left" data-tooltip="Resume" href="Jason_Zukewich_Resume.pdf" target="_blank">
+          <i class="large material-icons">description</i>
+        </a></li>
+    </ul>
   </div>
 
   <!--  Scripts-->
