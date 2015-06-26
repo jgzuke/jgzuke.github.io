@@ -10,27 +10,43 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .bubbleLink1 {
-	z-index: 11;
-	margin-left: -4.5%;
-	margin-top: -1vh;
-	width:10%;
-	position:absolute;
+	margin-left: -5%;
 }
 
 .bubbleLink2 {
-	z-index: 11;
 	margin-left: 3%;
-	margin-top: -1vh;
-	width:10%;
-	position:absolute;
 }
 
 .bubbleLink3 {
+	margin-left: 11%;
+}
+
+.bubbleLink {
 	z-index: 11;
-	margin-left: 10.5%;
-	margin-top: -1vh;
+	margin-top: -3%;
 	width:10%;
 	position:absolute;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.bubbleLink:hover {
+	margin-top: -4%;
+	width:12%;
+}
+
+.bubbleLink1:hover {
+	margin-left: -6%;
+}
+
+.bubbleLink2:hover {
+	margin-left: 2%;
+}
+
+.bubbleLink3:hover {
+	margin-left: 10%;
 }
 
 .section-header {
@@ -43,39 +59,37 @@ p, h1, h2, h3, h4, h5, h6 {
 	font-size: 600%;
 }
 
-.landing-text {
-	font-size: 175%;
+#page-home-background {
+	background-image: url("../images/enflick-games.jpg");
+}
+
+#page-projects-background {
+	background-image: url("../images/enghack.jpg");
+}
+
+#page-work-background {
+	background-image: url("../images/hack-the-north.jpg");
+}
+
+.page-background {
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #page-home {
 	height: 100vh;
+	background-color:rgba(33, 150, 243, 0.89);
 }
 
-.home-link {
-	color: #81d4fa;
-	cursor: pointer;
-}
-
-#topLi1, #topLi2, #topLi3, #topLi4 {
-	width: 60px;
-	height: 60px;
-	margin-bottom: 10px;
-}
-
-#toAbout {
-	width: 80px;
-	height: 80px;
-}
-
-.footer-text {
-	width: 100%;
-	display: inline;
+#page-projects {
+	padding-top: 7%;
+	background-color:rgba(3, 169, 244, 0.89);
 }
 
 #page-work {
 	padding-top: 7%;
-	padding-bottom: 0%;
-	margin-bottom: 0;
+	background-color:rgba(0, 188, 212, 0.89);
 }
 
 #page-work-inner {
@@ -83,9 +97,82 @@ p, h1, h2, h3, h4, h5, h6 {
 	padding-right: 10%;
 }
 
+.my-work-row {
+	margin-bottom: 0vh !important;
+	padding-bottom: 0vh !important;
+}
+
+#page-projects-inner {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
+.home-link {
+	color: #f8bbd0;
+	cursor: pointer;
+}
+
+#bubbleLinks {
+	margin-top: -10px;
+}
+
+.bubbleLinkTop {
+	width: 60px;
+	height: 60px;
+	margin: 0px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.bubbleLinkTop:hover {
+    width: 80px;
+	height: 80px;
+	margin: -10px;
+    opacity:1;
+}
+
+.bottom-div-button {
+	z-index: 20;
+	position:absolute;
+	width: 40px;
+	height: 40px;
+	left:0;
+    right:0;
+    bottom: 10px;
+    margin-left:auto;
+    margin-right:auto;
+	cursor: pointer;
+}
+
+.expand-more-projects {
+	z-index: 20;
+	width: 40px;
+	height: 40px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.collapse-more-projects {
+	z-index: 20;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+.footer-text {
+	width: 100%;
+	display: inline;
+}
+
 #contact-footer {
 	width: 100%;
-	height: 10vh;
+	height: 9vh;
 }
 
 #send-to-button {
@@ -103,8 +190,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-	/*background-color: #eee;
-	/*background-image: url("../images/back.png");*/
+	color: #fff;
+	background-color: #fff;
 }
 
 .github-li {
@@ -117,17 +204,15 @@ body {
 	float: left;
 }
 
-#page-center {
-	color: #fff;
-	background-color: #fff;
-}
-
 #my-fab-bar {
 	bottom: 30px;
 	right: 30px;
 }
 
-#page-center {
+.fab-img {
+	width: 40px;
+	height: 40px;
+	margin-top: 8px; 
 }
 
 #contact-modal {
@@ -149,9 +234,16 @@ body {
 	margin-bottom: 20px;
 }
 
+.image-overlay-project {
+    background-color:rgba(240, 98, 146, 0.89);
+}
+
+.image-overlay-work {
+    background-color:rgba(213, 101, 173, 0.89); /* 186, 104, 200		149, 117, 205 */
+}
+
 .image-overlay-text {
 	position: absolute;
-    background-color:rgba(240, 98, 146, 0.92);
     opacity:0;
     z-index: 10;
     padding-left: 6%;

@@ -10,7 +10,7 @@ $('.link-work').click(function()
 {
 	$('html, body').animate(
 	{
-		scrollTop: $('#page-work').offset().top
+		scrollTop: $('#page-projects').offset().top
 	}, 'slow');
 });
 
@@ -19,11 +19,29 @@ $('.link-contact').click(function()
 	$('#contact-modal').openModal();
 });
 
-$('#topLi1').mouseenter(function(){ resize('topLi1', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi1', '60', '60', '0', '40', '40', '0'); });
-$('#topLi2').mouseenter(function(){ resize('topLi2', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi2', '60', '60', '0', '40', '40', '0'); });
-$('#topLi3').mouseenter(function(){ resize('topLi3', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi3', '60', '60', '0', '40', '40', '0'); });
-$('#topLi4').mouseenter(function(){ resize('topLi4', '80', '80', '-10', '60', '60', '-10'); }).mouseleave(function() { resize('topLi4', '60', '60', '0', '40', '40', '0'); });
+$('.expand-more-projects').click(function()
+{
+	showExtraProjects();
+});
 
+$('.collapse-more-projects').click(function()
+{
+	hideExtraProjects();
+});
+
+function hideExtraProjects() {
+	extraProjectsHidden = true;
+	$('.image-overlay-extra').hide();
+	$('.collapse-more-projects').hide();
+	$('.expand-more-projects').show();
+}
+
+function showExtraProjects() {
+	extraProjectsHidden = false;
+	$('.image-overlay-extra').show();
+	$('.expand-more-projects').hide();
+	$('.collapse-more-projects').show();
+}
 
 $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {
 	resizeImageOverlays();
@@ -31,6 +49,7 @@ $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFu
 
 $(document).ready(function() {
 	resizeImageOverlays();
+	hideExtraProjects();
 });
 
 function resizeImageOverlays() {
@@ -56,10 +75,12 @@ function resizeImageOverlays() {
 
 	var landingTitle = Math.floor(textScale * 600) + '%';
 	var landingText = Math.floor(textScale * 150) + '%';
+	var footerText = Math.floor(textScale * 100) + '%';
 	var normalTitle = Math.floor(textScale * 500) + '%';
 	var modalTitle = Math.floor(textScale * 230) + '%';
 	$('#landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);
+	$('.footer-text').css('font-size', footerText);
 	$('.section-header').css('font-size', normalTitle);
 	$('.modal-header').css('font-size', modalTitle);
 }
