@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <a><img src="images/icons/ic_down.png" class="link-work bottom-div-button"/></a>
+      <a><img src="images/icons/ic_down.png" class="link-projects bottom-div-button"/></a>
     </div>
   </div>
 
@@ -166,9 +166,9 @@
             <img class="image-overlay-background" src="./images/screenshots/aimaker/view1.png"/>
           </div>
         </div>
+        <a><img src="images/icons/ic_more_vert.png" class="expand-more-projects right"/></a>
+        <a><img src="images/icons/ic_arrow_up.png" class="collapse-more-projects left"/></a>
       </div>
-      <a><img src="images/icons/ic_more_vert.png" class="expand-more-projects"/></a>
-      <a><img src="images/icons/ic_arrow_up.png" class="collapse-more-projects"/></a>
     </div>
   </div>
 
@@ -221,7 +221,8 @@
     <div class="valign-wrapper" id="page-contact">
       <div class="container white-text">
         <div class="valign" id="page-contact-inner">
-          <h3 class="modal-header header center-align">To jzukewic@uwaterloo.ca</h3>
+          <h1 class="section-header header center-align" id="contact-header">Contact</h1>
+          <p class="header center-align" id="contact-header-sub">To jzukewic@uwaterloo.ca</p>
 
           <form autocomplete="off" method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
             <div class="row">
@@ -232,7 +233,7 @@
 
               <div class="input-field col m6 s12">
                 <input type="text" name="_subject" class="validate">
-              <label for="subject">Subject</label>
+                <label for="subject">Subject</label>
               </div>
             </div>
 
@@ -242,6 +243,7 @@
               <label for="message">Message</label>
             </div>
 
+              <!-- blue-text text-lighten-3 -->
             <button class="btn-flat white-text waves-effect waves-white" type="submit" name="action" id="send-to-button">Send
               <i class="mdi-content-send right"></i>
             </button>
@@ -267,19 +269,23 @@
           <i class="large material-icons">home</i>
         </a></li>
 
-        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped light-blue link-work" data-position="left" data-tooltip="Projects">
+        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped light-blue link-projects" data-position="left" data-tooltip="Projects">
+          <i class="large material-icons">build</i>
+        </a></li>
+
+        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped cyan link-work" data-position="left" data-tooltip="Work">
           <i class="large material-icons">work</i>
         </a></li>
 
-        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped cyan link-contact" data-position="left" data-tooltip="Contact">
+        <li><a class="btn-floating btn-large waves-effect waves-light tooltipped teal link-contact" data-position="left" data-tooltip="Contact">
           <i class="large material-icons">email</i>
         </a></li>
 
-        <li><a class="btn-floating btn-large tooltipped teal" data-position="left" data-tooltip="Resume" href="Jason_Zukewich_Resume.pdf" target="_blank">
+        <li><a class="btn-floating btn-large tooltipped green" data-position="left" data-tooltip="Resume" href="Jason_Zukewich_Resume.pdf" target="_blank">
           <i class="large material-icons">description</i>
         </a></li>
 
-        <li><a class="btn-floating btn-large tooltipped green" data-position="left" data-tooltip="Linkedin" href="https://ca.linkedin.com/in/jgzuke" target="_blank"><img src="images/icons/linkedin.png" class="fab-img"/></a></li>
+        <li><a class="btn-floating btn-large tooltipped light-green" data-position="left" data-tooltip="Linkedin" href="https://ca.linkedin.com/in/jgzuke" target="_blank"><img src="images/icons/linkedin.png" class="fab-img"/></a></li>
 
         <li><a class="btn-floating btn-large tooltipped light-green" data-position="left" data-tooltip="Github" href="https://github.com/jgzuke" target="_blank"><img src="images/icons/github.png" class="fab-img"/></a></li>
     </ul>

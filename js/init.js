@@ -4,9 +4,15 @@ $('.link-home').click(function() {
 	}, 'slow');
 });
 
-$('.link-work').click(function() {
+$('.link-projects').click(function() {
 	$('html, body').animate({
 		scrollTop: $('#page-projects').offset().top
+	}, 'slow');
+});
+
+$('.link-work').click(function() {
+	$('html, body').animate({
+		scrollTop: $('#page-work').offset().top
 	}, 'slow');
 });
 
@@ -69,11 +75,9 @@ function resizeImageOverlays() {
 	var textScale = Math.pow($(window).width(), 0.48) / 30;
 
 	var landingTitle = Math.floor(textScale * 600) + '%';
-	var landingText = Math.floor(textScale * 150) + '%';
-	var normalTitle = Math.floor(textScale * 500) + '%';
-	var modalTitle = Math.floor(textScale * 230) + '%';
+	var landingText = Math.floor(textScale * 180) + '%';
+	var normalTitle = Math.floor(textScale * 400) + '%';
 	$('#landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);
 	$('.section-header').css('font-size', normalTitle);
-	$('.modal-header').css('font-size', modalTitle);
 }
