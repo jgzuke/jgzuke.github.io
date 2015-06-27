@@ -71,6 +71,10 @@ p, h1, h2, h3, h4, h5, h6 {
 	background-image: url("../images/hack-the-north.jpg");
 }
 
+#page-contact-background {
+	background-image: url("../images/enflick-games.jpg");
+}
+
 .page-background {
 	background-repeat:no-repeat;
 	background-size: cover;
@@ -92,9 +96,18 @@ p, h1, h2, h3, h4, h5, h6 {
 	background-color:rgba(0, 188, 212, 0.89);
 }
 
+#page-contact {
+	height: 100vh;
+	background-color:rgba(0, 150, 136, 0.89);
+}
+
 #page-work-inner {
 	padding-left: 10%;
 	padding-right: 10%;
+}
+
+#page-contact-inner {
+	width: 100%;
 }
 
 .my-work-row {
@@ -165,28 +178,8 @@ p, h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 }
 
-.footer-text {
-	width: 100%;
-	display: inline;
-}
-
-#contact-footer {
-	width: 100%;
-	height: 9vh;
-}
-
 #send-to-button {
 	float: right;
-}
-
-#page-contact {
-	width: 100%;
-	padding-top: 12vh;
-	padding-bottom: 5vh;
-}
-
-#page-contact-inner {
-	width: 100%;
 }
 
 body {
@@ -271,4 +264,38 @@ body {
 	z-index:1;
 	width: 100%;
 	height: 100%;
+}
+
+/* icon prefix, label focus color */
+.input-field label {
+    color: #fff;
+}
+
+   /* label focus color */
+.input-field .prefix.active, .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .input-field textarea[type=text]:focus + label {
+    color: #f06292;
+}
+   /* label focus color */
+.input-field input[type=text]:invalid + label, .input-field input[type=email]:invalid + label, .input-field textarea[type=text]:invalid + label {
+    color: #f44336;
+}
+	/* label unfocus color */
+.input-field input[type=text], .input-field input[type=email], .input-field textarea[type=text] {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0px 0 0 #fff;
+}
+   /* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field textarea[type=text]:focus {
+    border-bottom: 1px solid #f06292;
+    box-shadow: 0 0px 0 0 #fff;
+}
+  /* valid color */
+.input-field input[type=text].valid, .input-field input[type=email].valid, .input-field textarea[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0px 0 0 #fff;
+}
+   /* invalid color */
+.input-field input[type=text].invalid, .input-field input[type=email].invalid, .input-field textarea[type=text].invalid {
+    border-bottom: 1px solid #f44336;
+    box-shadow: 0 0px 0 0 #fff;
 }

@@ -217,28 +217,13 @@
     </div>
   </div>
 
-
-
-  <div class="blue valign-wrapper" id="contact-footer">
-    <p class="header center-align footer-text">Looking for a developer?  
-      <a class="home-link link-contact">Contact me</a>, or check out my 
-      <a class="home-link link-work">projects</a>. Let's build cool stuff together.</p>
-  </div>
-
-
-
-
-
-
-
-
-  <div id="contact-modal" class="modal">
+  <div id="page-contact-background" class="page-background">
     <div class="valign-wrapper" id="page-contact">
-      <div class="container">
+      <div class="container white-text">
         <div class="valign" id="page-contact-inner">
-          <h3 class="modal-header header center-align teal-text">To jzukewic@uwaterloo.ca</h3>
+          <h3 class="modal-header header center-align">To jzukewic@uwaterloo.ca</h3>
 
-          <form method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
+          <form autocomplete="off" method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
             <div class="row">
               <div class="input-field col m6 s12">
                 <input type="email" name="_replyto" class="validate">
@@ -252,12 +237,12 @@
             </div>
 
             <div class="input-field">
-              <i style="color: #999" class="mdi-editor-mode-edit prefix"></i>
+              <i class="mdi-editor-mode-edit prefix"></i>
               <textarea type="text" name="message" class="materialize-textarea"></textarea>
               <label for="message">Message</label>
             </div>
 
-            <button class="btn waves-effect waves-light" type="submit" name="action" id="send-to-button">Send
+            <button class="btn-flat white-text waves-effect waves-white" type="submit" name="action" id="send-to-button">Send
               <i class="mdi-content-send right"></i>
             </button>
           </form>
@@ -265,6 +250,13 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
 
   <div class="fixed-action-btn" id="my-fab-bar">
     <a class="btn-floating btn-large red">

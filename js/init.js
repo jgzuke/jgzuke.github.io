@@ -1,31 +1,26 @@
-$('.link-home').click(function()
-{
-	$('html, body').animate(
-	{
+$('.link-home').click(function() {
+	$('html, body').animate({
 		scrollTop: $('#page-home').offset().top
 	}, 'slow');
 });
 
-$('.link-work').click(function()
-{
-	$('html, body').animate(
-	{
+$('.link-work').click(function() {
+	$('html, body').animate({
 		scrollTop: $('#page-projects').offset().top
 	}, 'slow');
 });
 
-$('.link-contact').click(function()
-{
-	$('#contact-modal').openModal();
+$('.link-contact').click(function() {
+	$('html, body').animate({		
+		scrollTop: $('#page-contact').offset().top		
+	}, 'slow');
 });
 
-$('.expand-more-projects').click(function()
-{
+$('.expand-more-projects').click(function() {
 	showExtraProjects();
 });
 
-$('.collapse-more-projects').click(function()
-{
+$('.collapse-more-projects').click(function() {
 	hideExtraProjects();
 });
 
@@ -75,12 +70,10 @@ function resizeImageOverlays() {
 
 	var landingTitle = Math.floor(textScale * 600) + '%';
 	var landingText = Math.floor(textScale * 150) + '%';
-	var footerText = Math.floor(textScale * 100) + '%';
 	var normalTitle = Math.floor(textScale * 500) + '%';
 	var modalTitle = Math.floor(textScale * 230) + '%';
 	$('#landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);
-	$('.footer-text').css('font-size', footerText);
 	$('.section-header').css('font-size', normalTitle);
 	$('.modal-header').css('font-size', modalTitle);
 }
