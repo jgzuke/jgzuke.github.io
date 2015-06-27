@@ -170,18 +170,24 @@ p, h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 }
 
-.expand-more-projects {
+.select-projects {
 	z-index: 20;
-	width: 40px;
-	height: 40px;
+	width: 70px;
+	height: 70px;
 	cursor: pointer;
+	position: absolute;
 }
 
-.collapse-more-projects {
-	z-index: 20;
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
+.select-projects-container {
+	padding-bottom: 100px;
+}
+
+.select-projects-next {
+	right: 4.5%;
+}
+
+.select-projects-prev {
+	left: 4.5%;
 }
 
 #send-to-button {

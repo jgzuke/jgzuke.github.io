@@ -22,26 +22,52 @@ $('.link-contact').click(function() {
 	}, 'slow');
 });
 
-$('.expand-more-projects').click(function() {
-	showExtraProjects();
+$('.select-projects-next').click(function() {
+	if(currentProjectScreen == 1) {
+		showSecondProjects();
+	} else {
+		showThirdProjects();
+	}
 });
 
-$('.collapse-more-projects').click(function() {
-	hideExtraProjects();
+$('.select-projects-prev').click(function() {
+	if(currentProjectScreen == 3) {
+		showSecondProjects();
+	} else {
+		showFirstProjects();
+	}
 });
 
-function hideExtraProjects() {
-	extraProjectsHidden = true;
-	$('.image-overlay-extra').hide();
-	$('.collapse-more-projects').hide();
-	$('.expand-more-projects').show();
+var currentProjectScreen = 1;
+
+function showFirstProjects() {
+	currentProjectScreen = 1;
+	$('.image-overlay-first').show();
+	$('.image-overlay-second').hide();
+	$('.image-overlay-third').hide();
+
+	$('.select-projects-prev').hide();
+	$('.select-projects-next').show();
 }
 
-function showExtraProjects() {
-	extraProjectsHidden = false;
-	$('.image-overlay-extra').show();
-	$('.expand-more-projects').hide();
-	$('.collapse-more-projects').show();
+function showSecondProjects() {
+	currentProjectScreen = 2;
+	$('.image-overlay-first').hide();
+	$('.image-overlay-second').show();
+	$('.image-overlay-third').hide();
+
+	$('.select-projects-prev').show();
+	$('.select-projects-next').show();
+}
+
+function showThirdProjects() {
+	currentProjectScreen = 3;
+	$('.image-overlay-first').hide();
+	$('.image-overlay-second').hide();
+	$('.image-overlay-third').show();
+
+	$('.select-projects-prev').show();
+	$('.select-projects-next').hide();
 }
 
 $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {
@@ -50,7 +76,7 @@ $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFu
 
 $(document).ready(function() {
 	resizeImageOverlays();
-	hideExtraProjects();
+	showFirstProjects();
 });
 
 function resizeImageOverlays() {
