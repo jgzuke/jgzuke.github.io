@@ -23,26 +23,34 @@ $('.link-contact').click(function() {
 });
 
 $('.select-projects-next').click(function() {
-	if(currentProjectScreen == 1) {
-		showSecondProjects();
-	} else {
-		showThirdProjects();
-	}
+	showProjectSet(currentProjectSet + 1);
 });
 
 $('.select-projects-prev').click(function() {
-	if(currentProjectScreen == 3) {
-		showSecondProjects();
-	} else {
-		showFirstProjects();
-	}
+	showProjectSet(currentProjectSet - 1);
 });
 
-var currentProjectScreen = 1;
+var currentProjectSet = 1;
+var projectChangeAnimationTime = 300;
+
+function showProjectSet(num) {
+	//$('#my-work-row').fadeOut(projectChangeAnimationTime, function() {
+		if(num == 1) {
+			showFirstProjects();
+		}
+		if(num == 2) {
+			showSecondProjects();
+		}
+		if(num == 3) {
+			showThirdProjects();
+		}
+        //$('#my-work-row').fadeIn(projectChangeAnimationTime);
+    //});
+}
 
 function showFirstProjects() {
-	currentProjectScreen = 1;
-	$('.image-overlay-first').show();
+	currentProjectSet = 1;
+    $('.image-overlay-first').show();
 	$('.image-overlay-second').hide();
 	$('.image-overlay-third').hide();
 
@@ -51,7 +59,7 @@ function showFirstProjects() {
 }
 
 function showSecondProjects() {
-	currentProjectScreen = 2;
+	currentProjectSet = 2;
 	$('.image-overlay-first').hide();
 	$('.image-overlay-second').show();
 	$('.image-overlay-third').hide();
@@ -61,7 +69,7 @@ function showSecondProjects() {
 }
 
 function showThirdProjects() {
-	currentProjectScreen = 3;
+	currentProjectSet = 3;
 	$('.image-overlay-first').hide();
 	$('.image-overlay-second').hide();
 	$('.image-overlay-third').show();
