@@ -67,7 +67,7 @@ function showSecondProjects() {
 	$('.image-overlay-third').hide();
 
 	$('.select-projects-prev').show();
-	$('.select-projects-next').show();
+	$('.select-projects-next').hide(); //show();
 }
 
 function showThirdProjects() {
