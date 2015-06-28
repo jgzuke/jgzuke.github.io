@@ -31,10 +31,12 @@ $('.select-projects-prev').click(function() {
 });
 
 var currentProjectSet = 1;
-var projectChangeAnimationTime = 300;
+var projectChangeAnimationTime = 150;
 
 function showProjectSet(num) {
-	//$('#my-work-row').fadeOut(projectChangeAnimationTime, function() {
+	$('#projects-table').fadeOut(projectChangeAnimationTime);
+
+	setTimeout(function () {
 		if(num == 1) {
 			showFirstProjects();
 		}
@@ -44,8 +46,8 @@ function showProjectSet(num) {
 		if(num == 3) {
 			showThirdProjects();
 		}
-        //$('#my-work-row').fadeIn(projectChangeAnimationTime);
-    //});
+		$('#projects-table').fadeIn(projectChangeAnimationTime);
+	}, projectChangeAnimationTime);
 }
 
 function showFirstProjects() {
