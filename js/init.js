@@ -85,14 +85,24 @@ $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFu
 });
 
 $(document).ready(function() {
-	resizeImageOverlays();
 	showFirstProjects();
+	resizeImageOverlays();
 });
 
 function resizeImageOverlays() {
 	// Sets overlays to same hieght and width as pictures
-	var imHeight = $('#firstPicture').css('height');
-	var imWidth = $('#firstPicture').css('width');
+	var imHeight;
+	var imWidth
+	if(currentProjectSet == 1) {
+		imHeight = $('#project-pic-first').css('height');
+		imWidth = $('#project-pic-first').css('width');
+	} else if(currentProjectSet == 2) {
+		imHeight = $('#project-pic-second').css('height');
+		imWidth = $('#project-pic-second').css('width');
+	} else {
+		imHeight = $('#project-pic-third').css('height');
+		imWidth = $('#project-pic-third').css('width');
+	}
 	$('.image-overlay-text').css('height', imHeight);
 	$('.image-overlay-text').css('width', imWidth);
 
