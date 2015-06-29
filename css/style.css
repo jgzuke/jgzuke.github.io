@@ -83,22 +83,22 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #page-home {
 	height: 100vh;
-	background-color:rgba(33, 150, 243, 0.93);
+	background-color:rgba(33, 150, 243, 0.89);
 }
 
 #page-projects {
 	padding-top: 4%;
-	background-color:rgba(3, 169, 244, 0.93);
+	background-color:rgba(3, 169, 244, 0.89);
 }
 
 #page-work {
 	padding-top: 4%;
-	background-color:rgba(0, 188, 212, 0.93);
+	background-color:rgba(0, 188, 212, 0.89);
 }
 
 #page-contact {
 	height: 100vh;
-	background-color:rgba(0, 169, 174, 0.93);
+	background-color:rgba(0, 169, 174, 0.89);
 }
 
 #page-work-inner {
