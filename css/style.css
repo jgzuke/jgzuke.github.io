@@ -60,19 +60,19 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #page-home-background {
-	background-image: url("../images/back/enflick.jpg");
+	background-image: url("../images/back/1.jpg");
 }
 
 #page-projects-background {
-	background-image: url("../images/back/enghack.jpg");
+	background-image: url("../images/back/2.jpg");
 }
 
 #page-work-background {
-	background-image: url("../images/back/htn-1.jpg");
+	background-image: url("../images/back/3.jpg");
 }
 
 #page-contact-background {
-	background-image: url("../images/back/htn-2.jpg");
+	background-image: url("../images/back/4.jpg");
 }
 
 .page-background {
