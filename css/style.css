@@ -49,30 +49,17 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin-left: 10%;
 }
 
-.section-header {
-	font-size: 500%;
-	margin-top: 8vh;
-	margin-bottom: 4vh;
-}
-
-#landing-title {
-	font-size: 600%;
-}
-
 #page-home-background {
 	background-image: url("../images/back/1.jpg");
+	width: 30%;
+	float: left;
+	position: fixed;
 }
 
 #page-projects-background {
 	background-image: url("../images/back/2.jpg");
-}
-
-#page-work-background {
-	background-image: url("../images/back/3.jpg");
-}
-
-#page-contact-background {
-	background-image: url("../images/back/4.jpg");
+	width: 70%;
+	float: right;
 }
 
 .page-background {
@@ -109,20 +96,6 @@ p, h1, h2, h3, h4, h5, h6 {
     /*background-color:rgba(240, 98, 146, 0.89);*/
 }
 
-.image-overlay-work {
-    background-color:rgba(255, 120, 240, 0.9); /* 186, 104, 200		149, 117, 205 */
-    /*background-color:rgba(213, 101, 173, 0.89);*/
-}
-
-#page-work-inner {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-#page-contact-inner {
-	width: 100%;
-}
-
 #contact-header {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -142,19 +115,13 @@ p, h1, h2, h3, h4, h5, h6 {
 	padding-right: 10%;
 }
 
-
-.home-link {
-	color: #f8bbd0;
-	cursor: pointer;
-}
-
 #bubbleLinks {
 	margin-top: -10px;
 }
 
 .bubbleLinkTop {
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	margin: 0px;
 	cursor: pointer;
 	-webkit-transition: all 0.5s ease;
@@ -164,43 +131,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .bubbleLinkTop:hover {
-    width: 80px;
-	height: 80px;
+    width: 70px;
+	height: 70px;
 	margin: -10px;
     opacity:1;
-}
-
-.bottom-div-button {
-	z-index: 20;
-	position:absolute;
-	width: 50px;
-	height: 50px;
-	left:0;
-    right:0;
-    bottom: 10px;
-    margin-left:auto;
-    margin-right:auto;
-	cursor: pointer;
-}
-
-.select-projects {
-	z-index: 20;
-	width: 70px;
-	height: 70px;
-	cursor: pointer;
-	position: absolute;
-}
-
-.select-projects-container {
-	padding-bottom: 90px;
-}
-
-.select-projects-next {
-	right: 5%;
-}
-
-.select-projects-prev {
-	left: 5%;
 }
 
 #send-to-button {
@@ -210,27 +144,6 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
 	color: #fff;
 	background-color: #fff;
-}
-
-#my-fab-bar {
-	bottom: 20px;
-	right: 20px;
-}
-
-.fab-img {
-	width: 36px;
-	height: 36px;
-}
-
-.btn-medium {
-  height: 48px;
-  width: 48px;
-  line-height: 48px;
-  padding-top: 6px; 
-}
-
-.btn-medium i {
-    font-size: 1.4rem;
 }
 
 /*76	175	80	green
