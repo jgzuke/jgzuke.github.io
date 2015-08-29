@@ -62,6 +62,11 @@ p, h1, h2, h3, h4, h5, h6 {
 	float: right;
 }
 
+#projects-table {
+	padding: 5%;
+	background-color:rgba(3, 169, 244, 0.89);
+}
+
 .page-background {
 	background-repeat:no-repeat;
 	background-size: cover;
@@ -71,12 +76,6 @@ p, h1, h2, h3, h4, h5, h6 {
 #page-home {
 	height: 100vh;
 	background-color:rgba(33, 150, 243, 0.89);
-}
-
-#page-projects {
-	padding-top: 4%;
-	/*background-color:rgba(33, 243, 126, 0.89);*/
-	background-color:rgba(3, 169, 244, 0.89);
 }
 
 #page-work {
@@ -108,11 +107,6 @@ p, h1, h2, h3, h4, h5, h6 {
 .my-work-row {
 	margin-bottom: 0vh !important;
 	padding-bottom: 0vh !important;
-}
-
-#page-projects-inner {
-	padding-left: 10%;
-	padding-right: 10%;
 }
 
 #bubbleLinks {
