@@ -5,6 +5,7 @@
    -ms-user-select: none;
    user-select: none;
 }
+
 p, h1, h2, h3, h4, h5, h6 {
 	cursor: default;
 }
@@ -56,6 +57,11 @@ p, h1, h2, h3, h4, h5, h6 {
 	position: fixed;
 }
 
+#page-home {
+	height: 100vh;
+	background-color:rgba(33, 150, 243, 0.89);
+}
+
 #page-projects-background {
 	background-image: url("../images/back/2.jpg");
 	width: 70%;
@@ -73,35 +79,14 @@ p, h1, h2, h3, h4, h5, h6 {
 	background-position: center;
 }
 
-#page-home {
-	height: 100vh;
-	background-color:rgba(33, 150, 243, 0.89);
-}
-
-#page-work {
-	padding-top: 4%;
-	/*background-color:rgba(243, 126, 33, 0.89);*/
-	background-color:rgba(0, 188, 212, 0.89);
-}
-
-#page-contact {
-	height: 100vh;
-	/*background-color:rgba(243, 33, 150, 0.89);*/
-	background-color:rgba(0, 169, 174, 0.89);
+#contact-modal {
+	padding: 10vh !important;
+	background-color:rgb(0, 169, 174) !important;
+	max-height: 80vh !important;
 }
 
 .image-overlay-project {
     background-color:rgba(253, 117, 211, 0.9);
-    /*background-color:rgba(240, 98, 146, 0.89);*/
-}
-
-#contact-header {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-#contact-header-sub {
-	margin-top: 0;
 }
 
 .my-work-row {
