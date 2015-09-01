@@ -2,11 +2,25 @@ $('.link-contact').click(function() {
 	$('#contact-modal').openModal();
 });
 
-var projectChangeAnimationTime = 150;
+$('.projects-main').click(function() {
+	showProjectSet(0);
+});
+$('.projects-work').click(function() {
+	showProjectSet(1);
+});
+$('.projects-android').click(function() {
+	showProjectSet(2);
+});
+$('.projects-web').click(function() {
+	showProjectSet(3);
+});
 
+var projectChangeAnimationTime = 150;
+var projectSet = 0;
 var projectSets = ['main', 'work', 'android', 'web']
 
 function showProjectSet(num) {
+	projectSet = num;
 	$('#projects-table').fadeOut(projectChangeAnimationTime);
 
 	setTimeout(function () {

@@ -1,0 +1,136 @@
+* {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  cursor: default; }
+
+body {
+  color: #fff;
+  background-color: #fff; }
+
+#page-home-background {
+  background-image: url("../images/back/1.jpg");
+  width: 30%;
+  float: left;
+  position: fixed; }
+
+#page-home {
+  height: 100vh;
+  background-color: rgba(33, 150, 243, 0.89); }
+
+#page-projects-background {
+  background-color: #2196f3;
+  padding: 5%;
+  width: 70%;
+  float: right;
+  min-height: 100vh; }
+
+.page-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.my-work-row {
+  margin-bottom: 0vh !important;
+  padding-bottom: 0vh !important; }
+
+#bubbleLinks {
+  margin-top: -10px; }
+  #bubbleLinks img {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #bubbleLinks img:hover {
+      width: 70px;
+      height: 70px;
+      margin: -10px;
+      opacity: 1; }
+
+#projectLinks {
+  padding-left: 5%;
+  padding-right: 5%; }
+  #projectLinks div {
+    color: #fff;
+    font-size: 150%;
+    cursor: pointer; }
+
+.image-overlay-main {
+  position: relative;
+  margin-bottom: 20px; }
+  .image-overlay-main .image-overlay-text {
+    position: absolute;
+    background-color: rgba(253, 117, 211, 0.9);
+    opacity: 0;
+    z-index: 10;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3.5%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .image-overlay-main .image-overlay-text:hover {
+      opacity: 1; }
+    .image-overlay-main .image-overlay-text .image-overlay-text-title {
+      text-align: center;
+      font-style: bold; }
+  .image-overlay-main .image-overlay-background {
+    z-index: 1;
+    width: 100%;
+    height: 100%; }
+  .image-overlay-main .bubbleLink1 {
+    margin-left: -5%; }
+    .image-overlay-main .bubbleLink1:hover {
+      margin-left: -6%; }
+  .image-overlay-main .bubbleLink2 {
+    margin-left: 3%; }
+    .image-overlay-main .bubbleLink2:hover {
+      margin-left: 2%; }
+  .image-overlay-main .bubbleLink3 {
+    margin-left: 11%; }
+    .image-overlay-main .bubbleLink3:hover {
+      margin-left: 10%; }
+  .image-overlay-main .bubbleLink, .image-overlay-main .bubbleLink1, .image-overlay-main .bubbleLink2, .image-overlay-main .bubbleLink3 {
+    z-index: 11;
+    margin-top: -3%;
+    width: 10%;
+    position: absolute;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .image-overlay-main .bubbleLink:hover, .image-overlay-main .bubbleLink1:hover, .image-overlay-main .bubbleLink2:hover, .image-overlay-main .bubbleLink3:hover {
+      margin-top: -4%;
+      width: 12%; }
+
+#contact-modal {
+  padding: 10vh !important;
+  background-color: #00a9ae !important;
+  max-height: 80vh !important; }
+  #contact-modal #send-to-button {
+    float: right; }
+  #contact-modal .input-field label {
+    color: #fff; }
+  #contact-modal .input-field .prefix.active {
+    color: #ce93d8; }
+  #contact-modal .input-field input[type=text], #contact-modal .input-field input[type=email], #contact-modal .input-field textarea[type=text] {
+    box-shadow: none;
+    border-bottom: 1px solid #fff;
+    color: #fff; }
+    #contact-modal .input-field input[type=text]:focus, #contact-modal .input-field input[type=email]:focus, #contact-modal .input-field textarea[type=text]:focus {
+      border-bottom: 1px solid #ce93d8; }
+      #contact-modal .input-field input[type=text]:focus .invalid, #contact-modal .input-field input[type=email]:focus .invalid, #contact-modal .input-field textarea[type=text]:focus .invalid {
+        border-bottom: 1px solid #f44336 !important; }
+    #contact-modal .input-field input[type=text]:focus + label, #contact-modal .input-field input[type=email]:focus + label, #contact-modal .input-field textarea[type=text]:focus + label {
+      color: #ce93d8; }
+
+/*# sourceMappingURL=style.css.map */

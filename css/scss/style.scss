@@ -28,14 +28,11 @@ body {
 }
 
 #page-projects-background {
-	background-image: url("../images/back/2.jpg");
+	background-color:rgb(33, 150, 243);
+	padding: 5%;
 	width: 70%;
 	float: right;
-}
-
-#projects-table {
-	padding: 5%;
-	background-color:rgba(3, 169, 244, 0.89);
+	min-height: 100vh;
 }
 
 .page-background {
@@ -51,8 +48,7 @@ body {
 
 #bubbleLinks {
 	margin-top: -10px;
-
-	.bubbleLinkTop {
+	img {
 		width: 50px;
 		height: 50px;
 		margin: 0px;
@@ -67,6 +63,16 @@ body {
 			margin: -10px;
 		    opacity:1;
 		}
+	}
+}
+
+#projectLinks {
+	padding-left: 5%;
+	padding-right: 5%;
+	div {
+		color: #fff;
+		font-size: 150%;
+		cursor: pointer;
 	}
 }
 
