@@ -12,31 +12,19 @@ body {
   color: #fff;
   background-color: #fff; }
 
-#page-home-background {
-  background-image: url("../images/back/1.jpg");
-  width: 30%;
-  float: left;
-  position: fixed; }
+.row, .col {
+  padding: 0px !important;
+  margin: 0px; }
 
 #page-home {
   height: 100vh;
   background-color: rgba(33, 150, 243, 0.89); }
 
+#page-home-background {
+  position: fixed; }
+
 #page-projects-background {
-  background-color: #2196f3;
-  padding: 5%;
-  width: 70%;
-  float: right;
   min-height: 100vh; }
-
-.page-background {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.my-work-row {
-  margin-bottom: 0vh !important;
-  padding-bottom: 0vh !important; }
 
 #bubbleLinks {
   margin-top: -10px; }
@@ -56,16 +44,21 @@ body {
       opacity: 1; }
 
 #projectLinks {
-  padding-left: 5%;
-  padding-right: 5%; }
+  z-index: 11;
+  position: fixed;
+  color: #fff;
+  background-color: #333; }
   #projectLinks div {
-    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 150%;
     cursor: pointer; }
 
 .image-overlay-main {
   position: relative;
-  margin-bottom: 20px; }
+  margin: 0px !important;
+  margin-bottom: -6px !important;
+  padding: 0px !important; }
   .image-overlay-main .image-overlay-text {
     position: absolute;
     background-color: rgba(253, 117, 211, 0.9);

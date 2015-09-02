@@ -39,14 +39,18 @@ $(document).ready(function() {
 });
 
 function resizeImageOverlays() {
+	var topbarHeight = $('#projectLinks').css('height');
+	$('#projects-table').css('margin-top', topbarHeight);
+	var projectsWidth = $('#projects-table').css('width');
+	$('#projectLinks').css('width', projectsWidth);
+
 	// Sets overlays to same height and width as pictures
 	var imHeight;
-	var imWidth
+	var imWidth;
 	imHeight = $('#project-pic-first').css('height');
 	imWidth = $('#project-pic-first').css('width');
 	$('.image-overlay-text').css('height', imHeight);
 	$('.image-overlay-text').css('width', imWidth);
-
 
 	// Sets text size to fit well in overlay based on overlay dimensions
 	var heightInt = parseInt(imHeight, "10");
