@@ -14,21 +14,52 @@
   <body onresize="resizeImageOverlays()" onload="resizeImageOverlays()">
     <div class="row">
       <div id="page-home-background" class="col s12 m6 l4">
-        <div class="valign-wrapper" id="page-home">
-          <div class="container valign">
-            <h1 class="header center-align" id = "landing-title">Jason Zukewich</h1>
+        <div id="page-home-inner">
+          <div id="page-home-intro" class="valign-wrapper">
+            <div class="valign">
+              <h1 class="header center-align" id = "landing-title">Jason Zukewich</h1>
 
-            <p class="header center-align landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things and creating cool stuff</p>
+              <p class="header center-align landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things and creating cool stuff</p>
+            </div>
+          </div>
 
-            <div class="center-align" id="bubbleLinks">
+          <div id="page-home-links" class="valign-wrapper">
+            <div class="center-align valign">
               <a href="https://github.com/jgzuke" target="_blank"><img src="images/ic/github.png"/></a>
               <a href="https://ca.linkedin.com/in/jgzuke/" target="_blank"><img src="images/ic/linkedin.png"/></a>
               <a href="Jason_Zukewich_Resume.pdf" target="_blank"><img src="images/ic/resume.png"/></a>
               <a class="link-contact hide-on-med-and-up"><img src="images/ic/email.png"/></a>
             </div>
           </div>
+
+          <div id="page-home-contact" class = "hide-on-small-only">
+            <h5 class="header center-align">To jzukewic@uwaterloo.ca</h5>
+
+            <form autocomplete="off" method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
+              <div class="row">
+                <div class="input-field col m6 s12">
+                  <input type="email" name="_replyto" class="validate">
+                  <label for="email">Your Email</label>
+                </div>
+                <div class="input-field col m6 s12">
+                  <input type="text" name="_subject" class="validate">
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">edit</i>
+                <textarea type="text" name="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button class="btn-flat white-text waves-effect waves-white" type="submit" name="action" id="send-to-button">Send
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+
+
 
       <div id="page-projects-background" class="col s12 m6 l8 offset-m6 offset-l4 left-align">
         <div class="row center-align white-text" id="projectLinks">

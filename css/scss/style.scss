@@ -15,49 +15,75 @@ body {
 	background-color: #fff;
 }
 
+$intro-background-color: #712a45;
+$links-background-color: #ba5947;
+$form-background-color: #00b9b5;
+
+$top-bar-color: #975767;
+
+$form-text-color: #fff;
+$form-focus-color: #ce93d8;
+$form-error-color: #f44336;
+
 .row, .col {
 	padding: 0px !important;
 	margin: 0px;
 }
 
-#page-home {
-	height: 100vh;
-	background-color:rgba(33, 150, 243, 0.89);
-}
-
 #page-home-background {
 	position: fixed;
+	background-color: $form-background-color;
+
+	#page-home-inner {
+		height: 100vh;
+		overflow-y: auto;
+		padding: 0px !important;
+
+		#page-home-intro {
+			background-color: $intro-background-color;
+
+			.valign {
+				padding: 10%;
+			}
+		}
+
+		#page-home-links {
+			padding-top: 5px;
+			background-color: $links-background-color;
+
+			.center-align {
+				width: 100%;
+			}
+
+			img {
+				width: 50px;
+				height: 50px;
+				margin: 0px;
+				cursor: pointer;
+				-webkit-transition: all 0.5s ease;
+			    -moz-transition: all 0.5s ease;
+			    -o-transition: all 0.5s ease;
+			    transition: all 0.5s ease;
+			    &:hover {
+				    width: 70px;
+					height: 70px;
+					margin: -10px;
+				    opacity:1;
+				}
+			}
+		}
+	}
 }
 
 #page-projects-background {
 	min-height: 100vh;
 }
 
-#bubbleLinks {
-	margin-top: -10px;
-	img {
-		width: 50px;
-		height: 50px;
-		margin: 0px;
-		cursor: pointer;
-		-webkit-transition: all 0.5s ease;
-	    -moz-transition: all 0.5s ease;
-	    -o-transition: all 0.5s ease;
-	    transition: all 0.5s ease;
-	    &:hover {
-		    width: 70px;
-			height: 70px;
-			margin: -10px;
-		    opacity:1;
-		}
-	}
-}
-
 #projectLinks {
 	z-index: 11;
 	position: fixed;
 	color: #fff;
-	background-color: #333;
+	background-color: $top-bar-color;
 	div {
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -141,14 +167,14 @@ body {
 	}
 }
 
-$form-color: #fff;
-$form-background-color: rgb(0, 169, 174);
-$form-focus-color: #ce93d8;
-$form-error-color: #f44336;
-#contact-modal {
-	padding: 10vh !important;
+#contact-modal, #page-home-contact {
+	padding: 10% !important;
 	background-color: $form-background-color !important;
 	max-height: 80vh !important;
+
+	h5 {
+		font-size: 130%;
+	}
 
 	#send-to-button {
 		float: right;
@@ -156,7 +182,7 @@ $form-error-color: #f44336;
 
 	.input-field {
 	    label {
-		    color: $form-color;
+		    color: $form-text-color;
 		}
 
 		.prefix.active {
@@ -165,8 +191,8 @@ $form-error-color: #f44336;
 
 		input[type=text], input[type=email], textarea[type=text] {
 			box-shadow: none;
-			border-bottom: 1px solid $form-color;
-			color: $form-color;
+			border-bottom: 1px solid $form-text-color;
+			color: $form-text-color;
 
 	    	&:focus {
 	    		border-bottom: 1px solid $form-focus-color;

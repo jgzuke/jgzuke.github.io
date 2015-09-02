@@ -16,38 +16,45 @@ body {
   padding: 0px !important;
   margin: 0px; }
 
-#page-home {
-  height: 100vh;
-  background-color: rgba(33, 150, 243, 0.89); }
-
 #page-home-background {
-  position: fixed; }
+  position: fixed;
+  background-color: #00b9b5; }
+  #page-home-background #page-home-inner {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 0px !important; }
+    #page-home-background #page-home-inner #page-home-intro {
+      background-color: #712a45; }
+      #page-home-background #page-home-inner #page-home-intro .valign {
+        padding: 10%; }
+    #page-home-background #page-home-inner #page-home-links {
+      padding-top: 5px;
+      background-color: #ba5947; }
+      #page-home-background #page-home-inner #page-home-links .center-align {
+        width: 100%; }
+      #page-home-background #page-home-inner #page-home-links img {
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        #page-home-background #page-home-inner #page-home-links img:hover {
+          width: 70px;
+          height: 70px;
+          margin: -10px;
+          opacity: 1; }
 
 #page-projects-background {
   min-height: 100vh; }
-
-#bubbleLinks {
-  margin-top: -10px; }
-  #bubbleLinks img {
-    width: 50px;
-    height: 50px;
-    margin: 0px;
-    cursor: pointer;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-    #bubbleLinks img:hover {
-      width: 70px;
-      height: 70px;
-      margin: -10px;
-      opacity: 1; }
 
 #projectLinks {
   z-index: 11;
   position: fixed;
   color: #fff;
-  background-color: #333; }
+  background-color: #975767; }
   #projectLinks div {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -105,25 +112,27 @@ body {
       margin-top: -4%;
       width: 12%; }
 
-#contact-modal {
-  padding: 10vh !important;
-  background-color: #00a9ae !important;
+#contact-modal, #page-home-contact {
+  padding: 10% !important;
+  background-color: #00b9b5 !important;
   max-height: 80vh !important; }
-  #contact-modal #send-to-button {
+  #contact-modal h5, #page-home-contact h5 {
+    font-size: 130%; }
+  #contact-modal #send-to-button, #page-home-contact #send-to-button {
     float: right; }
-  #contact-modal .input-field label {
+  #contact-modal .input-field label, #page-home-contact .input-field label {
     color: #fff; }
-  #contact-modal .input-field .prefix.active {
+  #contact-modal .input-field .prefix.active, #page-home-contact .input-field .prefix.active {
     color: #ce93d8; }
-  #contact-modal .input-field input[type=text], #contact-modal .input-field input[type=email], #contact-modal .input-field textarea[type=text] {
+  #contact-modal .input-field input[type=text], #contact-modal .input-field input[type=email], #contact-modal .input-field textarea[type=text], #page-home-contact .input-field input[type=text], #page-home-contact .input-field input[type=email], #page-home-contact .input-field textarea[type=text] {
     box-shadow: none;
     border-bottom: 1px solid #fff;
     color: #fff; }
-    #contact-modal .input-field input[type=text]:focus, #contact-modal .input-field input[type=email]:focus, #contact-modal .input-field textarea[type=text]:focus {
+    #contact-modal .input-field input[type=text]:focus, #contact-modal .input-field input[type=email]:focus, #contact-modal .input-field textarea[type=text]:focus, #page-home-contact .input-field input[type=text]:focus, #page-home-contact .input-field input[type=email]:focus, #page-home-contact .input-field textarea[type=text]:focus {
       border-bottom: 1px solid #ce93d8; }
-      #contact-modal .input-field input[type=text]:focus .invalid, #contact-modal .input-field input[type=email]:focus .invalid, #contact-modal .input-field textarea[type=text]:focus .invalid {
+      #contact-modal .input-field input[type=text]:focus .invalid, #contact-modal .input-field input[type=email]:focus .invalid, #contact-modal .input-field textarea[type=text]:focus .invalid, #page-home-contact .input-field input[type=text]:focus .invalid, #page-home-contact .input-field input[type=email]:focus .invalid, #page-home-contact .input-field textarea[type=text]:focus .invalid {
         border-bottom: 1px solid #f44336 !important; }
-    #contact-modal .input-field input[type=text]:focus + label, #contact-modal .input-field input[type=email]:focus + label, #contact-modal .input-field textarea[type=text]:focus + label {
+    #contact-modal .input-field input[type=text]:focus + label, #contact-modal .input-field input[type=email]:focus + label, #contact-modal .input-field textarea[type=text]:focus + label, #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
       color: #ce93d8; }
 
 /*# sourceMappingURL=style.css.map */
