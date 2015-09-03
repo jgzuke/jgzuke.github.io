@@ -43,7 +43,7 @@ var stateMobile = false;
 $(window).scroll(function(){
 	if(stateMobile) {
 		homeHeight = parseInt($('#page-home-inner').css('height'), 10);
-		if(homeHeight - $(this).scrollTop() < 0) {
+		if(homeHeight - $(this).scrollTop() <= 0) {
 			if(!stateTopBarSticky) {
 				$("#projectLinks").addClass("stick-to-top");
 				stateTopBarSticky = true;
@@ -99,7 +99,7 @@ function handleResize() {
 	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
 	var textScale = Math.pow($(window).width(), 0.48) / 30;
 
-	var landingTitle = Math.floor(textScale * 300) + '%';
+	var landingTitle = Math.floor(textScale * 500) + '%';
 	var landingText = Math.floor(textScale * 110) + '%';
 	var normalTitle = Math.floor(textScale * 400) + '%';
 	$('#landing-title').css('font-size', landingTitle);

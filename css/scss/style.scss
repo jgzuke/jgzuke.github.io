@@ -23,7 +23,7 @@ $projects-background-color: #712a45;
 $top-bar-color: #14212f;
 
 $form-text-color: #ffffff;
-$form-focus-color: #5584bb;
+$form-focus-color: #019be5;
 $form-error-color: #ba5947;
 
 .row, .col {
@@ -99,6 +99,17 @@ $form-error-color: #ba5947;
 		margin-bottom: 10px;
 		font-size: 150%;
 		cursor: pointer;
+	}
+}
+
+#githubLink {
+	background-color: $top-bar-color;
+	z-index: 11;
+	padding: 10px;
+
+	div {
+		cursor: default;
+		font-size: 150%;
 	}
 }
 
@@ -194,6 +205,7 @@ $form-error-color: #ba5947;
 
 	#send-to-button {
 		float: right;
+		margin-bottom: 20px;
 	}
 
 	.input-field {

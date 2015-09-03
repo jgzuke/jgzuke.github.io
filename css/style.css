@@ -66,6 +66,14 @@ body {
     font-size: 150%;
     cursor: pointer; }
 
+#githubLink {
+  background-color: #14212f;
+  z-index: 11;
+  padding: 10px; }
+  #githubLink div {
+    cursor: default;
+    font-size: 150%; }
+
 .stick-to-top {
   position: fixed;
   top: 0; }
@@ -129,20 +137,21 @@ body {
     font-size: 130%;
     margin-bottom: 20px; }
   #contact-modal #send-to-button, #page-home-contact #send-to-button {
-    float: right; }
+    float: right;
+    margin-bottom: 20px; }
   #contact-modal .input-field label, #page-home-contact .input-field label {
     color: #ffffff; }
   #contact-modal .input-field .prefix.active, #page-home-contact .input-field .prefix.active {
-    color: #5584bb; }
+    color: #019be5; }
   #contact-modal .input-field input[type=text], #contact-modal .input-field input[type=email], #contact-modal .input-field textarea[type=text], #page-home-contact .input-field input[type=text], #page-home-contact .input-field input[type=email], #page-home-contact .input-field textarea[type=text] {
     box-shadow: none;
     border-bottom: 1px solid #ffffff;
     color: #ffffff; }
     #contact-modal .input-field input[type=text]:focus, #contact-modal .input-field input[type=email]:focus, #contact-modal .input-field textarea[type=text]:focus, #page-home-contact .input-field input[type=text]:focus, #page-home-contact .input-field input[type=email]:focus, #page-home-contact .input-field textarea[type=text]:focus {
-      border-bottom: 1px solid #5584bb; }
+      border-bottom: 1px solid #019be5; }
       #contact-modal .input-field input[type=text]:focus .invalid, #contact-modal .input-field input[type=email]:focus .invalid, #contact-modal .input-field textarea[type=text]:focus .invalid, #page-home-contact .input-field input[type=text]:focus .invalid, #page-home-contact .input-field input[type=email]:focus .invalid, #page-home-contact .input-field textarea[type=text]:focus .invalid {
         border-bottom: 1px solid #ba5947 !important; }
     #contact-modal .input-field input[type=text]:focus + label, #contact-modal .input-field input[type=email]:focus + label, #contact-modal .input-field textarea[type=text]:focus + label, #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
-      color: #5584bb; }
+      color: #019be5; }
 
 /*# sourceMappingURL=style.css.map */
