@@ -12,6 +12,9 @@ body {
   color: #fff;
   background-color: #fff; }
 
+a {
+  color: #019be5; }
+
 .row, .col {
   padding: 0px !important;
   margin: 0px; }
@@ -25,15 +28,15 @@ body {
   position: fixed; }
 
 #page-home-background {
-  background-color: #00b9b5; }
+  background-color: #1976d2; }
   #page-home-background #page-home-inner {
     padding: 0px !important; }
     #page-home-background #page-home-inner #page-home-intro {
-      background-color: #712a45;
+      background-color: #1976d2;
       padding: 10%; }
     #page-home-background #page-home-inner #page-home-links {
       padding-top: 5px;
-      background-color: #ba5947; }
+      background-color: #1976d2; }
       #page-home-background #page-home-inner #page-home-links .center-align {
         width: 100%; }
       #page-home-background #page-home-inner #page-home-links img {
@@ -52,24 +55,24 @@ body {
           opacity: 1; }
 
 #page-projects-background {
-  background-color: #712a45;
+  background-color: #0d47a1;
   min-height: 100vh; }
 
 #projectLinks {
   z-index: 11;
   top: 0;
-  color: #fff;
-  background-color: #14212f; }
+  color: #fff; }
   #projectLinks div {
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-size: 150%;
-    cursor: pointer; }
+    background-color: #0d47a1; }
+    #projectLinks div p {
+      margin: 10px;
+      cursor: pointer; }
   #projectLinks .active {
-    color: #019be5; }
+    background-color: #1565c0; }
 
 #githubLink {
-  background-color: #14212f;
+  background-color: #0d47a1;
   z-index: 11;
   padding: 10px; }
   #githubLink div {
@@ -87,7 +90,6 @@ body {
   padding: 0px !important; }
   .image-overlay-main .image-overlay-text {
     position: absolute;
-    background-color: rgba(20, 33, 47, 0.9);
     opacity: 0;
     z-index: 10;
     padding-left: 6%;
@@ -133,7 +135,7 @@ body {
 
 #contact-modal, #page-home-contact {
   padding: 10% !important;
-  background-color: #00b9b5 !important;
+  background-color: #1976d2 !important;
   max-height: 80vh !important; }
   #contact-modal h5, #page-home-contact h5 {
     font-size: 130%;
@@ -144,16 +146,16 @@ body {
   #contact-modal .input-field label, #page-home-contact .input-field label {
     color: #ffffff; }
   #contact-modal .input-field .prefix.active, #page-home-contact .input-field .prefix.active {
-    color: #019be5; }
+    color: #90caf9; }
   #contact-modal .input-field input[type=text], #contact-modal .input-field input[type=email], #contact-modal .input-field textarea[type=text], #page-home-contact .input-field input[type=text], #page-home-contact .input-field input[type=email], #page-home-contact .input-field textarea[type=text] {
     box-shadow: none;
     border-bottom: 1px solid #ffffff;
     color: #ffffff; }
     #contact-modal .input-field input[type=text]:focus, #contact-modal .input-field input[type=email]:focus, #contact-modal .input-field textarea[type=text]:focus, #page-home-contact .input-field input[type=text]:focus, #page-home-contact .input-field input[type=email]:focus, #page-home-contact .input-field textarea[type=text]:focus {
-      border-bottom: 1px solid #019be5; }
+      border-bottom: 1px solid #90caf9; }
       #contact-modal .input-field input[type=text]:focus .invalid, #contact-modal .input-field input[type=email]:focus .invalid, #contact-modal .input-field textarea[type=text]:focus .invalid, #page-home-contact .input-field input[type=text]:focus .invalid, #page-home-contact .input-field input[type=email]:focus .invalid, #page-home-contact .input-field textarea[type=text]:focus .invalid {
         border-bottom: 1px solid #ba5947 !important; }
     #contact-modal .input-field input[type=text]:focus + label, #contact-modal .input-field input[type=email]:focus + label, #contact-modal .input-field textarea[type=text]:focus + label, #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
-      color: #019be5; }
+      color: #90caf9; }
 
 /*# sourceMappingURL=style.css.map */

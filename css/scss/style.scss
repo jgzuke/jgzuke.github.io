@@ -15,18 +15,22 @@ body {
 	background-color: #fff;
 }
 
-$intro-background-color: #712a45;
-$links-background-color: #ba5947;
-$form-background-color: #00b9b5;
-$projects-background-color: #712a45;
+$intro-background-color: #1976d2;
+$links-background-color: #1976d2;
+$form-background-color: #1976d2;
+$projects-background-color: #0d47a1;
 $link-color: #019be5;
 
-$top-bar-color: #14212f;
-$hover-color: rgba(20, 33, 47, 0.9);
+$top-bar-color: #0d47a1;
+$top-bar-color-active: #1565c0;
 
 $form-text-color: #ffffff;
-$form-focus-color: #019be5;
+$form-focus-color: #90caf9;
 $form-error-color: #ba5947;
+
+a {
+	color: $link-color;
+}
 
 .row, .col {
 	padding: 0px !important;
@@ -95,16 +99,17 @@ $form-error-color: #ba5947;
 	z-index: 11;
 	top: 0;
 	color: #fff;
-	background-color: $top-bar-color;
 	div {
-		margin-top: 10px;
-		margin-bottom: 10px;
 		font-size: 150%;
-		cursor: pointer;
+		background-color: $top-bar-color;
+		p {
+			margin: 10px;
+			cursor: pointer;
+		}
 	}
 
 	.active {
-		color: $link-color;
+		background-color: $top-bar-color-active;
 	}
 }
 
@@ -132,7 +137,6 @@ $form-error-color: #ba5947;
 
 	.image-overlay-text {
 		position: absolute;
-		background-color: $hover-color;
 	    opacity:0;
 	    z-index: 10;
 	    padding-left: 6%;
