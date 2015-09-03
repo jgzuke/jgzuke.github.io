@@ -22,6 +22,7 @@ $projects-background-color: #712a45;
 $link-color: #019be5;
 
 $top-bar-color: #14212f;
+$hover-color: rgba(20, 33, 47, 0.9);
 
 $form-text-color: #ffffff;
 $form-focus-color: #019be5;
@@ -131,7 +132,7 @@ $form-error-color: #ba5947;
 
 	.image-overlay-text {
 		position: absolute;
-		background-color:rgba(253, 117, 211, 0.9);
+		background-color: $hover-color;
 	    opacity:0;
 	    z-index: 10;
 	    padding-left: 6%;

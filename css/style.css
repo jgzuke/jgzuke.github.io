@@ -87,7 +87,7 @@ body {
   padding: 0px !important; }
   .image-overlay-main .image-overlay-text {
     position: absolute;
-    background-color: rgba(253, 117, 211, 0.9);
+    background-color: rgba(20, 33, 47, 0.9);
     opacity: 0;
     z-index: 10;
     padding-left: 6%;
