@@ -19,6 +19,7 @@ $intro-background-color: #712a45;
 $links-background-color: #ba5947;
 $form-background-color: #00b9b5;
 $projects-background-color: #712a45;
+$link-color: #019be5;
 
 $top-bar-color: #14212f;
 
@@ -99,6 +100,10 @@ $form-error-color: #ba5947;
 		margin-bottom: 10px;
 		font-size: 150%;
 		cursor: pointer;
+	}
+
+	.active {
+		color: $link-color;
 	}
 }
 

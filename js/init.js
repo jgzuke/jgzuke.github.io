@@ -22,6 +22,8 @@ var projectSets = ['main', 'work', 'android', 'web']
 function showProjectSet(num) {
 	projectSet = num;
 	$('#projects-table').fadeOut(projectChangeAnimationTime);
+	$('#projectLinks div').removeClass("active");
+	$('.projects-' + projectSets[num]).addClass("active");
 
 	setTimeout(function () {
 		$('.image-overlay-main').hide();
