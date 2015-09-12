@@ -15,6 +15,12 @@ body {
 a {
   color: #019be5; }
 
+.transition, #myLinks img, .image-overlay-main .image-overlay-text, .image-overlay-main .bubbleLink, .image-overlay-main .bubbleLink1, .image-overlay-main .bubbleLink2 {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
 .row, .col {
   padding: 0px !important;
   margin: 0px; }
@@ -34,25 +40,6 @@ a {
     #page-home-background #page-home-inner #page-home-intro {
       background-color: #1976d2;
       padding: 10%; }
-    #page-home-background #page-home-inner #page-home-links {
-      padding-top: 5px;
-      background-color: #1976d2; }
-      #page-home-background #page-home-inner #page-home-links .center-align {
-        width: 100%; }
-      #page-home-background #page-home-inner #page-home-links img {
-        width: 50px;
-        height: 50px;
-        margin: 0px;
-        cursor: pointer;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease; }
-        #page-home-background #page-home-inner #page-home-links img:hover {
-          width: 70px;
-          height: 70px;
-          margin: -10px;
-          opacity: 1; }
 
 #page-projects-background {
   background-color: #0d47a1;
@@ -71,13 +58,16 @@ a {
   #projectLinks .active {
     background-color: #1565c0; }
 
-#githubLink {
+#myLinks {
   background-color: #0d47a1;
-  z-index: 11;
-  padding: 10px; }
-  #githubLink div {
-    cursor: default;
-    font-size: 150%; }
+  margin-top: 6px; }
+  #myLinks img {
+    width: 60px;
+    height: 60px; }
+    #myLinks img:hover {
+      margin-top: -5px;
+      width: 70px;
+      height: 70px; }
 
 .stick-to-top {
   position: fixed;
@@ -94,11 +84,7 @@ a {
     z-index: 10;
     padding-left: 6%;
     padding-right: 6%;
-    padding-top: 3.5%;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
+    padding-top: 3.5%; }
     .image-overlay-main .image-overlay-text:hover {
       opacity: 1; }
     .image-overlay-main .image-overlay-text .image-overlay-text-title {
@@ -109,29 +95,21 @@ a {
     width: 100%;
     height: 100%; }
   .image-overlay-main .bubbleLink1 {
-    margin-left: -5%; }
+    margin-left: -18px; }
     .image-overlay-main .bubbleLink1:hover {
-      margin-left: -6%; }
+      margin-left: -23px; }
   .image-overlay-main .bubbleLink2 {
-    margin-left: 3%; }
+    margin-left: 17px; }
     .image-overlay-main .bubbleLink2:hover {
-      margin-left: 2%; }
-  .image-overlay-main .bubbleLink3 {
-    margin-left: 11%; }
-    .image-overlay-main .bubbleLink3:hover {
-      margin-left: 10%; }
-  .image-overlay-main .bubbleLink, .image-overlay-main .bubbleLink1, .image-overlay-main .bubbleLink2, .image-overlay-main .bubbleLink3 {
+      margin-left: 12px; }
+  .image-overlay-main .bubbleLink, .image-overlay-main .bubbleLink1, .image-overlay-main .bubbleLink2 {
     z-index: 11;
-    margin-top: -3%;
-    width: 10%;
-    position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-    .image-overlay-main .bubbleLink:hover, .image-overlay-main .bubbleLink1:hover, .image-overlay-main .bubbleLink2:hover, .image-overlay-main .bubbleLink3:hover {
-      margin-top: -4%;
-      width: 12%; }
+    margin-top: -10px;
+    width: 40px;
+    position: absolute; }
+    .image-overlay-main .bubbleLink:hover, .image-overlay-main .bubbleLink1:hover, .image-overlay-main .bubbleLink2:hover {
+      margin-top: -15px;
+      width: 50px; }
 
 #contact-modal, #page-home-contact {
   padding: 10% !important;

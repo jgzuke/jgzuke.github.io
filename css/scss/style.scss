@@ -32,6 +32,13 @@ a {
 	color: $link-color;
 }
 
+.transition {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
 .row, .col {
 	padding: 0px !important;
 	margin: 0px;
@@ -61,32 +68,6 @@ a {
 			background-color: $intro-background-color;
 			padding: 10%;
 		}
-
-		#page-home-links {
-			padding-top: 5px;
-			background-color: $links-background-color;
-
-			.center-align {
-				width: 100%;
-			}
-
-			img {
-				width: 50px;
-				height: 50px;
-				margin: 0px;
-				cursor: pointer;
-				-webkit-transition: all 0.5s ease;
-			    -moz-transition: all 0.5s ease;
-			    -o-transition: all 0.5s ease;
-			    transition: all 0.5s ease;
-			    &:hover {
-				    width: 70px;
-					height: 70px;
-					margin: -10px;
-				    opacity:1;
-				}
-			}
-		}
 	}
 }
 
@@ -113,14 +94,20 @@ a {
 	}
 }
 
-#githubLink {
+#myLinks {
 	background-color: $top-bar-color;
-	z-index: 11;
-	padding: 10px;
+	margin-top: 6px;
 
-	div {
-		cursor: default;
-		font-size: 150%;
+	img {
+		width: 60px;
+		height: 60px;
+		@extend .transition;
+
+		&:hover {
+			margin-top: -5px;
+			width:70px;
+			height:70px;
+		}
 	}
 }
 
@@ -142,10 +129,7 @@ a {
 	    padding-left: 6%;
 	    padding-right: 6%;
 	    padding-top: 3.5%;
-	    -webkit-transition: all 0.5s ease;
-	    -moz-transition: all 0.5s ease;
-	    -o-transition: all 0.5s ease;
-	    transition: all 0.5s ease;
+	    @extend .transition;
 
 	    &:hover {
 	    	opacity:1;
@@ -165,40 +149,29 @@ a {
 
 	.bubbleLink1 {
 		@extend .bubbleLink;
-		margin-left: -5%;
+		margin-left: -18px;
 		&:hover {
-			margin-left: -6%;
+			margin-left: -23px;
 		}
 	}
 
 	.bubbleLink2 {
 		@extend .bubbleLink;
-		margin-left: 3%;
+		margin-left: 17px;
 		&:hover {
-			margin-left: 2%;
-		}
-	}
-
-	.bubbleLink3 {
-		@extend .bubbleLink;
-		margin-left: 11%;
-		&:hover {
-			margin-left: 10%;
+			margin-left: 12px;
 		}
 	}
 
 	.bubbleLink {
 		z-index: 11;
-		margin-top: -3%;
-		width:10%;
+		margin-top: -10px;
+		width:40px;
 		position:absolute;
-		-webkit-transition: all 0.5s ease;
-	    -moz-transition: all 0.5s ease;
-	    -o-transition: all 0.5s ease;
-	    transition: all 0.5s ease;
+		@extend .transition;
 	    &:hover {
-			margin-top: -4%;
-			width:12%;
+			margin-top: -15px;
+			width:50px;
 		}
 	}
 }
