@@ -12,7 +12,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
 	color: #fff;
-	background-color: #fff;
+	background:url("../images/back/1.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#overlay {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(13, 59, 95, 0.89);
 }
 
 $intro-background-color: #1976d2;
@@ -59,20 +70,16 @@ a {
 }
 
 #page-home-background {
-	background-color: $form-background-color;
-
 	#page-home-inner {
 		padding: 0px !important;
 
 		#page-home-intro {
-			background-color: $intro-background-color;
 			padding: 10%;
 		}
 	}
 }
 
 #page-projects-background {
-	background-color: $projects-background-color;
 	min-height: 100vh;
 }
 
@@ -82,7 +89,6 @@ a {
 	color: #fff;
 	div {
 		font-size: 150%;
-		background-color: $top-bar-color;
 		p {
 			margin: 10px;
 			cursor: pointer;
@@ -95,7 +101,6 @@ a {
 }
 
 #myLinks {
-	background-color: $top-bar-color;
 	margin-top: 6px;
 
 	img {
@@ -175,10 +180,12 @@ a {
 		}
 	}
 }
+#contact-modal {
+	background-color: $form-background-color !important;
+}
 
 #contact-modal, #page-home-contact {
 	padding: 10% !important;
-	background-color: $form-background-color !important;
 	max-height: 80vh !important;
 
 	h5 {
@@ -216,5 +223,9 @@ a {
 				color: $form-focus-color;
 			}
 		}
+	}
+
+	button {
+		text-transform: none;
 	}
 }
