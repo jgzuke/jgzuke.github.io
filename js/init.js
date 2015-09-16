@@ -1,7 +1,3 @@
-$('.link-contact').click(function() {
-	$('#contact-modal').openModal();
-});
-
 $('.projects-main').click(function() {
 	showProjectSet(0);
 });

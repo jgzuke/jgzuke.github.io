@@ -217,15 +217,7 @@ $form-error-color: #ba5947;
 #page-home-contact {
 	width: 90%;
 	padding-left: 10%;
-}
-
-#contact-modal {
-	background-color: $form-background-color !important;
-	padding: 10% !important;
-	max-height: 80vh !important;
-}
-
-#contact-modal, #page-home-contact {
+	
 	h5 {
 		font-size: 130%;
 		margin-bottom: 20px;
