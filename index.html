@@ -18,12 +18,12 @@
       <div id="page-left" class="col s12 m4 l3">
         <div id="page-home-inner" class="valign-wrapper">
           <div class="valign center-align">
-            <h1 class="header" id = "landing-title">JZ</h1>
+            <h1 class="landing-title">JZ</h1>
 
             <div id="navLinks">
-              <p class="aboutLink">About</p>
-              <p class="projectsLink">Projects</p>
-              <p class="contactLink">Contact</p>
+              <p class="aboutLink landing-text active">About</p>
+              <p class="projectsLink landing-text">Projects</p>
+              <p class="contactLink landing-text">Contact</p>
             </div>
 
             <div class="row" id="myLinks">
@@ -38,24 +38,26 @@
 
 
       <div id="page-right" class="col s12 m8 l9 offset-m4 offset-l3 left-align">
-        <div id="aboutSection" class="mainSections">
-          <h1>Who I Am</h1>
-          <div id="aboutInner">
-            <p class="landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things and designing/creating cool stuff</p>
+        <div id="aboutSection" class="mainSections valign-wrapper">
+          <div class="valign">
+            <h1 class="normal-title">Who I Am</h1>
+            <div id="aboutInner">
+              <p class="landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things and designing/creating cool stuff</p>
 
-            <p class="landing-text">Besides coding I also enjoy Rock Climbing, Baking, Volunteering, Board Games (Settlers is probably my favorite) and lots of other stuff</p>
+              <p class="landing-text">Besides coding I also enjoy Rock Climbing, Baking, Volunteering, Board Games (Settlers is probably my favorite) and lots of other stuff</p>
 
-            <p class="landing-text">Check out some of my <span class="projectsLink">Projects</span> below, if you want to work on something together feel free to <span class="contactLink">Get in Touch</span>!</p>
+              <p class="landing-text">Check out some of my <span class="projectsLink">Projects</span> below, if you want to work on something together feel free to <span class="contactLink">Get in Touch</span>!</p>
+            </div>
           </div>
         </div>
 
         <div id="projectSection" class="mainSections">
-          <h1>Stuff I've Done</h1>
+          <h1 class="normal-title">Stuff I've Done</h1>
           <div class="row center-align white-text hide-on-small-only" id="projectLinks">
-            <p class="col s3 projects-main active">All</p>
-            <p class="col s3 projects-work">Work</p>
-            <p class="col s3 projects-android">Android</p>
-            <p class="col s3 projects-web">Web</p>
+            <p class="col s3 projects-main active landing-text">All</p>
+            <p class="col s3 projects-work landing-text">Work</p>
+            <p class="col s3 projects-android landing-text">Android</p>
+            <p class="col s3 projects-web landing-text">Web</p>
           </div>
 
           <div class="row" id="projects-table">
@@ -208,29 +210,31 @@
           </div>
         </div>
 
-        <div id="contactSection" class="mainSections">
-          <h1>Get in Touch</h1>
-          <div id="page-home-contact">
-            <form autocomplete="off" method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
-              <div class="row">
-                <div class="input-field col m6 s12">
-                  <input type="email" name="_replyto" class="validate">
-                  <label for="email">Your Email</label>
+        <div id="contactSection" class="mainSections valign-wrapper">
+          <div class="valign">
+            <h1 class="normal-title">Get in Touch</h1>
+            <div id="page-home-contact">
+              <form autocomplete="off" method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
+                <div class="row">
+                  <div class="input-field col m6 s12">
+                    <input type="email" name="_replyto" class="validate">
+                    <label for="email">Your Email</label>
+                  </div>
+                  <div class="input-field col m6 s12">
+                    <input type="text" name="_subject" class="validate">
+                    <label for="subject">Subject</label>
+                  </div>
                 </div>
-                <div class="input-field col m6 s12">
-                  <input type="text" name="_subject" class="validate">
-                  <label for="subject">Subject</label>
+                <div class="input-field">
+                  <i class="material-icons prefix">edit</i>
+                  <textarea type="text" name="message" class="materialize-textarea"></textarea>
+                  <label for="message">Message</label>
                 </div>
-              </div>
-              <div class="input-field">
-                <i class="material-icons prefix">edit</i>
-                <textarea type="text" name="message" class="materialize-textarea"></textarea>
-                <label for="message">Message</label>
-              </div>
-              <button class="btn-flat white-text waves-effect waves-white" type="submit" name="action" id="send-to-button">To jzukewic@uwaterloo.ca
-                <i class="material-icons right">send</i>
-              </button>
-            </form>
+                <button class="btn-flat white-text waves-effect waves-white" type="submit" name="action" id="send-to-button">To jzukewic@uwaterloo.ca
+                  <i class="material-icons right">send</i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

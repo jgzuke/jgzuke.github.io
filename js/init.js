@@ -60,6 +60,18 @@ $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFu
 
 $(document).ready(function() {
 	handleResize();
+	$(window).scroll(function() {
+    	if($(window).scrollTop() > $('#contactSection').offset().top - 300) {
+    		$('#navLinks p').removeClass("active");
+    		$('.contactLink').addClass("active");
+    	} else if($(window).scrollTop() > $('#projectSection').offset().top - 300) {
+    		$('#navLinks p').removeClass("active");
+    		$('.projectsLink').addClass("active");
+    	} else {
+    		$('#navLinks p').removeClass("active");
+    		$('.aboutLink').addClass("active");
+    	}
+    });
 });
 
 var stateMobile = false;
@@ -107,6 +119,7 @@ function handleResize() {
 	var landingTitle = Math.floor(textScale * 500) + '%';
 	var landingText = Math.floor(textScale * 130) + '%';
 	var normalTitle = Math.floor(textScale * 400) + '%';
-	$('#landing-title').css('font-size', landingTitle);
+	$('.landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);
+	$('.normal-title').css('font-size', normalTitle);
 }
