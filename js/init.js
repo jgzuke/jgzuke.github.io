@@ -15,13 +15,13 @@ $('.projects-web').click(function() {
 	showProjectSet(3);
 });
 
-$('#aboutLink').click(function() {
+$('.aboutLink').click(function() {
 	showSectionSet(0);
 });
-$('#projectsLink').click(function() {
+$('.projectsLink').click(function() {
 	showSectionSet(1);
 });
-$('#contactLink').click(function() {
+$('.contactLink').click(function() {
 	showSectionSet(2);
 });
 
@@ -33,17 +33,10 @@ var sectionSet = 2;
 var sectionSets = ['about', 'project', 'contact'];
 
 function showSectionSet(num) {
-	if(sectionSet == num) return;
 	sectionSet = num;
-	$('.mainSections').hide();
-
-	$('#page-right').fadeOut(projectChangeAnimationTime);
-	setTimeout(function () {
-		$('#' + sectionSets[num] + 'Section').show();
-		$('#page-right').fadeIn(projectChangeAnimationTime);
-	}, projectChangeAnimationTime);
-
-	sectionSet = num;
+	$('html, body').animate({
+		scrollTop: $('#' + sectionSets[num] + 'Section').offset().top
+	}, 'slow');
 }
 
 function showProjectSet(num) {
@@ -120,7 +113,7 @@ function handleResize() {
 	var textScale = Math.pow($(window).width(), 0.48) / 30;
 
 	var landingTitle = Math.floor(textScale * 500) + '%';
-	var landingText = Math.floor(textScale * 110) + '%';
+	var landingText = Math.floor(textScale * 130) + '%';
 	var normalTitle = Math.floor(textScale * 400) + '%';
 	$('#landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);

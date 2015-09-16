@@ -77,19 +77,26 @@ a {
 			p {
 				font-size: 110%;
 				cursor: pointer;
+
+				@extend .transition;
+				&:hover {
+					color: $form-focus-color;
+				}
 			}
 		}
 	}
 }
 
 #page-right {
-	min-height: 100vh;
 	padding-right: 3% !important;
 
-	h1 {
-		font-size: 320%;
-		margin-top: 100px;
-		margin-left: 5%;
+	.mainSections {
+		padding-top: 15%;
+		padding-bottom: 10%;
+		h1 {
+			font-size: 320%;
+			margin-left: 5%;
+		}
 	}
 }
 
@@ -113,7 +120,6 @@ a {
 		height: 50px;
 		margin: 6px;
 		@extend .transition;
-
 		&:hover {
 			margin: 1px;
 			width:60px;
@@ -187,9 +193,21 @@ a {
 	}
 }
 
+#aboutInner {
+	width: 90%;
+	padding-left: 10%;
+
+	span {
+		color: $form-focus-color;
+		cursor: pointer;
+	}
+}
+
 #page-home-contact {
 	width: 90%;
 	padding-left: 10%;
+	padding-top: 30px;
+	padding-bottom: 15%;
 }
 
 #contact-modal {
