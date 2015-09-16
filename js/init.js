@@ -25,11 +25,11 @@ var projectChangeAnimationTime = 150;
 var projectSet = 0;
 var projectSets = ['main', 'work', 'android', 'web'];
 
-var sectionSet = 2;
 var sectionSets = ['about', 'project', 'contact'];
 
+var stateMobile = true;
+
 function showSectionSet(num) {
-	sectionSet = num;
 	$('html, body').animate({
 		scrollTop: $('#' + sectionSets[num] + 'Section').offset().top
 	}, 'slow');
@@ -70,23 +70,8 @@ $(document).ready(function() {
     });
 });
 
-var stateMobile = false;
-
 function handleResize() {
-	stateMobile = $(window).width() <= 600;
-	if(stateMobile) {
-		$("#fullsite").removeClass("page-big");
-		if(stateTopBarSticky) {
-			var topbarHeight = $('#projectLinks').css('height');
-			$('#projects-table').css('margin-top', topbarHeight);
-		} else {
-			$('#projects-table').css('margin-top', '0px');
-		}
-	} else {
-		$("#fullsite").addClass("page-big");
-		var topbarHeight = $('#projectLinks').css('height');
-		$('#projects-table').css('margin-top', topbarHeight);
-	}
+	handleMobileSwitch();
 
 	var projectsWidth = $('#projects-table').css('width');
 	$('#projectLinks').css('width', projectsWidth);
@@ -108,7 +93,6 @@ function handleResize() {
 	$('.image-overlay-text-title').css('font-size', fontSizeTitle);
 	$('.image-overlay-text-main').css('font-size', fontSizeBody);
 
-
 	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
 	var textScale = Math.pow($(window).width(), 0.48) / 30;
 
@@ -118,4 +102,14 @@ function handleResize() {
 	$('.landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);
 	$('.normal-title').css('font-size', normalTitle);
+}
+
+function handleMobileSwitch() {
+	if(stateMobile == $(window).width() <= 600) return;
+	stateMobile = $(window).width() <= 600;
+	if(stateMobile) {
+		$("#fullsite").removeClass("page-big");
+	} else {
+		$("#fullsite").addClass("page-big");
+	}
 }
