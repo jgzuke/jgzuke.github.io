@@ -27,10 +27,10 @@ function showSectionSet(num) {
 	sectionSet = num;
 	$('.mainSections').hide();
 
-	$('#page-projects-background').fadeOut(projectChangeAnimationTime);
+	$('#page-right').fadeOut(projectChangeAnimationTime);
 	setTimeout(function () {
 		$('#' + sectionSets[num] + 'Section').show();
-		$('#page-projects-background').fadeIn(projectChangeAnimationTime);
+		$('#page-right').fadeIn(projectChangeAnimationTime);
 	}, projectChangeAnimationTime);
 
 	sectionSet = num;
@@ -42,7 +42,7 @@ function showProjectSet(num) {
 	$('.mainSections').hide();
 	$('#projectSection').show();
 
-	var container = '#page-projects-background';
+	var container = '#page-right';
 	if(sectionSet == 2) {
 		container = '#projects-table';
 	}

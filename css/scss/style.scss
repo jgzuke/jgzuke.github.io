@@ -57,7 +57,7 @@ a {
 }
 
 .page-big {
-	#page-home-background {
+	#page-left {
 		position: fixed;
 		#page-home-inner {
 			height: 100vh;
@@ -66,17 +66,13 @@ a {
 	}
 }
 
-#page-home-background {
+#page-left {
 	#page-home-inner {
-		padding: 0px !important;
-
-		#page-home-intro {
-			padding: 10%;
-		}
+		padding: 10% !important;
 	}
 }
 
-#page-projects-background {
+#page-right {
 	min-height: 100vh;
 	padding: 3% !important;
 }
@@ -98,17 +94,16 @@ a {
 }
 
 #myLinks {
-	margin-top: 6px;
-
 	img {
-		width: 60px;
-		height: 60px;
+		width: 50px;
+		height: 50px;
+		margin: 6px;
 		@extend .transition;
 
 		&:hover {
-			margin-top: -5px;
-			width:70px;
-			height:70px;
+			margin: 1px;
+			width:60px;
+			height:60px;
 		}
 	}
 }
@@ -116,6 +111,10 @@ a {
 .stick-to-top {
 	position: fixed;
 	top: 0;
+}
+
+#navLinks {
+	margin-left: 70px;
 }
 
 .image-overlay-main {

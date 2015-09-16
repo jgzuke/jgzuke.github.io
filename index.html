@@ -15,15 +15,39 @@
     <div id="overlay"></div>
 
     <div class="row" id="fullsite">
-      <div id="page-home-background" class="col s12 m5 l3">
-        <div id="page-home-inner">
-          <div id="page-home-intro">
-            <h1 class="header center-align" id = "landing-title">JZ</h1>
+      <div id="page-left" class="col s12 m5 l3">
+        <div id="page-home-inner" class="center-align valign-wrapper">
+          <div class="valign">
+            <h1 class="header" id = "landing-title">JZ</h1>
 
-            <p class="header center-align landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things and creating cool stuff</p>
+            <p class="header landing-text">Hi, I'm Jason Zukewich, Android and Web developer with a passion for learning new things and creating cool stuff</p>
+
+            <div id="navLinks" class="left-align">
+              <p id="aboutLink">About</p>
+              <p id="projectsLink">Projects</p>
+              <p id="contactLink">Contact</p>
+            </div>
+
+            <div class="row center-align" id="myLinks">
+              <div class="col s3 m4"><a href="https://github.com/jgzuke" target="_blank"><img src="images/ic/github.png"/></a></div>
+              <div class="col s3 m4"><a href="https://ca.linkedin.com/in/jgzuke/" target="_blank"><img src="images/ic/linkedin.png"/></a></div>
+              <div class="col s3 m4"><a href="Jason_Zukewich_Resume.pdf" target="_blank"><img src="images/ic/resume.png"/></a></div>
+              <div class="col s3 hide-on-med-and-up"><a class="link-contact"><img src="images/ic/email.png"/></a></div>
+            </div>
           </div>
+        </div>
+      </div>
 
-          <div id="page-home-contact" class = "hide-on-small-only">
+
+
+      <div id="page-right" class="col s12 m7 l9 offset-m5 offset-l3 left-align">
+        <div id="aboutSection" class="mainSections">
+          <h1>About</h1>
+        </div>
+
+        <div id="contactSection" class="mainSections">
+          <h1>Contact</h1>
+          <div id="page-home-contact">
             <form autocomplete="off" method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
               <div class="row">
                 <div class="input-field col m6 s12">
@@ -45,18 +69,6 @@
               </button>
             </form>
           </div>
-        </div>
-      </div>
-
-
-
-      <div id="page-projects-background" class="col s12 m7 l9 offset-m5 offset-l3 left-align">
-        <div id="aboutSection" class="mainSections">
-          <h1>About</h1>
-        </div>
-
-        <div id="contactSection" class="mainSections">
-          <h1>Contact</h1>
         </div>
 
         <div id="projectSection" class="mainSections">
@@ -217,13 +229,6 @@
             </div>
           </div>
         </div>
-
-        <div class="row center-align" id="myLinks">
-          <div class="col s3 m4"><a href="https://github.com/jgzuke" target="_blank"><img src="images/ic/github.png"/></a></div>
-          <div class="col s3 m4"><a href="https://ca.linkedin.com/in/jgzuke/" target="_blank"><img src="images/ic/linkedin.png"/></a></div>
-          <div class="col s3 m4"><a href="Jason_Zukewich_Resume.pdf" target="_blank"><img src="images/ic/resume.png"/></a></div>
-          <div class="col s3 hide-on-med-and-up"><a class="link-contact"><img src="images/ic/email.png"/></a></div>
-        </div>
       </div>
     </div>
 
@@ -246,7 +251,7 @@
           <textarea type="text" name="message" class="materialize-textarea"></textarea>
           <label for="message">Message</label>
         </div>
-        <button class="btn-flat white-text waves-effect waves-white" type="submit" name="action" id="send-to-button">Send
+        <button class="btn-flat white-text waves-effect waves-white" type="submit" name="action" id="send-to-button">SEND
           <i class="material-icons right">send</i>
         </button>
       </form>
