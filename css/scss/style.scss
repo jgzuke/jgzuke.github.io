@@ -69,23 +69,37 @@ a {
 #page-left {
 	#page-home-inner {
 		padding: 10% !important;
+		.center-align {
+			width: 100%;
+		}
+
+		#navLinks {
+			p {
+				font-size: 110%;
+				cursor: pointer;
+			}
+		}
 	}
 }
 
 #page-right {
 	min-height: 100vh;
-	padding: 3% !important;
+	padding-right: 3% !important;
+
+	h1 {
+		font-size: 320%;
+		margin-top: 100px;
+		margin-left: 5%;
+	}
 }
 
 #projectLinks {
 	z-index: 11;
-	color: #fff;
-	div {
+	margin-top: -10px;
+	margin-bottom: -40px;
+	p {
 		font-size: 150%;
-		p {
-			margin: 10px;
-			cursor: pointer;
-		}
+		cursor: pointer;
 	}
 
 	.active {
@@ -111,10 +125,6 @@ a {
 .stick-to-top {
 	position: fixed;
 	top: 0;
-}
-
-#navLinks {
-	margin-left: 70px;
 }
 
 .image-overlay-main {
@@ -176,14 +186,19 @@ a {
 		}
 	}
 }
+
+#page-home-contact {
+	width: 90%;
+	padding-left: 10%;
+}
+
 #contact-modal {
 	background-color: $form-background-color !important;
+	padding: 10% !important;
+	max-height: 80vh !important;
 }
 
 #contact-modal, #page-home-contact {
-	padding: 10% !important;
-	max-height: 80vh !important;
-
 	h5 {
 		font-size: 130%;
 		margin-bottom: 20px;

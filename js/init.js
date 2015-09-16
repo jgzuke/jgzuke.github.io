@@ -15,12 +15,22 @@ $('.projects-web').click(function() {
 	showProjectSet(3);
 });
 
+$('#aboutLink').click(function() {
+	showSectionSet(0);
+});
+$('#projectsLink').click(function() {
+	showSectionSet(1);
+});
+$('#contactLink').click(function() {
+	showSectionSet(2);
+});
+
 var projectChangeAnimationTime = 150;
 var projectSet = 0;
 var projectSets = ['main', 'work', 'android', 'web'];
 
 var sectionSet = 2;
-var sectionSets = ['about', 'contact', 'projects'];
+var sectionSets = ['about', 'project', 'contact'];
 
 function showSectionSet(num) {
 	if(sectionSet == num) return;
@@ -47,7 +57,7 @@ function showProjectSet(num) {
 		container = '#projects-table';
 	}
 	$(container).fadeOut(projectChangeAnimationTime);
-	$('#projectLinks div').removeClass("active");
+	$('#projectLinks p').removeClass("active");
 	$('.projects-' + projectSets[num]).addClass("active");
 
 	setTimeout(function () {
@@ -67,26 +77,7 @@ $(document).ready(function() {
 	handleResize();
 });
 
-var stateTopBarSticky = false;
 var stateMobile = false;
-$(window).scroll(function(){
-	if(stateMobile) {
-		homeHeight = parseInt($('#page-home-inner').css('height'), 10);
-		if(homeHeight - $(this).scrollTop() <= 0) {
-			if(!stateTopBarSticky) {
-				$("#projectLinks").addClass("stick-to-top");
-				stateTopBarSticky = true;
-				handleResize();
-			}
-		} else {
-			if(stateTopBarSticky) {
-				$("#projectLinks").removeClass("stick-to-top");
-				stateTopBarSticky = false;
-				handleResize();
-			}
-		}
-	}
-});
 
 function handleResize() {
 	stateMobile = $(window).width() <= 600;
