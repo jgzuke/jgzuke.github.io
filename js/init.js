@@ -42,24 +42,16 @@ function showSectionSet(num) {
 function showProjectSet(num) {
 	if(projectSet == num) return;
 	projectSet = num;
-	$('.mainSections').hide();
-	$('#projectSection').show();
 
-	var container = '#page-right';
-	if(sectionSet == 2) {
-		container = '#projects-table';
-	}
-	$(container).fadeOut(projectChangeAnimationTime);
+	$('#projects-table').fadeOut(projectChangeAnimationTime);
 	$('#projectLinks p').removeClass("active");
 	$('.projects-' + projectSets[num]).addClass("active");
 
 	setTimeout(function () {
 		$('.image-overlay-main').hide();
 		$('.image-overlay-' + projectSets[num]).show();
-		$(container).fadeIn(projectChangeAnimationTime);
+		$('#projects-table').fadeIn(projectChangeAnimationTime);
 	}, projectChangeAnimationTime);
-
-	sectionSet = 2;
 }
 
 $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {

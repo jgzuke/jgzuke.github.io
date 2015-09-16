@@ -107,10 +107,15 @@ a {
 	p {
 		font-size: 150%;
 		cursor: pointer;
+		@extend .transition;
+		&:hover {
+			color: $form-focus-color;
+		}
 	}
 
 	.active {
 		font-weight: bold;
+		color: $form-focus-color;
 	}
 }
 
