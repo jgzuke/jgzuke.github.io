@@ -39,6 +39,14 @@ $form-error-color: #ba5947;
 	transition: all 0.5s ease;
 }
 
+.blue-on-hover {
+	cursor: pointer;
+	@extend .transition;
+	&:hover {
+		color: $form-focus-color;
+	}
+}
+
 .row, .col {
 	padding: 0px !important;
 	margin: 0px;
@@ -73,12 +81,7 @@ $form-error-color: #ba5947;
 		#navLinks {
 			p {
 				font-size: 110%;
-				cursor: pointer;
-
-				@extend .transition;
-				&:hover {
-					color: $form-focus-color;
-				}
+				@extend .blue-on-hover;
 			}
 
 			.active {
@@ -118,11 +121,7 @@ $form-error-color: #ba5947;
 	margin-bottom: -40px;
 	p {
 		font-size: 150%;
-		cursor: pointer;
-		@extend .transition;
-		&:hover {
-			color: $form-focus-color;
-		}
+		@extend .blue-on-hover;
 	}
 
 	.active {
@@ -176,6 +175,10 @@ $form-error-color: #ba5947;
 			}
 		}	
 
+		a {
+			@extend .blue-on-hover;
+		}
+
 		.image-overlay-background {
 			z-index:1;
 			width: 100%;
@@ -216,9 +219,8 @@ $form-error-color: #ba5947;
 	width: 90%;
 	padding-left: 10%;
 
-	span {
-		color: $form-focus-color;
-		cursor: pointer;
+	a {
+		@extend .blue-on-hover;
 	}
 }
 
