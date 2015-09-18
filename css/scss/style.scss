@@ -177,7 +177,7 @@ $form-error-color: #ba5947;
 			height: 100%;
 		}
 
-		.bubbleLink1 {
+		.link1 {
 			@extend .bubbleLink;
 			margin-left: -13px;
 			&:hover {
@@ -185,7 +185,7 @@ $form-error-color: #ba5947;
 			}
 		}
 
-		.bubbleLink2 {
+		.link2 {
 			@extend .bubbleLink;
 			margin-left: 15px;
 			&:hover {
