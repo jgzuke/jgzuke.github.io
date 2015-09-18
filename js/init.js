@@ -94,7 +94,7 @@ function handleResize() {
 	$('.image-overlay-text-main').css('font-size', fontSizeBody);
 
 	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
-	var textScale = Math.pow($(window).width(), 0.48) / 30;
+	var textScale = Math.pow($(window).width(), 0.13) / 2.4;
 
 	var landingTitle = Math.floor(textScale * 500) + '%';
 	var landingText = Math.floor(textScale * 130) + '%';
