@@ -97,10 +97,8 @@ function handleResize() {
 	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
 	var textScale = Math.pow($(window).width(), 0.13) / 2.4;
 
-	var landingTitle = Math.floor(textScale * 500) + '%';
 	var landingText = Math.floor(textScale * 130) + '%';
 	var normalTitle = Math.floor(textScale * 400) + '%';
-	$('.landing-title').css('font-size', landingTitle);
 	$('.landing-text').css('font-size', landingText);
 	$('.normal-title').css('font-size', normalTitle);
 }
