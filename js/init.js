@@ -22,8 +22,8 @@ $('.contactLink').click(function() {
 });
 
 var projectChangeAnimationTime = 150;
-var projectSet = 0;
-var projectSets = ['main', 'work', 'android', 'web'];
+var projectSet = -1;
+var projectSets = ['top', 'work', 'android', 'web'];
 
 var sectionSets = ['about', 'project', 'contact'];
 
@@ -44,8 +44,8 @@ function showProjectSet(num) {
 	$('.projects-' + projectSets[num]).addClass("active");
 
 	setTimeout(function () {
-		$('.image-overlay-main').hide();
-		$('.image-overlay-' + projectSets[num]).show();
+		$('#projects-table .col').hide();
+		$('#projects-table .' + projectSets[num]).show();
 		$('#projects-table').fadeIn(projectChangeAnimationTime);
 	}, projectChangeAnimationTime);
 }
@@ -68,6 +68,7 @@ $(document).ready(function() {
     		$('.aboutLink').addClass("active");
     	}
     });
+    showProjectSet(0);
 });
 
 function handleResize() {
@@ -81,8 +82,8 @@ function handleResize() {
 	var imWidth;
 	imHeight = $('#project-pic-first').css('height');
 	imWidth = $('#project-pic-first').css('width');
-	$('.image-overlay-text').css('height', imHeight);
-	$('.image-overlay-text').css('width', imWidth);
+	$('#projectSection .col div').css('height', imHeight);
+	$('#projectSection .col div').css('width', imWidth);
 
 	// Sets text size to fit well in overlay based on overlay dimensions
 	var heightInt = parseInt(imHeight, "10");
