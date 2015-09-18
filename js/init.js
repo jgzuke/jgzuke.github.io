@@ -91,8 +91,8 @@ function handleResize() {
 	var fontSizeTitle = Math.floor(fontSizeScale * 0.65) + '%';
 	var fontSizeBody = Math.floor(fontSizeScale*0.46) + '%';
 
-	$('.image-overlay-text-title').css('font-size', fontSizeTitle);
-	$('.image-overlay-text-main').css('font-size', fontSizeBody);
+	$('#projects-table h4').css('font-size', fontSizeTitle);
+	$('#projects-table p').css('font-size', fontSizeBody);
 
 	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
 	var textScale = Math.pow($(window).width(), 0.13) / 2.4;
