@@ -88,7 +88,7 @@ function handleResize() {
 
 	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
 
-	var navText = Math.floor(Math.pow($('#page-left').width(), 0.5) * 10) + '%';
+	var navText = Math.floor(Math.pow($('#page-left').width(), 0.5) * 8) + '%';
 	var landingText = Math.floor(Math.pow(windowWidth, -0.08) * 250) + '%';
 	var normalTitle = Math.floor(Math.pow(windowWidth, 0.13) * 170) + '%';
 	$('.nav-text').css('font-size', navText);

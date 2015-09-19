@@ -73,6 +73,7 @@ $nav-link-margin-hover: -3%;
 
 #page-left {
 	#page-home-inner {
+		min-height: 100vh;
 		padding: 10% !important;
 		.center-align {
 			width: 100%;
@@ -153,11 +154,6 @@ $nav-link-margin-hover: -3%;
 	top: 0;
 }
 
-$bubble-link-size: 20%;
-$bubble-link-size-hover: 24%;
-$bubble-link-margin: -1%;
-$bubble-link-margin-hover: -3%;
-
 #projectSection {
 	.col {
 		position: relative;
@@ -197,29 +193,29 @@ $bubble-link-margin-hover: -3%;
 
 		.link1 {
 			@extend .bubbleLink;
-			margin-left: -13px;
+			margin-left: -4.5%;
 			&:hover {
-				margin-left: -15px;
+				margin-left: -5.5%;
 			}
 		}
 
 		.link2 {
 			@extend .bubbleLink;
-			margin-left: 15px;
+			margin-left: 5%;
 			&:hover {
-				margin-left: 13px;
+				margin-left: 4%;
 			}
 		}
 
 		.bubbleLink {
 			z-index: 11;
-			margin-top: -7px;
-			width:34px;
+			margin-top: -3%;
+			width:12%;
 			position:absolute;
 			@extend .transition;
 		    &:hover {
-				margin-top: -9px;
-				width:38px;
+				margin-top: -4%;
+				width:14%;
 			}
 		}
 	}
