@@ -1,0 +1,277 @@
+* {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	cursor: default;
+}
+
+body {
+	color: #fff;
+	background:url("../images/back/1.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#overlay {
+	z-index: -10;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(13, 59, 95, 0.89);
+}
+
+$form-background-color: #1976d2;
+$form-text-color: #ffffff;
+$form-focus-color: #90caf9;
+$form-error-color: #ba5947;
+
+$nav-link-size: 20%;
+$nav-link-size-hover: 24%;
+$nav-link-margin: -1%;
+$nav-link-margin-hover: -3%;
+
+.transition {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.blue-on-hover {
+	cursor: pointer;
+	@extend .transition;
+	&:hover {
+		color: $form-focus-color;
+	}
+}
+
+.row, .col {
+	padding: 0px !important;
+	margin: 0px;
+}
+
+.page-big {
+	#page-left {
+		position: fixed;
+		#page-home-inner {
+			height: 100vh;
+			overflow-y: auto;
+		}
+	}
+
+	#page-right {
+		padding-left: 0px !important;
+	}
+}
+
+#page-left {
+	#page-home-inner {
+		min-height: 100vh;
+		padding: 10% !important;
+		.center-align {
+			width: 100%;
+			margin-top: 50px;
+		}
+
+		.landing-title {
+			width: 40%;
+		}
+
+		#navLinks {
+			p {
+				font-size: 110%;
+				@extend .blue-on-hover;
+			}
+
+			.active {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+#page-right {
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+
+	.mainSections {
+		h1 {
+			font-size: 320%;
+			margin-left: 5vh;
+		}
+	}
+
+	#aboutSection, #projectSection {
+		margin-bottom: 100px;
+	}
+
+	#aboutSection, #contactSection {
+		height: 100vh;
+
+		.valign {
+			width: 100%;
+		}
+	}
+}
+
+#projectLinks {
+	z-index: 11;
+	margin-top: -10px;
+	margin-bottom: -40px;
+	p {
+		font-size: 150%;
+		@extend .blue-on-hover;
+	}
+
+	.active {
+		text-decoration: underline;
+	}
+}
+
+#myLinks {
+	img {
+		width: $nav-link-size;
+		height: $nav-link-size;
+		margin: $nav-link-margin;
+		@extend .transition;
+		&:hover {
+			width: $nav-link-size-hover;
+			height: $nav-link-size-hover;
+			margin: $nav-link-margin-hover;
+		}
+	}
+}
+
+.stick-to-top {
+	position: fixed;
+	top: 0;
+}
+
+#projectSection {
+	.col {
+		position: relative;
+		margin: 0px !important;
+		margin-bottom: -6px !important;
+		padding: 10px !important;
+
+		div {
+			position: absolute;
+		    opacity:0;
+		    z-index: 10;
+		    padding-left: 6%;
+		    padding-right: 6%;
+		    padding-top: 3.5%;
+		    background-color: rgba(22,93,136, 0.91);
+		    @extend .transition;
+
+		    &:hover {
+		    	opacity:1;
+		    }
+
+		    h4 {
+				text-align: center;
+				font-style: bold;
+			}
+		}	
+
+		a {
+			@extend .blue-on-hover;
+		}
+
+		.image-overlay-background {
+			z-index:1;
+			width: 100%;
+			height: 100%;
+		}
+
+		.link1 {
+			@extend .bubbleLink;
+			margin-left: -4.5%;
+			&:hover {
+				margin-left: -5.5%;
+			}
+		}
+
+		.link2 {
+			@extend .bubbleLink;
+			margin-left: 5%;
+			&:hover {
+				margin-left: 4%;
+			}
+		}
+
+		.bubbleLink {
+			z-index: 11;
+			margin-top: -3%;
+			width:12%;
+			position:absolute;
+			@extend .transition;
+		    &:hover {
+				margin-top: -4%;
+				width:14%;
+			}
+		}
+	}
+}
+
+#aboutInner {
+	width: 90%;
+	padding-left: 10%;
+
+	a {
+		@extend .blue-on-hover;
+	}
+}
+
+#page-home-contact {
+	width: 90%;
+	padding-left: 10%;
+
+	h5 {
+		font-size: 130%;
+		margin-bottom: 20px;
+	}
+
+	#send-to-button {
+		float: right;
+		margin-bottom: 20px;
+	}
+
+	.input-field {
+	    label {
+		    color: $form-text-color;
+		}
+
+		.prefix.active {
+			color: $form-focus-color;
+		}
+
+		input[type=text], input[type=email], textarea[type=text] {
+			box-shadow: none;
+			border-bottom: 1px solid $form-text-color;
+			color: $form-text-color;
+
+	    	&:focus {
+	    		border-bottom: 1px solid $form-focus-color;
+
+	    		.invalid {
+		    		border-bottom: 1px solid $form-error-color !important;
+		    	}
+	    	}
+	    	&:focus + label {
+				color: $form-focus-color;
+			}
+		}
+	}
+
+	button {
+		text-transform: none;
+	}
+}
