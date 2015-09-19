@@ -1,4 +1,4 @@
-$('.projects-main').click(function() {
+$('.projects-top').click(function() {
 	showProjectSet(0);
 });
 $('.projects-work').click(function() {
