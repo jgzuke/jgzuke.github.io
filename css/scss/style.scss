@@ -32,6 +32,11 @@ $form-text-color: #ffffff;
 $form-focus-color: #90caf9;
 $form-error-color: #ba5947;
 
+$nav-link-size: 20%;
+$nav-link-size-hover: 24%;
+$nav-link-margin: -1%;
+$nav-link-margin-hover: -3%;
+
 .transition {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -75,7 +80,7 @@ $form-error-color: #ba5947;
 		}
 
 		.landing-title {
-			width: 50%;
+			width: 40%;
 		}
 
 		#navLinks {
@@ -131,14 +136,14 @@ $form-error-color: #ba5947;
 
 #myLinks {
 	img {
-		width: 50px;
-		height: 50px;
-		margin: -3px;
+		width: $nav-link-size;
+		height: $nav-link-size;
+		margin: $nav-link-margin;
 		@extend .transition;
 		&:hover {
-			margin: -6px;
-			width:56px;
-			height:56px;
+			width: $nav-link-size-hover;
+			height: $nav-link-size-hover;
+			margin: $nav-link-margin-hover;
 		}
 	}
 }
@@ -147,6 +152,11 @@ $form-error-color: #ba5947;
 	position: fixed;
 	top: 0;
 }
+
+$bubble-link-size: 20%;
+$bubble-link-size-hover: 24%;
+$bubble-link-margin: -1%;
+$bubble-link-margin-hover: -3%;
 
 #projectSection {
 	.col {

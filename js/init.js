@@ -72,40 +72,33 @@ $(document).ready(function() {
 });
 
 function handleResize() {
-	handleMobileSwitch();
+	var windowWidth = $(window).width()
+	handleMobileSwitch(windowWidth);
 
-	var projectsWidth = $('#projects-table').css('width');
-	$('#projectLinks').css('width', projectsWidth);
+	$('#projectLinks').css('width', $('#projects-table').css('width'));
 
 	// Sets overlays to same height and width as pictures
-	var imHeight;
-	var imWidth;
-	imHeight = $('#project-pic-first').css('height');
-	imWidth = $('#project-pic-first').css('width');
-	$('#projectSection .col div').css('height', imHeight);
-	$('#projectSection .col div').css('width', imWidth);
+	$('#projectSection .col div').css('height', $('#project-pic-first').css('height'));
+	$('#projectSection .col div').css('width', $('#project-pic-first').css('width'));
 
 	// Sets text size to fit well in overlay based on overlay dimensions
-	var heightInt = parseInt(imHeight, "10");
-	var fontSizeScale = Math.pow(heightInt, 1); //constant to keep text scaling with size
-	var fontSizeTitle = Math.floor(fontSizeScale * 0.65) + '%';
-	var fontSizeBody = Math.floor(fontSizeScale*0.46) + '%';
-
-	$('#projects-table h4').css('font-size', fontSizeTitle);
-	$('#projects-table p').css('font-size', fontSizeBody);
+	var picHeight = parseInt($('#project-pic-first').css('height'), "10");
+	$('#projects-table h4').css('font-size', Math.floor(picHeight * 0.65) + '%');
+	$('#projects-table p').css('font-size', Math.floor(picHeight * 0.46) + '%');
 
 	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
-	var textScale = Math.pow($(window).width(), 0.13) / 2.4;
 
-	var landingText = Math.floor(textScale * 130) + '%';
-	var normalTitle = Math.floor(textScale * 400) + '%';
+	var navText = Math.floor(Math.pow($('#page-left').width(), 0.5) * 10) + '%';
+	var landingText = Math.floor(Math.pow(windowWidth, -0.08) * 250) + '%';
+	var normalTitle = Math.floor(Math.pow(windowWidth, 0.13) * 170) + '%';
+	$('.nav-text').css('font-size', navText);
 	$('.landing-text').css('font-size', landingText);
 	$('.normal-title').css('font-size', normalTitle);
 }
 
-function handleMobileSwitch() {
-	if(stateMobile == $(window).width() <= 600) return;
-	stateMobile = $(window).width() <= 600;
+function handleMobileSwitch(windowWidth) {
+	if(stateMobile == windowWidth <= 600) return;
+	stateMobile = windowWidth <= 600;
 	if(stateMobile) {
 		$("#fullsite").removeClass("page-big");
 	} else {
