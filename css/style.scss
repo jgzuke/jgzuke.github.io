@@ -32,11 +32,6 @@ $form-text-color: #ffffff;
 $form-focus-color: #90caf9;
 $form-error-color: #ba5947;
 
-$nav-link-size: 20%;
-$nav-link-size-hover: 24%;
-$nav-link-margin: -1%;
-$nav-link-margin-hover: -3%;
-
 .transition {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -136,15 +131,18 @@ $nav-link-margin-hover: -3%;
 }
 
 #myLinks {
-	img {
-		width: $nav-link-size;
-		height: $nav-link-size;
-		margin: $nav-link-margin;
-		@extend .transition;
+	svg {
+		width: 20%;
+		height: 20%;
+		margin: -1%;
+		g {
+			@extend .transition;
+			fill: #fff;
+		}
 		&:hover {
-			width: $nav-link-size-hover;
-			height: $nav-link-size-hover;
-			margin: $nav-link-margin-hover;
+			g {
+				fill: $form-focus-color;
+			}
 		}
 	}
 }

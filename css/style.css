@@ -23,7 +23,7 @@ body {
   height: 100vh;
   background-color: rgba(13, 59, 95, 0.89); }
 
-.transition, .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a, #myLinks img, #projectSection .col div, #projectSection .col .bubbleLink, #projectSection .col .link1, #projectSection .col .link2 {
+.transition, .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a, #myLinks svg g, #projectSection .col div, #projectSection .col .bubbleLink, #projectSection .col .link1, #projectSection .col .link2 {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -81,14 +81,14 @@ body {
   #projectLinks .active {
     text-decoration: underline; }
 
-#myLinks img {
+#myLinks svg {
   width: 20%;
   height: 20%;
   margin: -1%; }
-  #myLinks img:hover {
-    width: 24%;
-    height: 24%;
-    margin: -3%; }
+  #myLinks svg g {
+    fill: #fff; }
+  #myLinks svg:hover g {
+    fill: #90caf9; }
 
 .stick-to-top {
   position: fixed;
