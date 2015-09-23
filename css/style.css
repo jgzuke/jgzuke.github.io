@@ -23,7 +23,7 @@ body {
   height: 100vh;
   background-color: rgba(13, 59, 95, 0.89); }
 
-.transition, .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a, #myLinks svg g, #projectSection .col div, #projectSection .col .bubbleLink, #projectSection .col .link1, #projectSection .col .link2 {
+.transition, .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a, #myLinks svg g, #projectSection .col div, #projectSection .col .link1, #projectSection .col .link2 {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -103,34 +103,34 @@ body {
     position: absolute;
     opacity: 0;
     z-index: 10;
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 3.5%;
     background-color: rgba(22, 93, 136, 0.91); }
     #projectSection .col div:hover {
       opacity: 1; }
     #projectSection .col div h4 {
       text-align: center;
-      font-style: bold; }
+      font-style: bold;
+      margin-bottom: -2%; }
+    #projectSection .col div p {
+      margin: 5%; }
   #projectSection .col .image-overlay-background {
     z-index: 1;
     width: 100%;
     height: 100%; }
   #projectSection .col .link1 {
-    margin-left: -4.5%; }
+    margin-left: 0.5%; }
     #projectSection .col .link1:hover {
-      margin-left: -5.5%; }
+      margin-left: -0.5%; }
   #projectSection .col .link2 {
-    margin-left: 5%; }
+    margin-left: 10.5%; }
     #projectSection .col .link2:hover {
-      margin-left: 4%; }
-  #projectSection .col .bubbleLink, #projectSection .col .link1, #projectSection .col .link2 {
+      margin-left: 9.5%; }
+  #projectSection .col .link1, #projectSection .col .link2 {
     z-index: 11;
-    margin-top: -3%;
+    margin-top: 0.5%;
     width: 12%;
     position: absolute; }
-    #projectSection .col .bubbleLink:hover, #projectSection .col .link1:hover, #projectSection .col .link2:hover {
-      margin-top: -4%;
+    #projectSection .col .link1:hover, #projectSection .col .link2:hover {
+      margin-top: -0.5%;
       width: 14%; }
 
 #aboutInner {

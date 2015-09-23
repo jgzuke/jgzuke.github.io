@@ -163,9 +163,6 @@ $form-error-color: #ba5947;
 			position: absolute;
 		    opacity:0;
 		    z-index: 10;
-		    padding-left: 6%;
-		    padding-right: 6%;
-		    padding-top: 3.5%;
 		    background-color: rgba(22,93,136, 0.91);
 		    @extend .transition;
 
@@ -176,6 +173,11 @@ $form-error-color: #ba5947;
 		    h4 {
 				text-align: center;
 				font-style: bold;
+				margin-bottom: -2%;
+			}
+
+			p {
+				margin: 5%;
 			}
 		}	
 
@@ -190,29 +192,27 @@ $form-error-color: #ba5947;
 		}
 
 		.link1 {
-			@extend .bubbleLink;
-			margin-left: -4.5%;
+			margin-left: 0.5%;
 			&:hover {
-				margin-left: -5.5%;
+				margin-left: -0.5%;
 			}
 		}
 
 		.link2 {
-			@extend .bubbleLink;
-			margin-left: 5%;
+			margin-left: 10.5%;
 			&:hover {
-				margin-left: 4%;
+				margin-left: 9.5%;
 			}
 		}
 
-		.bubbleLink {
+		.link1, .link2 {
 			z-index: 11;
-			margin-top: -3%;
+			margin-top: 0.5%;
 			width:12%;
 			position:absolute;
 			@extend .transition;
 		    &:hover {
-				margin-top: -4%;
+				margin-top: -0.5%;
 				width:14%;
 			}
 		}
