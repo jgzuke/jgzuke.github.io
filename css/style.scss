@@ -273,5 +273,13 @@ $nav-link-margin-hover: -3%;
 
 	button {
 		text-transform: none;
+		background-color: transparent !important;
+
+		&:focus {
+			background-color: transparent !important;
+		}
+		.waves-ripple {
+			background-color: $form-focus-color;
+		}
 	}
 }

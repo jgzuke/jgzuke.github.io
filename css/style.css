@@ -161,6 +161,11 @@ body {
     #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
       color: #90caf9; }
   #page-home-contact button {
-    text-transform: none; }
+    text-transform: none;
+    background-color: transparent !important; }
+    #page-home-contact button:focus {
+      background-color: transparent !important; }
+    #page-home-contact button .waves-ripple {
+      background-color: #90caf9; }
 
 /*# sourceMappingURL=style.css.map */
