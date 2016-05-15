@@ -69,7 +69,63 @@ $(document).ready(function() {
     	}
     });
     showProjectSet(0);
+
+    var json = '{"projects":[{"name":"Enflick","web":"https://www.textnow.com","twitter":"https://twitter.com/enflick","description":"At Enflick I worked as part of the android team on the Textnow app. It was an incredible experience, I learned a ton, and got to design and code super cool things.","image":"textnow.png","tags":"work android top"},{"name":"TechRetreat","web":"http://www.techretreat.ca","twitter":"https://twitter.com/techretreat","description":"I was one of the organizers of TechRetreat as well as a teacher for our Learnathon. We took kids with no coding experience and in less than ten hours have them writing functional ruby AIs.","image":"techretreat.png","tags":"work top"},{"name":"Army Commander","github":"https://github.com/jgzuke/DrawingGame","description":"Create and control an army using custom or preset gestures for different formations and actions. Enemies work together and form groups to defend themselves","image":"commander.jpg","tags":"android top"},{"name":"TechTanks","web":"http://techtanks.techretreat.ca/","github":"https://github.com/TechRetreat/game","description":"Write a ruby AI to control a tank, then test against your friends programs, all in your browser with no setup. Made for TechRetreat Learnathon.","image":"techtanks.png","tags":"web top"},{"name":"3D Viewer","github":"https://github.com/jgzuke/3DCity","description":"Takes sets of connected 3D points and draws them onto a canvas. Walk and jump using screen controls and look around by rotating phone. Coded from scratch","image":"3d.png","tags":"android top"},{"name":"Swipler","github":"https://github.com/icechen1/Swipler","description":"Chrome extention that use the doppler effect to detect hand gestures using your laptops mic and speakers. Switches/removes tabs when you swipe different directions","image":"swipler.png","tags":"web top"},{"name":"IntoxicMate","github":"https://github.com/IntoxicM8/android","description":"Uses your location, time, heart-rate etc over time to guess when you are intoxicated. IntoxicMate will then help guide you home, call a cab, or in emergencies call friends/family","image":"intoxic.png","tags":"android top"},{"name":"MyoGuitar","github":"https://github.com/jgzuke/MyoProject","description":"Use the Myo to play a virtual guitar on your android device. Detects strums when you have your hand closed and uses your fingers positions to play chords on the phone","image":"myoguitar.jpg","tags":"android top"},{"name":"War of Myths","github":"https://github.com/jgzuke/OpenWOM","description":"Play as a mage and explore the world. Enemies path and search around obstacles, dodge harm, and guess your movement. Started in grade 6 as a flash game, written for android in grade 11","image":"wom.png","tags":"android top"},{"name":"EngSoc","web":"https://www.engsoc.uwaterloo.ca/","description":"At Uwaterloo I help out the Engineering Society as an Ambassador, Director, Orientation Leader, and First Year Mentor, as well as helping with specific events","image":"engsoc.png","tags":"work"}]}';
+	//loadJSON();
+	buildProjects(json);
 });
+
+function loadJSON() {
+	var xobj = new XMLHttpRequest();
+	xobj.overrideMimeType("application/json");
+	xobj.open('GET', 'js/projects.json', true);
+	xobj.onreadystatechange = function () {
+		if (xobj.readyState == 4 && xobj.status == "200") {
+			// .open will NOT return a value but simply returns undefined in async mode so use a callback
+			buildProjects(xobj.responseText);
+		}
+	}
+	xobj.send(null);
+}
+
+function buildProjects(jsonresponse) {
+	var projects = JSON.parse(jsonresponse).projects;
+	for(var i = 0; i < projects.length; i++) {
+	    $('#projects-table').append(buildProject(projects[i], i == 0));
+	}
+}
+
+function buildProject(project, first) {
+	var title = project.name;
+	var github = project.github;
+	var web = project.web;
+	var twitter = project.twitter;
+	var description = project.description;
+	var image = project.image;
+	var tags = project.tags;
+	var id = '';
+
+	if (first) {
+		id = 'id="project-pic-first"';
+	}
+
+	var links = ``;
+	var bubbles = 0;
+	if (github != null) {
+		bubbles ++;
+		links += `<a href="${github}" target="_blank"><img src="ic/github.png" class = "link${bubbles}"/></a>`;
+	}
+	if (web != null) {
+		bubbles ++;
+		links += `<a href="${web}" target="_blank"><img src="ic/weblink.png" class = "link${bubbles}"/></a>`;
+	}
+	if (twitter != null) {
+		bubbles ++;
+		links += `<a href="${twitter}" target="_blank"><img src="ic/twitter.png" class = "link${bubbles}"/></a>`;
+	}
+    var newdiv = $(`<div class="col s12 m6 l4 ${tags}"><div>${links}<h4>${title}</h4><p>${description}</p></div><img class="image-overlay-background z-depth-3" src="./images/badges/${image}" ${id}/></div>`);
+    return newdiv;
+}
 
 function handleResize() {
 	var windowWidth = $(window).width()
