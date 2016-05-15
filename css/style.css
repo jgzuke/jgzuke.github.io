@@ -11,9 +11,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-Text Color #AAAAAA
-Highlight color #165D88
-Overlay rgba(22, 93, 136, 0.91)
+Text Color: #AAAAAA
+Project text color: FFFFFF;
+Highlight color: #165D88
+Overlay: rgba(22, 93, 136, 0.91)
 */
 
 body {
@@ -87,16 +88,13 @@ body {
   #myLinks svg:hover g {
     fill: #165D88; }
 
-.stick-to-top {
-  position: fixed;
-  top: 0; }
-
 #projectSection .col {
   position: relative;
   margin: 0px !important;
   margin-bottom: -6px !important;
   padding: 10px !important; }
   #projectSection .col div {
+    color: #FFFFFF;
     position: absolute;
     opacity: 0;
     z-index: 10;
@@ -130,13 +128,10 @@ body {
       margin-top: -0.5%;
       width: 14%; }
 
-#aboutInner {
+#aboutInner, #page-home-contact {
   width: 90%;
   padding-left: 10%; }
 
-#page-home-contact {
-  width: 90%;
-  padding-left: 10%; }
   #page-home-contact h5 {
     font-size: 130%;
     margin-bottom: 20px; }
@@ -144,14 +139,14 @@ body {
     float: right;
     color: #AAAAAA;
     margin-bottom: 20px; }
-  #page-home-contact .input-field label {
-    color: #AAAAAA; }
+  .input-field {
+    margin-top: 25px;
+  }
   #page-home-contact .input-field .prefix.active {
     color: #165D88; }
   #page-home-contact .input-field input[type=text], #page-home-contact .input-field input[type=email], #page-home-contact .input-field textarea[type=text] {
     box-shadow: none;
-    border-bottom: 1px solid #AAAAAA;
-    color: #AAAAAA; }
+    border-bottom: 1px solid #AAAAAA; }
     #page-home-contact .input-field input[type=text]:focus, #page-home-contact .input-field input[type=email]:focus, #page-home-contact .input-field textarea[type=text]:focus {
       border-bottom: 1px solid #165D88; }
       #page-home-contact .input-field input[type=text]:focus .invalid, #page-home-contact .input-field input[type=email]:focus .invalid, #page-home-contact .input-field textarea[type=text]:focus .invalid {
@@ -159,7 +154,6 @@ body {
     #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
       color: #165D88; }
   #page-home-contact button {
-    color: #AAAAAA;
     text-transform: none;
     background-color: transparent !important; }
     #page-home-contact button:focus {
@@ -169,4 +163,3 @@ body {
 
 
 
-      

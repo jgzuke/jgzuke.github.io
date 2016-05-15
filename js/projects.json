@@ -10,7 +10,7 @@
     "name": "TechRetreat",
     "web": "http://www.techretreat.ca",
     "twitter": "https://twitter.com/techretreat",
-    "description": "I was one of the organizers of TechRetreat as well as a teacher for our Learnathon. We took kids with no coding experience and in less than ten hours have them writing functional ruby AI's.",
+    "description": "I was one of the organizers of TechRetreat as well as a teacher for our Learnathon. We took kids with no coding experience and in less than ten hours have them writing functional ruby AIs.",
     "image": "techretreat.png",
     "tags": "work top"
   }, {
@@ -62,14 +62,6 @@
     "description": "At Uwaterloo I help out the Engineering Society as an Ambassador, Director, Orientation Leader, and First Year Mentor, as well as helping with specific events",
     "image": "engsoc.png",
     "tags": "work"
-  }, {
-    "name": "name",
-    "web": "web",
-    "twitter": "twitter",
-    "github": "github",
-    "description": "description",
-    "image": "image",
-    "tags": "work android top"
   }]
 }
 
