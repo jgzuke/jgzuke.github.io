@@ -1,16 +1,23 @@
 {
   "projects": [{
+    "name": "Coursera",
+    "web": "https://www.coursera.org/",
+    "twitter": "https://twitter.com/coursera",
+    "description": "At Enflick I worked as part of the android team on the Textnow app. It was an incredible experience, I learned a ton, and got to design and code super cool things",
+    "image": "textnow.png",
+    "tags": "work android top"
+  }, {
     "name": "Enflick",
     "web": "https://www.textnow.com",
     "twitter": "https://twitter.com/enflick",
-    "description": "At Enflick I worked as part of the android team on the Textnow app. It was an incredible experience, I learned a ton, and got to design and code super cool things.",
+    "description": "At Enflick I worked as part of the android team on the Textnow app. It was an incredible experience, I learned a ton, and got to design and code super cool things",
     "image": "textnow.png",
     "tags": "work android top"
   }, {
     "name": "TechRetreat",
     "web": "http://www.techretreat.ca",
     "twitter": "https://twitter.com/techretreat",
-    "description": "I was one of the organizers of TechRetreat as well as a teacher for our Learnathon. We took kids with no coding experience and in less than ten hours have them writing functional ruby AIs.",
+    "description": "I was one of the organizers of TechRetreat as well as a teacher for our Learnathon. In less than ten hours kids with no prior coding experience were writing working Ruby AIs for TechTanks",
     "image": "techretreat.png",
     "tags": "work top"
   }, {
@@ -23,13 +30,13 @@
     "name": "TechTanks",
     "web": "http://techtanks.techretreat.ca/",
     "github": "https://github.com/TechRetreat/game",
-    "description": "Write a ruby AI to control a tank, then test against your friends programs, all in your browser with no setup. Made for TechRetreat Learnathon.",
+    "description": "Write a ruby AI to control a tank, then test against your friends programs, all in your browser with no setup. Made for TechRetreat Learnathon",
     "image": "techtanks.png",
     "tags": "web top"
   }, {
     "name": "3D Viewer",
     "github": "https://github.com/jgzuke/3DCity",
-    "description": "Takes sets of connected 3D points and draws them onto a canvas. Walk and jump using screen controls and look around by rotating phone. Coded from scratch",
+    "description": "Takes sets of connected 3D points and draws them onto a canvas. Walk and jump using screen controls and look around by rotating phone. Coded from scratch using only Android Canvas",
     "image": "3d.png",
     "tags": "android top"
   }, {
@@ -43,114 +50,76 @@
     "github": "https://github.com/IntoxicM8/android",
     "description": "Uses your location, time, heart-rate etc over time to guess when you are intoxicated. IntoxicMate will then help guide you home, call a cab, or in emergencies call friends/family",
     "image": "intoxic.png",
-    "tags": "android top"
+    "tags": "android"
   }, {
     "name": "MyoGuitar",
     "github": "https://github.com/jgzuke/MyoProject",
     "description": "Use the Myo to play a virtual guitar on your android device. Detects strums when you have your hand closed and uses your fingers positions to play chords on the phone",
     "image": "myoguitar.jpg",
-    "tags": "android top"
+    "tags": "android"
   }, {
     "name": "War of Myths",
     "github": "https://github.com/jgzuke/OpenWOM",
     "description": "Play as a mage and explore the world. Enemies path and search around obstacles, dodge harm, and guess your movement. Started in grade 6 as a flash game, written for android in grade 11",
     "image": "wom.png",
-    "tags": "android top"
+    "tags": "android"
   }, {
     "name": "EngSoc",
     "web": "https://www.engsoc.uwaterloo.ca/",
     "description": "At Uwaterloo I help out the Engineering Society as an Ambassador, Director, Orientation Leader, and First Year Mentor, as well as helping with specific events",
     "image": "engsoc.png",
     "tags": "work"
+  }, {
+    "name": "SIPOFoundation",
+    "web": "http://www.sipofoundation.org/",
+    "twitter": "https://twitter.com/sipofoundation",
+    "description": "In Toronto I got to be part of an organization aiming to Inspire and Equip young professionals. I webmastered and helped with SIPOConference and SIPOWorkshops",
+    "image": "sipo.png",
+    "tags": "work"
+  }, {
+    "name": "Ontario Science Centre",
+    "web": "http://www.ontariosciencecentre.ca/",
+    "twitter": "https://twitter.com/ontsciencectr",
+    "description": "After spending second semester grade 12 studying at the OSC, I also got a chance to work there as a Host, interacting with visitors and helping with shows",
+    "image": "osc.png",
+    "tags": "work"
+  }, {
+    "name": "Portfolio Site",
+    "github": "https://github.com/jgzuke/jgzuke.github.io",
+    "description": "The first website I ever made, my portfolio has gone through many variations since, from the <a href='old/original.html' target='_blank'>Original</a> to my first attempt at using <a href='old/material.html' target='_blank'>Material Design",
+    "image": "website.png",
+    "tags": "web"
+  }, {
+    "name": "Find Me",
+    "github": "https://github.com/jgzuke/Find-Me-Web-App",
+    "description": "Create and share item lists with your friends through their email. People on a list can move and search for items, display list contents, and add or delete items",
+    "image": "findme.png",
+    "tags": "web"
+  }, {
+    "name": "Aaron Z Music",
+    "web": "http://aazukewich.github.io",
+    "github": "https://github.com/jgzuke/aazukewich.github.io",
+    "description": "My brothers website, still under developement and needs to be filled with content, the structure has all been finished though",
+    "image": "aarons.png",
+    "tags": "web"
+  }, {
+    "name": "Flash Games",
+    "web": "http://jgzuke.me/Old-Flash-Games/",
+    "github": "https://github.com/jgzuke/Old-Flash-Games",
+    "description": "A collection of old as2 and as3 flash games made around grade 5 to 8</p><p>Follow the link to read descriptions, and play",
+    "image": "throwback.png",
+    "tags": "web"
+  }, {
+    "name": "Ring Manager",
+    "github": "https://github.com/jgzuke/NotificationsManager",
+    "description": "Create sets of ring/vibration settings for different times/days, for example Work: 9-5 Mon-Fri. The current active set decides notification actions for certain contacts or groups",
+    "image": "notif.png",
+    "tags": "android"
+  }, {
+    "name": "Myro Security",
+    "github": "https://github.com/jgzuke/SE-101-Domestic-Sercurity",
+    "description": "Built a security system using the myro robot. When someone enetered your house, the Myro would send a passcode to your phone. If the code was not shown to the robot in time, the police were called",
+    "image": "myro.png",
+    "tags": "android"
   }]
 }
-
-
-
-/*<div class="col s12 m6 l4 work">
-  <div>
-    <a href="http://www.sipofoundation.org/" target="_blank"><img src="ic/weblink.png" class = "link1"/></a>
-    <a href="https://twitter.com/sipofoundation" target="_blank"><img src="ic/twitter.png" class = "link2"/></a>
-
-    <h4>SIPOFoundation</h4>
-    <p>In Toronto I got to be part of an organization aiming to Inspire and Equip young professionals. I webmastered and helped with SIPOConference and SIPOWorkshops</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/sipo.png"/>
-</div>
-
-<div class="col s12 m6 l4 work">
-  <div>
-    <a href="http://www.ontariosciencecentre.ca/" target="_blank"><img src="ic/weblink.png" class = "link1"/></a>
-    <a href="https://twitter.com/ontsciencectr" target="_blank"><img src="ic/twitter.png" class = "link2"/></a>
-
-    <h4>Ontario Science Centre</h4>
-    <p>After spending second semester grade 12 studying at the OSC, I also got a chance to work there as a Host, interacting with visitors and helping with shows</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/osc.png"/>
-</div>
-
-
-
-
-<div class="col s12 m6 l4 web">
-  <div>
-    <a href="https://github.com/jgzuke/jgzuke.github.io" target="_blank"><img src="ic/github.png" class = "link1"/></a>
-
-    <h4>Portfolio Site</h4>
-    <p>The first website I ever made, my portfolio has gone through many variations since, from the <a href="old/original.html" target="_blank">Original</a> to my first attempt at using <a href="old/material.html" target="_blank">Material Design</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/website.png"/>
-</div>
-
-<div class="col s12 m6 l4 web">
-  <div>
-    <a href="https://github.com/jgzuke/Old-Flash-Games" target="_blank"><img src="ic/github.png" class = "link1"/></a>
-    <a href="http://jgzuke.me/Old-Flash-Games/" target="_blank" id = "throwbackLink"><img src="ic/weblink.png" class = "link2"/></a>
-
-    <h4>Throwback</h4>
-    <p>A collection of old as2 and as3 flash games made around grade 5 to 8</p>
-    <p>Follow the <a href="http://jgzuke.me/Old-Flash-Games/" target="_blank">link</a> to read descriptions, and play</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/throwback.png" id="project-pic-second"/>
-</div>
-
-<div class="col s12 m6 l4 web">
-  <div>
-    <a href="https://github.com/jgzuke/Find-Me-Web-App" target="_blank"><img src="ic/github.png" class = "link1"/></a>
-
-    <h4>Find Me</h4>
-    <p>Create and share item lists with your friends through their email. People on a list can move and search for items, display list contents, and add or delete items</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/findme.png"/>
-</div>
-
-<div class="col s12 m6 l4 web">
-  <div>
-    <a href="https://github.com/jgzuke/aazukewich.github.io" target="_blank"><img src="ic/github.png" class = "link1"/></a>
-    <a href="http://aazukewich.github.io" target="_blank"><img src="ic/weblink.png" class = "link2"/></a>
-
-    <h4>Aaron Z Music</h4>
-    <p>My brothers website, still under developement and needs to be filled with content, the structure has all been finished though</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/aarons.png"/>
-</div>
-
-<div class="col s12 m6 l4 android">
-  <div>
-    <a href="https://github.com/jgzuke/NotificationsManager" target="_blank"><img src="ic/github.png" class = "link1"/></a>
-
-    <h4>Ring Manager</h4>
-    <p>Create sets of ring/vibration settings for different times/days, for example Work: 9-5 Mon-Fri. The current active set decides notification actions for certain contacts or groups</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/notif.png"/>
-</div>
-
-<div class="col s12 m6 l4 android">
-  <div>
-    <a href="https://github.com/jgzuke/SE-101-Domestic-Sercurity" target="_blank"><img src="ic/github.png" class = "link1"/></a>
-
-    <h4>Myro Security</h4>
-    <p>Built a security system using the myro robot for a school project. When someone enetered your house, the Myro would send a passcode to your phone. If the code wasn't shown to the robot in time, the police were called</p>
-  </div>
-  <img class="image-overlay-background z-depth-3" src="./images/badges/myro.png"/>
-</div>*/
