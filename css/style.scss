@@ -12,12 +12,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 $form-focus-color: #FFC045;
 $form-error-color: #ba5947;
+$text-color: rgba(180, 180, 180);
 $background-color: rgba(13, 59, 95, 0.89);
 $badge-color: rgba(22,93,136, 0.91);
 
 body {
-	color: #fff;
-	background:url("../images/back.jpg");
+	color: $text-color;
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-size: cover;

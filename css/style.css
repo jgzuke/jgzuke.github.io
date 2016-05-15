@@ -3,23 +3,22 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
 p, h1, h2, h3, h4, h5, h6 {
-  cursor: default; }
+  cursor: default;
+}
+
+/*
+Text Color #AAAAAA
+Highlight color #165D88
+Overlay rgba(22, 93, 136, 0.91)
+*/
 
 body {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-#overlay {
-  z-index: -10;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(13, 59, 95, 0.89); }
+  color: #AAAAAA;
+}
 
 .transition, .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a, #myLinks svg g, #projectSection .col div, #projectSection .col .link1, #projectSection .col .link2 {
   -webkit-transition: all 0.5s ease;
@@ -30,7 +29,7 @@ body {
 .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a {
   cursor: pointer; }
   .blue-on-hover:hover, #page-left #page-home-inner #navLinks p:hover, #projectLinks p:hover, #projectSection .col a:hover, #aboutInner a:hover {
-    color: #FFC045; }
+    color: #165D88; }
 
 .row, .col {
   padding: 0px !important;
@@ -84,9 +83,9 @@ body {
   height: 20%;
   margin: -1%; }
   #myLinks svg g {
-    fill: #fff; }
+    fill: #AAAAAA; }
   #myLinks svg:hover g {
-    fill: #FFC045; }
+    fill: #165D88; }
 
 .stick-to-top {
   position: fixed;
@@ -143,27 +142,31 @@ body {
     margin-bottom: 20px; }
   #page-home-contact #send-to-button {
     float: right;
+    color: #AAAAAA;
     margin-bottom: 20px; }
   #page-home-contact .input-field label {
-    color: #fff; }
+    color: #AAAAAA; }
   #page-home-contact .input-field .prefix.active {
-    color: #FFC045; }
+    color: #165D88; }
   #page-home-contact .input-field input[type=text], #page-home-contact .input-field input[type=email], #page-home-contact .input-field textarea[type=text] {
     box-shadow: none;
-    border-bottom: 1px solid #fff;
-    color: #fff; }
+    border-bottom: 1px solid #AAAAAA;
+    color: #AAAAAA; }
     #page-home-contact .input-field input[type=text]:focus, #page-home-contact .input-field input[type=email]:focus, #page-home-contact .input-field textarea[type=text]:focus {
-      border-bottom: 1px solid #FFC045; }
+      border-bottom: 1px solid #165D88; }
       #page-home-contact .input-field input[type=text]:focus .invalid, #page-home-contact .input-field input[type=email]:focus .invalid, #page-home-contact .input-field textarea[type=text]:focus .invalid {
         border-bottom: 1px solid #ba5947 !important; }
     #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
-      color: #FFC045; }
+      color: #165D88; }
   #page-home-contact button {
+    color: #AAAAAA;
     text-transform: none;
     background-color: transparent !important; }
     #page-home-contact button:focus {
       background-color: transparent !important; }
     #page-home-contact button .waves-ripple {
-      background-color: #FFC045; }
+      background-color: #165D88; }
 
-/*# sourceMappingURL=style.css.map */
+
+
+      
