@@ -50,12 +50,10 @@ function showProjectSet(num) {
 	}, projectChangeAnimationTime);
 }
 
-$(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {
-	handleResize();
-});
-
 $(document).ready(function() {
 	handleResize();
+	showProjectSet(0);
+    loadJSON();
 	$(window).scroll(function() {
     	if($(window).scrollTop() > $('#contactSection').offset().top - 300) {
     		$('#navLinks p').removeClass("active");
@@ -68,8 +66,6 @@ $(document).ready(function() {
     		$('.aboutLink').addClass("active");
     	}
     });
-    showProjectSet(0);
-    loadJSON();
 });
 
 function loadJSON() {
@@ -124,10 +120,27 @@ function buildProject(project, first) {
     return newdiv;
 }
 
+$(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {
+	handleResize();
+});
+
 function handleResize() {
 	var windowWidth = $(window).width()
 	handleMobileSwitch(windowWidth);
+	handleTextResizing(windowWidth);
+}
 
+function handleMobileSwitch(windowWidth) {
+	if(stateMobile == windowWidth <= 600) return;
+	stateMobile = windowWidth <= 600;
+	if(stateMobile) {
+		$("#fullsite").removeClass("page-big");
+	} else {
+		$("#fullsite").addClass("page-big");
+	}
+}
+
+function handleTextResizing(windowWidth) {
 	$('#projectLinks').css('width', $('#projects-table').css('width'));
 
 	// Sets overlays to same height and width as pictures
@@ -147,14 +160,4 @@ function handleResize() {
 	$('.nav-text').css('font-size', navText);
 	$('.landing-text').css('font-size', landingText);
 	$('.normal-title').css('font-size', normalTitle);
-}
-
-function handleMobileSwitch(windowWidth) {
-	if(stateMobile == windowWidth <= 600) return;
-	stateMobile = windowWidth <= 600;
-	if(stateMobile) {
-		$("#fullsite").removeClass("page-big");
-	} else {
-		$("#fullsite").addClass("page-big");
-	}
 }

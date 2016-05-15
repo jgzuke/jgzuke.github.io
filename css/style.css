@@ -65,7 +65,8 @@ body {
     font-size: 320%;
     margin-left: 5vh; }
   #page-right #aboutSection, #page-right #projectSection {
-    margin-bottom: 100px; }
+    padding-top: 100px;
+    padding-bottom: 100px; }
   #page-right #aboutSection, #page-right #contactSection {
     height: 100vh; }
     #page-right #aboutSection .valign, #page-right #contactSection .valign {

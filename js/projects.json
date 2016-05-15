@@ -4,7 +4,7 @@
     "web": "https://www.coursera.org/",
     "twitter": "https://twitter.com/coursera",
     "description": "I joined the Coursera Mobile team and worked on a bunch of cool projects, from building support for Peer review assesments to building a new main page and accomplishments page",
-    "image": "textnow.png",
+    "image": "coursera.png",
     "tags": "work android top"
   }, {
     "name": "Enflick",
@@ -38,7 +38,7 @@
     "github": "https://github.com/jgzuke/3DCity",
     "description": "Takes sets of connected 3D points and draws them onto a canvas. Walk and jump using screen controls and look around by rotating phone. Coded from scratch using only Android Canvas",
     "image": "3d.png",
-    "tags": "android top"
+    "tags": "android"
   }, {
     "name": "Swipler",
     "github": "https://github.com/icechen1/Swipler",
