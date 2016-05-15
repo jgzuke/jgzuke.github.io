@@ -10,6 +10,11 @@ p, h1, h2, h3, h4, h5, h6 {
 	cursor: default;
 }
 
+$form-focus-color: #FFC045;
+$form-error-color: #ba5947;
+$background-color: rgba(13, 59, 95, 0.89);
+$badge-color: rgba(22,93,136, 0.91);
+
 body {
 	color: #fff;
 	background:url("../images/back.jpg");
@@ -24,13 +29,8 @@ body {
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(13, 59, 95, 0.89);
+	background-color: $background-color;
 }
-
-$form-background-color: #1976d2;
-$form-text-color: #ffffff;
-$form-focus-color: #90caf9;
-$form-error-color: #ba5947;
 
 .transition {
 	-webkit-transition: all 0.5s ease;
@@ -163,7 +163,7 @@ $form-error-color: #ba5947;
 			position: absolute;
 		    opacity:0;
 		    z-index: 10;
-		    background-color: rgba(22,93,136, 0.91);
+		    background-color: $badge-color;
 		    @extend .transition;
 
 		    &:hover {
@@ -244,7 +244,7 @@ $form-error-color: #ba5947;
 
 	.input-field {
 	    label {
-		    color: $form-text-color;
+		    color: #fff;
 		}
 
 		.prefix.active {
@@ -253,8 +253,8 @@ $form-error-color: #ba5947;
 
 		input[type=text], input[type=email], textarea[type=text] {
 			box-shadow: none;
-			border-bottom: 1px solid $form-text-color;
-			color: $form-text-color;
+			border-bottom: 1px solid #fff;
+			color: #fff;
 
 	    	&:focus {
 	    		border-bottom: 1px solid $form-focus-color;

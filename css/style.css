@@ -9,8 +9,6 @@ p, h1, h2, h3, h4, h5, h6 {
   cursor: default; }
 
 body {
-  color: #fff;
-  background: url("../images/back.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +30,7 @@ body {
 .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a {
   cursor: pointer; }
   .blue-on-hover:hover, #page-left #page-home-inner #navLinks p:hover, #projectLinks p:hover, #projectSection .col a:hover, #aboutInner a:hover {
-    color: #90caf9; }
+    color: #FFC045; }
 
 .row, .col {
   padding: 0px !important;
@@ -88,7 +86,7 @@ body {
   #myLinks svg g {
     fill: #fff; }
   #myLinks svg:hover g {
-    fill: #90caf9; }
+    fill: #FFC045; }
 
 .stick-to-top {
   position: fixed;
@@ -147,25 +145,25 @@ body {
     float: right;
     margin-bottom: 20px; }
   #page-home-contact .input-field label {
-    color: #ffffff; }
+    color: #fff; }
   #page-home-contact .input-field .prefix.active {
-    color: #90caf9; }
+    color: #FFC045; }
   #page-home-contact .input-field input[type=text], #page-home-contact .input-field input[type=email], #page-home-contact .input-field textarea[type=text] {
     box-shadow: none;
-    border-bottom: 1px solid #ffffff;
-    color: #ffffff; }
+    border-bottom: 1px solid #fff;
+    color: #fff; }
     #page-home-contact .input-field input[type=text]:focus, #page-home-contact .input-field input[type=email]:focus, #page-home-contact .input-field textarea[type=text]:focus {
-      border-bottom: 1px solid #90caf9; }
+      border-bottom: 1px solid #FFC045; }
       #page-home-contact .input-field input[type=text]:focus .invalid, #page-home-contact .input-field input[type=email]:focus .invalid, #page-home-contact .input-field textarea[type=text]:focus .invalid {
         border-bottom: 1px solid #ba5947 !important; }
     #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
-      color: #90caf9; }
+      color: #FFC045; }
   #page-home-contact button {
     text-transform: none;
     background-color: transparent !important; }
     #page-home-contact button:focus {
       background-color: transparent !important; }
     #page-home-contact button .waves-ripple {
-      background-color: #90caf9; }
+      background-color: #FFC045; }
 
 /*# sourceMappingURL=style.css.map */
