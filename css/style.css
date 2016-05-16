@@ -22,7 +22,7 @@ body {
   color: #5d5d5d;
 }
 
-.transition, .blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a, #myLinks svg g, #projectSection .col div, #projectSection .col .link1, #projectSection .col .link2 {
+.transition, .blue-on-hover, #projectLinks p, #projectSection .col a, #myLinks svg g, #projectSection .col div, #projectSection .col {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
