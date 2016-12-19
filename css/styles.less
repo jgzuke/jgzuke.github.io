@@ -1,0 +1,54 @@
+@text-color: #B4B4B4;
+@text-highlight-color: #165d88;
+
+.transition {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+body {
+  color: @text-color
+}
+
+.blue-on-hover {
+	cursor: pointer;
+	.transition;
+
+	&:hover {
+		color: @text-highlight-color;
+	}
+}
+
+#landing-title {
+  width: 40%
+}
+
+#navLinks {
+  p {
+    font-size: 110%;
+    .blue-on-hover;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+}
+
+#myLinks {
+	svg {
+		width: 20%;
+		height: 20%;
+		margin: -1%;
+		g {
+			.transition;
+			fill: @text-color;
+		}
+		&:hover {
+			g {
+				fill: @text-highlight-color;
+			}
+		}
+	}
+}

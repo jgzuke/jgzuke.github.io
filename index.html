@@ -20,9 +20,10 @@
             <img class="landing-title" src="images/logo.png"/>
 
             <div id="navLinks">
-              <p class="aboutLink nav-text active">About</p>
-              <p class="projectsLink nav-text">Projects</p>
-              <p class="contactLink nav-text">Contact</p>
+              <p onclick="showPage('about')" id="aboutLink">About</p>
+              <p onclick="showPage('experience')" id="experienceLink">Experience</p>
+              <p onclick="showPage('projects')" id="projectsLink">Projects</p>
+              <p onclick="showPage('initiatives')" id="initiativesLink">Initiatives</p>
             </div>
 
             <div class="row" id="myLinks">
@@ -59,56 +60,15 @@
 
 
       <div id="page-right" class="col s12 m8 l9 offset-m4 offset-l3 left-align">
-        <div id="aboutSection" class="mainSections valign-wrapper">
+        <div id="aboutSection" class="valign-wrapper">
           <div class="valign">
-            <h1 class="normal-title">Who I Am</h1>
-            <div id="aboutInner">
-              <p class="landing-text">Hi, I'm Jason Zukewich, a Software Engineering student at the University of Waterloo with a passion for designing/creating cool things and solving interesting problems</p>
-
-              <p class="landing-text">Besides coding I also enjoy Rock Climbing, Board Games, Baking, Playing Piano, Camping and lots of other activities</p>
-
-              <p class="landing-text">I am currently looking for Data Science or Machine Learning internships for the fall of 2016, if you think I might be a good fit at your company check out my <a class="projectsLink">Projects</a> or <a class="contactLink">Get in Touch</a></p>
+            <div id="about">
+              <p>Hi, I'm Jason Zukewich, a student at the University of Waterloo with a passion for solving interesting problems</p>
+              <p>I am currently looking for Machine Learning internships for the summer of 2017, if you think I might be a good fit at your company check out my <a class="projectsLink">projects</a> or get in touch at <a href="mailto:jgzuke@gmail.com">jgzuke@gmail.com</a></a></p>
+              <p>Besides coding I also enjoy rock climbing, board games and DDR</p>
             </div>
-          </div>
-        </div>
-
-        <div id="projectSection" class="mainSections">
-          <h1 class="normal-title">Stuff I've Done</h1>
-          <div class="row center-align hide-on-small-only" id="projectLinks">
-            <p class="col s3 projects-top landing-text">Top</p>
-            <p class="col s3 projects-work landing-text">Work</p>
-            <p class="col s3 projects-android landing-text">Android</p>
-            <p class="col s3 projects-web landing-text">Web</p>
-          </div>
-
-          <div class="row" id="projects-table">
-          </div>
-        </div>
-
-        <div id="contactSection" class="mainSections valign-wrapper">
-          <div class="valign">
-            <h1 class="normal-title">Get in Touch</h1>
-            <div id="page-home-contact">
-              <form autocomplete="off" method="POST" action="http://formspree.io/jzukewic@uwaterloo.ca" id="contactForm">
-                <div class="row">
-                  <div class="input-field col m6 s12">
-                    <input type="email" name="_replyto" class="validate landing-text">
-                    <label for="email" class="landing-text">Your Email</label>
-                  </div>
-                  <div class="input-field col m6 s12">
-                    <input type="text" name="_subject" class="validate landing-text">
-                    <label for="subject" class="landing-text">Subject</label>
-                  </div>
-                </div>
-                <div class="input-field">
-                  <i class="material-icons prefix">edit</i>
-                  <textarea type="text" name="message" class="materialize-textarea landing-text"></textarea>
-                  <label for="message" class="landing-text">Message</label>
-                </div>
-                <button class="btn-flat waves-effect waves-lblue landing-text" type="submit" name="action" id="send-to-button">To jgzuke@gmail.com
-                  <i class="material-icons right landing-text">send</i>
-                </button>
-              </form>
+            <div id="projects">
+              <div class="row" id="projects-table"/>
             </div>
           </div>
         </div>

@@ -1,71 +1,57 @@
-$('.projects-top').click(function() {
-	showProjectSet(0);
-});
-$('.projects-work').click(function() {
-	showProjectSet(1);
-});
-$('.projects-android').click(function() {
-	showProjectSet(2);
-});
-$('.projects-web').click(function() {
-	showProjectSet(3);
-});
-
-$('.aboutLink').click(function() {
-	showSectionSet(0);
-});
-$('.projectsLink').click(function() {
-	showSectionSet(1);
-});
-$('.contactLink').click(function() {
-	showSectionSet(2);
-});
-
 var projectChangeAnimationTime = 150;
-var projectSet = -1;
+var currentPageName = -1;
 var projectSets = ['top', 'work', 'android', 'web'];
-
+var projectsJSON = {};
 var sectionSets = ['about', 'project', 'contact'];
 
-var stateMobile = true;
-
-function showSectionSet(num) {
-	$('html, body').animate({
-		scrollTop: $('#' + sectionSets[num] + 'Section').offset().top
-	}, 'slow');
+var pages = {
+	'about': {
+		'isAbout': true,
+	},
+	'experience': {
+		'isAbout': false,
+		'projectSet': ['coursera', 'enflick', 'osc']
+	},
+	'projects': {
+		'isAbout': false,
+		'projectSet': ['techtanks', 'army-commander', '3d-viewer', 'swipler']
+	},
+	'initiatives': {
+		'isAbout': false,
+		'projectSet': ['tech-retreat', 'engsoc', 'sipo']
+	}
 }
 
-function showProjectSet(num) {
-	if(projectSet == num) return;
-	projectSet = num;
-
-	$('#projects-table').fadeOut(projectChangeAnimationTime);
-	$('#projectLinks p').removeClass("active");
-	$('.projects-' + projectSets[num]).addClass("active");
-
+var stateMobile = true;
+function showPage(pageName) {
+	if(currentPageName == pageName) return;
+	page = pages[pageName];
+	$('#page-right').fadeOut(projectChangeAnimationTime);
+	$('#navLinks p').removeClass("active");
+	$(`#${pageName}Link`).addClass("active");
 	setTimeout(function () {
-		$('#projects-table .col').hide();
-		$('#projects-table .' + projectSets[num]).show();
-		$('#projects-table').fadeIn(projectChangeAnimationTime);
+		if (page.isAbout) {
+			$('#about').show();
+			$('#projects').hide();
+		} else {
+			$('#about').hide();
+			$('#projects').show();
+			$('#projects-table').empty();
+			for(var i = 0; i < page.projectSet.length; i++) {
+				var project = projectsJSON[page.projectSet[i]];
+			  $('#projects-table').append(buildProject(project, i == 0));
+			}
+		}
+		handleResize();
+		$('#page-right').fadeIn(projectChangeAnimationTime);
 	}, projectChangeAnimationTime);
+	currentPageName = pageName;
 }
 
 $(document).ready(function() {
 	handleResize();
-	showProjectSet(0);
-    loadJSON();
-	$(window).scroll(function() {
-    	if($(window).scrollTop() > $('#contactSection').offset().top - 300) {
-    		$('#navLinks p').removeClass("active");
-    		$('.contactLink').addClass("active");
-    	} else if($(window).scrollTop() > $('#projectSection').offset().top - 300) {
-    		$('#navLinks p').removeClass("active");
-    		$('.projectsLink').addClass("active");
-    	} else {
-    		$('#navLinks p').removeClass("active");
-    		$('.aboutLink').addClass("active");
-    	}
-    });
+	showPage('about');
+  loadJSON();
 });
 
 function loadJSON() {
@@ -74,50 +60,34 @@ function loadJSON() {
 	xobj.open('GET', 'js/projects.json', true);
 	xobj.onreadystatechange = function () {
 		if (xobj.readyState == 4 && xobj.status == "200") {
-			// .open will NOT return a value but simply returns undefined in async mode so use a callback
-			buildProjects(xobj.responseText);
+			projectsJSON = JSON.parse(xobj.responseText);
 		}
 	}
 	xobj.send(null);
 }
 
-function buildProjects(jsonresponse) {
-	var projects = JSON.parse(jsonresponse).projects;
-	for(var i = 0; i < projects.length; i++) {
-	    $('#projects-table').append(buildProject(projects[i], i == 0));
-	}
-}
-
 function buildProject(project, first) {
-	var title = project.name;
-	var github = project.github;
-	var web = project.web;
-	var twitter = project.twitter;
-	var description = project.description;
-	var image = project.image;
-	var tags = project.tags;
-	var id = '';
-
-	if (first) {
-		id = 'id="project-pic-first"';
-	}
+	var id = first ? 'id="project-pic-first"' : '';
 
 	var links = ``;
 	var bubbles = 0;
-	if (github != null) {
+	if (project.github) {
 		bubbles ++;
-		links += `<a href="${github}" target="_blank"><img src="ic/github.png" class = "link${bubbles}"/></a>`;
+		links += `<a href="${project.github}" target="_blank"><img src="ic/github.png" class = "link${bubbles}"/></a>`;
 	}
-	if (web != null) {
+	if (project.web) {
 		bubbles ++;
-		links += `<a href="${web}" target="_blank"><img src="ic/weblink.png" class = "link${bubbles}"/></a>`;
+		links += `<a href="${project.web}" target="_blank"><img src="ic/weblink.png" class = "link${bubbles}"/></a>`;
 	}
-	if (twitter != null) {
-		bubbles ++;
-		links += `<a href="${twitter}" target="_blank"><img src="ic/twitter.png" class = "link${bubbles}"/></a>`;
-	}
-    var newdiv = $(`<div class="col s12 m6 l4 ${tags}"><div>${links}<h4>${title}</h4><p>${description}</p></div><img class="image-overlay-background z-depth-3" src="./images/badges/${image}" ${id}/></div>`);
-    return newdiv;
+  return $(
+		`<div class="col s12 m6 l4">
+			<div>
+				${links}
+				<h4>${project.name}</h4>
+				<p>${project.description}</p>
+			</div>
+			<img class="image-overlay-background z-depth-3" src="./images/badges/${project.image}" ${id}/>
+		</div>`);
 }
 
 $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {
@@ -144,8 +114,8 @@ function handleTextResizing(windowWidth) {
 	$('#projectLinks').css('width', $('#projects-table').css('width'));
 
 	// Sets overlays to same height and width as pictures
-	$('#projectSection .col div').css('height', $('#project-pic-first').css('height'));
-	$('#projectSection .col div').css('width', $('#project-pic-first').css('width'));
+	$('#projects .col div').css('height', $('#project-pic-first').css('height'));
+	$('#projects .col div').css('width', $('#project-pic-first').css('width'));
 
 	// Sets text size to fit well in overlay based on overlay dimensions
 	var picHeight = parseInt($('#project-pic-first').css('height'), "10");

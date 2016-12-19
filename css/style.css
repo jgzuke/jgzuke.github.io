@@ -1,15 +1,3 @@
-* {
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  cursor: default;
-}
-
 /*
 Text Color Dark: #414141
 Text Color Light: #5d5d5d;
@@ -22,15 +10,15 @@ body {
   color: #5d5d5d;
 }
 
-.transition, .blue-on-hover, #projectLinks p, #projectSection .col a, #myLinks svg g, #projectSection .col div, #projectSection .col {
+.transition, .blue-on-hover, #projects .col a, #myLinks svg g, #projects .col div, #projects .col {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
-.blue-on-hover, #page-left #page-home-inner #navLinks p, #projectLinks p, #projectSection .col a, #aboutInner a {
+.blue-on-hover, #page-left #page-home-inner #navLinks p, #projects .col a, #aboutInner a {
   cursor: pointer; }
-  .blue-on-hover:hover, #page-left #page-home-inner #navLinks p:hover, #projectLinks p:hover, #projectSection .col a:hover, #aboutInner a:hover {
+  .blue-on-hover:hover, #page-left #page-home-inner #navLinks p:hover, #projectLinks p:hover, #projects .col a:hover, #aboutInner a:hover {
     color: #0099ff; }
 
 .row, .col {
@@ -61,25 +49,16 @@ body {
 #page-right {
   padding-right: 10px !important;
   padding-left: 10px !important; }
-  #page-right .mainSections h1 {
+  #page-right #aboutSection h1 {
     font-size: 320%;
     margin-left: 5vh; }
-  #page-right #aboutSection, #page-right #projectSection {
+  #page-right #aboutSection {
     padding-top: 100px;
     padding-bottom: 100px; }
-  #page-right #aboutSection, #page-right #contactSection {
+  #page-right #aboutSection {
     height: 100vh; }
-    #page-right #aboutSection .valign, #page-right #contactSection .valign {
+    #page-right #aboutSection .valign {
       width: 100%; }
-
-#projectLinks {
-  z-index: 11;
-  margin-top: -10px;
-  margin-bottom: -40px; }
-  #projectLinks p {
-    font-size: 150%; }
-  #projectLinks .active {
-    text-decoration: underline; }
 
 #myLinks svg {
   width: 20%;
@@ -90,78 +69,42 @@ body {
   #myLinks svg:hover g {
     fill: #0099ff; }
 
-#projectSection .col {
+#projects .col {
   position: relative;
   margin: 0px !important;
   margin-bottom: -6px !important;
   padding: 10px !important; }
-  #projectSection .col div {
+  #projects .col div {
     color: #FFFFFF;
     position: absolute;
     opacity: 0;
     z-index: 10;
     background-color: rgba(22, 93, 136, 0.91); }
-    #projectSection .col div:hover {
+    #projects .col div:hover {
       opacity: 1; }
-    #projectSection .col div h4 {
+    #projects .col div h4 {
       text-align: center;
       font-style: bold;
       margin-bottom: -2%; }
-    #projectSection .col div p {
+    #projects .col div p {
       margin: 5%; }
-  #projectSection .col .image-overlay-background {
+  #projects .col .image-overlay-background {
     z-index: 1;
     width: 100%;
     height: 100%; }
-  #projectSection .col .link1 {
+  #projects .col .link1 {
     margin-left: 0.5%; }
-    #projectSection .col .link1:hover {
+    #projects .col .link1:hover {
       margin-left: -0.5%; }
-  #projectSection .col .link2 {
+  #projects .col .link2 {
     margin-left: 10.5%; }
-    #projectSection .col .link2:hover {
+    #projects .col .link2:hover {
       margin-left: 9.5%; }
-  #projectSection .col .link1, #projectSection .col .link2 {
+  #projects .col .link1, #projects .col .link2 {
     z-index: 11;
     margin-top: 0.5%;
     width: 12%;
     position: absolute; }
-    #projectSection .col .link1:hover, #projectSection .col .link2:hover {
+    #projects .col .link1:hover, #projects .col .link2:hover {
       margin-top: -0.5%;
       width: 14%; }
-
-#aboutInner, #page-home-contact {
-  width: 90%;
-  padding-left: 10%; }
-
-  #page-home-contact h5 {
-    font-size: 130%;
-    margin-bottom: 20px; }
-  #page-home-contact #send-to-button {
-    float: right;
-    color: #5d5d5d;
-    margin-bottom: 20px; }
-  .input-field {
-    margin-top: 25px;
-  }
-  #page-home-contact .input-field .prefix.active {
-    color: #0099ff; }
-  #page-home-contact .input-field input[type=text], #page-home-contact .input-field input[type=email], #page-home-contact .input-field textarea[type=text] {
-    box-shadow: none;
-    border-bottom: 1px solid #5d5d5d; }
-    #page-home-contact .input-field input[type=text]:focus, #page-home-contact .input-field input[type=email]:focus, #page-home-contact .input-field textarea[type=text]:focus {
-      border-bottom: 1px solid #0099ff; }
-      #page-home-contact .input-field input[type=text]:focus .invalid, #page-home-contact .input-field input[type=email]:focus .invalid, #page-home-contact .input-field textarea[type=text]:focus .invalid {
-        border-bottom: 1px solid #ba5947 !important; }
-    #page-home-contact .input-field input[type=text]:focus + label, #page-home-contact .input-field input[type=email]:focus + label, #page-home-contact .input-field textarea[type=text]:focus + label {
-      color: #0099ff; }
-  #page-home-contact button {
-    text-transform: none;
-    background-color: transparent !important; }
-    #page-home-contact button:focus {
-      background-color: transparent !important; }
-    #page-home-contact button .waves-ripple {
-      background-color: #0099ff; }
-
-
-
