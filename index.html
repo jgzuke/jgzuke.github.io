@@ -20,10 +20,10 @@
             <img class="landing-title" src="images/logo.png"/>
 
             <div id="navLinks">
-              <p onclick="showPage('about')" id="aboutLink">About</p>
-              <p onclick="showPage('experience')" id="experienceLink">Experience</p>
-              <p onclick="showPage('projects')" id="projectsLink">Projects</p>
-              <p onclick="showPage('initiatives')" id="initiativesLink">Initiatives</p>
+              <p class="myButton" onclick="showPage('about')" id="aboutLink">About</p>
+              <p class="myButton" onclick="showPage('experience')" id="experienceLink">Experience</p>
+              <p class="myButton" onclick="showPage('projects')" id="projectsLink">Projects</p>
+              <p class="myButton" onclick="showPage('initiatives')" id="initiativesLink">Initiatives</p>
             </div>
 
             <div class="row" id="myLinks">
@@ -60,16 +60,16 @@
 
 
       <div id="page-right" class="col s12 m8 l9 offset-m4 offset-l3 left-align">
-        <div id="aboutSection" class="valign-wrapper">
-          <div class="valign">
-            <div id="about">
+        <div id="aboutSection">
+          <div class="valign-wrapper" id="about">
+            <div class="valign">
               <p>Hi, I'm Jason Zukewich, a student at the University of Waterloo with a passion for solving interesting problems</p>
-              <p>I am currently looking for Machine Learning internships for the summer of 2017, if you think I might be a good fit at your company check out my <a class="projectsLink">projects</a> or get in touch at <a href="mailto:jgzuke@gmail.com">jgzuke@gmail.com</a></a></p>
+              <p>I am currently looking for Machine Learning internships for the summer of 2017, if you think I might be a good fit at your company check out my <span class="myButton" onclick="showPage('experience')">experience</span> and <span class="myButton" onclick="showPage('projects')">projects</span> or get in touch at <a href="mailto:jgzuke@gmail.com">jgzuke@gmail.com</a></a></p>
               <p>Besides coding I also enjoy rock climbing, board games and DDR</p>
             </div>
-            <div id="projects">
-              <div class="row" id="projects-table"/>
-            </div>
+          </div>
+          <div id="projects">
+            <div id="projects-table"/>
           </div>
         </div>
       </div>

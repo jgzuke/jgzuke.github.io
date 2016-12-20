@@ -1,45 +1,69 @@
 {
-  "coursera": {
-    "name": "Coursera",
+  "terrible-hack": {
+    "name": "TerribleHack",
+    "web": "http://terriblehack.website/",
+    "description": "Helped organize and run a recurring comedic hackathon in Waterloo",
+    "image": "techretreat.png"
+  },
+  "coursera-full-stack": {
+    "name": "Coursera Full Stack",
     "web": "https://www.coursera.org/",
-    "description": "I joined the Coursera Mobile team and worked on a bunch of cool projects, from building support for Peer review assesments to building a new main page and accomplishments page",
+    "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
+    "image": "coursera.png"
+  },
+  "coursera-mobile": {
+    "name": "Coursera Mobile",
+    "web": "https://www.coursera.org/",
+    "description": "Built a new Course List (main page), support for Peer Review assignments, an Accomplishments page and many more features<br />Rewrote large parts of the app to fit with our newer architecture, helped design a new data layer for efficient caching/loading",
     "image": "coursera.png"
   },
   "enflick": {
     "name": "Enflick",
     "web": "https://www.textnow.com",
-    "description": "At Enflick I worked as part of the android team on the Textnow app. It was an incredible experience, I learned a ton, and got to design and code super cool things",
+    "description": "Implemented TextNow floating chat, a new call screen and messaging interface, and a Premium/Wireless redesign<br />Fixed numerous bugs and made performance improvements to various parts of the app",
     "image": "textnow.png"
   },
   "tech-retreat": {
     "name": "TechRetreat",
     "web": "http://www.techretreat.ca",
-    "description": "I was one of the organizers of TechRetreat as well as a teacher for our Learnathon. In less than ten hours kids with no prior coding experience were writing working Ruby AIs for TechTanks",
+    "description": "Helped plan Waterloo’s first High-school Hackathon/Learnathon, Co-ran the Learnathon<br />Taught attendees to build AIs for TechTanks (2015), and wrote Android Learnathon lesson plan (2016)",
     "image": "techretreat.png"
   },
   "army-commander": {
     "name": "Army Commander",
     "github": "https://github.com/jgzuke/DrawingGame",
-    "description": "Create and control an army using custom or preset gestures for different formations and actions. Enemies work together and form groups to defend themselves",
+    "description": "Create/control an army using custom gestures for different formations or actions<br />Enemies form groups and work together to defend themselves",
     "image": "commander.jpg"
   },
   "techtanks": {
     "name": "TechTanks",
     "web": "http://techtanks.techretreat.ca/",
     "github": "https://github.com/TechRetreat/game",
-    "description": "Write a ruby AI to control a tank, then test against your friends programs, all in your browser with no setup. Made for TechRetreat Learnathon",
+    "description": "Browser based game to teach Ruby, players write AIs to control tanks and battle against their friends<br />Used at TechRetreat and Hack the North",
     "image": "techtanks.png"
+  },
+  "ddr-generation": {
+    "name": "DDR Step Generation",
+    "description": "Takes in an mp3 and outputs a step file that fits the style of the music<br />Extracts features relevant to the music and feeds through a series of models to generate steps"
+  },
+  "news-feed": {
+    "name": "News Feed",
+    "description": "Parse content and summaries from set of news RSS feeds<br />Train model from those and source, time, etc to recommend articles a user would be likely to read"
   },
   "3d-viewer": {
     "name": "3D Viewer",
     "github": "https://github.com/jgzuke/3DCity",
-    "description": "Takes sets of connected 3D points and draws them onto a canvas. Walk and jump using screen controls and look around by rotating phone. Coded from scratch using only Android Canvas",
+    "description": "3D viewer for Android, turn your phone to move/look around<br />Built completely from scratch using only the basic Android canvas",
     "image": "3d.png"
+  },
+  "jarvis": {
+    "name": "Jarvis Coursera",
+    "description": "Messenger bot that parses meaning from user queries and matches them to a set of commands<br />Made at the Coursera Makeathon"
   },
   "swipler": {
     "name": "Swipler",
     "github": "https://github.com/icechen1/Swipler",
-    "description": "Chrome extention that use the doppler effect to detect hand gestures using your laptops mic and speakers. Switches/removes tabs when you swipe different directions",
+    "description": "Detect hand gestures using your laptops mic and speakers with the Doppler effect<br />Switches through or closes tabs when you swipe different directions",
     "image": "swipler.png"
   },
   "intoxicmate": {
@@ -63,19 +87,19 @@
   "engsoc": {
     "name": "EngSoc",
     "web": "https://www.engsoc.uwaterloo.ca/",
-    "description": "At Uwaterloo I help out the Engineering Society as an Ambassador, Director, Orientation Leader, and First Year Mentor, as well as helping with specific events",
+    "description": "Involved with the Engineering Society as an Engineering Ambassador, Director, and First Year Mentor<br />Help with specific events like Orientation and some conferences",
     "image": "engsoc.png"
   },
   "sipo": {
     "name": "SIPOFoundation",
     "web": "http://www.sipofoundation.org/",
-    "description": "In Toronto I got to be part of an organization aiming to Inspire and Equip young professionals. I webmastered and helped with SIPOConference and SIPOWorkshops",
+    "description": "In Toronto I got to be part of an organization aiming to Inspire and Equip young professionals<br />Webmastered and helped run and plan SIPOConference and various SIPOWorkshops",
     "image": "sipo.png"
   },
   "osc": {
     "name": "Ontario Science Centre",
     "web": "http://www.ontariosciencecentre.ca/",
-    "description": "After spending second semester grade 12 studying at the OSC, I also got a chance to work there as a Host, interacting with visitors and helping with shows",
+    "description": "Worked as a Host, interacted with visitors and helped with running shows",
     "image": "osc.png"
   },
   "find-me": {

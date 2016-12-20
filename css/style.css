@@ -47,18 +47,31 @@ body {
     text-decoration: underline; }
 
 #page-right {
-  padding-right: 10px !important;
+  padding-right: 15% !important;
   padding-left: 10px !important; }
   #page-right #aboutSection h1 {
     font-size: 320%;
     margin-left: 5vh; }
-  #page-right #aboutSection {
-    padding-top: 100px;
-    padding-bottom: 100px; }
+  #page-right #aboutSection .valign-wrapper {
+    height: 100vh; }
   #page-right #aboutSection {
     height: 100vh; }
     #page-right #aboutSection .valign {
       width: 100%; }
+    #page-right #aboutSection #projects {
+      padding-top: 30vh;
+    padding-bottom: 10vh; }
+
+.myButton {
+  cursor: pointer;
+  color: #0099ff;
+}
+
+
+.bubbleLink {
+  width: 40px;
+  fill: #0099ff;
+}
 
 #myLinks svg {
   width: 20%;
