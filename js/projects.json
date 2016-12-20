@@ -36,7 +36,8 @@
     "name": "Army Commander",
     "github": "https://github.com/jgzuke/DrawingGame",
     "description": "Create/control an army using custom gestures for different formations or actions<br />Enemies form groups and work together to defend themselves",
-    "image": "commander.jpg"
+    "image": "commander.jpg",
+    "technologies": "Android"
   },
   "techtanks": {
     "name": "TechTanks",

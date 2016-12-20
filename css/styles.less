@@ -1,5 +1,5 @@
-@text-color: #B4B4B4;
-@text-highlight-color: #165d88;
+@text-color: #5D5D5D;
+@text-highlight-color: #0099FF;
 
 .transition {
 	-webkit-transition: all 0.5s ease;
@@ -9,46 +9,95 @@
 }
 
 body {
-  color: @text-color
+  color: @text-color;
+  g {
+    fill: @text-color;
+  }
+  h3 {
+    font-size: 210%;
+  }
+  h4 {
+    font-size: 140%;
+  }
+  p {
+    font-size: 120%;
+  }
 }
 
 .blue-on-hover {
 	cursor: pointer;
 	.transition;
-
 	&:hover {
 		color: @text-highlight-color;
+    g {
+      .transition;
+      fill: @text-highlight-color;
+    }
 	}
 }
 
-#landing-title {
-  width: 40%
+#page-left {
+  width: 350px;
+  margin-left: 200px;
+  position: fixed;
+  .valign-wrapper {
+    min-height: 100vh;
+    padding: 10%;
+    .valign {
+      width: 100%;
+      #landing-title {
+        width: 40%;
+      }
+      #navLinks {
+        h4 {
+          .blue-on-hover;
+        }
+        .active {
+          text-decoration: underline;
+        }
+      }
+      #myLinks {
+      	svg {
+      		width: 25%;
+      		height: 25%;
+      		margin: -1%;
+          .blue-on-hover;
+      	}
+      }
+    }
+  }
 }
 
-#navLinks {
-  p {
-    font-size: 110%;
-    .blue-on-hover;
+#page-right {
+  margin-left: 600px;
+  margin-right: 400px;
+  #aboutSection {
+    height: 100vh;
+    .valign-wrapper {
+      height: 100vh;
+      .valign {
+        .myButton {
+          cursor: pointer;
+          color: #0099ff;
+        }
+      }
+    }
+    #projects {
+      padding-top: 30vh;
+      padding-bottom: 10vh;
+      .project {
+        padding-bottom: 20px;
+        i {
+          margin-right: 20px !important;
+        }
+        svg {
+          margin-bottom: -12px !important;
+          margin-right: -5px !important;
+          width: 40px;
+          margin: -5px;
+          .blue-on-hover;
+        }
+      }
+    }
   }
-
-  .active {
-    text-decoration: underline;
-  }
-}
-
-#myLinks {
-	svg {
-		width: 20%;
-		height: 20%;
-		margin: -1%;
-		g {
-			.transition;
-			fill: @text-color;
-		}
-		&:hover {
-			g {
-				fill: @text-highlight-color;
-			}
-		}
-	}
 }
