@@ -9,19 +9,22 @@
     "name": "Coursera Full Stack",
     "web": "https://www.coursera.org/",
     "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
-    "image": "coursera.png"
+    "image": "coursera.png",
+    "technologies": "JSX, React, Scala, Play"
   },
   "coursera-mobile": {
     "name": "Coursera Mobile",
     "web": "https://www.coursera.org/",
     "description": "Built a new Course List (main page), support for Peer Review assignments, an Accomplishments page and many more features<br />Rewrote large parts of the app to fit with our newer architecture, helped design a new data layer for efficient caching/loading",
-    "image": "coursera.png"
+    "image": "coursera.png",
+    "technologies": "Android, Kotlin, RXJava"
   },
   "enflick": {
     "name": "Enflick",
     "web": "https://www.textnow.com",
     "description": "Implemented TextNow floating chat, a new call screen and messaging interface, and a Premium/Wireless redesign<br />Fixed numerous bugs and made performance improvements to various parts of the app",
-    "image": "textnow.png"
+    "image": "textnow.png",
+    "technologies": "Android"
   },
   "tech-retreat": {
     "name": "TechRetreat",
@@ -40,49 +43,58 @@
     "web": "http://techtanks.techretreat.ca/",
     "github": "https://github.com/TechRetreat/game",
     "description": "Browser based game to teach Ruby, players write AIs to control tanks and battle against their friends<br />Used at TechRetreat and Hack the North",
-    "image": "techtanks.png"
+    "image": "techtanks.png",
+    "technologies": "Ruby on Rails"
   },
   "ddr-generation": {
     "name": "DDR Step Generation",
-    "description": "Takes in an mp3 and outputs a step file that fits the style of the music<br />Extracts features relevant to the music and feeds through a series of models to generate steps"
+    "description": "Takes in an mp3 and outputs a step file that fits the style of the music<br />Extracts features relevant to the music and feeds through a series of models to generate steps",
+    "technologies": "Python, Scikit-Learn, Keras"
   },
   "news-feed": {
     "name": "News Feed",
-    "description": "Parse content and summaries from set of news RSS feeds<br />Train model from those and source, time, etc to recommend articles a user would be likely to read"
+    "description": "Parse content and summaries from set of news RSS feeds<br />Train model from those and source, time, etc to recommend articles a user would be likely to read",
+    "technologies": "Python, Scikit-Learn, NLTK"
   },
   "3d-viewer": {
     "name": "3D Viewer",
     "github": "https://github.com/jgzuke/3DCity",
     "description": "3D viewer for Android, turn your phone to move/look around<br />Built completely from scratch using only the basic Android canvas",
-    "image": "3d.png"
+    "image": "3d.png",
+    "technologies": "Android"
   },
   "jarvis": {
     "name": "Jarvis Coursera",
-    "description": "Messenger bot that parses meaning from user queries and matches them to a set of commands<br />Made at the Coursera Makeathon"
+    "description": "Messenger bot that parses meaning from user queries and matches them to a set of commands<br />Made at the Coursera Makeathon",
+    "technologies": "Python, Wit.ai"
   },
   "swipler": {
     "name": "Swipler",
     "github": "https://github.com/icechen1/Swipler",
     "description": "Detect hand gestures using your laptops mic and speakers with the Doppler effect<br />Switches through or closes tabs when you swipe different directions",
-    "image": "swipler.png"
+    "image": "swipler.png",
+    "technologies": "Javascript, Chrome Extension"
   },
   "intoxicmate": {
     "name": "IntoxicMate",
     "github": "https://github.com/IntoxicM8/android",
     "description": "Uses your location, time, heart-rate etc over time to guess when you are intoxicated. IntoxicMate will then help guide you home, call a cab, or in emergencies call friends/family",
-    "image": "intoxic.png"
+    "image": "intoxic.png",
+    "technologies": "Android, Python"
   },
   "myoguitar": {
     "name": "MyoGuitar",
     "github": "https://github.com/jgzuke/MyoProject",
     "description": "Use the Myo to play a virtual guitar on your android device. Detects strums when you have your hand closed and uses your fingers positions to play chords on the phone",
-    "image": "myoguitar.jpg"
+    "image": "myoguitar.jpg",
+    "technologies": "Android, Myo"
   },
   "war-of-myths": {
     "name": "War of Myths",
     "github": "https://github.com/jgzuke/OpenWOM",
     "description": "Play as a mage and explore the world. Enemies path and search around obstacles, dodge harm, and guess your movement. Started in grade 6 as a flash game, written for android in grade 11",
-    "image": "wom.png"
+    "image": "wom.png",
+    "technologies": "Android"
   },
   "engsoc": {
     "name": "EngSoc",

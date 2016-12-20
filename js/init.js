@@ -22,7 +22,6 @@ var pages = {
 	}
 }
 
-var stateMobile = true;
 function showPage(pageName) {
 	if(currentPageName == pageName) return;
 	page = pages[pageName];
@@ -42,14 +41,12 @@ function showPage(pageName) {
 			  $('#projects-table').append(buildProject(project, i == 0));
 			}
 		}
-		handleResize();
 		$('#page-right').fadeIn(projectChangeAnimationTime);
 	}, projectChangeAnimationTime);
 	currentPageName = pageName;
 }
 
 $(document).ready(function() {
-	handleResize();
 	showPage('about');
   loadJSON();
 });
@@ -67,76 +64,22 @@ function loadJSON() {
 }
 
 function buildProject(project, first) {
-	var id = first ? 'id="project-pic-first"' : '';
-
-	var links = ``;
-	var bubbles = 0;
-	if (project.github) {
-		bubbles ++;
-		links += `
-		<a href="${project.github}" target="_blank">
-			<svg class="bubbleLink" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
-				${githubSVG}
-			</svg>
-		</a>`;
-	}
-	if (project.web) {
-		bubbles ++;
-		links += `
-		<a href="${project.web}" target="_blank">
-			<svg class="bubbleLink" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
-				${githubSVG}
-			</svg>
-		</a>`;
-	}
-	// <img class="image-overlay-background z-depth-3" src="./images/badges/${project.image}" ${id}/>
-	// ${links}
   return $(
 		`<div>
 			<h4>${project.name}</h4>
 			<p>${project.description}</p>
-			${links}
+			${project.technologies ? project.technologies : ''}
+			${project.github ?
+			`<a href="${project.github}" target="_blank">
+				<svg class="bubbleLink" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+					${githubSVG}
+				</svg>
+			</a>` : ''}
+			${project.web ?
+			`<a href="${project.web}" target="_blank">
+				<svg class="bubbleLink" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+					${githubSVG}
+				</svg>
+			</a>` : ''}
 		</div>`);
-}
-
-$(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange', function(e) {
-	handleResize();
-});
-
-function handleResize() {
-	var windowWidth = $(window).width()
-	handleMobileSwitch(windowWidth);
-	handleTextResizing(windowWidth);
-}
-
-function handleMobileSwitch(windowWidth) {
-	if(stateMobile == windowWidth <= 600) return;
-	stateMobile = windowWidth <= 600;
-	if(stateMobile) {
-		$("#fullsite").removeClass("page-big");
-	} else {
-		$("#fullsite").addClass("page-big");
-	}
-}
-
-function handleTextResizing(windowWidth) {
-	$('#projectLinks').css('width', $('#projects-table').css('width'));
-
-	// Sets overlays to same height and width as pictures
-	$('#projects .col div').css('height', $('#project-pic-first').css('height'));
-	$('#projects .col div').css('width', $('#project-pic-first').css('width'));
-
-	// Sets text size to fit well in overlay based on overlay dimensions
-	var picHeight = parseInt($('#project-pic-first').css('height'), "10");
-	$('#projects-table h4').css('font-size', Math.floor(picHeight * 0.65) + '%');
-	$('#projects-table p').css('font-size', Math.floor(picHeight * 0.46) + '%');
-
-	// Sets text to scale nicely with the size of the device screen (a bit smaller on phones)
-
-	var navText = Math.floor(Math.pow($('#page-left').width(), 0.5) * 8) + '%';
-	var landingText = Math.floor(Math.pow(windowWidth, -0.08) * 250) + '%';
-	var normalTitle = Math.floor(Math.pow(windowWidth, 0.13) * 170) + '%';
-	$('.nav-text').css('font-size', navText);
-	$('.landing-text').css('font-size', landingText);
-	$('.normal-title').css('font-size', normalTitle);
 }
