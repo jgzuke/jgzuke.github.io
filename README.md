@@ -1,2 +1,2 @@
 # Portfolio Website
-My portfolio website, find it at www.jzukewich.me
+My portfolio website, find it at [jgzuke.me](http://jgzuke.me/)
