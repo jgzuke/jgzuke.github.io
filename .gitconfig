@@ -1,0 +1,3 @@
+[filter "update_resume"]
+    clean = update_resume
+    smudge = cat

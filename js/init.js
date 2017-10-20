@@ -55,7 +55,7 @@ $(document).ready(function() {
 function loadJSON() {
 	var xobj = new XMLHttpRequest();
 	xobj.overrideMimeType("application/json");
-	xobj.open('GET', 'js/projects.json', true);
+	xobj.open('GET', 'data/projects.json', true);
 	xobj.onreadystatechange = function () {
 		if (xobj.readyState == 4 && xobj.status == "200") {
 			projectsJSON = JSON.parse(xobj.responseText);

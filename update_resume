@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+# Add containing folder to $PATH
+import sys
+import os
+
+file = sys.stdin.read()
+
+# Update latex and resume
+
+print (file)
