@@ -6,8 +6,52 @@ import os
 import json
 
 file = sys.stdin.read()
+projects_json = json.loads(file)
 
-projects = json.loads(file)
+def create_initiative(job_type, name, location, time, description, technologies=None, **kwargs):
+    description = description.replace('<br />', '} \item {')
+    job_type = '{0} ({1})'.format(job_type, technologies) if technologies else job_type
+    return """\\cventry
+        {{{0}}} {{{1}}} {{{2}}} {{{3}}}
+        {{
+          \\begin{{cvitems}}
+            \\item {{{4}}}
+          \\end{{cvitems}}
+        }}\n""".format(job_type, name, location, time, description)
 
+def create_experience(job_type, name, description, **kwargs):
+    description = description.replace('<br />', '} \\newline \\skillsetstyle{')
+    return """\\cvskill
+        {{{0}}}
+        {{{1}}}
+        {{{
+          \skillsetstyle{{{2}} \newline
+        }}}\n""".format(name, job_type)
+
+def create_projects(name, technologies, description):
+    description = description.replace('<br />', '} \\newline \\skillsetstyle{')
+    return """\\cvskill
+        {{{0}}}
+        {{{1}}}
+        {{
+          \skillsetstyle{{{2}}}
+        }}\n""".format(name, technologies, description)
+
+
+sections = ('initiatives', 'experience', 'projects')
+creation_templates = {
+    'initiatives': create_initiative,
+    'experience': create_experience,
+    'projects': create_projects
+}
+files = {
+    section: open('resume/latex/resume/{}.tex'.format(section), 'w+') for section in sections
+}
+for section in sections:
+    file = files[section]
+    creation_template = creation_templates[section]
+    for project in projects_json:
+        if section in project['pages']:
+            file.write(creation_template(project))
 
 print (file)

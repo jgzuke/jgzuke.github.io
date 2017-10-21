@@ -5,84 +5,68 @@ var projectChangeAnimationTime = 150;
 var currentPageName = '';
 var projectsJSON = {};
 
-var pages = {
-	'about': {
-		'isAbout': true,
-	},
-	'experience': {
-		'isAbout': false,
-		'projectSet': ['coursera-full-stack', 'coursera-mobile', 'enflick', 'osc']
-	},
-	'projects': {
-		'isAbout': false,
-		'projectSet': ['techtanks', 'ddr-generation', 'army-commander', 'news-feed', 'swipler', 'jarvis', '3d-viewer', 'intoxicmate', 'myoguitar']
-	},
-	'initiatives': {
-		'isAbout': false,
-		'projectSet': ['tech-retreat', 'terrible-hack', 'engsoc', 'sipo']
-	}
-}
-
 function showPage(pageName) {
-	if(currentPageName == pageName) return;
-	page = pages[pageName];
-	$('#page-right').fadeOut(projectChangeAnimationTime);
-	$('#navLinks h4').removeClass("active");
-	$(`#${pageName}Link`).addClass("active");
-	setTimeout(function () {
-		if (page.isAbout) {
-			$('#about').show();
-			$('#projects').hide();
-		} else {
-			$('#about').hide();
-			$('#projects').show();
-			$('#projects-table').empty();
-			for(var i = 0; i < page.projectSet.length; i++) {
-				var project = projectsJSON[page.projectSet[i]];
-			  $('#projects-table').append(buildProject(project, i == 0));
-			}
-		}
-		$('#page-right').fadeIn(projectChangeAnimationTime);
-	}, projectChangeAnimationTime);
-	currentPageName = pageName;
+    if(currentPageName == pageName) return;
+    $('#page-right').fadeOut(projectChangeAnimationTime);
+    $('#navLinks h4').removeClass("active");
+    $(`#${pageName}Link`).addClass("active");
+    setTimeout(function () {
+        if (pageName == 'about') {
+            $('#about').show();
+            $('#projects').hide();
+        } else {
+            $('#about').hide();
+            $('#projects').show();
+            $('#projects-table').empty();
+
+            for (var i = 0; i < projectsJSON.length; i++) {
+                var project = projectsJSON[i];
+                if (project.pages.indexOf(pageName) > -1) {
+                    $('#projects-table').append(buildProject(project));
+                }
+            }
+        }
+        $('#page-right').fadeIn(projectChangeAnimationTime);
+    }, projectChangeAnimationTime);
+    currentPageName = pageName;
 }
 
 $(document).ready(function() {
-	showPage('about');
-  loadJSON();
+    showPage('about');
+    loadJSON();
 });
 
 function loadJSON() {
-	var xobj = new XMLHttpRequest();
-	xobj.overrideMimeType("application/json");
-	xobj.open('GET', 'data/projects.json', true);
-	xobj.onreadystatechange = function () {
-		if (xobj.readyState == 4 && xobj.status == "200") {
-			projectsJSON = JSON.parse(xobj.responseText);
-		}
-	}
-	xobj.send(null);
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'data/projects.json', true);
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            projectsJSON = JSON.parse(xobj.responseText);
+        }
+    }
+    xobj.send(null);
 }
 
-function buildProject(project, first) {
+function buildProject(project) {
   return $(
-		`<div class="project">
-			<h3>${project.type? project.name : project.name + ' ' + project.type}</h3>
-			<p>${project.description}</p>
-			<p>
-				${project.technologies ? `<i>${project.technologies}</i>` : ''}
-				${project.github ?
-				`<a class="bubbleLink" href="${project.github}" target="_blank">
-					<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
-						${githubSVG}
-					</svg>
-				</a>` : ''}
-				${project.web ?
-				`<a class="bubbleLink" href="${project.web}" target="_blank">
-					<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
-						${webSVG}
-					</svg>
-				</a>` : ''}
-			</p>
-		</div>`);
+        `<div class="project">
+            <h3>${project.type? project.name + ' ' + project.type : project.name}</h3>
+            <p>${project.description}</p>
+            <p>
+                ${project.technologies ? `<i>${project.technologies}</i>` : ''}
+                ${project.github ?
+                `<a class="bubbleLink" href="${project.github}" target="_blank">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+                        ${githubSVG}
+                    </svg>
+                </a>` : ''}
+                ${project.web ?
+                `<a class="bubbleLink" href="${project.web}" target="_blank">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+                        ${webSVG}
+                    </svg>
+                </a>` : ''}
+            </p>
+        </div>`);
 }

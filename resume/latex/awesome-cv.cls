@@ -21,7 +21,7 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{awesome-cv}[2015/12/14 v1.3 Awesome Curriculum Vitae Class]
+\ProvidesClass{awesome-cv}[2017/02/05 v1.6.1 Awesome Curriculum Vitae Class]
 \NeedsTeXFormat{LaTeX2e}
 
 
@@ -77,7 +77,7 @@
   \RequirePackage[utf8]{inputenc}
 \fi
 % Needed to manage math fonts
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 % Needed to use icons from font-awesome
 % (https://github.com/posquit0/latex-fontawesome)
 \RequirePackage{fontawesome}
@@ -417,7 +417,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{isstart}{false} 
             }
             {\@headersocialsep}
           \href{mailto:\@email}{\includegraphics[width=0.018\textwidth]{email}\ \@email}
@@ -427,7 +427,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{isstart}{false} 
             }
             {\@headersocialsep}
           \href{http://\@homepage}{\includegraphics[width=0.018\textwidth]{weblink}\ \@homepage}
@@ -437,7 +437,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{isstart}{false} 
             }
             {\@headersocialsep}
           \href{https://github.com/\@github}{\includegraphics[width=0.018\textwidth]{github}\ \@github}
@@ -447,7 +447,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{isstart}{false} 
             }
             {\@headersocialsep}
           \href{https://stackoverflow.com/users/\@stackoverflowid}{\faStackOverflow\ \@stackoverflowname}
@@ -457,7 +457,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{isstart}{false} 
             }
             {\@headersocialsep}
           \href{https://www.linkedin.com/in/\@linkedin}{\includegraphics[width=0.018\textwidth]{linkedin}\ \@linkedin}
@@ -467,7 +467,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{isstart}{false} 
             }
             {\@headersocialsep}
           \href{https://twitter.com/\@twitter}{\faTwitter\ \@twitter}
@@ -477,7 +477,7 @@
         {
           \ifbool{isstart}
             {
-              \setbool{istart}{false} 
+              \setbool{isstart}{false} 
             }
             {\@headersocialsep}
           \faSkype\ \@skype

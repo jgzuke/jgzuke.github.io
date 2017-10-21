@@ -1,43 +1,51 @@
 [
   {
     "name": "Dropbox",
-    "type": "Backend/Internal tools",
+    "job_type": "Backend/Internal tools",
     "web": "https://www.coursera.org/",
     "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
     "image": "coursera.png",
     "technologies": "Python, Stone",
-    "pages": ["experience", "resume-experience"]
+    "pages": ["experience", "resume-experience"],
+    "location": "San Fransisco, CA",
+    "time": "May--Aug 2017"
   },
   {
     "name": "Coursera",
-    "type": "Full Stack",
+    "job_type": "Full Stack",
     "web": "https://www.coursera.org/",
     "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
     "image": "coursera.png",
     "technologies": "JSX, React, Scala, Play",
-    "pages": ["experience", "resume-experience"]
+    "pages": ["experience", "resume-experience"],
+    "location": "Mountain View, CA",
+    "time": "Sept--Dec 2016"
   },
   {
     "name": "Coursera",
-    "type": "Mobile",
+    "job_type": "Mobile",
     "web": "https://www.coursera.org/",
     "description": "Built a new Course List (main page), support for Peer Review assignments, an Accomplishments page and many more features<br />Rewrote large parts of the app to fit with our newer architecture, helped design a new data layer for efficient caching/loading",
     "image": "coursera.png",
     "technologies": "Android, Kotlin, RXJava",
-    "pages": ["experience", "resume-experience"]
+    "pages": ["experience", "resume-experience"],
+    "location": "Mountain View, CA",
+    "time": "Jan--April 2016"
   },
   {
     "name": "Textnow",
-    "type": "Mobile",
+    "job_type": "Mobile",
     "web": "https://www.textnow.com",
     "description": "Implemented TextNow floating chat, a new call screen and messaging interface, and a Premium/Wireless redesign<br />Fixed numerous bugs and made performance improvements to various parts of the app",
     "image": "textnow.png",
     "technologies": "Android",
-    "pages": ["experience", "resume-experience"]
+    "pages": ["experience", "resume-experience"],
+    "location": "Waterloo, Canada",
+    "time": "May--Dec 2015"
   },
   {
     "name": "Ontario Science Centre",
-    "type": "Host",
+    "job_type": "Host",
     "web": "http://www.ontariosciencecentre.ca/",
     "description": "Worked as a Host, interacted with visitors and helped with running shows",
     "image": "osc.png",
@@ -45,15 +53,17 @@
   },
   {
     "name": "TechRetreat",
-    "type": "Organizer",
+    "job_type": "Learnathon/Organizer",
     "web": "http://www.techretreat.ca",
     "description": "Helped plan Waterloo’s first High-school Hackathon/Learnathon, Co-ran the Learnathon<br />Taught attendees to build AIs for TechTanks (2015), and wrote Android Learnathon lesson plan (2016)",
     "image": "techretreat.png",
-    "pages": ["initiatives", "resume-experience"]
+    "pages": ["initiatives", "resume-experience"],
+    "location": "Waterloo, Canada",
+    "time": "Jun 2015--Aug 2016"
   },
   {
     "name": "TerribleHack",
-    "type": "Organizer",
+    "job_type": "Organizer",
     "web": "http://terriblehack.website/",
     "description": "Helped organize and run a recurring comedic hackathon in Waterloo",
     "image": "techretreat.png",
