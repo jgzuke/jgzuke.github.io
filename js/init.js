@@ -67,7 +67,7 @@ function loadJSON() {
 function buildProject(project, first) {
   return $(
 		`<div class="project">
-			<h3>${project.name}</h3>
+			<h3>${project.type? project.name : project.name + ' ' + project.type}</h3>
 			<p>${project.description}</p>
 			<p>
 				${project.technologies ? `<i>${project.technologies}</i>` : ''}

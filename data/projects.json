@@ -1,137 +1,135 @@
-{
-  "terrible-hack": {
-    "name": "TerribleHack",
-    "web": "http://terriblehack.website/",
-    "description": "Helped organize and run a recurring comedic hackathon in Waterloo",
-    "image": "techretreat.png"
-  },
-  "coursera-full-stack": {
-    "name": "Coursera Full Stack",
+[
+  {
+    "name": "Dropbox",
+    "type": "Backend/Internal tools",
     "web": "https://www.coursera.org/",
     "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
     "image": "coursera.png",
-    "technologies": "JSX, React, Scala, Play"
+    "technologies": "Python, Stone",
+    "pages": ["experience", "resume-experience"]
   },
-  "coursera-mobile": {
-    "name": "Coursera Mobile",
+  {
+    "name": "Coursera",
+    "type": "Full Stack",
+    "web": "https://www.coursera.org/",
+    "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
+    "image": "coursera.png",
+    "technologies": "JSX, React, Scala, Play",
+    "pages": ["experience", "resume-experience"]
+  },
+  {
+    "name": "Coursera",
+    "type": "Mobile",
     "web": "https://www.coursera.org/",
     "description": "Built a new Course List (main page), support for Peer Review assignments, an Accomplishments page and many more features<br />Rewrote large parts of the app to fit with our newer architecture, helped design a new data layer for efficient caching/loading",
     "image": "coursera.png",
-    "technologies": "Android, Kotlin, RXJava"
+    "technologies": "Android, Kotlin, RXJava",
+    "pages": ["experience", "resume-experience"]
   },
-  "enflick": {
-    "name": "Enflick",
+  {
+    "name": "Textnow",
+    "type": "Mobile",
     "web": "https://www.textnow.com",
     "description": "Implemented TextNow floating chat, a new call screen and messaging interface, and a Premium/Wireless redesign<br />Fixed numerous bugs and made performance improvements to various parts of the app",
     "image": "textnow.png",
-    "technologies": "Android"
+    "technologies": "Android",
+    "pages": ["experience", "resume-experience"]
   },
-  "tech-retreat": {
+  {
+    "name": "Ontario Science Centre",
+    "type": "Host",
+    "web": "http://www.ontariosciencecentre.ca/",
+    "description": "Worked as a Host, interacted with visitors and helped with running shows",
+    "image": "osc.png",
+    "pages": ["experience"]
+  },
+  {
     "name": "TechRetreat",
+    "type": "Organizer",
     "web": "http://www.techretreat.ca",
     "description": "Helped plan Waterloo’s first High-school Hackathon/Learnathon, Co-ran the Learnathon<br />Taught attendees to build AIs for TechTanks (2015), and wrote Android Learnathon lesson plan (2016)",
-    "image": "techretreat.png"
+    "image": "techretreat.png",
+    "pages": ["initiatives", "resume-experience"]
   },
-  "army-commander": {
-    "name": "Army Commander",
-    "github": "https://github.com/jgzuke/DrawingGame",
-    "description": "Create/control an army using custom gestures for different formations or actions<br />Enemies form groups and work together to defend themselves",
-    "image": "commander.jpg",
-    "technologies": "Android"
+  {
+    "name": "TerribleHack",
+    "type": "Organizer",
+    "web": "http://terriblehack.website/",
+    "description": "Helped organize and run a recurring comedic hackathon in Waterloo",
+    "image": "techretreat.png",
+    "pages": ["initiatives"]
   },
-  "techtanks": {
+  {
+    "name": "EngSoc",
+    "web": "https://www.engsoc.uwaterloo.ca/",
+    "description": "Involved with the Engineering Society as an Engineering Ambassador, Director, and First Year Mentor<br />Help with specific events like Orientation and some conferences",
+    "image": "engsoc.png",
+    "pages": ["initiatives"]
+  },
+  {
+    "name": "SIPOFoundation",
+    "web": "http://www.sipofoundation.org/",
+    "description": "Webmastered and helped run and plan SIPOConference and various SIPOWorkshops",
+    "image": "sipo.png",
+    "pages": ["initiatives"]
+  },
+  {
     "name": "TechTanks",
     "web": "http://techtanks.techretreat.ca/",
     "github": "https://github.com/TechRetreat/game",
     "description": "Browser based game to teach Ruby, players write AIs to control tanks and battle against their friends<br />Used at TechRetreat and Hack the North",
     "image": "techtanks.png",
-    "technologies": "Ruby on Rails"
+    "technologies": "Rails",
+    "pages": ["projects", "resume-projects"]
   },
-  "ddr-generation": {
+  {
     "name": "DDR Step Generation",
     "description": "Takes in an mp3 and outputs a step file that fits the style of the music<br />Extracts features relevant to the music and feeds through a series of models to generate steps",
-    "technologies": "Python, Scikit-Learn, Keras"
+    "technologies": "Python, Scikit-Learn, Keras",
+    "pages": ["projects", "resume-projects"]
   },
-  "news-feed": {
-    "name": "News Feed",
-    "description": "Parse content and summaries from set of news RSS feeds<br />Train model from those and source, time, etc to recommend articles a user would be likely to read",
-    "technologies": "Python, Scikit-Learn, NLTK"
+  {
+    "name": "Army Commander",
+    "github": "https://github.com/jgzuke/DrawingGame",
+    "description": "Create/control an army using custom gestures for different formations or actions<br />Enemies form groups and work together to defend themselves",
+    "image": "commander.jpg",
+    "technologies": "Android",
+    "pages": ["projects", "resume-projects"]
   },
-  "3d-viewer": {
-    "name": "3D Viewer",
-    "github": "https://github.com/jgzuke/3DCity",
-    "description": "3D viewer for Android, turn your phone to move/look around<br />Built completely from scratch using only the basic Android canvas",
-    "image": "3d.png",
-    "technologies": "Android"
-  },
-  "jarvis": {
-    "name": "Jarvis Coursera",
-    "description": "Messenger bot that parses meaning from user queries and matches them to a set of commands<br />Made at the Coursera Makeathon",
-    "technologies": "Python, Wit.ai"
-  },
-  "swipler": {
+  {
     "name": "Swipler",
     "github": "https://github.com/icechen1/Swipler",
     "description": "Detect hand gestures using your laptops mic and speakers with the Doppler effect<br />Switches through or closes tabs when you swipe different directions",
     "image": "swipler.png",
-    "technologies": "Javascript, Chrome Extension"
+    "technologies": "Chrome Extension",
+    "pages": ["projects", "resume-projects"]
   },
-  "intoxicmate": {
-    "name": "IntoxicMate",
-    "github": "https://github.com/IntoxicM8/android",
-    "description": "Uses your location, time, heart-rate etc over time to guess when you are intoxicated. IntoxicMate will then help guide you home, call a cab, or in emergencies call friends/family",
-    "image": "intoxic.png",
-    "technologies": "Android, Python"
+  {
+    "name": "Jarvis Coursera",
+    "description": "Messenger bot that parses meaning from user queries and matches them to a set of commands<br />Made at the Coursera Makeathon",
+    "technologies": "Python, Wit.ai",
+    "pages": ["projects", "resume-projects"]
   },
-  "myoguitar": {
+  {
+    "name": "3D Viewer",
+    "github": "https://github.com/jgzuke/3DCity",
+    "description": "3D viewer for Android, turn your phone to move/look around<br />Built completely from scratch using only the basic Android canvas",
+    "image": "3d.png",
+    "technologies": "Android",
+    "pages": ["projects", "resume-projects"]
+  },
+  {
+    "name": "News Feed",
+    "description": "Parse content and summaries from set of news RSS feeds<br />Train model from those and source, time, etc to recommend articles a user would be likely to read",
+    "technologies": "Python, Scikit-Learn, NLTK",
+    "pages": ["projects"]
+  },
+  {
     "name": "MyoGuitar",
     "github": "https://github.com/jgzuke/MyoProject",
     "description": "Use the Myo to play a virtual guitar on your android device. Detects strums when you have your hand closed and uses your fingers positions to play chords on the phone",
     "image": "myoguitar.jpg",
-    "technologies": "Android, Myo"
-  },
-  "war-of-myths": {
-    "name": "War of Myths",
-    "github": "https://github.com/jgzuke/OpenWOM",
-    "description": "Play as a mage and explore the world. Enemies path and search around obstacles, dodge harm, and guess your movement. Started in grade 6 as a flash game, written for android in grade 11",
-    "image": "wom.png",
-    "technologies": "Android"
-  },
-  "engsoc": {
-    "name": "EngSoc",
-    "web": "https://www.engsoc.uwaterloo.ca/",
-    "description": "Involved with the Engineering Society as an Engineering Ambassador, Director, and First Year Mentor<br />Help with specific events like Orientation and some conferences",
-    "image": "engsoc.png"
-  },
-  "sipo": {
-    "name": "SIPOFoundation",
-    "web": "http://www.sipofoundation.org/",
-    "description": "Webmastered and helped run and plan SIPOConference and various SIPOWorkshops",
-    "image": "sipo.png"
-  },
-  "osc": {
-    "name": "Ontario Science Centre",
-    "web": "http://www.ontariosciencecentre.ca/",
-    "description": "Worked as a Host, interacted with visitors and helped with running shows",
-    "image": "osc.png"
-  },
-  "find-me": {
-    "name": "Find Me",
-    "github": "https://github.com/jgzuke/Find-Me-Web-App",
-    "description": "Create and share item lists with your friends through their email. People on a list can move and search for items, display list contents, and add or delete items",
-    "image": "findme.png"
-  },
-  "flash-games": {
-    "name": "Flash Games",
-    "web": "http://jgzuke.me/Old-Flash-Games/",
-    "github": "https://github.com/jgzuke/Old-Flash-Games",
-    "description": "A collection of old as2 and as3 flash games made around grade 5 to 8</p><p>Follow the link to read descriptions, and play",
-    "image": "throwback.png"
-  },
-  "ring-manager": {
-    "name": "Ring Manager",
-    "github": "https://github.com/jgzuke/NotificationsManager",
-    "description": "Create sets of ring/vibration settings for different times/days, for example Work: 9-5 Mon-Fri. The current active set decides notification actions for certain contacts or groups",
-    "image": "notif.png"
+    "technologies": "Android, Myo",
+    "pages": ["projects"]
   }
-}
+]

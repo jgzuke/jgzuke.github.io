@@ -3,9 +3,11 @@
 # Add containing folder to $PATH
 import sys
 import os
+import json
 
 file = sys.stdin.read()
 
-# Update latex and resume
+projects = json.loads(file)
+
 
 print (file)
