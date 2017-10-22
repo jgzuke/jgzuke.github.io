@@ -3,7 +3,7 @@
     "name": "Dropbox",
     "job_type": "Backend/Internal tools",
     "web": "https://www.coursera.org/",
-    "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
+    "description": "Implemented and improved functionality for Dropbox Api V2 endpoints to enable the shutoff of Api V1<br />Adding redaction and ommision annotations and lint rules to Stone (Dropbox model/route specification language)<br />Created Jetbrains plugin to support Stone (syntax highlighting, code completion, etc) during Hack Week",
     "image": "coursera.png",
     "technologies": "Python, Stone",
     "pages": ["experience", "resume-experience"],
@@ -14,7 +14,7 @@
     "name": "Coursera",
     "job_type": "Full Stack",
     "web": "https://www.coursera.org/",
-    "description": "Launched a new Dashboard and Course Home with many progress tracking features improving course completions by 13%<br />Rewrote Dashboard frontend and supported on backend as part of a GraphQl pilot project to improve performance<br />Made design/performance improvements on Dashboard, Course Home, and Assignments/Course Info tabs, including better session switching, tabulating and paginating Dashboard and many more",
+    "description": "Launched a new Dashboard and Course Home experience improving course completions by 13%<br />Moved Dashboard frontend/backend to use GraphQl as our first pilot project",
     "image": "coursera.png",
     "technologies": "JSX, React, Scala, Play",
     "pages": ["experience", "resume-experience"],
@@ -25,7 +25,7 @@
     "name": "Coursera",
     "job_type": "Mobile",
     "web": "https://www.coursera.org/",
-    "description": "Built a new Course List (main page), support for Peer Review assignments, an Accomplishments page and many more features<br />Rewrote large parts of the app to fit with our newer architecture, helped design a new data layer for efficient caching/loading",
+    "description": "Helped build a new Dashboard, support for Peer Review assignments, an Accomplishments page, and more<br />Rewrote large parts of the app to fit with our newer data architecture",
     "image": "coursera.png",
     "technologies": "Android, Kotlin, RXJava",
     "pages": ["experience", "resume-experience"],
@@ -36,7 +36,7 @@
     "name": "Textnow",
     "job_type": "Mobile",
     "web": "https://www.textnow.com",
-    "description": "Implemented TextNow floating chat, a new call screen and messaging interface, and a Premium/Wireless redesign<br />Fixed numerous bugs and made performance improvements to various parts of the app",
+    "description": "Wrote TextNow floating chat, a new call screen and messaging interface, and a Premium/Wireless redesign<br />Fixed numerous bugs and made performance improvements to various parts of the app",
     "image": "textnow.png",
     "technologies": "Android",
     "pages": ["experience", "resume-experience"],
@@ -55,7 +55,7 @@
     "name": "TechRetreat",
     "job_type": "Learnathon/Organizer",
     "web": "http://www.techretreat.ca",
-    "description": "Helped plan Waterloo’s first High-school Hackathon/Learnathon, Co-ran the Learnathon<br />Taught attendees to build AIs for TechTanks (2015), and wrote Android Learnathon lesson plan (2016)",
+    "description": "Helped organize Waterloo’s first High-school Hackathon/Learnathon, Co-ran the Learnathon<br />Taught attendees to build AIs for TechTanks (2015), and wrote Android Learnathon lesson plan (2016)",
     "image": "techretreat.png",
     "pages": ["initiatives", "resume-experience"],
     "location": "Waterloo, Canada",
@@ -143,3 +143,4 @@
     "pages": ["projects"]
   }
 ]
+

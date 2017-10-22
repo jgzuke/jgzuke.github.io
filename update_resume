@@ -6,41 +6,34 @@ import os
 import json
 
 file = sys.stdin.read()
-projects_json = json.loads(file)
+projects_json = json.loads(open('data/projects.json', 'r').read())
 
-def create_initiative(job_type, name, location, time, description, technologies=None, **kwargs):
-    description = description.replace('<br />', '} \item {')
+def create_experience(job_type, name, location, time, description, technologies=None, **kwargs):
+    description = description.replace('<br />', '} \item {').replace('%', '\\%')
     job_type = '{0} ({1})'.format(job_type, technologies) if technologies else job_type
-    return """\\cventry
-        {{{0}}} {{{1}}} {{{2}}} {{{3}}}
-        {{
-          \\begin{{cvitems}}
-            \\item {{{4}}}
-          \\end{{cvitems}}
-        }}\n""".format(job_type, name, location, time, description)
+    return """  \\cventry
+    {{{0}}} {{{1}}} {{{2}}} {{{3}}}
+    {{
+      \\begin{{cvitems}}
+        \\item {{{4}}}
+      \\end{{cvitems}}
+    }}\n""".format(job_type, name, location, time, description)
 
-def create_experience(job_type, name, description, **kwargs):
-    description = description.replace('<br />', '} \\newline \\skillsetstyle{')
-    return """\\cvskill
-        {{{0}}}
-        {{{1}}}
-        {{{
-          \skillsetstyle{{{2}} \newline
-        }}}\n""".format(name, job_type)
+def create_projects(name, technologies, description, **kwargs):
+    description = description.replace('<br />', '} \\newline \\skillsetstyle{').replace('%', '\\%')
+    return """  \\cvskill
+    {{{0}}}
+    {{{1}}}
+    {{
+      \\skillsetstyle{{{2}}}
+    }}\n""".format(name, technologies, description)
 
-def create_projects(name, technologies, description):
-    description = description.replace('<br />', '} \\newline \\skillsetstyle{')
-    return """\\cvskill
-        {{{0}}}
-        {{{1}}}
-        {{
-          \skillsetstyle{{{2}}}
-        }}\n""".format(name, technologies, description)
-
-
-sections = ('initiatives', 'experience', 'projects')
+setup = {
+    'experience': ("""\\cvsection{Experience}\n\\begin{cventries}\n  \\vspace{-1mm}\n""", """  \\vspace{-1mm}\n\end{cventries}"""),
+    'projects': ("""\\cvsection{Projects}\n\\begin{cvskills}\n""", """  \\vspace{-7mm}\n\\end{cvskills}""")
+    }
+sections = ('experience', 'projects')
 creation_templates = {
-    'initiatives': create_initiative,
     'experience': create_experience,
     'projects': create_projects
 }
@@ -48,10 +41,13 @@ files = {
     section: open('resume/latex/resume/{}.tex'.format(section), 'w+') for section in sections
 }
 for section in sections:
-    file = files[section]
+    tex_file = files[section]
     creation_template = creation_templates[section]
+    start, end = setup[section]
+    tex_file.write(start)
     for project in projects_json:
-        if section in project['pages']:
-            file.write(creation_template(project))
+        if 'resume-{}'.format(section) in project['pages']:
+            tex_file.write(creation_template(**project))
+    tex_file.write(end)
 
 print (file)

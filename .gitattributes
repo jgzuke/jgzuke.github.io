@@ -1,1 +1,3 @@
 data/projects.json filter=update_resume
+resume/latex/awesome-cv.cls filter=update_resume
+resume/latex/resume.tex filter=update_resume
