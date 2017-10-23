@@ -105,17 +105,25 @@ body p {
   cursor: pointer;
   color: #0099ff;
 }
-#page-right #aboutSection #projects {
+#page-right #aboutSection #experiences,
+#page-right #aboutSection #projects,
+#page-right #aboutSection #initiatives {
   padding-top: 30vh;
   padding-bottom: 10vh;
 }
-#page-right #aboutSection #projects .project {
+#page-right #aboutSection #experiences .project,
+#page-right #aboutSection #projects .project,
+#page-right #aboutSection #initiatives .project {
   padding-bottom: 20px;
 }
-#page-right #aboutSection #projects .project i {
+#page-right #aboutSection #experiences .project i,
+#page-right #aboutSection #projects .project i,
+#page-right #aboutSection #initiatives .project i {
   margin-right: 20px !important;
 }
-#page-right #aboutSection #projects .project svg {
+#page-right #aboutSection #experiences .project svg,
+#page-right #aboutSection #projects .project svg,
+#page-right #aboutSection #initiatives .project svg {
   margin-bottom: -12px !important;
   margin-right: -5px !important;
   width: 40px;
@@ -126,10 +134,14 @@ body p {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#page-right #aboutSection #projects .project svg:hover {
+#page-right #aboutSection #experiences .project svg:hover,
+#page-right #aboutSection #projects .project svg:hover,
+#page-right #aboutSection #initiatives .project svg:hover {
   color: #0099FF;
 }
-#page-right #aboutSection #projects .project svg:hover g {
+#page-right #aboutSection #experiences .project svg:hover g,
+#page-right #aboutSection #projects .project svg:hover g,
+#page-right #aboutSection #initiatives .project svg:hover g {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;

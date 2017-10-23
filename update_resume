@@ -1,94 +1,226 @@
-#!/usr/bin/env python
+<_io.TextIOWrapper name='index.html' mode='r+' encoding='UTF-8'>
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./JasonZukewichResume.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 22 language(s) loaded.
+(./awesome-cv.cls
+Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/size11.clo))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/tools/array.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/ms/ragged2e.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/ms/everysel.sty))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics-def/xetex.def))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/xifthen/xifthen.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/setspace/setspace.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/l3kernel/expl3-code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/tuenc.def))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/unicode-math/unicode-math.st
+y
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e
+.sty) (/usr/local/texlive/2017basic/texmf-dist/tex/latex/ucharcat/ucharcat.sty)
+ (/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/filehook/filehook.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/unicode-math/unicode-math-xe
+tex.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/unicode-math/unicode-math-ta
+ble.tex)))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/sourcesanspro/sourcesanspro.
+sty (/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
+ (/usr/local/texlive/2017basic/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/xkeyval/xkvutils.tex))))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-comm
+on.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-comm
+on-lists.tex))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgfutil-late
+x.def (/usr/local/texlive/2017basic/texmf-dist/tex/latex/ms/everyshi.sty))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.
+tex))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+ (/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.cod
+e.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code
+.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgfkeysfilte
+red.code.tex))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xet
+ex.def
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvi
+pdfmx.def
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-com
+mon-pdf.def))))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoft
+path.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprot
+ocol.code.tex))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.cod
+e.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.
+tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.
+tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathparser.cod
+e.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+code.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+basic.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+trigonometric.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+random.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+comparison.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+base.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+round.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+misc.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.
+integerarithmetics.code.tex)))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code
+.tex))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoin
+ts.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+construct.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+usage.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescop
+es.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregrap
+hicstate.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretran
+sformations.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequic
+k.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobje
+cts.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepath
+processing.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearro
+ws.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshad
+e.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimag
+e.code.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexte
+rnal.code.tex))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelaye
+rs.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretran
+sparency.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatt
+erns.code.tex)))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/modules/pgfmoduleshape
+s.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.
+code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ve
+rsion-0-65.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-ve
+rsion-1-18.sty))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/environ/environ.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.11'
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code
+.tex)) (/usr/local/texlive/2017basic/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/utilities/pgffor.code.
+tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+))
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tik
+z.code.tex
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/libraries/pgflibrarypl
+othandlers.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/modules/pgfmodulematri
+x.code.tex)
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/pgf/frontendlayer/tikz/lib
+raries/tikzlibrarytopaths.code.tex)))
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.cod
+e.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.11'
+))) (/usr/local/texlive/2017basic/texmf-dist/tex/latex/parskip/parskip.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.s
+ty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/hobsub-generic.st
+y)) (/usr/local/texlive/2017basic/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/url/url.sty))
 
-# Add containing folder to $PATH
-import sys
-import os
-import json
-import subprocess
+Package hyperref Message: Driver (autodetected): hxetex.
 
-githubSVG = """<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M2314 4070 c-624 -79 -1138 -503 -1327 -1095 -99 -310 -96 -676 7 -983 123 -363 394 -690 723 -873 108 -60 273 -129 307 -129 13 0 35 9 50 21 l26 20 0 162 0 162 -147 1 c-126 1 -156 4 -204 23 -89 34 -132 78 -194 200 -53 105 -81 139 -185 230 -40 35 -43 41 -30 56 11 13 26 16 65 13 92 -8 170 -62 249 -171 91 -128 155 -163 288 -154 92 6 158 22 162 40 15 63 43 129 68 160 16 21 28 40 27 42 -2 2 -49 11 -104 20 -212 36 -397 141 -481 272 -83 130 -124 287 -125 473 0 94 5 135 22 192 23 79 66 164 106 212 23 27 24 35 17 76 -5 25 -9 97 -8 160 1 140 24 223 63 228 55 8 251 -66 357 -133 50 -32 59 -35 87 -26 157 52 567 52 724 0 28 -9 37 -6 88 26 109 70 295 140 353 133 21 -2 29 -13 44 -58 26 -74 34 -213 18 -301 l-13 -68 29 -41 c54 -76 73 -115 100 -200 24 -79 26 -94 21 -230 -5 -165 -24 -252 -82 -374 -81 -171 -259 -290 -508 -337 -62 -12 -114 -23 -116 -25 -3 -2 5 -14 16 -27 68 -74 83 -158 83 -480 l0 -248 25 -24 c33 -34 59 -32 170 14 307 126 546 322 733 602 304 454 342 1067 96 1561 -222 447 -618 754 -1103 854 -140 29 -370 40 -497 24z"/></g>"""
-webSVG = """<g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M1265 2416 c-167 -44 -293 -115 -422 -239 -132 -127 -214 -268 -260 -447 -35 -136 -35 -324 0 -460 46 -179 117 -301 251 -436 190 -190 395 -275 661 -276 271 -1 479 85 671 276 189 190 275 399 276 666 0 265 -88 479 -276 666 -135 135 -258 205 -435 250 -132 34 -335 34 -466 0z m-126 -233 c-37 -47 -118 -123 -130 -123 -8 0 -20 4 -27 9 -10 6 6 22 55 58 62 46 102 72 112 73 2 0 -3 -8 -10 -17z m713 -8 c16 -19 29 -24 48 -20 20 4 39 -6 90 -48 164 -134 267 -324 285 -532 6 -67 6 -69 -9 -42 -9 16 -26 37 -38 48 -23 19 -155 89 -169 89 -17 0 27 -61 48 -66 12 -3 30 -15 40 -26 17 -19 17 -20 -7 -39 -82 -66 -124 -76 -141 -31 -6 15 -33 60 -61 101 -46 67 -51 79 -49 123 2 49 -5 58 -28 36 -10 -11 -17 -7 -37 17 -13 17 -24 37 -24 47 0 23 53 39 106 31 35 -5 44 -3 44 9 0 9 -11 23 -25 32 -14 9 -23 21 -20 27 12 19 -27 21 -65 4 -26 -12 -42 -27 -49 -46 -5 -16 -14 -29 -18 -30 -56 -8 -76 -5 -80 10 -3 13 -58 52 -95 69 -18 8 -6 -25 18 -51 36 -39 24 -45 -17 -8 -18 17 -44 31 -57 31 -35 0 -94 -36 -117 -71 -17 -26 -25 -29 -60 -27 -39 3 -40 4 -43 44 -3 40 -2 42 31 48 40 7 70 36 61 59 -4 11 7 23 43 41 26 15 60 36 74 47 l27 21 31 -23 c26 -19 34 -21 56 -11 26 12 34 52 16 81 -7 11 -13 8 -26 -13 -22 -33 -48 -33 -64 0 -8 19 -17 25 -31 21 -23 -6 -27 15 -6 32 32 26 95 40 194 40 97 1 103 0 124 -24z m-448 -104 c27 -29 28 -29 8 -40 -39 -21 -52 -14 -52 29 0 22 4 40 8 40 5 0 21 -13 36 -29z m-64 -30 c0 -6 -4 -13 -10 -16 -5 -3 -10 1 -10 9 0 9 5 16 10 16 6 0 10 -4 10 -9z m-474 -138 c6 -23 1 -32 -39 -66 -26 -21 -47 -43 -47 -49 0 -5 5 -6 10 -3 15 9 12 0 -11 -40 -12 -20 -24 -34 -26 -31 -13 13 79 216 98 216 5 0 12 -12 15 -27z m671 -113 c14 0 24 -9 32 -30 13 -38 51 -54 113 -46 58 8 171 -26 191 -58 8 -11 27 -53 44 -92 41 -98 91 -165 121 -160 33 5 27 -17 -21 -76 -73 -90 -80 -104 -78 -162 1 -49 -2 -58 -39 -102 -22 -27 -40 -58 -40 -70 0 -24 -58 -88 -99 -108 -14 -7 -42 -16 -62 -20 -39 -7 -49 3 -49 48 0 25 -25 82 -48 108 -12 15 -13 24 -2 62 15 53 5 123 -20 151 -10 11 -21 44 -25 73 -7 55 -8 56 -40 42 -15 -6 -24 -3 -36 12 -15 19 -18 19 -45 5 -16 -8 -46 -18 -67 -22 -31 -6 -43 -3 -73 20 -19 15 -49 45 -65 68 -25 35 -29 49 -29 109 0 63 3 72 28 97 15 15 34 32 42 37 8 5 28 28 43 52 18 28 34 42 50 42 12 0 42 7 67 15 25 8 54 12 65 10 11 -3 30 -5 42 -5z m-733 -525 c28 -17 52 -42 70 -74 22 -41 36 -54 86 -77 32 -15 61 -33 64 -40 3 -8 -2 -33 -10 -56 -8 -24 -12 -53 -9 -66 8 -33 -21 -40 -52 -11 -52 48 -141 179 -172 252 -31 75 -37 97 -25 97 3 0 25 -11 48 -25z m1236 -199 c-11 -34 -55 -84 -66 -74 -12 12 21 94 45 115 31 26 39 11 21 -41z"/></g>"""
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/stringenc.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)
+)) (./JasonZukewichResume.aux) ABD: EverySelectfont initializing macros
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+ABD: EveryShipout initializing macros
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
+y)) (./JasonZukewichResume.out) (./JasonZukewichResume.out)
+Overfull \hbox (1.46pt too wide) in paragraph at lines 69--70
+[]$[]$ $[]$$[]$
 
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
-file = sys.stdin.read()
-projects_json = json.loads(open('data/projects.json', 'r').read())
-
-def create_resume_experiences(job_type, name, location, time, description, technologies=None, **kwargs):
-    description = description.replace('<br />', '}\n        \\item {').replace('%', '\\%')
-    job_type = '{0} ({1})'.format(job_type, technologies) if technologies else job_type
-    return """  \\cventry
-    {{{0}}}
-    {{{1}}}
-    {{{2}}}
-    {{{3}}}
-    {{
-      \\begin{{cvitems}}
-        \\item {{{4}}}
-      \\end{{cvitems}}
-    }}
-
-%---------------------------------------------------------\n""".format(job_type, name, location, time, description)
-
-def create_resume_projects(name, technologies, description, **kwargs):
-    description = description.replace('<br />', '}\n      \\newline\n      \\skillsetstyle{').replace('%', '\\%')
-    return """  \\cvproject
-    {{{0}}}
-    {{{1}}}
-    {{
-      \\skillsetstyle{{{2}}}
-    }}\n""".format(name, technologies, description)
-
-def create_bubble_link(svg, link_url):
-    return """<a class="bubbleLink" href="{0}" target="_blank">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
-                        {1}
-                    </svg>
-                </a>""".format(link_url, svg)
-
-def create_experiences(name, description, job_type=None, technologies=None, github=None, web=None, **kwargs):
-    job_type = '{0} {1}'.format(name, job_type) if job_type else name
-    technologies = '' if not technologies else '<i>{}</i>'.format(technologies)
-    github = '' if not github else create_bubble_link(githubSVG, github)
-    web = '' if not web else create_bubble_link(webSVG, web)
-    return """<div class="project">
-            <h3>{0}</h3>
-            <p>{1}</p>
-            <p>
-                {2}
-                {3}
-                {4}
-            </p>
-        </div>""".format(job_type, description, technologies, github, web)
-
-def create_projects(**kwargs):
-    return create_experiences(kwargs)
-
-def create_initiatives(**kwargs):
-    return create_experiences(kwargs)
-
-sections = ['resume-experiences', 'resume-projects', 'experiences', 'projects', 'initiatives']
-section_info = {
-    section: {
-        'file_name': 'resume/resume/{}.tex'.format(section[len('resume-'):]) if section.startswith('resume-') else 'index.html',
-        'template': globals()['_'.join(['create'] + section.split('-'))]
-    } for section in sections
-}
-
-# for section, (file_name, template) in section_info.items():
-#     with open(file_name, 'r+') as file:
-#         full_text = file.read()
-#         replace_match = re.search('.*begin {0}.*\n((?:.*\n)*).*end {0}.*'.format(section), full_text)
-#         start, end = replace_match.start(1), replace_match.end(1)
-#         file.seek(start)
-
-#         for project in projects_json:
-#             if section in project['pages']:
-#                 file.write(template(**project))
-#         file.write(full_text[end:])
-
-# os.chdir('resume')
-# subprocess.Popen(['xelatex', 'JasonZukewichResume.tex'])
-# os.chdir('../')
-
-print (file)
-
+(./resume/skills.tex
+Overfull \hbox (48.99248pt too wide) in alignment at lines 2--14
+[] [] 
+) (./resume/experiences.tex) (./resume/projects.tex
+Overfull \hbox (55.14073pt too wide) in alignment at lines 2--53
+[] [] 
+) (./resume/education.tex) [1] (./JasonZukewichResume.aux) )
+(see the transcript file for additional information)
+Output written on JasonZukewichResume.pdf (1 page).
+Transcript written on JasonZukewichResume.log.

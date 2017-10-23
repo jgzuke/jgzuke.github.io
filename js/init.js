@@ -3,11 +3,12 @@ var currentPageName = '';
 
 function showPage(pageName) {
     if(currentPageName == pageName) return;
+    var oldPageName = currentPageName;
     $('#page-right').fadeOut(projectChangeAnimationTime);
     $('#navLinks h4').removeClass("active");
     $(`#${pageName}Link`).addClass("active");
     setTimeout(function () {
-        $(`#${currentPageName}`).hide();
+        $(`#${oldPageName}`).hide();
         $(`#${pageName}`).show();
         $('#page-right').fadeIn(projectChangeAnimationTime);
     }, projectChangeAnimationTime);
@@ -15,5 +16,8 @@ function showPage(pageName) {
 }
 
 $(document).ready(function() {
-    showPage('about');
+    currentPageName = 'about';
+    $('#experiences').hide();
+    $('#projects').hide();
+    $('#initiatives').hide();
 });

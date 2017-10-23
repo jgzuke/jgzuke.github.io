@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.10.21)  22 OCT 2017 15:39
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.10.21)  23 OCT 2017 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,10 +1202,6 @@ LaTeX Info: Redefining \nameref on input line 65.
 \@outlinefile=\write6
 \openout6 = `JasonZukewichResume.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \headertextwidth=\skip79
 \headerphotowidth=\skip80
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1254,27 +1250,27 @@ Overfull \hbox (48.99248pt too wide) in alignment at lines 2--14
 [] [] 
  []
 
-) (./resume/experience.tex
+) (./resume/experiences.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 14.
+t line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 14.
+(Font)              scaled to size 9.0pt on input line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 14.
+(Font)              scaled to size 8.0pt on input line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 14.
+(Font)              scaled to size 8.0pt on input line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 14.
+(Font)              scaled to size 8.0pt on input line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 14.
+t line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 14.
+(Font)              scaled to size 8.0pt on input line 15.
 ) (./resume/projects.tex
-Overfull \hbox (55.14073pt too wide) in alignment at lines 2--51
+Overfull \hbox (55.14073pt too wide) in alignment at lines 2--53
 [] [] 
  []
 
@@ -1289,8 +1285,8 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
  36231 strings out of 494511
- 724697 string characters out of 6166319
- 917266 words of memory out of 5000000
+ 724700 string characters out of 6166319
+ 917277 words of memory out of 5000000
  39647 multiletter control sequences out of 15000+600000
  532658 words of font info for 74 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
