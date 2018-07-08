@@ -62,7 +62,7 @@
             </div>
             <div class="project">
               <h3>Asana Client Infrastructure</h3>
-              <p>Codemodded various pieces of frontend tech debt, including switching away from index files<br />Added GraphQL style directives to Asana query language, supported optimistic updates for one object type<br />Refactored model/query code generation system, reduced generated bundle size<br />Made performance regression testing system improvements and added more tests</p>
+              <p>Codemodded various pieces of frontend tech debt, including switching away from index files<br />Added GraphQL style directives to Asana query language, supported optimistic updates for one object type<br />Refactored model/query code generation system, reduced generated bundle size<br />Made improvements to the performance regression testing framework, added tests for important components</p>
               <p>
                 <i>Typescript, Scala, Python</i>
                 
@@ -75,7 +75,7 @@
             </div>
             <div class="project">
               <h3>Dropbox Backend/Internal tools</h3>
-              <p>Implemented and improved functionality for Dropbox Api V2 endpoints to enable the shutoff of Api V1<br />Added redaction/omission annotations and lint rules to Stone (Dropbox model/route specification language)<br />Created Jetbrains plugin with 322 downloads for Stone (code completion, go to definition, etc)</p>
+              <p>Implemented and improved functionality for Dropbox Api V2 endpoints to enable the shutoff of Api V1<br />Added redaction/omission annotations and lint rules to Stone (Dropbox model/route specification language)</p>
               <p>
                 <i>Python</i>
                 
@@ -147,6 +147,19 @@
               </p>
             </div>
             <div class="project">
+              <h3>Stone Plugin</h3>
+              <p>Created Jetbrains plugin for Stone with 322 downloads, made during Dropbox HackWeek<br />Supports code completion, go to definition, syntax highlighting, refactoring, etc</p>
+              <p>
+                <i>Java, Flex, Bison</i>
+                
+                <a class="bubbleLink" href="https://plugins.jetbrains.com/plugin/9973-stone-editor-support">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M1265 2416 c-167 -44 -293 -115 -422 -239 -132 -127 -214 -268 -260 -447 -35 -136 -35 -324 0 -460 46 -179 117 -301 251 -436 190 -190 395 -275 661 -276 271 -1 479 85 671 276 189 190 275 399 276 666 0 265 -88 479 -276 666 -135 135 -258 205 -435 250 -132 34 -335 34 -466 0z m-126 -233 c-37 -47 -118 -123 -130 -123 -8 0 -20 4 -27 9 -10 6 6 22 55 58 62 46 102 72 112 73 2 0 -3 -8 -10 -17z m713 -8 c16 -19 29 -24 48 -20 20 4 39 -6 90 -48 164 -134 267 -324 285 -532 6 -67 6 -69 -9 -42 -9 16 -26 37 -38 48 -23 19 -155 89 -169 89 -17 0 27 -61 48 -66 12 -3 30 -15 40 -26 17 -19 17 -20 -7 -39 -82 -66 -124 -76 -141 -31 -6 15 -33 60 -61 101 -46 67 -51 79 -49 123 2 49 -5 58 -28 36 -10 -11 -17 -7 -37 17 -13 17 -24 37 -24 47 0 23 53 39 106 31 35 -5 44 -3 44 9 0 9 -11 23 -25 32 -14 9 -23 21 -20 27 12 19 -27 21 -65 4 -26 -12 -42 -27 -49 -46 -5 -16 -14 -29 -18 -30 -56 -8 -76 -5 -80 10 -3 13 -58 52 -95 69 -18 8 -6 -25 18 -51 36 -39 24 -45 -17 -8 -18 17 -44 31 -57 31 -35 0 -94 -36 -117 -71 -17 -26 -25 -29 -60 -27 -39 3 -40 4 -43 44 -3 40 -2 42 31 48 40 7 70 36 61 59 -4 11 7 23 43 41 26 15 60 36 74 47 l27 21 31 -23 c26 -19 34 -21 56 -11 26 12 34 52 16 81 -7 11 -13 8 -26 -13 -22 -33 -48 -33 -64 0 -8 19 -17 25 -31 21 -23 -6 -27 15 -6 32 32 26 95 40 194 40 97 1 103 0 124 -24z m-448 -104 c27 -29 28 -29 8 -40 -39 -21 -52 -14 -52 29 0 22 4 40 8 40 5 0 21 -13 36 -29z m-64 -30 c0 -6 -4 -13 -10 -16 -5 -3 -10 1 -10 9 0 9 5 16 10 16 6 0 10 -4 10 -9z m-474 -138 c6 -23 1 -32 -39 -66 -26 -21 -47 -43 -47 -49 0 -5 5 -6 10 -3 15 9 12 0 -11 -40 -12 -20 -24 -34 -26 -31 -13 13 79 216 98 216 5 0 12 -12 15 -27z m671 -113 c14 0 24 -9 32 -30 13 -38 51 -54 113 -46 58 8 171 -26 191 -58 8 -11 27 -53 44 -92 41 -98 91 -165 121 -160 33 5 27 -17 -21 -76 -73 -90 -80 -104 -78 -162 1 -49 -2 -58 -39 -102 -22 -27 -40 -58 -40 -70 0 -24 -58 -88 -99 -108 -14 -7 -42 -16 -62 -20 -39 -7 -49 3 -49 48 0 25 -25 82 -48 108 -12 15 -13 24 -2 62 15 53 5 123 -20 151 -10 11 -21 44 -25 73 -7 55 -8 56 -40 42 -15 -6 -24 -3 -36 12 -15 19 -18 19 -45 5 -16 -8 -46 -18 -67 -22 -31 -6 -43 -3 -73 20 -19 15 -49 45 -65 68 -25 35 -29 49 -29 109 0 63 3 72 28 97 15 15 34 32 42 37 8 5 28 28 43 52 18 28 34 42 50 42 12 0 42 7 67 15 25 8 54 12 65 10 11 -3 30 -5 42 -5z m-733 -525 c28 -17 52 -42 70 -74 22 -41 36 -54 86 -77 32 -15 61 -33 64 -40 3 -8 -2 -33 -10 -56 -8 -24 -12 -53 -9 -66 8 -33 -21 -40 -52 -11 -52 48 -141 179 -172 252 -31 75 -37 97 -25 97 3 0 25 -11 48 -25z m1236 -199 c-11 -34 -55 -84 -66 -74 -12 12 21 94 45 115 31 26 39 11 21 -41z"/></g>
+                  </svg>
+                </a>
+              </p>
+            </div>
+            <div class="project">
               <h3>DDR Generator</h3>
               <p>Takes in an mp3 and outputs a step file that fits the style of the music<br />Extracts features relevant to the music and feeds through a series of ml models to generate steps</p>
               <p>
@@ -157,19 +170,6 @@
                   </svg>
                 </a>
                 
-              </p>
-            </div>
-            <div class="project">
-              <h3>Stone editor Support</h3>
-              <p>Editor support for stone, Dropbox model specification language</p>
-              <p>
-                <i>Java, Flex, Bison</i>
-                
-                <a class="bubbleLink" href="https://plugins.jetbrains.com/plugin/9973-stone-editor-support">
-                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet">
-                    <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M1265 2416 c-167 -44 -293 -115 -422 -239 -132 -127 -214 -268 -260 -447 -35 -136 -35 -324 0 -460 46 -179 117 -301 251 -436 190 -190 395 -275 661 -276 271 -1 479 85 671 276 189 190 275 399 276 666 0 265 -88 479 -276 666 -135 135 -258 205 -435 250 -132 34 -335 34 -466 0z m-126 -233 c-37 -47 -118 -123 -130 -123 -8 0 -20 4 -27 9 -10 6 6 22 55 58 62 46 102 72 112 73 2 0 -3 -8 -10 -17z m713 -8 c16 -19 29 -24 48 -20 20 4 39 -6 90 -48 164 -134 267 -324 285 -532 6 -67 6 -69 -9 -42 -9 16 -26 37 -38 48 -23 19 -155 89 -169 89 -17 0 27 -61 48 -66 12 -3 30 -15 40 -26 17 -19 17 -20 -7 -39 -82 -66 -124 -76 -141 -31 -6 15 -33 60 -61 101 -46 67 -51 79 -49 123 2 49 -5 58 -28 36 -10 -11 -17 -7 -37 17 -13 17 -24 37 -24 47 0 23 53 39 106 31 35 -5 44 -3 44 9 0 9 -11 23 -25 32 -14 9 -23 21 -20 27 12 19 -27 21 -65 4 -26 -12 -42 -27 -49 -46 -5 -16 -14 -29 -18 -30 -56 -8 -76 -5 -80 10 -3 13 -58 52 -95 69 -18 8 -6 -25 18 -51 36 -39 24 -45 -17 -8 -18 17 -44 31 -57 31 -35 0 -94 -36 -117 -71 -17 -26 -25 -29 -60 -27 -39 3 -40 4 -43 44 -3 40 -2 42 31 48 40 7 70 36 61 59 -4 11 7 23 43 41 26 15 60 36 74 47 l27 21 31 -23 c26 -19 34 -21 56 -11 26 12 34 52 16 81 -7 11 -13 8 -26 -13 -22 -33 -48 -33 -64 0 -8 19 -17 25 -31 21 -23 -6 -27 15 -6 32 32 26 95 40 194 40 97 1 103 0 124 -24z m-448 -104 c27 -29 28 -29 8 -40 -39 -21 -52 -14 -52 29 0 22 4 40 8 40 5 0 21 -13 36 -29z m-64 -30 c0 -6 -4 -13 -10 -16 -5 -3 -10 1 -10 9 0 9 5 16 10 16 6 0 10 -4 10 -9z m-474 -138 c6 -23 1 -32 -39 -66 -26 -21 -47 -43 -47 -49 0 -5 5 -6 10 -3 15 9 12 0 -11 -40 -12 -20 -24 -34 -26 -31 -13 13 79 216 98 216 5 0 12 -12 15 -27z m671 -113 c14 0 24 -9 32 -30 13 -38 51 -54 113 -46 58 8 171 -26 191 -58 8 -11 27 -53 44 -92 41 -98 91 -165 121 -160 33 5 27 -17 -21 -76 -73 -90 -80 -104 -78 -162 1 -49 -2 -58 -39 -102 -22 -27 -40 -58 -40 -70 0 -24 -58 -88 -99 -108 -14 -7 -42 -16 -62 -20 -39 -7 -49 3 -49 48 0 25 -25 82 -48 108 -12 15 -13 24 -2 62 15 53 5 123 -20 151 -10 11 -21 44 -25 73 -7 55 -8 56 -40 42 -15 -6 -24 -3 -36 12 -15 19 -18 19 -45 5 -16 -8 -46 -18 -67 -22 -31 -6 -43 -3 -73 20 -19 15 -49 45 -65 68 -25 35 -29 49 -29 109 0 63 3 72 28 97 15 15 34 32 42 37 8 5 28 28 43 52 18 28 34 42 50 42 12 0 42 7 67 15 25 8 54 12 65 10 11 -3 30 -5 42 -5z m-733 -525 c28 -17 52 -42 70 -74 22 -41 36 -54 86 -77 32 -15 61 -33 64 -40 3 -8 -2 -33 -10 -56 -8 -24 -12 -53 -9 -66 8 -33 -21 -40 -52 -11 -52 48 -141 179 -172 252 -31 75 -37 97 -25 97 3 0 25 -11 48 -25z m1236 -199 c-11 -34 -55 -84 -66 -74 -12 12 21 94 45 115 31 26 39 11 21 -41z"/></g>
-                  </svg>
-                </a>
               </p>
             </div>
             <div class="project">
