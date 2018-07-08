@@ -17,7 +17,7 @@ function showPage(pageName) {
 
 $(document).ready(function() {
     currentPageName = 'about';
-    $('#experiences').hide();
+    $('#experience').hide();
     $('#projects').hide();
     $('#initiatives').hide();
 });
