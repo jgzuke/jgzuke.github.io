@@ -4,6 +4,15 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+.fadeable {
+  -webkit-transition: opacity 0.15s ease;
+  -moz-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+.faded {
+  opacity: 0;
+}
 body {
   color: #5D5D5D;
 }
@@ -68,7 +77,7 @@ body p {
   transition: all 0.5s ease;
   fill: #0099FF;
 }
-#page-left .valign-wrapper .valign #navLinks .active {
+#page-left .valign-wrapper .valign #navLinks .activeLink {
   text-decoration: underline;
 }
 #page-left .valign-wrapper .valign #myLinks svg {
@@ -94,6 +103,10 @@ body p {
 #page-right {
   margin-left: 600px;
   margin-right: 400px;
+  -webkit-transition: opacity 0.15s ease;
+  -moz-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
 }
 #page-right #aboutSection {
   height: 100vh;
@@ -104,6 +117,9 @@ body p {
 #page-right #aboutSection .valign-wrapper .valign .myButton {
   cursor: pointer;
   color: #0099ff;
+}
+#page-right #aboutSection .hiddenPage {
+  display: none;
 }
 #page-right #aboutSection #experience,
 #page-right #aboutSection #projects,

@@ -8,6 +8,16 @@
 	transition: all 0.5s ease;
 }
 
+.fadeable {
+  -webkit-transition: opacity 0.15s ease;
+  -moz-transition: opacity 0.15s ease;
+  -o-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+.faded {
+  opacity: 0;
+}
+
 body {
   color: @text-color;
   g {
@@ -52,7 +62,7 @@ body {
         h4 {
           .blue-on-hover;
         }
-        .active {
+        .activeLink {
           text-decoration: underline;
         }
       }
@@ -71,6 +81,7 @@ body {
 #page-right {
   margin-left: 600px;
   margin-right: 400px;
+  .fadeable;
   #aboutSection {
     height: 100vh;
     .valign-wrapper {
@@ -81,6 +92,9 @@ body {
           color: #0099ff;
         }
       }
+    }
+    .hiddenPage {
+      display: none;
     }
     #experience, #projects, #initiatives {
       padding-top: 30vh;

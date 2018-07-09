@@ -13,7 +13,7 @@
           <img id="landing-title" src="ic/logo.png"/>
 
           <div id="navLinks">
-            <h4 onclick="showPage('about')" class="active" id="aboutLink">About</h4>
+            <h4 onclick="showPage('about')" class="activeLink" id="aboutLink">About</h4>
             <h4 onclick="showPage('experience')" id="experienceLink">Experience</h4>
             <h4 onclick="showPage('projects')" id="projectsLink">Projects</h4>
             <h4 onclick="showPage('initiatives')" id="initiativesLink">Initiatives</h4>
@@ -45,7 +45,7 @@
             <p>Besides coding I also enjoy rock climbing, camping and board games</p>
           </div>
         </div>
-        <div id="experience">
+        <div id="experience" class="hiddenPage">
           <!-- BEGIN {experience} -->
             <div class="project">
               <h3>Airbnb Web Infrastructure</h3>
@@ -127,7 +127,7 @@
             </div>
           <!-- END {experience} -->
         </div>
-        <div id="projects">
+        <div id="projects" class="hiddenPage">
           <!-- BEGIN {projects} -->
             <div class="project">
               <h3>Stone Plugin</h3>
@@ -244,7 +244,7 @@
             </div>
           <!-- END {projects} -->
         </div>
-        <div id="initiatives">
+        <div id="initiatives" class="hiddenPage">
           <!-- BEGIN {initiatives} -->
             <div class="project">
               <h3>TechRetreat Learnathon/Organizer</h3>
@@ -304,7 +304,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
   </body>
